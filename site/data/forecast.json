@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-10-12T04:29:39",
+  "generated_at": "2026-10-12T04:51:28",
   "asof": "2026-10-12",
   "days_out": 22,
   "n_sims": 40000,
@@ -67,11 +67,11 @@
   "struct_sd": 2.45,
   "drift_sd": 1.41,
   "sim": {
-   "mean": 7.450766948629325,
-   "p10": 4.236371321318515,
-   "p90": 10.635763181997579,
-   "p025": 1.8204641166253337,
-   "p975": 13.02637860554361,
+   "mean": 7.450093650212695,
+   "p10": 4.235698022901886,
+   "p90": 10.63508988358095,
+   "p025": 1.8197908182087046,
+   "p975": 13.02570530712698,
    "p_dem_win_popvote": 0.9909
   },
   "components": {
@@ -86,7 +86,7 @@
     "w": 0.5109498339232496
    },
    "markets": {
-    "margin": 8.962719298245613,
+    "margin": 8.95921052631579,
     "sd": 3.0,
     "detail": {
      "Kalshi": {
@@ -95,22 +95,22 @@
       "url": "https://kalshi.com/markets/kxhousepopvotemargind"
      },
      "Polymarket": {
-      "mean": 7.837898518185901,
-      "median": 8.675438596491228,
+      "mean": 7.853767275969684,
+      "median": 8.66842105263158,
       "url": "https://polymarket.com/event/2026-midterms-house-popular-vote-margin-of-victory-224"
      }
     },
     "w": 0.19189004874006485
    },
    "approval": {
-    "margin": 8.583297942610688,
-    "sd": 3.847822752813069,
+    "margin": 8.583297942610692,
+    "sd": 3.8478227528130686,
     "approval": 37.0,
     "models": {
      "level": 8.6,
      "swing": 8.56
     },
-    "w": 0.1866314492624082
+    "w": 0.18663144926240827
    },
    "specials": {
     "margin": 3.6758122204040267,
@@ -3313,10 +3313,10 @@
   },
   "fundamentals": {
    "level": {
-    "intercept": -5.836600816145763,
-    "slope": 0.34529767177021364,
-    "era": 8.076226591167911,
-    "loo_rmse": 3.847822752813069,
+    "intercept": -5.836600816145766,
+    "slope": 0.34529767177021375,
+    "era": 8.076226591167908,
+    "loo_rmse": 3.8478227528130686,
     "n": 20
    },
    "swing": {
@@ -3345,145 +3345,145 @@
  },
  "house": {
   "total_seats": 435,
-  "d_mean": 230.83815,
-  "r_mean": 204.16185,
+  "d_mean": 230.838525,
+  "r_mean": 204.161475,
   "i_mean": 0.0,
   "d_median": 230.0,
   "d_p10": 217.0,
   "d_p90": 245.0,
   "d_p025": 209.0,
   "d_p975": 256.0,
-  "p_d_control": 0.887925,
-  "p_r_control": 0.112075,
-  "p_other": 4.163336342344337e-17,
+  "p_d_control": 0.887875,
+  "p_r_control": 0.112125,
+  "p_other": 2.7755575615628914e-17,
   "tipping_point": {
-   "NC-01": 0.0325,
-   "PA-07": 0.0313,
-   "OH-07": 0.0311,
-   "NY-17": 0.0309,
-   "CO-08": 0.0305,
+   "NC-01": 0.0324,
+   "NY-17": 0.0313,
+   "OH-07": 0.0313,
    "WA-03": 0.0304,
-   "FL-14": 0.0297,
-   "PA-10": 0.0297,
-   "IA-01": 0.0288,
-   "CA-22": 0.0286,
-   "VA-02": 0.0279,
-   "TX-34": 0.0273
+   "PA-07": 0.0303,
+   "CO-08": 0.0301,
+   "FL-14": 0.0291,
+   "PA-10": 0.0291,
+   "IA-01": 0.0291,
+   "VA-02": 0.0283,
+   "TX-34": 0.0274,
+   "CA-22": 0.0269
   },
   "seats_by_national_vote": [
    {
     "margin": -1.5,
-    "d_seats": 200.4320987654321,
+    "d_seats": 200.40740740740742,
     "p_control": 0.0,
     "n": 81
    },
    {
     "margin": -0.5,
-    "d_seats": 204.2406015037594,
+    "d_seats": 204.22556390977442,
     "p_control": 0.0,
     "n": 133
    },
    {
     "margin": 0.5,
-    "d_seats": 207.01865671641792,
+    "d_seats": 207.0037313432836,
     "p_control": 0.0,
     "n": 268
    },
    {
     "margin": 1.5,
-    "d_seats": 209.92640692640694,
+    "d_seats": 209.9090909090909,
     "p_control": 0.05627705627705628,
     "n": 462
    },
    {
     "margin": 2.5,
-    "d_seats": 213.13365155131265,
-    "p_control": 0.18496420047732698,
-    "n": 838
+    "d_seats": 213.13230035756854,
+    "p_control": 0.18116805721096543,
+    "n": 839
    },
    {
     "margin": 3.5,
-    "d_seats": 216.51943005181346,
-    "p_control": 0.4164507772020725,
-    "n": 1544
+    "d_seats": 216.52038834951458,
+    "p_control": 0.4174757281553398,
+    "n": 1545
    },
    {
     "margin": 4.5,
-    "d_seats": 219.97253753203955,
-    "p_control": 0.6678872207982424,
+    "d_seats": 219.98205785426583,
+    "p_control": 0.6693518857561332,
     "n": 2731
    },
    {
     "margin": 5.5,
-    "d_seats": 223.4392502258356,
-    "p_control": 0.8615627822944896,
-    "n": 4428
+    "d_seats": 223.44344095732671,
+    "p_control": 0.8611424700835403,
+    "n": 4429
    },
    {
     "margin": 6.5,
-    "d_seats": 227.0325911584382,
-    "p_control": 0.9590190383994837,
+    "d_seats": 227.0296869958051,
+    "p_control": 0.9588576960309777,
     "n": 6198
    },
    {
     "margin": 7.5,
-    "d_seats": 230.61530582382207,
-    "p_control": 0.9929762949956101,
-    "n": 6834
+    "d_seats": 230.61784930504754,
+    "p_control": 0.9929773226042429,
+    "n": 6835
    },
    {
     "margin": 8.5,
-    "d_seats": 234.29724441545736,
-    "p_control": 0.9985325289417903,
-    "n": 6133
+    "d_seats": 234.30322791000978,
+    "p_control": 0.998532768177372,
+    "n": 6134
    },
    {
     "margin": 9.5,
-    "d_seats": 238.32753490501258,
+    "d_seats": 238.33806688043975,
     "p_control": 1.0,
-    "n": 4369
+    "n": 4366
    },
    {
     "margin": 10.5,
-    "d_seats": 242.05866666666665,
+    "d_seats": 242.05373475609755,
     "p_control": 1.0,
-    "n": 2625
+    "n": 2624
    },
    {
     "margin": 11.5,
-    "d_seats": 246.34682080924856,
+    "d_seats": 246.34417932031815,
     "p_control": 1.0,
-    "n": 1384
+    "n": 1383
    },
    {
     "margin": 12.5,
-    "d_seats": 249.7940813810111,
+    "d_seats": 249.8027127003699,
     "p_control": 1.0,
     "n": 811
    },
    {
     "margin": 13.5,
-    "d_seats": 255.1320293398533,
+    "d_seats": 255.19024390243902,
     "p_control": 1.0,
-    "n": 409
+    "n": 410
    },
    {
     "margin": 14.5,
-    "d_seats": 259.8306451612903,
+    "d_seats": 259.748987854251,
     "p_control": 1.0,
-    "n": 248
+    "n": 247
    },
    {
     "margin": 15.5,
-    "d_seats": 263.9527559055118,
+    "d_seats": 264.046875,
     "p_control": 1.0,
-    "n": 127
+    "n": 128
    },
    {
     "margin": 16.5,
-    "d_seats": 272.0470588235294,
+    "d_seats": 272.04761904761904,
     "p_control": 1.0,
-    "n": 85
+    "n": 84
    }
   ],
   "hist": {
@@ -3504,136 +3504,135 @@
    "176": 2.5e-05,
    "177": 7.5e-05,
    "178": 7.5e-05,
-   "179": 2.5e-05,
-   "180": 0.0001,
+   "179": 5e-05,
+   "180": 7.5e-05,
    "181": 2.5e-05,
    "182": 5e-05,
    "183": 2.5e-05,
    "184": 7.5e-05,
    "185": 0.000125,
-   "186": 0.000175,
-   "187": 0.00015,
+   "186": 0.00015,
+   "187": 0.000175,
    "188": 0.00015,
    "189": 0.000175,
-   "190": 0.0001,
-   "191": 0.00015,
-   "192": 0.000125,
-   "193": 0.000225,
-   "194": 0.000275,
+   "190": 7.5e-05,
+   "191": 0.000175,
+   "192": 0.00015,
+   "193": 0.000175,
+   "194": 0.0003,
    "195": 0.00035,
    "196": 0.000375,
-   "197": 0.0004,
-   "198": 0.000675,
-   "199": 0.000625,
+   "197": 0.000425,
+   "198": 0.000725,
+   "199": 0.00055,
    "200": 0.000725,
-   "201": 0.000875,
-   "202": 0.001625,
-   "203": 0.00145,
+   "201": 0.000925,
+   "202": 0.0016,
+   "203": 0.001475,
    "204": 0.001875,
-   "205": 0.0022,
+   "205": 0.002125,
    "206": 0.002625,
    "207": 0.00305,
-   "208": 0.0041,
+   "208": 0.004175,
    "209": 0.0047,
-   "210": 0.005725,
+   "210": 0.005675,
    "211": 0.006725,
-   "212": 0.007775,
-   "213": 0.0091,
-   "214": 0.0105,
-   "215": 0.013025,
-   "216": 0.0143,
-   "217": 0.016725,
-   "218": 0.018725,
+   "212": 0.0078,
+   "213": 0.00905,
+   "214": 0.01065,
+   "215": 0.012775,
+   "216": 0.014175,
+   "217": 0.017025,
+   "218": 0.018775,
    "219": 0.02105,
-   "220": 0.022175,
-   "221": 0.025425,
-   "222": 0.028925,
-   "223": 0.029075,
+   "220": 0.021925,
+   "221": 0.025475,
+   "222": 0.0289,
+   "223": 0.0291,
    "224": 0.031225,
-   "225": 0.035225,
-   "226": 0.034825,
-   "227": 0.03785,
-   "228": 0.03795,
-   "229": 0.038675,
-   "230": 0.038225,
-   "231": 0.0362,
-   "232": 0.0361,
-   "233": 0.03435,
-   "234": 0.03475,
-   "235": 0.03245,
-   "236": 0.029175,
-   "237": 0.03,
-   "238": 0.026575,
-   "239": 0.02585,
-   "240": 0.0218,
-   "241": 0.020475,
-   "242": 0.01905,
-   "243": 0.016825,
-   "244": 0.0149,
-   "245": 0.012725,
-   "246": 0.011525,
-   "247": 0.010525,
-   "248": 0.009225,
-   "249": 0.007425,
-   "250": 0.007025,
-   "251": 0.00595,
-   "252": 0.00545,
-   "253": 0.00465,
-   "254": 0.00385,
-   "255": 0.003825,
-   "256": 0.0033,
-   "257": 0.0029,
-   "258": 0.002325,
-   "259": 0.00195,
-   "260": 0.002,
-   "261": 0.0012,
+   "225": 0.035425,
+   "226": 0.0346,
+   "227": 0.03815,
+   "228": 0.03765,
+   "229": 0.038475,
+   "230": 0.03845,
+   "231": 0.036275,
+   "232": 0.036325,
+   "233": 0.03405,
+   "234": 0.03505,
+   "235": 0.0321,
+   "236": 0.029525,
+   "237": 0.0296,
+   "238": 0.02675,
+   "239": 0.0257,
+   "240": 0.021725,
+   "241": 0.020825,
+   "242": 0.0189,
+   "243": 0.01715,
+   "244": 0.0145,
+   "245": 0.012975,
+   "246": 0.011175,
+   "247": 0.010675,
+   "248": 0.009475,
+   "249": 0.0073,
+   "250": 0.00695,
+   "251": 0.00605,
+   "252": 0.00555,
+   "253": 0.004425,
+   "254": 0.004075,
+   "255": 0.0037,
+   "256": 0.003175,
+   "257": 0.003,
+   "258": 0.00235,
+   "259": 0.00185,
+   "260": 0.001925,
+   "261": 0.0013,
    "262": 0.001225,
    "263": 0.0013,
-   "264": 0.0013,
-   "265": 0.0008,
-   "266": 0.000675,
-   "267": 0.00055,
-   "268": 0.0009,
-   "269": 0.000375,
-   "270": 0.000525,
+   "264": 0.001325,
+   "265": 0.000725,
+   "266": 0.00075,
+   "267": 0.000625,
+   "268": 0.000875,
+   "269": 0.0003,
+   "270": 0.00055,
    "271": 0.00045,
    "272": 0.000525,
-   "273": 0.000575,
-   "274": 0.000425,
-   "275": 0.0004,
-   "276": 0.000375,
-   "277": 0.00025,
-   "278": 0.0003,
+   "273": 0.000625,
+   "274": 0.0004,
+   "275": 0.0003,
+   "276": 0.00045,
+   "277": 0.000225,
+   "278": 0.000325,
    "279": 0.00035,
    "280": 0.0002,
-   "281": 0.000225,
-   "282": 0.0002,
-   "283": 0.0002,
+   "281": 0.00025,
+   "282": 0.000175,
+   "283": 0.000225,
    "284": 0.0002,
-   "285": 0.0002,
+   "285": 0.000175,
    "286": 0.00015,
-   "287": 0.0001,
-   "288": 7.5e-05,
+   "287": 7.5e-05,
+   "288": 0.0001,
    "289": 5e-05,
-   "291": 7.5e-05,
+   "290": 2.5e-05,
+   "291": 5e-05,
    "292": 0.00015,
    "293": 0.00015,
-   "294": 2.5e-05,
-   "295": 0.0001,
+   "294": 5e-05,
+   "295": 7.5e-05,
    "297": 2.5e-05,
    "298": 5e-05,
    "301": 5e-05,
    "302": 5e-05,
-   "306": 2.5e-05,
-   "308": 2.5e-05,
-   "309": 2.5e-05,
-   "310": 5e-05,
-   "311": 5e-05,
+   "305": 2.5e-05,
+   "308": 5e-05,
+   "310": 7.5e-05,
+   "311": 2.5e-05,
    "315": 2.5e-05,
    "316": 0.0001,
    "318": 2.5e-05,
-   "323": 2.5e-05,
-   "324": 2.5e-05,
+   "323": 5e-05,
    "327": 2.5e-05,
    "328": 2.5e-05,
    "332": 2.5e-05,
@@ -3641,14 +3640,14 @@
    "343": 5e-05,
    "350": 2.5e-05,
    "359": 2.5e-05,
-   "381": 2.5e-05,
-   "396": 2.5e-05
+   "380": 2.5e-05,
+   "395": 2.5e-05
   }
  },
  "senate": {
   "total_seats": 100,
-  "d_mean": 51.587375,
-  "r_mean": 48.1277,
+  "d_mean": 51.58725,
+  "r_mean": 48.127825,
   "i_mean": 0.284925,
   "d_median": 52.0,
   "d_p10": 48.0,
@@ -3659,13 +3658,13 @@
   "p_r_control": 0.30545,
   "p_other": 0.010600000000000054,
   "tipping_point": {
-   "TX-SEN": 0.1549,
+   "TX-SEN": 0.1548,
    "OH-SEN-SP": 0.1289,
    "IA-SEN": 0.1228,
    "AK-SEN": 0.1221,
-   "ME-SEN": 0.1194,
+   "ME-SEN": 0.1195,
    "MI-SEN": 0.1075,
-   "KS-SEN": 0.0815,
+   "KS-SEN": 0.0814,
    "NE-SEN": 0.0371,
    "MN-SEN": 0.0331,
    "SC-SEN": 0.0305,
@@ -3686,17 +3685,17 @@
    "45": 0.008,
    "46": 0.01745,
    "47": 0.0346,
-   "48": 0.05595,
+   "48": 0.055925,
    "49": 0.082,
-   "50": 0.11105,
-   "51": 0.135425,
-   "52": 0.1521,
-   "53": 0.15035,
-   "54": 0.130175,
-   "55": 0.077225,
-   "56": 0.028,
-   "57": 0.008,
-   "58": 0.00175,
+   "50": 0.111075,
+   "51": 0.1354,
+   "52": 0.152125,
+   "53": 0.1504,
+   "54": 0.130225,
+   "55": 0.07715,
+   "56": 0.027975,
+   "57": 0.008025,
+   "58": 0.001725,
    "59": 0.000625,
    "60": 0.000175,
    "61": 5e-05,
@@ -3706,16 +3705,16 @@
  },
  "governors": {
   "total_seats": 50,
-  "d_mean": 27.0769,
-  "r_mean": 22.9231,
+  "d_mean": 27.07685,
+  "r_mean": 22.92315,
   "i_mean": 0.0,
   "d_median": 27.0,
   "d_p10": 23.0,
   "d_p90": 31.0,
   "d_p025": 21.0,
   "d_p975": 33.0,
-  "p_d_control": 0.7113,
-  "p_r_control": 0.2887,
+  "p_d_control": 0.71135,
+  "p_r_control": 0.28865,
   "p_other": 0.0,
   "hist": {
    "6": 7.5e-05,
@@ -3729,25 +3728,25 @@
    "14": 0.000275,
    "15": 0.000425,
    "16": 0.00065,
-   "17": 0.00145,
-   "18": 0.002925,
-   "19": 0.006275,
+   "17": 0.001475,
+   "18": 0.00295,
+   "19": 0.006225,
    "20": 0.011125,
-   "21": 0.0167,
-   "22": 0.0317,
-   "23": 0.049625,
+   "21": 0.016725,
+   "22": 0.031675,
+   "23": 0.0496,
    "24": 0.070175,
-   "25": 0.09675,
-   "26": 0.123375,
-   "27": 0.13395,
+   "25": 0.096725,
+   "26": 0.12345,
+   "27": 0.133925,
    "28": 0.13175,
    "29": 0.112775,
    "30": 0.0838,
    "31": 0.05515,
    "32": 0.03375,
    "33": 0.017725,
-   "34": 0.009525,
-   "35": 0.00475,
+   "34": 0.00955,
+   "35": 0.004725,
    "36": 0.002225,
    "37": 0.00145,
    "38": 0.00055,
@@ -3758,10 +3757,10 @@
   }
  },
  "joint": {
-  "both_d": 0.661875,
-  "house_d_senate_r": 0.2163,
-  "house_r_senate_d": 0.022075,
-  "both_r": 0.08915
+  "both_d": 0.66185,
+  "house_d_senate_r": 0.216275,
+  "house_r_senate_d": 0.0221,
+  "both_r": 0.089175
  },
  "races": [
   {
@@ -3770,7 +3769,7 @@
    "state": "AK",
    "name": "Alaska",
    "pvi": -6.0,
-   "p": 0.5711,
+   "p": 0.571,
    "mean": 0.9,
    "p10": -6.0,
    "p90": 7.7,
@@ -4120,7 +4119,7 @@
    "mean": -20.1,
    "p10": -28.1,
    "p90": -12.1,
-   "p025": -32.8,
+   "p025": -32.9,
    "p975": -7.1,
    "rating": "Safe R",
    "dem": {
@@ -4185,12 +4184,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -11.2,
+     "margin": -11.3,
      "sd": 7.0,
      "w": 0.22,
-     "p": 0.031,
+     "p": 0.03,
      "sources": {
-      "Polymarket": 0.024,
+      "Polymarket": 0.022,
       "Kalshi": 0.03,
       "PredictIt": 0.04
      }
@@ -4643,7 +4642,7 @@
    "state": "FL",
    "name": "Florida (special)",
    "pvi": -5.0,
-   "p": 0.0644,
+   "p": 0.0642,
    "mean": -7.7,
    "p10": -14.0,
    "p90": -1.3,
@@ -4715,10 +4714,10 @@
      "margin": -7.6,
      "sd": 7.0,
      "w": 0.123,
-     "p": 0.104,
+     "p": 0.103,
      "sources": {
       "Polymarket": 0.095,
-      "Kalshi": 0.092,
+      "Kalshi": 0.091,
       "PredictIt": 0.134
      }
     }
@@ -5033,7 +5032,7 @@
      "w": 0.13,
      "p": 0.952,
      "sources": {
-      "Polymarket": 0.962,
+      "Polymarket": 0.963,
       "Kalshi": 0.953,
       "PredictIt": 0.935
      }
@@ -5696,7 +5695,7 @@
      "w": 0.176,
      "p": 0.023,
      "sources": {
-      "Polymarket": 0.041,
+      "Polymarket": 0.042,
       "Kalshi": 0.003,
       "PredictIt": 0.026
      }
@@ -5802,38 +5801,6 @@
      "dem": 26.3,
      "rep": 45.7,
      "asof": "2026-09-18"
-    }
-   ],
-   "news": [
-    {
-     "title": "RISCH: Serves Israel, not Idaho",
-     "source": "Coeur d'Alene Press",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB0YnZFbGZNN2ZEM3pDUGNDUXJIamZ0YnJwZkpOZzljdDEwbmpGM3F5WEJuRzlVUHhtSUlodkpCMk1SZEltcl91UWt1dElsNEw3eHdxR2NNLVZkYnBmZUhna2MxWTlobUllNXB1ZkN3a21SMmNEUlQ4?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "OPINION: Why would anyone ask Jim Risch that question?",
-     "source": "The Lewiston Tribune",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNFhld3ItTmtaaFZ2cUpUZ21oVkpUNEFaTVZzUzY5VG5xSVhQV09aOTVZaDVfMlg0VlNKYlgyaFpJMFJTQ2YxYkVxckV2V1J1UmIxS1hyZ3ZzU0xjY29wWWd5SmdzWmZOMmwzTnBhYnNnVXE1NUpCVUZwUmw3TURXSElINGVOUXk1RElqaldXUnY?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "LETTERS TO THE EDITOR: Land for data center, Congress, endorsements",
-     "source": "Idaho Press",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOMEQ5TnZmLU5pM1pLNVZYTkI2UC11VkNtUDhPZHBDQ3F5YWlmM0lMdFN4dlh6R2tqakpKSlk0cmxxWVF0RGM4amtWYUt0UG9uV25qakNXQVRUUkRHSVNxSS1lUjRIOWRKUENpdVA0clNZNDllTk1fWjVZUzFZczE4cFlCNjRwT2FqSG90WEc0SnpCRUF0UnFvWW5nUzhlRTk5bFA4MEZwVEV6Vm9mTFNacThFSEJIYXlVcnpUV0haV3RoTHRCMnc3V2ZDd0JWQkhpSmc?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Idaho U.S. Senate Election 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSUVGSVZRYVd0Z2xBLU4ybzFwMllVaV9IbnZ2VWN6N0U0T3ozZER6Z2ZqaTM5bXZnc0VQUkEwMHRwWjVKRFRyaEVCYTRfTkI5ZWp3ZFlOaWF3OXVoTVkweV83Q3VXdWFzQldQa3N2dmc2YU43ODBlcE45a0l5ZjBlY2ZhbXVBWl9XaEE?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Idaho Elections: Who’s Leading In Prediction Markets?",
-     "source": "Forbes",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUUpMSlJDR1p3NUpic2hrT1BfckZSMm9DcGc5NmlCeERUMUVYYmhGLXFVSUJqV1ptMHoxX2dkZ0dPS3d0MmNZbnFaLUZ3ME44aHVuWDJrVWNObENqX0ZCR3dTMFpfcmlhYUZzbTEtcmloak0wY3pEYTZwWnBqUms1WGIyMmV5RlJqLURn?oc=5",
-     "date": "2026-10-09"
     }
    ]
   },
@@ -6264,6 +6231,12 @@
      "date": "2026-10-12"
     },
     {
+     "title": "Opinion: A beginner's guide to the strange stories swirling around U.S. Sen. Roger Marshall of Kansas",
+     "source": "Kansas Reflector",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTndwdFZ5bkZaZFVXRHZsbl9iVjYzSThHaVpwLWV6dk5ZRERFaU1Qd2dpN0pXWFdoczZYVlhWSkZSVnlRY0gzZFZERUxpVkNJbFM5d2pzcnJBcFdqRDA1Ukx1QURLNmxhQVpfV1QxcWNqTTFLZVpGc2lXRW9RMGpZdDREazQyQkFudGtmWWJFZnhGWXpPV05JVkMzQTlVNmtQcHBBa1VoNG51dlhkQ1NURmtrX2ZoLUJOcU9Od213LTF6Yy00Q3hLaw?oc=5",
+     "date": "2026-10-12"
+    },
+    {
      "title": "Opinion: Kansas may surprise the nation and elect a Democrat to the US Senate. MAGA politics reshaped state.",
      "source": "Kansas Reflector",
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaWNjZGppSXFvLTJBdi1uM0JYQ3FsVkpISW50QW92NHdDN09zc3M4bGpTbkhOd05WT3BhSnl6SHNUQ1dJWGVwZ2NpbEhYeGRqd3hoY0xlcWFMdlNfU2FjMFFqRzBxZGs4VW9IeTNqMXBDZVYxUHlyRjdvcDZobmF1czA0SjZWWk9hVk9BWmppYjlJbm5aZ3NzSF9yVzFqbzMzYU9OV3lXWFlMSVU1?oc=5",
@@ -6279,12 +6252,6 @@
      "title": "Marshall charged 18% on medical bills — more than other Kansas doctors who sued",
      "source": "Kansas City Star",
      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5GZEZDYTJUMjBMVmtmZVVMNVJ2a2NLZ3d1V3FUdVAwbWZxakJxT3l0YnBKLXVOYjBsaW91ZFZzU3N4eURqbmNNRE9KWXB1TFQwZ0p4V1cydzI2THBWZXQ1RHBmbjR4NXRxdFBtenFjMHpQcTFzSzBEb3QzX2NkQdIBfkFVX3lxTE1hNkY2NG01bnZDYm04TjJpSl8xeTFUYUdwQk5tNERnelFyUDNLV0xkakRxRjd5X3JTWFpMQU1XQzc5UU5tUUVkUndjNWlNQ0o3Ti1oZEZodFNGY0tPWU9aeWN1emdSTkRZcFk3VURpNDNVWXN2S202cENtc3hPQQ?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Rev. Adam Hamilton, left, shakes hands with Republican incumbent Sen. Roger Marshall during a debate Sept. 12, 2026, at the Kansas State Fair in Hutchinson, Kansas.",
-     "source": "The Daily News | Texas' Oldest Newspaper",
-     "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOc20xOXI4YjNURHpTcjYwcGhZRGtHQzRRMHgwSHAzX3lvSDdmR0FuVHN1WDlLMzRDMWNsTlpvTnRpMmlmZkpES1FiMW9XZHRGQzFGb0NVcFA2dWZCSHVTdzFfSGdFd2RycEkwOXEzaUlVWThZNlduQVg0aFBWRGdrRkZSNzV0YUVrOVZjYzJlUTZBdW5tc2Jxb2VrSWVXLVRfYVgzZDdhVnEtaDdmbFFoUm45QVBjaVNOVTBMOVg5eC1fREwzSDFfb3RVSVpsVm9nZHdQZlM4ZnJkQWZIcG1yUmdBUXJIOGM1ZG5PcjdldmZjQmp5eTNLRXM0NWdxNDlvNmdLcnNEeWc5V19FdDlKZGMxbXAxLVQy?oc=5",
      "date": "2026-10-11"
     }
    ]
@@ -6454,7 +6421,7 @@
    "status": "Incumbent lost renomination",
    "comps": {
     "fundamentals": {
-     "margin": -17.1,
+     "margin": -17.2,
      "sd": 7.5,
      "w": 0.285,
      "parts": {
@@ -6543,39 +6510,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Louisiana U.S. Senate Election 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRVVFb2tnMUp0UHlUTVpoV0dGU0FLMGxUaWxVTjJsYmJHS2VlX1hha1J4bzEzSUZLRXVLd25BV0Q0ZXNSUTVtWkNESi1Bc25KTF8zVE5IdTIzeHg4UUNfNU9Vd2xnRlZOcnJLdjVTOXhpczlWRXNQMXdiVzlGSWphdndqcGFfd2VBRUlFa256bw?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "New Orleans Election 2026",
-     "source": "Verite News New Orleans",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOS1J4aWNGel91ZnN1RFAzbnRTaklyUnBpWHkxR1dONnN6T1kwUVVOUW9yY2lvZklXb0dZcW5FNTJHR2I0Z0NOS214NHdmTVJ4dzdIS3ZSWVh2cGQxaFRRbDJHLW1PbG8?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Who leads Louisiana Senate race? Polls for Letlow, Davis election",
-     "source": "Shreveport Times",
-     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNaFg0V3BQd1ZSTnlTTFozV0U5Ql9TeE95dUdTclBsb1B0N2cwS1FnQkg3YmJGUXhhV2R1bHY2bjU2bk1kRS14dkNqNzlnZ1RSdGdmb0ZKQTRCNjFlX19yaDBsNldWWnBTa1Z6N05zN0pTTllxNEZtb3kxU2w0LUJ4b2J4WXg1NWQzRHI4alU5OWpOVHFKZVJBV3BWc2Y4NVpfRzVQd1dBeXYxU21hUVRubnpvQmlTS1VMc1k3TF9RaWJfWHd6WHdkaGdKQUczM050SjF3TDNTOXFaOG00X2JyWFRIWWN3anVoNEVackdjQldYdWVuX1dxQWktd0cxeUs3V21Tcms0RlZTTEdfbXNyMDd3?oc=5",
-     "date": "2026-10-06"
-    },
-    {
-     "title": "Letlow releases new TV ad ahead of Nov. midterm election",
-     "source": "KSLA",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbmlOcDB0c2NnVlJvNFVZLTF0U2JXZ2k1RW55ZnU1WEdram45MU9PbWptM1hPbWt5b0pUemV0UmdUemJqcGVGQmpHTDIxODY0VGJhM0JVZ0xwMExkNUZ2enZwLTY2Y2YyeVo0ZXB3Vjh4T19QbksydV9MZ2ZfQWNneHk4MXBKc1N3eHRsVEx30gGiAUFVX3lxTFBqd3FZVlI3bUhrcVR5SlhUVnFWTmVuNTN5Wm1aX0owbzdNUWJZZ2pzYWxocEUweG9qVkV0RWVZMFc2MG02Ni03YkJHSHQwSWdweTB5Y1FGVW1HSkJVdzk3azdJb09wbXVheEw5Umt1Nmk4UXFVd0Q2dUl3S0NfaWJLTC1pZ2Y0UTBnNG5GTW5kamdnVXYtV0RiUWt2Qm1NbmVXdw?oc=5",
-     "date": "2026-10-06"
-    },
-    {
-     "title": "How Jamie Davis went from farmer to U.S. Senate candidate: ‘You have to get out and see people’",
-     "source": "NOLA.com",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVG8yUkh0MEJCc3NUSnhfWDYzTTctRWZpODc4SjZEMVpSWWdnZWlkMm80ZTZtV09qU01iSk9HVmx1ckdPZG9hQjlJeDM3OGJPcF9rTEhkTjc0d3k3ZmR2VXBsQnVRTDhJMExuOVJkZkxyZ2cwLVQzWU1OQnJWTEpCUXd1b3k3SEVhaHBvYUg3YnFTV0NRX3JHZ1BzV1hvTl9Jd294RkxVbkdyMlUyQWdHS2Nkc1BLTnRQOUHSAb8BQVVfeXFMTUx6a05qUnlFekszOEVKX2Rid21ubFFfQ2N4enpLV0YxR3lzXzV6N1gxNjdidmdseExvT0RDVmxxeGMwd1ZISU9wVE11WV9TZUx1enVjd1AxZ2RNTWprU0N4TUZkd0RfSG4tQUpVZ1VTX3hwTjZzcE5FQWpKb2lPSlpNZ3FfV21CUkFMMEN0bFZlQkFuNzBwM2MyLXJUTkdOM25feFZGMXpsRlAwV2swOTJjTVNxd3VDdC1Nb3JKTjQ?oc=5",
-     "date": "2026-10-05"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "MA-SEN",
@@ -7135,7 +7070,7 @@
    "state": "MI",
    "name": "Michigan",
    "pvi": 0.0,
-   "p": 0.8072,
+   "p": 0.8074,
    "mean": 4.0,
    "p10": -2.0,
    "p90": 10.0,
@@ -7207,9 +7142,9 @@
      "margin": 2.6,
      "sd": 7.0,
      "w": 0.103,
-     "p": 0.668,
+     "p": 0.67,
      "sources": {
-      "Polymarket": 0.688,
+      "Polymarket": 0.692,
       "Kalshi": 0.67,
       "PredictIt": 0.635
      }
@@ -7451,38 +7386,6 @@
      "dem": 48.3,
      "rep": 44.9,
      "asof": "2026-10-07"
-    }
-   ],
-   "news": [
-    {
-     "title": "Abdul El-Sayed walks back Obama criticism ahead of their campaign event",
-     "source": "The Washington Post",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNY19RZWxmb3E2UWluUldMZVdkTF9yN1BJdFVmNVVINXBGR2FqUFh6RngxMWhMT3cwMXRJYndkUlZpU2taQnZWV0Y1QXJaRkZMcUJ3eTZEMjlqNUFURTBkcmdaQXVxazNpdHg4bmNXSVVEMjZ2NXdDVnlSV2VRLWswX1cxa1RxUWQ1U29EbU1SOEF3QzBBYWpaWjFydlRuUmViblU1cm9zUHJvdEdlYThqak13UlhTMF9BZ2ZPSA?oc=5",
-     "date": "2026-10-12"
-    },
-    {
-     "title": "Henderson: There is a better way to stage political debates",
-     "source": "The Detroit News",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOMUgwMzExMFkwUWM1c2VKQW9jaTJyRmZtTTVlbGZ4WGpIdWZFRUFOM3FEMkgwOHUyYVM3S2FIcnF1R3QtMjlzY3l6bXk2UXlFMGI5RGY0YUpCakxYNHIwR19ZWUttNUFXSUpzcjZYR05hWU1NZmhiQTBFTVRIMmpaSmVJbjctaVlwckV2UGZMa1VuM2pyeGtjWHNPR0c4ZS1oaTJ1RW9WSV8zMExfOEpGOGszS3I5S3ZaYTJ5ZjVEY2JYNl9nV2ZmU2JmQWxNZw?oc=5",
-     "date": "2026-10-12"
-    },
-    {
-     "title": "Abdul El-Sayed says Democrats must ‘win by massive numbers’ to fend off GOP election denial",
-     "source": "NBC News",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTkVxbTVEQ21rOTE1TkRBWnF3RFY2Z3A0U085M3ZRUTRvNTVqSENkWDZXQ1dDVGdkX21NZk9ESmdaY3FybEJXVTZDQWZRbVZHSThVLS1pQ0tUbWlUc0FMOU80RmdOU1dkTV91a2xSSHRjdS1pZWZTY2NwT1J3dlowZDlrQTFlOW9kNHdwNDVKckVmSmp5aXlQc2dDS3I3MXFNSFk3a0VBVEg?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Abdul El-Sayed Responds to Mike Rogers’ Claims of Terrorist Ties",
-     "source": "TODAY.com",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPV21rQm4zRVRkWTJXRzBvZ0xSMHRQci14UUYtZnNMWXgtVlN4RTF4OTAzRmJoNmtzWi1tM013ZG9HWFJZdkwxaXBpNVRicHU3Qjd3eXpFUlJQTFpneVhSbWQ4WFNhSE94bWZFSVNFR2tmRmNjVGkzc3k1N2kwaEhVTHJlQWhfRXc4eVZGU1V1T1hXUzY4b0ItTG1VNWRxVVAzeXNlMXNBRQ?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Republicans want Abdul El-Sayed to be the main character of the midterms. He's happy to oblige - ABC News",
-     "source": "ABC News - Breaking News, Latest News and Videos",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVDFCb25iT01mMU1TMXMwclIxTDFXeHkxRzZJdF9XelpsZVRETUx3WHBkOTRqUm5TeEFMeUNxZWpoalRqVnNTLXRZdVdNdE96Znd3RzFjOXBWczJTZC1sSzdxaWJLTjlMUzc1U2pnbmw4bVVmQUcwbXFQMTFnckFiTHl1VFZEMEJTa1NvZHZBU0pWZEluUEh6UllIX3FjV2JodFRvRjVtQVPSAa4BQVVfeXFMTU9rSFlKd0o1aFMzU2hrQTRPZ29PTHVTZ0dqTWw0Y01fWXNrLVhTR2FWTTNrWmhRVDNBSl9CWk9XeWNoWnIxMGhLbjljUlNSaGxFVjRUd1VadEVNVWNVUmxIMjlXNkpCbk5UamNqNTZHMm5yYXhFSzlsSjM4ejVXZGp1ei1Xb0ZDR0h4WjZJbjlnNTlsamU2OHZoa2d5SHdVOF9SWTdmVW5FOG1zMUNn?oc=5",
-     "date": "2026-10-11"
     }
    ]
   },
@@ -8006,7 +7909,7 @@
      "w": 0.145,
      "p": 0.066,
      "sources": {
-      "Polymarket": 0.064,
+      "Polymarket": 0.065,
       "Kalshi": 0.068,
       "PredictIt": 0.065
      }
@@ -9072,39 +8975,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Tom Thomson: We need Sununu fighting for us in Washington",
-     "source": "New Hampshire Union Leader",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPLUpKb3RvZ0Y0enZqN0NtSE43Y0pqcmxER3laMFB2SmRfVXNWSzNBVTJ1cl83dlVTSmlKN1poaXdXWkxQclNfU2VrZEYzQXNUd0E1aU9RRVFpbVBlaGlxbWw1d3pHSkJlRUZPNmo5VmVUUmU4NXZFU1NsS3FmdW5WOWxlSHBTVmV4WWk0ZmJfT2c1b1R0VkNCanplQjNhcUItU3lQRHQyMTh2Zw?oc=5",
-     "date": "2026-10-12"
-    },
-    {
-     "title": "23 Days To Go: Chris Pappas Warns Dems Are Taking Nothing For Granted In New Hampshire Senate Race",
-     "source": "Tampa Free Press",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTHZybmtDNF9VRk14LVo0U0w3U2ZuYVZnbHBpV3FSeHJrV05la2syRHFydDRHQXZDQVk3TnhnQlprelJOZW5EVUl6TUJMcWg4TVpuZ3pTb3hoR01UUVNlSkdmTzdVdzBhZVcyUG5GZkdnTHljNmVRckNGaW1RZWNPNFg5RWs4ZnR3R1lkM2w0N0IzQlNtNUJ3dWhFWU9Ob09Na2JYOFBfWDNnYmhxOVNBUS1ENE92MzlyOUpycUFvWQ?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Opinion | John E. Sununu Is Running a Model Campaign. He Might Still Lose.",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQV1pyY3ZZOGRMQ2tYdlVmR2w0MXprQm5OcHl4RFN0cU9ZZTV2YUthZWM3dVlnbFhhSjdkRUxsY0hRNmRaM2FodW15OWxBc0w4dzBhMmlpQUg1b2pLMFhkb21RMWV3ZE9zNjZxdGpzV2xCWE9JRmVxU0x5MTBJUFhldldfbVJwR2ZaUUl4OXN5SkR6ajhE?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "John Sununu’s path back to Washington looks nothing like his victory over two decades ago",
-     "source": "The Boston Globe",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcHVJbkZNOVlyMXYzMk40ZGdSWVVMVE1RbGVDekRYTjJMX1cxVzV3UU1XbnB6VU85TUJLdDcxOEVQdkFyajJCWUFhMGp2dGNmOEs2U2dKVWhnTnRXdWN5S2VMZkgzWHZKSlpXeXAxbzAwSDBjN3hTNzlCZXctNmN2MlNFRmlpZkNhd0JBeDBIUVQ?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Under-the-radar Senate race could determine balance of power | The Trail",
-     "source": "WMUR",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVHVmWjhxd21iRjVFeHNBNkNCR3haWFUwdDhzZXdybWN5R0I2emM1ejliYjNKb1J0OVBoNzd4WWdfcHd4REtGV0M5bU1hRTJMM1BBa09DcjdJY3BxZTNFNnNabEhtdXQzVWd2d2lRMUkyNnVTbTFUdzdXM192dnEzTlJGSjRFMnRPeVRXQWwzTG92UEE?oc=5",
-     "date": "2026-10-10"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "NJ-SEN",
@@ -9176,7 +9047,7 @@
      "w": 0.37,
      "p": 0.979,
      "sources": {
-      "Polymarket": 0.982,
+      "Polymarket": 0.983,
       "Kalshi": 0.979,
       "PredictIt": 0.975
      }
@@ -9661,38 +9532,6 @@
      "dem": 48.5,
      "rep": 44.1,
      "asof": "2026-10-08"
-    }
-   ],
-   "news": [
-    {
-     "title": "Grandma Joy and Brad Ryan endorse a candidate in the race for U.S. Senate - WHIZ - Fox 5 / Marquee Broadcasting",
-     "source": "WHIZ",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQS2dqMDV3aEpvd2NJVWNEeDVna29jZ1RhY3FRTkliY051V1R3NGJHeGstUEM4YXF0TnNoQkZ1a2s0djNzUFQ5TFFYSENnS3RoaFNPTlhLNlh6RkV0VjVXbF9RVXphQjFReFVZYjR1TWgzUER1Xy1vU01KVkZEM0JmaFlNUE10MVl1bS1nUmRYdGVscmJDcVBNamJzZk1TOGk4dnc?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Ohio US Senate race: Tight race forces GOP to surge in resources",
-     "source": "The Statehouse News Bureau",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQSXRITnM0MUhLS3NGeXlyRENrX1NjTG5TTWV2UkFid1dUTjJqSHRGVVBWVmpPRndRc3ZTaWZRLWtYcjFaZ1Uyci05dnlETjBLNEFfb2hQSXV3UFdWbllndEROQ0NJTmhiYjFjYzBNSWQ1dTd3UDdHQ2JERXhuOWdTajd3b1RSZFY5NUNDenZPVVNTMkdiWW5UNFlnZUIwVWJJd3hmQ0xTS2x2ZXpNMjY0Z2JWaUZSYmNMcnlHRA?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Sherrod Brown explains his proposals to lower costs for Ohioans",
-     "source": "TiffinOhio.net",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUXNEVUgwRUxjTFFmQ0VsTUJPeHJtdWZWc1hta3RNRERaWkdqRVZ4ellPXy1hcWJQX2pzRlk1WTNkZVY2UzRRc19waHVzUzliZ0Y3NmZhVGNBb28ya1NfNEhtZS0xa0VvTjNqc3F2ZzNNUG42OHgwTE5iMFVLRjdnVw?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Sherrod Brown Rebuts Anti-Trans Ad, Hits Husted on Epstein",
-     "source": "Metro Weekly",
-     "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOcUVvOFBEVnJMNEJkYlZFZm5HQi14c2VWclhnLUx5ejVqZDRmOGZhTHM1Y1g0VWxBTFdUX0pERW80dUJMZVYtUFBiSE5lZDFkamx5aFExM3dSVFNQYzQxNDJ6UnktVlFoWWpscGt3eTktQXZ2cWw0UWFCakxNQ0ZmNXc5ZXhibUwzQUg0ckhoSWZlS0NyV2UzRnh3ZXAwWlVsemYwdm4tVTJMeFZ5cE5OWnpHS3o5azBQQ2t1RTBRSmh6Nnl6MElCWlYwOWJ0SllTcDYydXJqYmZjdklpVU04VkRCS2ljS1JEVi1HUjZsRFBBX2hwUU9zT3J2S3RpVG5YOEJ6TXE1RUxmX2Y5cHpIYVRBM2Q?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "GOP pours another $14 million into Jon Husted's campaign",
-     "source": "Wonderwall",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOX1A1WnlRUjhESE5MRndiVmlFZU1RLXh5dmNQMDk5NGRKdXlvQ1FGRGRZYTBmNGNvWjdtbWlZUk9qZS1SVUl4WGlaejQ3UG9sT2VPZ3VjUEM0VlpxMDRiSUQyN1ZyNXBxTDVlMnMwdlcwYVFUdjVSUHRWQW10VjhNVzJKWHR2dGg0RGcwMnJBc0FnaHZlWm16bjdXRks0SUgxR3hKbkdLdERtZW5SYVBTN2RQczBjYWJQVEdNbGRGQ1J4R0Z6Rk56UTJRYTRrRGVOd0hnRQ?oc=5",
-     "date": "2026-10-10"
     }
    ]
   },
@@ -10634,7 +10473,7 @@
      "w": 0.198,
      "p": 0.062,
      "sources": {
-      "Polymarket": 0.059,
+      "Polymarket": 0.058,
       "Kalshi": 0.071,
       "PredictIt": 0.055
      }
@@ -11019,38 +10858,6 @@
      "rep": 45.5,
      "asof": "2026-10-08"
     }
-   ],
-   "news": [
-    {
-     "title": "Talarico returns to campaign trail after flu, challenges Paxton to debate - NBC 5 Dallas-Fort Worth",
-     "source": "NBC 5 Dallas-Fort Worth",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNbmkxTDRyRHJtLXUtRGhqTkhvMjA0Snp0U3FYaThqekNWTzBrVmw0MEpzZ2d6bWwzVjJuQ2Y3V0VuTFQ5WDZfZDdhUy1GTGhaUzNLQjJXcTJOY2dZNFRrWW50ZEw3dFRwTFZEeXl6bnFuLWdsZG42dEdNWjR4QThOTjhoOVMtUW9FZmdVcURXdmQzeEdaSU9WdkFRZDB3MzRLb1poNFdSRVZKTHV1eVhySjZLR0NWLXdKcHRQSHN4b3RtZjkwWkpvNU0xS01rZ9IB1gFBVV95cUxQdHp5MXE5YkxLX2pTY0p2dlBhWGZVX0tqdGhRcXdzOFpQYmFfazhhdmZNNW1taWpQbFdINHA5M1VyanAwaHNfOVhsQm5URTBKX3pYOERUdzk1b2p6czZuZmxsaWl1S0Z6VlYzd2dwcldoYmxtaWUxdW5nR0FEeUlhVWd5RzdlMWhVbHhjQ0NDQWlqdkp3TDlKX0MwMGJyd3lGNE1ES0doZU5ic3NqT1RNRW9YbURFZWM3NkRxQ3FLcUxDQVBqTXJPV3NqU2ZBakc0dWNvekhn?oc=5",
-     "date": "2026-10-12"
-    },
-    {
-     "title": "‘I just had the flu’: James Talarico shoots down conservative speculation about his absence from the trail",
-     "source": "NBC News",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNF93dGotOVJPZjgwZzNNTGdUVmsxa0t2WThWZ3hmVXRfRFBVUzJzRE8xOWtoZkdLWHhKUENBY3RwdFE2dno2aExpUTlpY19KS1ZVNEw2anhCNG1vZXAxd05wNlZZZ1k5STBoa19ITEZqYTJjUzg4VmlUZVNWRTlENmpFZzhycDJkXzA2NzRGLXFyZVo1ZFdfckdiX09pejdKN05qQ0xKb2FaM3FuU000cmlXOXIyUnk4ZXlKbTVRMlZVcmU0RkQ4?oc=5",
-     "date": "2026-10-12"
-    },
-    {
-     "title": "Back on the trail: James Talarico discusses Senate race against Ken Paxton - NBC 5 Dallas-Fort Worth",
-     "source": "NBC 5 Dallas-Fort Worth",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTDRLcjFYZS13OU5IOUl3NjVJN2RlY0ppTnl5d1RPWWZ3Y2YwOFVUd21RZDNkR1NhZklvSXFzWXpxUllSMXQ1Qi1heTZjaWtLbFVPUG04VWtBYlE5V2pMMFluaWF5VXBwdHR2TENWZzN2azFQa1dfNlFCOW9TaXpZSGdGM0lEQ1VYSVZFWHFqVV9ZYmJXMlB3cGJNc3ZsTkVSYXppenY2X2lFODVueGcwcXIzUUQxMjhNc3FDUGdqQdIBxwFBVV95cUxOaUxwcVc1RlpaM0htdEVGOGhDdDFzYl9mRXdpSDFUaURGN2c3RWEtMlliZXlXVmw0N2FWRUd1UkhabGZZU0Q2UjZLMzg4akp4bTFCMGs4cU8wSHlkODdVS0xJR1Y2elZNeHYzNnBJNlc0NDAwR3VOTWlTN051dVA4c3IzSFEwYXRmcU8yN0hldWN0WnpsSjRGeU9MT1kxTTdld1ZQb3VCRVAzU2c3M0tXeTFKcUpEVTJEaEJ5bEkwVXNuMy1mejFV?oc=5",
-     "date": "2026-10-12"
-    },
-    {
-     "title": "Ken Paxton slams opponent James Talarico over campaign absence",
-     "source": "Fox News",
-     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9GS2N1dURJclNWM3pEdDdPRXJQVmdSOURhNW1XUzViYno2LUp4dU43TklPVEJkbTMyMnVYRW1zeXFUS2hNdTUxMzhwbXNTRlBWV0N2RUZ3?oc=5",
-     "date": "2026-10-12"
-    },
-    {
-     "title": "James Talarico Dismisses Mental Health Conspiracy Theories Amplified By Musk",
-     "source": "Forbes",
-     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxONkZKSHhYZUdTM0tmWW9ieWdRRnQxSVF6b2lKeGV5S0txVVJ1dU1CNHFZY0JPMFhnRFFMdFBtM0RvaWJhMTU2c2dTN2dJUnR0YklvZU9QQUJkOC1pUmFXV09laXNlYkFLYnA0SFZWQ2szdGN5eFpaNE1mbXgyTVhWVHF1dXdMTTd0cDd0YU15VWdwdW9wZ2hkQ0dKN0dReE0wQkJZZlQ3dEQ2enYwX1VVTXNLemRqaERPSXpGME9yYW5RTWdZNXBicjJJWUdwazhOYUtWS3Bn?oc=5",
-     "date": "2026-10-12"
-    }
    ]
   },
   {
@@ -11242,9 +11049,9 @@
      "margin": -11.3,
      "sd": 7.0,
      "w": 0.37,
-     "p": 0.017,
+     "p": 0.018,
      "sources": {
-      "Polymarket": 0.012,
+      "Polymarket": 0.013,
       "Kalshi": 0.024,
       "PredictIt": 0.015
      }
@@ -11717,39 +11524,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Alabama Midterm Elections 2026: Key Races, Candidates and Past Results",
-     "source": "NBC News",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAyWWFFbnd1NUp2cGxfU3hsUU1lMldWSnRnVmJJZmhfSFY3UmNpcDVFd0Z6OUJCVVlUb2JIOGpaMUx1ZWFJT3JraUtFTDJuZm1FWkhXVlRRY3FyMElacFIxbmxEOGllVlUyMUx0U0FOeVI?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Alabama governor’s race: Tuberville, Jones clash over crime, schools, socialism, and a debate",
-     "source": "AL.com",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVUNIR0R6YjVtTjQ3UFlfQnZCaEo4OG1rVUl1Y0x0MjlLQzhXM25wUWhVZEVPTmxTWjFhcllIMXVwTV9PS0daR2Z0Z29GT2NVSFNUd0h0RGFfWkI0TWlWOTZIUTl6LTYxalplTm5HSEN2ZVBERXF2dGlyRURvT0w1blNiN2VvaU9EWVlab3FqVm9nbnRONUVET1JSakhoS3dXUEpQUnlrdDkwNFFVcjdKclRVSEwwdkY0TlZhSkt2MFRsVHFrd1JN0gHbAUFVX3lxTFBrX1VtemhJZWhoa3ZlZm52bEx1ZHdsSzFLUjVLZXVTMHI5MDBHenRJUElSSFMxYXhMMV9sRC1sWXpoWE5sT01JTjBTRVNxWGN5cmFJSkd1aFhKUkhiV3FtYjFIMjFwTEhuRHlWUFh4czlYd04zNDQ3WWdFaVVVUUpwYW9uSUdDcFl3S2JFVFV3MDBOdDVxVHEtUWh1cWl1X2YyOHRiYTFWZ2dQR2VmeWoyM3RBbExIWnpIS2NDWV9DSDU3aEczanFWQ2h5dWMtYXMycFgwdFg3ai1POA?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Who Is Ahead in the Alabama Governor's Race? Latest 2026 Election Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZG54WEl6dDFlMEd3M3BqSjdJUkNDR3gtMjZkVzI1dVJRa1FBWWlwSG84c3RmS1ppdmtHZHQ4dENEOVoyTnJwR0JES0ZKMG1YaE1xWUw4NzY2VV81WGdtZEJ6Uy0tcldUenpHX0Vhel9Iem45NTVCaTNyaGNDSVR0VHUyT2NsTHNzbTQw?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Alabama Elections: Who’s Leading In Prediction Markets?",
-     "source": "Forbes",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYUg4aE83cHMzSVFwMW9MNnpkY3NnQ1R1OElCQUNlNG9wdzkyQ2g5TFFnSndjeFl3Mk83U2x5Tlo1VTN0TGluWTlJY2Z2dmtNNTg0X01ya21PUGxWeTQxRV9JVFlTN0F6VkNSeGhWWlJmakFOdDVod2wwZ1U2NFdqS2lLclI0MTJqYm1IczdB?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Alabama Supreme Court rules on Tommy Tuberville residency lawsuit",
-     "source": "AL.com",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSHBvOWpCeXk3VGdreTFCajFEZXNBMEphX1hvdnNKYmc1ZzNfYUNoSURsU0FSTDBNamk3djZyOEsyWGNZY1p6RlBxclY5azUwQTYtZ2J0TG14d3M1T3lab3Q0SmhRaGpiaFNrOVBVbUw5R3kwcjdrSVRVSEtJbFFyZ05lTTFqNjlGT3Awblc2Uks5NUVsa3d0UjFiWHlRQUpsa2JBU9IBuAFBVV95cUxNdkYxaE5PcDhLZ1ljd0pSeDEtejNuTldYel90bGZKa3doWHRiZVJqamc2Q0hBMVRTVmVtRE1MQnpQLTAwWU4xMk1rSlRhRUFNOThyMHMwSmZJSDRiUmRLdkJnTXlwTXVibF9STTFONDdIQVlzZ0hSRFZVUHB4WmJxa19RaUkwYlVwbmktUW1YTTZubDhEQ09rbnJEU1hVMG5NcWVRa2pJVGt2QllQQmpFOVdxbTB0eEJv?oc=5",
-     "date": "2026-10-09"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "AR-GOV",
@@ -11823,7 +11598,7 @@
      "margin": -11.3,
      "sd": 7.5,
      "w": 0.304,
-     "p": 0.029,
+     "p": 0.028,
      "sources": {
       "Polymarket": 0.027,
       "Kalshi": 0.03
@@ -11862,33 +11637,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Vote 2026: Federal and Statewide Races",
-     "source": "K8 News | Jonesboro, Arkansas",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8xUkp6OWVKRjlSc2JSTmdGVnlkSTBlbTMwV1RHZHlieExxMGVOVG1vNDg5Z2xZX3hma2o5dHk0NnlmWUZoY2NXQjRqWlRnTE00MXFGcG5BT2dCOTk3aGdnel9DOHpDRHUtTmFqWGdlMDM5NlI2MFE?oc=5",
-     "date": "2026-10-08"
-    },
-    {
-     "title": "Governor Odds for 34 Midterm Elections",
-     "source": "Gambling911",
-     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBLTmRvZE5iZzlPUTJWSmhONnZ3T2hacUhvbE92OTM4YTlaVzlWRUxPd0JNSmhUS1FfTER0ZjM2Qnd2NXF6WEFzbVNrdE5YWWQwRjJPN1o4V1Q4WEtlVmJ2UlVYMVNabWdWSURJ?oc=5",
-     "date": "2026-10-08"
-    },
-    {
-     "title": "Republicans Hold the Edge in These 14 Races for Governor",
-     "source": "U.S. News & World Report",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVTBXeHdyM0tBb2pvc2EyOGg2SXZ1ejJCSk02cGZreVNlTUtJZGhTUWtWbmg5Qnc5Y2hETGE2RFA0NlhUSVd5SDZGRXB5ZDIwejdTem0zZXc1UG1OVy15Z2pwZ3BrZjNyd3BaVmtjMU03ak42MlFpemlLWDdRbmJPcmFCdzR0MUZqY05JX3JpSXdxWXZTNVNaUC0xVUxMdXVMbWNMclBGZ1pVOFRQclU1VFlibTN0dExVS1Q3Q0ZOT3d2Zw?oc=5",
-     "date": "2026-10-06"
-    },
-    {
-     "title": "EXCLUSIVE: Arkansas Democrat’s preference for illegal immigrant work to American laborers is “appalling and disqualifying,” Gov. Sarah Huckabee Sanders explains",
-     "source": "Washington Reporter",
-     "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQckY3bDZHS0VRODFSc2tNTTJBcE5qSkpNdDBlYVI4UTJiRndfb2FfMENaQURpZkotQTBnMV9fTHgteHRiemtlRlNWZlkxbFA4eFY2Y2ttVTZ3UmltMGFyV2tOMExuNFU3Y2xkZ1ZOVDk5aUM2S3lXcTljSHd0UktaTm1HaHRzX0F2M3hMZG9sVDBUZFVSdndwRDYxV0t0ZWVTSnk5dVdFdG4zNUN3VG9Ha1oxdW9JUnRkZFF5ek1zMnEwMzhvRE1HM0RUXzBydHZrZC02c3VIQVhUancyTVJYaHRjcHJYMzF4QVlIdEg5TlY1R2FDMlhPcUI3STh2QkJxZU50NjM5bnFlU0o5UjVVeVYza25BZw?oc=5",
-     "date": "2026-10-06"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "AZ-GOV",
@@ -12457,7 +12206,7 @@
    "state": "CO",
    "name": "Colorado",
    "pvi": 6.0,
-   "p": 0.9915,
+   "p": 0.9914,
    "mean": 20.3,
    "p10": 10.7,
    "p90": 29.8,
@@ -12513,9 +12262,9 @@
      "margin": 11.2,
      "sd": 7.5,
      "w": 0.377,
-     "p": 0.97,
+     "p": 0.969,
      "sources": {
-      "Polymarket": 0.976,
+      "Polymarket": 0.975,
       "Kalshi": 0.968,
       "PredictIt": 0.965
      }
@@ -13027,38 +12776,6 @@
      "rep": 47.5,
      "asof": "2026-10-11"
     }
-   ],
-   "news": [
-    {
-     "title": "New polls show GOP Byron Donalds with narrow lead over Democrat David Jolly in race for governor",
-     "source": "CBS News",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOT2p1WGF6VUZlZlJfN0YxTlBTZDJCREUtRHZzd0pPY09XZTJreFU0V01Wb2RNVW0wek00VEkwQkVmSUxkME0tTmYzaTFhSkZkV3NaMFpxNXdweEJtWjdVXzhNTmhTUVl5em1remZfTFlWMWtrVTZjOGRTc0I2T2JQNXhJSFM3VTlOTnVqTGVyejlNdU05Y3AyU190VUttY0xEQWF5YzVfVmdDQ2JBS1NzMlFiejFJNHNBODFXWWpsR0RWN3J1OHZGWVBnV082LTNhQlE?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Florida Governor Candidates: Donalds Spent Longer as a Democrat; Jolly Reports Longer Republican History",
-     "source": "Florida National News",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVlU5UkhzN2pOMFlUbTVfbWlRTHRaOXpVY3ZBRjlSWjg2X1dXUVdYY19JODBmWmZhdW5vTGJxRFBwXzVKdlJ1R0MwRWhpLWRqWDltYm1QR0FLMlNSLUMtWGN2YmozekdtOVRnQ1Z4dWxabFBoaWRuS2Rlb0txSUhUSW5fUjRXSzY4WDhISDFZVG5IUFFjWlRKdkRnSUx6dzN6VmkzUkh6azZaTHE4ekE0eEdTeU1DRjJRVWo3d1NpR3lDREV4ZFlhM0FraXB4ZkRVbDZDR1BUYw?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Florida polls show Republicans lead Democrats in governor and Senate races, but contests remain close",
-     "source": "Sun Sentinel",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZzlUXzU4N0JVUXYzN1BISEF0T3RHS0FIaFFpUjk5TkhmVkVCZ3R6eXZOaVhYenk3OXk0WWZBcVU0TW5WQnAtMjlSLUstSHlFMklfYVVDcUE2X3h5TmxFZy13R3dRdWFYSUpzbkJyaE1NSjM0SGZ5MmQ4Q2dzNGNTY1IzZ0RRVGJIMVY1S3UwZ3ZEeVdtWHp0QTF2V0J6bFBvR3c3S19TVnVIRHZkeHpmOVFWSjJxMUNyS2p2R09iTnZBcGhLYWNjczdMUUN3cExBeHB6MkpKbV8?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Florida polls show Republicans lead Democrats in governor & Senate races, still close",
-     "source": "WPEC",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNX2FiX0k1VTZHYk5FUGtFb1FhdDE5VVZBd3ZSWU5UcndmSUJjNjlwWW1meUdnRjM2Y2tPcFlrSGlrQkJvUk9xOTBBOGRnUl9LYzFwSGhEN3dVcEpWWVZvY2RpN1l3SjFMRVRFMU1kSGhHR1FjRDRQanhodGpoV1d1NnF0N01pdXR2bm05a0I1ZTU2enVDZWE3Z242MzNKa0FYdmV3VE1OU2FYY0lVQTVydHp1YWV1OU02NVFz?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Jolly defends new Donalds attack ad that critics say plays angry Black man trope",
-     "source": "Miami Herald",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSFhMUHhBcXJEb1M3TWpSOUx5QXF3Nnc2YXVkOVRLcE5URDBUdXdkcktlbzJ3Undqc2dQSVpWaWZkMWdYRGtVY3YxS2FGVmlNcnJJNzRoUVVPNW5peklGQTNtVGhCekozZWtVVWM5NnVLS3hwMkNMSUt4RTB4eHNQYUw2MGNleVR5d29RUDI5VFRxOE3SAZMBQVVfeXFMTlpZaVo3RjVnXzZhN21nMUptdHFBWjAwZzJtWklNX0NLbHp6MHJDXzlhQ0hxWUV1YnNYNFFzYmFjUXdIc2pwalBDU2puRzJmVk1acEFQYmE5UV9EODhXajA2ZlVLYXpJMWlEUEh6aWN1cFEzaVAtMzZzQkFLWEw1c0lJQlRObE1vS0pwZDR3dzl3RHo0?oc=5",
-     "date": "2026-10-10"
-    }
    ]
   },
   {
@@ -13357,38 +13074,6 @@
      "dem": 46.9,
      "rep": 47.8,
      "asof": "2026-10-04"
-    }
-   ],
-   "news": [
-    {
-     "title": "Read the full transcript from the town hall debate between Keisha Lance Bottoms, Rick Jackson",
-     "source": "Atlanta News First",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQaTF2UTJIbUwzc0hncnZ2bmJtX0NBSnBFNjBMMHlsZUEtX1JUeEpVdXNPaU9BdVY3cW1XaGpYaTBfaUMzdUlGWFdwdHBTMFpuOHJaRWVuRzM4UEYwbEN5TXlvaEI2YjFLQ3RZalUzVTg0NTBYRXNsSEV6YWNickltdlFEZEp1aTYwMjRtRzdtNlhKS0VVUmlTSFVBTGRTaWxLSDVoZDNCdjNadlBRWXhWZ0FabGJwS1ZRWk9TNUZidlFKd9IB1gFBVV95cUxQTUx4Z00yakxZaVRJME9iMWRtRnkwVzRWQUdlNmlBb2NRZlJ1ZUR3dDFVbmJkMUEwWFg2SkhUaXpSMnlUV0x2Ml9KUmU1WXhKa0RGRkc1dHM2eFRUazYwNUhTZ3c5V05PT2oxSzMyX0ZlTjFRYUoyV3FUSllHd0xuVDI1S3RRY1lXYkdwc3p4TXRzengtMXNiT3oyVS1LUFB3UGFFYVByOEtpN2NMWXpNTnZZR2hadXlfSUF3Z2NMV2pFZHpKZW0zVWV6VmFWb2Q2a3hNNE9B?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Candidates for Georgia governor, Senate face off in heated debates",
-     "source": "WABE",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVzhfWUw1RWlBUDZXbVlidnB1alVpLWtNTzhMWXNNSFlkMDVXV3A4aVBkb0QxdFhidWdHelNnTkp0eDF0ZmRrMmFSMlp1QUpRVWNyR09TeFJfV3pqT0stQk14b3N6bGIyTmdleFozZFBOSG9NVTZZeXBNTTVZUWItRGtrRTlJUUhTckdrZ0pVakY?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Georgia Governor",
-     "source": "Grady Newsource",
-     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB3VHJmNnIxSDlDTW55ZmtsMEpKbV9qYzh4a1huMDZWR0lfZjJYSC0zZVVxc2VFLWFSZ0h0VkRaLTdTcklEY25ZNWllRHY0Y2dNZWowSVJzR2Y2OG55?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Georgia Governor Election 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdExOWWFBakg2UUJrZmEwZW5aMGxHdTk1a193MjlGN1dEanFtdng5blN1eS1BZ0dUWDVuMHZqajk1c0ZNWkg3WDR6Y2lYdnh5NWI1ejhVS1VkRmtMM3NTS3dBbUdHNUNXZWloVkVicklubUN3WTRoMWNIMTF0REZmR2pxZ3hHckFscEs0?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Republicans once raced to embrace Trump. Their debate answers tell a different story now",
-     "source": "WKMG",
-     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdFpoQXRIbjAzNXJiVVk4SmFlNUZxT2YzXzl0Rml1Sy1yWTRwYkRvNTN0Q09Tc3dFTHlUOGt3UkIyRm5BZjlRMEVhX1djM0hOVmlhbVpxSWUzOGI1OFpfVDBhSE5OSUJmcnRlRlFBNHdaZ0UxRU1Yem1ROXVIRnpPeUQ4M0tFX2VNY1JNR3E5RVN6c3dwUEUwUXQxQldSS0owRU1XNmxDM1BJdjZhR3dleGZFWG5oNXRTUjVta3hPUnhtX2FTSmk1SE9ycThkMTd5S1lWaHpnUklaZw?oc=5",
-     "date": "2026-10-09"
     }
    ]
   },
@@ -14304,38 +13989,6 @@
      "rep": 49.1,
      "asof": "2026-10-06"
     }
-   ],
-   "news": [
-    {
-     "title": "FULL INTERVIEWS: One-on-one with Kansas governor candidates",
-     "source": "KMBC",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONi1uMUdsdTZLT0NsNkYzMlFxUjd3eF9ERm1SWDUzeWdzTFp0V3lqX3h1TzFHRzBSU0NvcVJOaDVlU0g1c1dFU0t4M1NtcFAxYUJHYl9mVFJ5Yy1kaVVHaEM3Qmd0TkI2S1FyMm5rRXdGTHEwXzhZRjhFYlRCTHBCaF85V0pMeDFSNlZ3YkV0VFkxeVliY0JkTFdWLXI?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Debate about Kansas law incentivizing data center construction charges up governor’s race",
-     "source": "Salina Post",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5XTlRCYXQyeE9KMWUxMG91cmthaTVTX3YzU1pCX3paeHZPdFNidFFvRmZrZ2k5S0M3eGg0VVNjTTE4LUpqbkJrT3Aza0hNbUEwX3lVQ0tjTlNMNng2NGRBN2Y0c0RmejlUSkM2cFVmNkNzcE0?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Debate about Kansas law incentivizing data center construction charges up governor’s race - News-Press NOW",
-     "source": "News-Press NOW",
-     "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPYXoxT1h4VnNNQjNHbmVNVms0a3ZPTlBsMEE3bUpPVU1uR3VuYnRJUG9yWkJRRTZRVk9obXVwcDdqZDR5bkFfM28zX3BTQWRqV1RlZ0trZWp4clZjYXBsTENwUmtnYVNTbWhySzBDOFdtTC15WW5SbV96QVFRTjVWOVNqOXhHMmdZYUo3dmR0LVdQbGZIajlLLTdTWDVpNlpzcl94azlhY21kZTBzd3MxVFlCbVNOZ3VTamQ0UlljV2pKRUFqRlBUZm1LRzJBWXRuZEZ3MDFqa1J3VW13Z2xQN3piY1V3Y1JKbDNaVXhCOFFidXY1QlkyX1dXVkFPY0d1YUpBMDNYOGUxTG5YSHE5bm9YN2x4Zw?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Kansas Governor Election 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTUtheVdQUXVtbWRjc0lNM0VOSFdFUmhFWkRkNGpGM0JLMVBPYmJCV1c4M2ZNeG9pYk1VcGMzcTkxTS12dVdlYUJFbFJMVkh4RFMzcEdxTWg1Y2lCNUtnLUFVVmxoRS1PckVHdDU0bVhGQmNxLUpqS0tCZGN4N1FVcWNfVzE3dFo5QVE?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Kansas Elections: Who’s Leading In Prediction Markets?",
-     "source": "Forbes",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcnRfeTZzRlQtMWVlMWJwUWpIbnpWSEVnUDdUZkljMnZoR2hjWkNsd3E4Zmp0SFFRdl9WN1JBcW42TndhcmNyMlNoeTMtcmJLV2FTNDFqTUt3OS0xRURHVnRHdnVzeUJEcHlfcE9HeUpBcHBiQzBtNWo2SUxLMnhUcFlNaFY3aXlNSS1yQg?oc=5",
-     "date": "2026-10-09"
-    }
    ]
   },
   {
@@ -14996,7 +14649,7 @@
    "state": "MI",
    "name": "Michigan",
    "pvi": 0.0,
-   "p": 0.9256,
+   "p": 0.9257,
    "mean": 8.0,
    "p10": 0.9,
    "p90": 15.0,
@@ -15062,10 +14715,10 @@
      "margin": 8.7,
      "sd": 7.5,
      "w": 0.151,
-     "p": 0.925,
+     "p": 0.926,
      "sources": {
       "Polymarket": 0.937,
-      "Kalshi": 0.928,
+      "Kalshi": 0.93,
       "PredictIt": 0.905
      }
     }
@@ -15424,8 +15077,8 @@
      "w": 0.191,
      "p": 0.941,
      "sources": {
-      "Polymarket": 0.953,
-      "Kalshi": 0.95,
+      "Polymarket": 0.952,
+      "Kalshi": 0.949,
       "PredictIt": 0.916
      }
     }
@@ -15527,38 +15180,6 @@
      "rep": 40.5,
      "asof": "2026-10-11"
     }
-   ],
-   "news": [
-    {
-     "title": "Minnesota Midterm Elections 2026: Key Races, Candidates and Past Results",
-     "source": "NBC News",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9tcm9zOTJpaDhaUmRNYzJwNFRudHdjd05icGVNNmJjLTUyYVBuWFZoTm5jNDI0Um1XX1dxS3NvbFVnaU1mR0JPaDJNNUtpS1lURjQ1X2FrZ1M5UXY4eEVhLWVhR2tXN0FlQXUySjlLbXp1Nm8?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Lisa Demuth, Amy Klobuchar say they want to fight fraud. Here’s how they’d do it.",
-     "source": "Pioneer Press",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOU90WVJRV1VFVWphTXh6T2FsY2dYdjZ1aXNVOENwWllaRmdhRzdFSVpUYXduOHNYekJ0ZlBMSDcza0pESFFkQnRDV2R6NVFTRGNGRUJMQmtmc0RFWWdPRWFtbTFDU21hMGhtTWFHRzBJY3VEZmkzLXBaQ1c1SFJiVUVmSXotVVhrMllnTFY3WmNrMFlldjNwWU1QNGQ5Yy1lanNYQTdQZmpnZ01INFp3aFZQZEVldw?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Minnesota gubernatorial race TV ads go through the Truth Test",
-     "source": "WDIO.com",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTTVfeDNwRFQ1Qlo5dlFCb2JQRng3RjRSMl80cFdibklCWldsX2M1MUFEMkZEaEtOR0U5N18wRTZISWVTQ0FsbzFMV1lBekhrYi1pek5fMFVta3lueUdoZlhiU2cxYXJUVy1Tdm02MnhZMVFyTk50Z3hiSGZfdmIySktZOXV6azZLajR3aHJ4SUhzaG9mdEl2U0hzUQ?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Who Is Ahead in the Minnesota Governor's Race? Latest 2026 Election Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMzFJTExUa2lBYTVMWFNGLVo0Q2pwTDZEb1BFamZocU56OGpodHpfQko0WGZ2RXN4SDZ6NHVOVzRIM2FIMVgzam9hSzJFcEtxMHJBU3N6dXBaZnA4WHZodGFaMEZFVTRvMWJMZEszQ0ZMeW5yY1FmTllxa0JaZzZpbWg3UlB5dVlrZHZJNEt3?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Klobuchar, Demuth highlight public safety plans amid high-profile violence in Twin Cities",
-     "source": "Minnesota Reformer",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNeTRLbDROSTFCNWtvWkdXX2oxWUdDUlFvR1ZHSF9PbW81WURheXN4dmlVd1d2ZzFjWEo3a2tXZlJyTGZYcUV2a0dqT25sV0pHSk45Tkd6dERod0liOTVxeHlxQlNPTXoxQnZ5N3hpMTRyVk5xR2NRVzIxektzQkppbUtwWVVQbXBTa3JMUHRoZTZFeGx2VFNsMVoyR0ZLZnRyV3h5Z3k5a2FFeWdqNV9rRTNwcm04Z0NoWTNlc1YzOF81R2JuSkUwenV3?oc=5",
-     "date": "2026-10-09"
-    }
    ]
   },
   {
@@ -15568,7 +15189,7 @@
    "name": "Nebraska",
    "pvi": -10.0,
    "p": 0.0728,
-   "mean": -9.0,
+   "mean": -9.1,
    "p10": -16.9,
    "p90": -1.1,
    "p025": -21.7,
@@ -15751,38 +15372,6 @@
      "dem": 38.5,
      "rep": 43.5,
      "asof": "2026-10-11"
-    }
-   ],
-   "news": [
-    {
-     "title": "Election 2026: Hillary Clinton visits Nebraska to stump for Lynne Walz, Denise Powell",
-     "source": "WOWT",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWkFWMi1QTmJVVzRPeVgyZGtWc3o4Y0w4SGE3cllXeXJSQklwWDBKRUUwR1M1ejN3aW5jblZPY0dhbWdNakZCT0FoMUNDS0gxT2d2NXdrUk4zdTIxWnNCN083THBGVGZjOTE3anVVbXR1d2pnM096R0ZqcXRnQ2VWUkptTndQRy1YVTJ2dmF4VjVDZGJQSDJZRjBBTXZnLU1SMC1zeVFKbHZiT19jTkHSAcIBQVVfeXFMUGVJWW9UdWJqOGtaT2haYU1DTzNUTUIwT05fRGt1SmRhajZGNm1PeGQwcXNyOVhnaEgtRmNOQWd0b1VsMk5pcGJlajdyaThaZjRUZ3lqRzl1VmRPTzg4aUlRd2JvUzRTR1MzOS1sYzBvQmV2S0tsOXlkUmdGNmkxbVZQQl96dDF2dWZub0l5ekRCNkppNVFfT3RhRVQ5NTFyd2R2MUI4MzIwV0RYMmRKQ0kxYTAzMmhVVnhHVlZPM1ZSbmc?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Nebraska Governor Election 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcWZIdExwTjJmNnhmdTRrcG1SRXBEMHNSSlJ3V1JoZ3h1RjJtSnpSSXdwalg2YUc1amlIbksyWG5GWTdiNlpWU1Z5SWhTMkR2bFNTS28yT3d5Z2lPenJVQmZMOHF3cFRrc2d1VXlsY3Z2VkdxNFdxcElBMW9XZ2gtU2o3ZjNhNXFpbzB1bA?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Update: Lindstrom reports $16,049.50 spent in 2026 NE gubernatorial campaign",
-     "source": "Nebraska Examiner",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPTzVkLTk4ZlJPdU51cDFpRENTcnNwYlpvWXFoaDhZMVh1WUEzX2lWZXBiYmRnLXZKVTg0RURVWWEtMEJ2aFl2VjRvd2RkandhX0VMbHA3LU9SZVg5cmlYTjFwN0p5dUpfWTQ3Y2J1T1ZPejN5Q3dJOURFZVJtNHk2RWllQkVtSnRHa0JTaDFFR2pwNDJlNHlYU2V0S2oyZ1A3eGVTNXBXVUxTNXA5Rm8yWFJwTkVjNDVBWFk2Zkp6NHA0TWNMNkNN?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Farmers, policy experts warn of tax burdens at Walz campaign event",
-     "source": "Lincoln Journal Star",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUWdmQlFoNXpYcmxValFGMm1tLUZuRW1wS2JiRHhoVjlTU183ZUYyRUV2elVFeFRZZlhwaXBtcFRwbGcwd0N1Y2dNYXhFdHpkUmJDY1FmaTZKX19OU1FxaFc1X24xME5wQmIzcXBLMkMwWkU1TXhKZVJxZDNNZ1FfUFhFdXZjYjNlLXZKa0gyODcxUnlNbjJSZFJIVjZRT1JzTGRFR2xhV25MRTdsZ0ptUVM2OXdxMzRhWnNkUXlQaWQ?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Nebraska Elections: Who’s Leading In Prediction Markets?",
-     "source": "Forbes",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSzFKSVdHR0VwdEdXbjVyY05kU3Q3MWxzd3RLd2dJUDJJZm9SU3dYSDhYVDV5alhLX2YzTVNUUDFraWdUclpEbFZtczIxLVNUY1JVVVk0ZWRtR2NIN3pLUDNSb2xONkkwLWRVZWRwTF80NGdRSThXcTlSSC1wYTBCUU9EQmFQU0JhWjFOVVM2UQ?oc=5",
-     "date": "2026-10-09"
     }
    ]
   },
@@ -18098,39 +17687,7 @@
      "url": "https://data.ddhq.io/polls/2026/07/30/Public-Policy-Polling/Annie-Andrews-South-Carolina-2026-07-16-2026-07-17"
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Connect to the Capitol: Wilson & Johnson debate, campaign ads clash",
-     "source": "WACH.com",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaURyZXIxOU05N2N6V2RycGh6bjhzbjBiTzEyMTdTQ1Z4ZEV2XzlvVEhZcFdselNYNzJwM2pLMUtzY0lYSjU5akhXaWRlMVBnREprRTYtU254YzJHTXRyZ2ZpdGw2SXd4bWhkU3FTRmd4eHB2WDRkeU1PcHNOQ3l6dUdLNDlFTlBJOEM1QWt3N0hNN1NsdWpWNk1NdGNQSFd5VEdZOFhUbGRtRkY4dzNZZWhn?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Who Is Ahead in the South Carolina Governor's Race? Latest 2026 Election Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOamtudy1UQXZ4N1B2OWxTYjhFbi1CSjR6UVc1MVVUVlY3U1kzcHQxZS1mUTNNTDlORzJrNm5XQlVhbDI2SThyVlZWMU1aLWVUQ01sM2Z3OWtuZDRLVjhzNVcxT2gzclFEam5YZ0R3Z0RpdWhZUVlKWDE5c3hlZmtXMTFOY1dzV1hsWElLU0dYSm96QVFB?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "We The Palmetto: Who won the gubernatorial debate",
-     "source": "Live 5 News",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRENJbUFzTEFjSU1YTW1yenZMb09fSlRVQVhMOGdXMjg1dnBvc0lPSGtySmJIN0tEUkpteE9rVHRRZGw4bkhSU2JaUjNkcWI0TTYtSXdJVG5vRC1ESWYyOUQyZ2s4ejBUTENILVlzMHpBazZidFdraWZ3QThGUjN6bzIweWk?oc=5",
-     "date": "2026-10-08"
-    },
-    {
-     "title": "SC governor candidates agree on abortion, differ on gambling and Medicaid - Index-Journal",
-     "source": "Index-Journal",
-     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNQW50TW1IVWdrWURXZklublBqRks0NVFVNk5mSlNFSGZNcW5GMmJySWlyUnI1MU1mYmswcFhnbGdrU2NrZ2d1Y2JhVVhZZG93ZFdqczItQnZlUEE5WVRmSHVDdGZ3cXowNXJVRVQteDZ2Z0pDRWJiUjZUdjRObkNTakhBZG5IT3Q1OU5KdDVXQ01jdVNkZ005ZUttUzJrU01icnVfcHhIRVVMLVJXQ05ZLUVkanJEbTRYMW1WVWZ0SlpXQjlDeEdFODB2clNpNS1HSktsWmVQU1kwd0Z4cUZKVHFIbXZiMURPcVFSTg?oc=5",
-     "date": "2026-10-08"
-    },
-    {
-     "title": "Takeaways from the SC governor debate between Alan Wilson and Jermaine Johnson",
-     "source": "Post and Courier",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNeHppZlhJOG5OVUhsanlkX05pU3NXMFdKTWJNYVlQRGtGeTdxOGplYkE2ajJzNnk2TVgxcnBaQy14Q2FBVkRycEp3WGVqZWRDcy01Rm9ZMVhOVXp1ajVJRExwOWNqUmx2VU16X19ndGVhNU5mNFNTTmRvanA2MjBBbWJvWTVtTzZVYXlUdzIwWndBVHZrQnFmNjNzNlIzMHlwbGlaWHN5Nk5OXzlTdmhhRFhUaE9iODJybnI3LXdtMEU5bzUzSUFJ?oc=5",
-     "date": "2026-10-07"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "SD-GOV",
@@ -18904,39 +18461,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Vermont’s Phil Scott faces a surprising challenge from the left in governor’s race",
-     "source": "The Boston Globe",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPX3c0SEttLXRzY0NJV0FhbG81VUFDcmxSSHhRdGI0THB5QUNYR3FLbHZYeE56LTdLZ2w5cUVPQmdVT1R1QU5mWTVDTENjVGhPSFhFMkxaQXZaU1JaZ0EyakdOWUhuT0paekM5YWxJWmptR3RLZlVyNDdMSzVjTDZYMnQ0QU9WYTc3YTBoQ0tn?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Political polls historically underestimate Phil Scott. Will 2026 be different?",
-     "source": "VTDigger",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTjdlaTVIN21tZy1GMFZIVmg1eWhmMTliQ1VwNE14VHR0OHpja1RwYkZVaTUybGpZVDY4U20zcDl5RnJQc19EcjRib2xKdUN0N1VEN2N1RjBfSU1VcE1BX0tVazVMVlRodlh2Wk9BWVAycWdhQ0J3T1dXdTh1MmVpNWp0Q1BLWUtRZnlxVFNMc01JM2ljVHJkVWxDbXZObXctVXRpQUcxVGptNXBJaHc?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Amanda Janoo for governor",
-     "source": "Brattleboro Reformer",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNM3AtMm91bm43bjJaeHAwTzBXMS0zNDZZckZDMEo3UlhxUW5WM1lsR0gzMGFNcE5GUVFuTHZEQUNwcXBKWWJHVGl4MjMwTFdObkRDSjVMV0ZtYmtnaGFvWjZRM3JTTWdXXzVULXctbEItY1ZHQzNMQnRGaGdEZGZaUQ?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Outside spending is pouring into Vermont’s race for governor",
-     "source": "WCAX",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPOHpZRzJ5MDhrNlpoX2huZkI2ak1MRGVXTUUwb19tNFQxYUlXWUs5eEVpQ2VNVW1OOVRPUDRud0VTby1FRUF3UnoxelZIajljUzFRQWJwRVdHd0gzSHpRdm5qaEpETHFWNUJBcDc1Y01JbGtjb3pxVkNDZmNtOE5HUVE0SWUxOVNONmMtaFdMUWc5d9IBpgFBVV95cUxNVWdreThZSlUzNkJZOVpwLVRFSkFPNnFrbF8zSlRQYkxmTGdsNlhvOElBQzFpS2pQLWJhUmVDZUE0cTNUbmxhdWd2cXNyTFo1NFJVVUFYXzlhOGk4N3JQRFJtelVmRHVHOTZjeExhc3ZMMFdrelhRNV9XU180OHVCbFlXMDl3VU9KZHU0cWFKTHEtdEduRTBJNnVKZU1hUGkzYmFJeUxB?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Vermont Governor Election 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQX1NQZ3NhVHdJaE5GSjZ5YjRkMXZhMUs3OFByN0hzNFRZdGtWQm5FVC1fUWFtbTRiM3dMY3ZWTzZfQW9KQkRqOEdNc3JfVTFTZDQ1N3l2UENhaGdhbG1YQXdDeEdiaHdPNG9qNm82Z0dnUk15UVBYN0RfbHNYZkZHbTBFc1F6dllJYjhv?oc=5",
-     "date": "2026-10-09"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "WI-GOV",
@@ -19463,15 +18988,15 @@
      "date": "2026-10-08"
     },
     {
+     "title": "Democrats outspend Republicans on ads nearly 2-to-1 in Alabama’s 2nd District race",
+     "source": "Alabama Daily News",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVWVVWEZYWVlEdE1pcXlRbElzaXc4NldOZ0otVWp3RnhyMDl4U0laTndDbThWOExkUUp6N1F0RVJxX3lpR25RRTN2WERSb05ZYjZxQlF6M1l3RG56azNWcGtsS1U4NVR2czNNMk1EWFVWQVNSdDNlSGt6c1NXZ2ZyNjVTa1hyR05FT20yeFBUd2dHTE9mbmRGWTFwWmNiUy1XYjU3OVA3N0R2QQ?oc=5",
+     "date": "2026-10-08"
+    },
+    {
      "title": "Shomari Figures again caught taking credit for funding he voted against – opposed $39 million in projects for own district",
      "source": "Yellowhammer News",
      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPWlhUOEx6M2RhaDc1aVZPSGs1Qk1sX3ByeF94cGtZSTVXZ0p1dTNFYUlkOGFjOG5LSlFBaHF1MllZX29SZktBdTdjUkhoTWVreW53NEhid0dRdGMzMVM4akZHS3RhQ1pRVWltSkEwSHFUbHlnRlBHOWl1QTA2aGVuMGV2QUlmMWZMYkxWWmFlY3d5T2VoOWpFa3hFUWZKSFJtZXR5cXp0RDdtbjZRcXB0MmpvZVR0cHhqbE5ZdE5VNDdYMExNWE56S0IwVzFadHFfWkFRNkJUbXpuVm5YZkdCcGVkWQ?oc=5",
-     "date": "2026-10-07"
-    },
-    {
-     "title": "Candidates spending big on TV ads in Alabama’s most heated race",
-     "source": "AL.com",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdGplUHZveGIzRlM2Rk9rMlRfUFlyTkNJZDlxYmc4NkM4TGE2VkkxOGR5Q1pVUHdLbnBibHJ5YTdDbHFjekNNNlRXQ01BVTNMZ21KT0lRMG1TSDNHZTBEWVU0TlVqNFVIWHItQmJSc0VaXzg1Z2NNZHJ2TTVyWjFVUEJJZVZNTnVOOHBEWFJKSExPeDdnQ1hua2R0emFXUkph0gG0AUFVX3lxTE5waDF6dDFMQWotMm10c2ZwUHRGaWU3UGJwWXVXTFFCdG9WcU4tcVJrVTZrNzd5eVRxVDYwX0xyYVY3T1VuVWhHWEVDTjN6VW5uTEdrTlphUE8tQTFLUEZiMW9FbVlhOEQxX3prR3Z1XzlmWWhRYVBhUmk0cXQtdlA5RkNEV01OSzFTZ3FvNDFON193aUVUUVhJaFpVZEc0cnpxZE1Jam9OaDJnM1RpMENLZnBQRA?oc=5",
      "date": "2026-10-07"
     }
    ]
@@ -19975,7 +19500,7 @@
      "w": 0.15,
      "p": 0.273,
      "sources": {
-      "Polymarket": 0.227,
+      "Polymarket": 0.226,
       "Kalshi": 0.313
      }
     }
@@ -20076,7 +19601,7 @@
    "state": "AZ",
    "name": "AZ-04",
    "pvi": 4.0,
-   "p": 0.9907,
+   "p": 0.9908,
    "mean": 16.7,
    "p10": 8.7,
    "p90": 24.6,
@@ -20112,10 +19637,10 @@
    "state": "AZ",
    "name": "AZ-05",
    "pvi": -10.0,
-   "p": 0.0229,
-   "mean": -12.3,
+   "p": 0.023,
+   "mean": -12.2,
    "p10": -19.7,
-   "p90": -4.9,
+   "p90": -4.8,
    "p025": -24.2,
    "p975": -0.2,
    "rating": "Safe R",
@@ -20169,12 +19694,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -8.5,
+     "margin": -8.4,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.079,
+     "p": 0.082,
      "sources": {
-      "Polymarket": 0.079
+      "Polymarket": 0.082
      }
     }
    },
@@ -20461,11 +19986,11 @@
    "state": "AZ",
    "name": "AZ-09",
    "pvi": -15.0,
-   "p": 0.0048,
+   "p": 0.0047,
    "mean": -20.5,
-   "p10": -29.0,
+   "p10": -29.1,
    "p90": -12.0,
-   "p025": -34.3,
+   "p025": -34.4,
    "p975": -6.7,
    "rating": "Safe R",
    "dem": {
@@ -20533,9 +20058,9 @@
    "state": "AR",
    "name": "AR-02",
    "pvi": -8.0,
-   "p": 0.0906,
+   "p": 0.0903,
    "mean": -7.1,
-   "p10": -13.8,
+   "p10": -13.9,
    "p90": -0.3,
    "p025": -18.1,
    "p975": 3.8,
@@ -20600,12 +20125,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -3.4,
+     "margin": -3.5,
      "sd": 7.0,
      "w": 0.17,
-     "p": 0.286,
+     "p": 0.279,
      "sources": {
-      "Polymarket": 0.286
+      "Polymarket": 0.279
      }
     }
    },
@@ -21516,7 +21041,7 @@
    "name": "CA-19",
    "pvi": 18.0,
    "p": 0.9999,
-   "mean": 47.8,
+   "mean": 47.7,
    "p10": 37.8,
    "p90": 57.6,
    "p025": 31.6,
@@ -21587,11 +21112,11 @@
    "state": "CA",
    "name": "CA-21",
    "pvi": 5.0,
-   "p": 0.9973,
+   "p": 0.9974,
    "mean": 19.1,
    "p10": 11.9,
    "p90": 26.3,
-   "p025": 7.3,
+   "p025": 7.4,
    "p975": 30.6,
    "rating": "Safe D",
    "dem": {
@@ -21647,9 +21172,9 @@
      "margin": 9.6,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.945,
+     "p": 0.946,
      "sources": {
-      "Kalshi": 0.945
+      "Kalshi": 0.946
      }
     }
    },
@@ -21680,10 +21205,10 @@
    "state": "CA",
    "name": "CA-22",
    "pvi": 1.0,
-   "p": 0.8381,
+   "p": 0.8403,
    "mean": 5.0,
    "p10": -1.6,
-   "p90": 11.4,
+   "p90": 11.5,
    "p025": -5.6,
    "p975": 15.5,
    "rating": "Lean D",
@@ -21747,12 +21272,12 @@
      "n": 10
     },
     "markets": {
-     "margin": 4.9,
+     "margin": 5.2,
      "sd": 7.0,
      "w": 0.17,
-     "p": 0.794,
+     "p": 0.807,
      "sources": {
-      "Kalshi": 0.887,
+      "Kalshi": 0.908,
       "PredictIt": 0.675
      }
     }
@@ -21790,39 +21315,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "CA-22 Election",
-     "source": "MundoNOW",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMHctdGRzV3Y4Um1sMk1aVldFMy1GWVBVV0JxNTFGTXBLaGtOVk96MXNSdW1PZm55b1RCdWtGcXh6OEtROFFIQmhjS0JLM2lVOG9MYy1KSzhYdl9RVDBwU21heGZNaGRoaVd3dm1OYldmWFJQcE5uVnh4TGhsXzlHcGhIUVlRVm9BLTZETUZyRno2SEpmTXo5VEdCOGtabk0xRUdidEtmMTdNeGpXcEE?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Immigration enforcement report sparks clash between Villegas and Valadao in CA-22 race",
-     "source": "KBAK",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPajgtTEI1SnNuM1Z3SkZ5YW1XcVhuVVJHSzJ6NllXeElRbVZ6SERlRWo1Zy1DNjQwcGlQSHhYS19SWTVTcTNiY3VLVkpMeDFHQnp2TGo2Sm5GVVFicW1hR0RJSTQ5ODliS2Z5ZzlTdlR4eTNZZGQ3RC12SHJueXZFZE5FdUNEZkI3U081c2dpbHU2YXJUMm9Ocng4algxLUlIMzVrZ3RTSGtISk9iUHUyclh5Tnp1cFpYWHpvNVVJZDNfQQ?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Valadao, Villegas meet for CD22's only debate: Water, healthcare, immigration, war among topics",
-     "source": "Hanford Sentinel",
-     "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPekR6ZWJ2d2M4Y2VwUWUwTTkwVVN0Tng0c2ZFVVBYYW9aZGhjSjJxdGZVb0otY1dpMVA5TEMyV2x5cWp2VURHWmt4NDBBdTdRdWk2S1V2WHlDamx2cWNYQ0ZhWGN3N3dwRzN0bTRVdzRjNDU1V0ZVeWhNMk5Xdm5PZkZRN0JUR3lzSXBnNXR2ZWJfdlBEVkd5QnF1NEZGLXVVOGQzUjczN0hzcWdWUTdOWnhsQ1d6T2c1ZkJXc1pLUEVLMTRLbkQzLTRRdEE4TGZGQ3M1VDZVUjdSUFZTQ01rN1ZUZEFZZnpOMlF3NG01OGJKMzNDUFlNY25lcHJDQ2V2b21TbEdfUGtCeE5uUlRzcERYX212S3pqeHM0OUZPSHk5NEF60gGqAkFVX3lxTE93V3BXNnMyTFdxS3ZJV0M4XzJPZEVWWXkzRDR1QjIyWGJoNlFQajRBX0hVa0FmY1NxQUw3ZFRZNXRCVElWSHRWZVRDYS1tRHJjUEJTTDAzOEc2UXY0VFlBd01yenR0WFJCRktGc0FFR0NfX0ozUjFmZ21wdG4xTHViOXNlSTB6Q0REY01UeS1sSXV6S0I4Q2NjdjdBUm9laFJTUHdTSmxZbE1MOVBWUGtJS0RsU1dyRlc3YjFtWTJYYmhLMVFfOEdqTUZaSndCa2Q5THByTDBzMGFCUVVfc0p1X01xMEc5ZjhrdUZ5UURkRmlJZkktbndUdkthQm9xODhFd0Jmem8yb0NtZXYwMWk5a1I0R2FBa2hjdDc5OUw3ZXJrRDdRUGp4cFE?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Health Care, War, And Water Take Center Stage in Valadao-Villegas Debate",
-     "source": "The Runner Online",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVnRWWGxOZlZSb09ONnQtVEFHemZNNXZhVHBkQU1BNGd1V1A1ak5tSFBnUWhJOGI4MVZTcF9RbmMzMUdVellLY1NkajVhSk1tXy1PaWREMUxHcEJsTVRyb0hOcDF3ZHRQVU96ZHdlU1NmYVlKcjhtdElLYlo5SXZ0bUdUaU9LSnRMQy1vOGRSZ0R2MVhVaUVVM1FVV052MGloWmNCR1RYQndpa184dHFJ?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "California 22nd Congressional District 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONU9iSUZJQmFONXgzLTRiX2dOenFncVZXdW5ZRzNwWHNpcHBwdW52Y29vemtfNV9mXzR3VF9CWkRqN2FPRnBuZXpBZjduRXVvTlVJcllESm9vTVkxTFZkWGhETlVnQno3WnQwTWhNWklsaUs3WWtnalJmZHNWdW02cENXQ0xnTWc?oc=5",
-     "date": "2026-10-09"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "CA-23",
@@ -22350,7 +21843,7 @@
    "p10": 14.2,
    "p90": 32.8,
    "p025": 8.1,
-   "p975": 38.8,
+   "p975": 38.7,
    "rating": "Safe D",
    "dem": {
     "name": "Hilda Solis",
@@ -23327,12 +22820,12 @@
    "state": "CO",
    "name": "CO-05",
    "pvi": -5.0,
-   "p": 0.1842,
-   "mean": -4.5,
+   "p": 0.1804,
+   "mean": -4.6,
    "p10": -11.1,
-   "p90": 2.1,
-   "p025": -15.1,
-   "p975": 6.1,
+   "p90": 2.0,
+   "p025": -15.2,
+   "p975": 6.0,
    "rating": "Lean R",
    "dem": {
     "name": "Jessica Killin",
@@ -23394,12 +22887,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -2.8,
+     "margin": -3.3,
      "sd": 7.0,
      "w": 0.171,
-     "p": 0.319,
+     "p": 0.292,
      "sources": {
-      "Polymarket": 0.319
+      "Polymarket": 0.292
      }
     }
    },
@@ -23545,7 +23038,7 @@
    "state": "CO",
    "name": "CO-08",
    "pvi": 0.0,
-   "p": 0.8153,
+   "p": 0.8152,
    "mean": 4.4,
    "p10": -2.1,
    "p90": 10.9,
@@ -23665,16 +23158,10 @@
      "date": "2026-10-11"
     },
     {
-     "title": "Gabe Evans Loves Him Some Donald Trump",
-     "source": "Colorado Pols",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMFVoeEc5REdWMjd1ZFlPVXQxVXhNZTlQNFhHMWNYdERCWDF4NGlIcXdtbUdURXdMU3pMbkJIZmJMQWpyUERSVzVYcjlYcXExcF9fYktnaUx0RHpJRUtJbTBBbUpoMm1WUTdPRkk3cmxsTnc2UnNLWVVpYVhYLTJ3bHhGaFBWUmc?oc=5",
-     "date": "2026-10-11"
-    },
-    {
      "title": "New Poll Shows Two-Candidate Race in CO-08 Primary",
      "source": "Colorado Pols",
      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQM1NXc2NDYlZLeVBiZ3N5NzYxUFYwR0V6RWZqR3M1WDhvNWd0ZkdiUzQwZDJnUVVFWVl6Z1dIMExlUVQtVUw0ckJGTVgtV0VTMDB2cHBTNU9BVXN5dmNhV2w4MHY4aHpsbk9NMDhCTEJPS1FCNWlWbVRuOTduSEVXOTlpdTBhdlFZVDVJcDAzZ3hja1RfR3RZ?oc=5",
-     "date": "2026-10-10"
+     "date": "2026-10-11"
     },
     {
      "title": "New Poll Shows Manny Rutinel Surging In CO-08 Race",
@@ -23686,6 +23173,12 @@
      "title": "The Ads are Here!",
      "source": "Colorado Pols",
      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1lLWh3d2tKR0JSWTNwNGxjTDZRYUJ5bFRXbVU2V19TSnZqSzhWdTJ3U3N5dVlCRFM5bF9hM1owYlNabnRZajF1dGE2WmJOb2o4R1AxX09jOTlkR0NBeW9UN1Jod01HSnZXdUE?oc=5",
+     "date": "2026-10-10"
+    },
+    {
+     "title": "The Battle for CO-08 is Underway",
+     "source": "Colorado Pols",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzMTl4MFdmWmhmbGppRDlDWTJTalc3ZWREQlllVzdsam84VXF0OEFMUTRTLUVJVTRYZElFeExrWm1rc0pFU3lmVEs0ellmMzJGX3M1SUhHQmlZNFdBWG1DQzRreUVTVk8tal9yYm14bV80WmVTTlg3Y2EwUmxSWFE?oc=5",
      "date": "2026-10-10"
     }
    ]
@@ -23768,7 +23261,7 @@
    "name": "CT-03",
    "pvi": 8.0,
    "p": 0.9987,
-   "mean": 28.4,
+   "mean": 28.3,
    "p10": 19.0,
    "p90": 37.7,
    "p025": 13.0,
@@ -23839,12 +23332,12 @@
    "state": "CT",
    "name": "CT-05",
    "pvi": 3.0,
-   "p": 0.9841,
+   "p": 0.9844,
    "mean": 15.0,
    "p10": 7.0,
-   "p90": 22.9,
+   "p90": 23.0,
    "p025": 1.8,
-   "p975": 28.0,
+   "p975": 28.1,
    "rating": "Safe D",
    "dem": {
     "name": "Jahana Hayes",
@@ -24007,9 +23500,9 @@
      "margin": -11.3,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.015,
+     "p": 0.016,
      "sources": {
-      "Polymarket": 0.015
+      "Polymarket": 0.016
      }
     }
    },
@@ -24133,12 +23626,12 @@
    "state": "FL",
    "name": "FL-04",
    "pvi": -5.0,
-   "p": 0.0294,
-   "mean": -12.2,
-   "p10": -20.0,
-   "p90": -4.3,
-   "p025": -24.9,
-   "p975": 0.6,
+   "p": 0.0281,
+   "mean": -11.3,
+   "p10": -18.4,
+   "p90": -4.0,
+   "p025": -22.9,
+   "p975": 0.4,
    "rating": "Safe R",
    "dem": {
     "name": "LaShonda Holloway",
@@ -24170,7 +23663,7 @@
     "fundamentals": {
      "margin": -8.9,
      "sd": 6.0,
-     "w": 0.662,
+     "w": 0.512,
      "parts": {
       "national": 7.46,
       "lean": -10.0,
@@ -24185,9 +23678,18 @@
     "ratings": {
      "margin": -18.5,
      "sd": 6.5,
-     "w": 0.338,
+     "w": 0.262,
      "label": "Safe R",
      "n": 10
+    },
+    "markets": {
+     "margin": -8.0,
+     "sd": 7.0,
+     "w": 0.226,
+     "p": 0.09,
+     "sources": {
+      "Polymarket": 0.09
+     }
     }
    },
    "ratings": {
@@ -24737,10 +24239,10 @@
    "state": "FL",
    "name": "FL-11",
    "pvi": -7.0,
-   "p": 0.0361,
+   "p": 0.0363,
    "mean": -9.7,
    "p10": -16.4,
-   "p90": -3.1,
+   "p90": -3.0,
    "p025": -20.6,
    "p975": 1.0,
    "rating": "Likely R",
@@ -24804,12 +24306,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -7.9,
+     "margin": -7.8,
      "sd": 7.0,
      "w": 0.172,
-     "p": 0.094,
+     "p": 0.097,
      "sources": {
-      "Polymarket": 0.094
+      "Polymarket": 0.097
      }
     }
    },
@@ -25008,9 +24510,9 @@
      "margin": -3.9,
      "sd": 7.0,
      "w": 0.147,
-     "p": 0.259,
+     "p": 0.26,
      "sources": {
-      "Polymarket": 0.256,
+      "Polymarket": 0.257,
       "Kalshi": 0.262
      }
     }
@@ -25369,8 +24871,8 @@
    "state": "FL",
    "name": "FL-16",
    "pvi": -6.0,
-   "p": 0.1141,
-   "mean": -6.1,
+   "p": 0.1146,
+   "mean": -6.0,
    "p10": -12.5,
    "p90": 0.4,
    "p025": -16.6,
@@ -25436,12 +24938,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -6.1,
+     "margin": -6.0,
      "sd": 7.0,
      "w": 0.159,
-     "p": 0.156,
+     "p": 0.159,
      "sources": {
-      "Polymarket": 0.156
+      "Polymarket": 0.159
      }
     }
    },
@@ -25592,12 +25094,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -9.4,
+     "margin": -9.5,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.058,
+     "p": 0.057,
      "sources": {
-      "Polymarket": 0.058
+      "Polymarket": 0.057
      }
     }
    },
@@ -25630,9 +25132,9 @@
    "pvi": -14.0,
    "p": 0.005,
    "mean": -19.4,
-   "p10": -27.9,
-   "p90": -11.0,
-   "p025": -33.0,
+   "p10": -27.8,
+   "p90": -10.9,
+   "p025": -32.9,
    "p975": -5.6,
    "rating": "Safe R",
    "dem": {
@@ -25668,7 +25170,7 @@
    "p10": 40.4,
    "p90": 60.6,
    "p025": 34.3,
-   "p975": 66.9,
+   "p975": 66.8,
    "rating": "Safe D",
    "dem": {
     "name": "Debbie Wasserman Schultz",
@@ -25698,7 +25200,7 @@
    "state": "FL",
    "name": "FL-21",
    "pvi": -7.0,
-   "p": 0.0137,
+   "p": 0.0138,
    "mean": -13.6,
    "p10": -20.9,
    "p90": -6.3,
@@ -25755,12 +25257,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -7.4,
+     "margin": -7.3,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.11,
+     "p": 0.112,
      "sources": {
-      "Polymarket": 0.11
+      "Polymarket": 0.112
      }
     }
    },
@@ -25791,7 +25293,7 @@
    "state": "FL",
    "name": "FL-22",
    "pvi": -4.0,
-   "p": 0.4614,
+   "p": 0.4613,
    "mean": -0.5,
    "p10": -7.1,
    "p90": 6.1,
@@ -26099,39 +25601,7 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Scott Singer Visited Qatar in 2024, Photographed With Qatari Minister",
-     "source": "VINnews",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUmdqMTNHRmNJQzVEWm1TTXpZZ3YxUWo2OGQtUGR3Y3phOUpHLU1zdHd5UWttQWtMZ0EzaUl0T28ycllTWThkeUt0N1Z1WDlpMHFheFpuckNhSVZFdGFPOUlyaUwyQnh2ZTg2T3FiWU9RU3FaTElvQUNtWWVUM2FIUm5CRldWQ3o4Z0NuMGl6WTFRTEM0UmE2UDRGeUZlTVBld2c?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Florida 25th Congressional District 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQOHhCMFFHZDlXSHNRdHJQNHVKcTVucUN5aDg5b003aU1BeGdHdDkwenl5bWxzTlB5QkkwVEE3MFZ6QmhHdzhCdEFfSlNPQ2d6LTIwY25kUC1LQm1pZl9pN2R6allMNHBreXdGeWxZMmN5dE5SVDBFYkNMU01SMTNPc1pIcw?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Scott Singer Makes His Pitch To Unseat Jared Moskowitz",
-     "source": "Forbes",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbzVyLUpzZ2x0cWVxQzlsYWpVUGZXeDBpTFoyeFc1NmtMOUR6ekl4NW5tMzZjSERCTWxhVjNLQUdOMlY4QXNhVzlZNWhLM3FRSE54RWwwQml3d3I1dkx3c20yMGh5eG1MdzBnSi1mRHNPbEppRmk1NlpjS1RSSU1ueGhIVzBXSkVwc1JSajVOcWJBSEJtdDQ3RXBFNmk0NFczY2dQQkdSQQ?oc=5",
-     "date": "2026-10-08"
-    },
-    {
-     "title": "Crystal Ball: Independent election analyst moves Moskowitz-Singer congressional race to ‘leans Democratic’",
-     "source": "Sun Sentinel",
-     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNR3BRWlQzMTZUajNhSW8zc3ZocUlaSnp2bXBVc0FIVFpEc3FiQmV2b2hPZ3BqNWVrTUtPdk5XdUhzS1lzU3RkaUtkSTBGYkN3RU42R2JJXzg1aVF2a3BaRlVwNUM1aVY4UU1XY2F6aF95TFFCQUkzMFBnMUhnRXNZVVhIUjlUU2tXUlFJTk5fcHpwMUtQMGZ5R3o0dnkzZEhscXNxUTB6ZDBYcHFOZXpJVlBWNGVNX21xV2tPdWduRld4RE1na0RUcnNQMnQ1cEpGVDAwN2tNaDdOdTFT?oc=5",
-     "date": "2026-10-08"
-    },
-    {
-     "title": "Another prognosticator rates Jared Moskowitz as slight favorite in CD 25",
-     "source": "Florida Politics",
-     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYzFEMkxRaFEyLU45blR0a3BqRUJCQlkxZkx2QUlEWmRTOExzX1NNSDRVdENmdjNhV1kyX09OcF83VHFkdHh2ekpDdjVLTFRSX0g5NlZTWUFtbERzbFo1aXVrVUcxQ0dGc1htSUU4YWJEdVhRRUpwNGpmZEZfb0dHMTRWQTd5WnJaYWxRbGQ5VWF0UHllVlBaQXRZUGZ1VEVzUG5uTDJYYzc5di1DOHVmVW92aG0wblFE?oc=5",
-     "date": "2026-10-08"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "FL-26",
@@ -26223,12 +25693,12 @@
    "state": "FL",
    "name": "FL-27",
    "pvi": -6.0,
-   "p": 0.1164,
+   "p": 0.116,
    "mean": -5.9,
    "p10": -12.4,
    "p90": 0.5,
    "p025": -16.5,
-   "p975": 4.4,
+   "p975": 4.3,
    "rating": "Lean R",
    "dem": {
     "name": "Eliott Rodriguez",
@@ -26290,12 +25760,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -3.2,
+     "margin": -3.3,
      "sd": 7.0,
      "w": 0.154,
-     "p": 0.299,
+     "p": 0.293,
      "sources": {
-      "Polymarket": 0.299
+      "Polymarket": 0.293
      }
     }
    },
@@ -26391,7 +25861,7 @@
    "pvi": -8.0,
    "p": 0.0182,
    "mean": -12.7,
-   "p10": -20.0,
+   "p10": -20.1,
    "p90": -5.4,
    "p025": -24.6,
    "p975": -1.0,
@@ -26446,12 +25916,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -9.3,
+     "margin": -9.4,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.06,
+     "p": 0.059,
      "sources": {
-      "Polymarket": 0.06
+      "Polymarket": 0.059
      }
     }
    },
@@ -26523,7 +25993,7 @@
    "p10": -30.4,
    "p90": -13.3,
    "p025": -35.8,
-   "p975": -7.8,
+   "p975": -7.9,
    "rating": "Safe R",
    "dem": {
     "name": "Maura Keller",
@@ -26588,11 +26058,11 @@
    "name": "GA-05",
    "pvi": 36.0,
    "p": 1.0,
-   "mean": 59.8,
-   "p10": 48.8,
-   "p90": 70.7,
-   "p025": 42.7,
-   "p975": 76.8,
+   "mean": 60.2,
+   "p10": 49.2,
+   "p90": 71.1,
+   "p025": 43.1,
+   "p975": 77.3,
    "rating": "Safe D",
    "dem": {
     "name": "Nikema Williams",
@@ -28048,9 +27518,9 @@
      "margin": 11.3,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.98,
+     "p": 0.971,
      "sources": {
-      "Polymarket": 0.969,
+      "Polymarket": 0.951,
       "Kalshi": 0.989
      }
     }
@@ -28448,7 +27918,7 @@
    "state": "IA",
    "name": "IA-01",
    "pvi": -4.0,
-   "p": 0.7175,
+   "p": 0.7174,
    "mean": 2.8,
    "p10": -3.7,
    "p90": 9.4,
@@ -28520,7 +27990,7 @@
      "w": 0.172,
      "p": 0.794,
      "sources": {
-      "Polymarket": 0.793,
+      "Polymarket": 0.792,
       "Kalshi": 0.871,
       "PredictIt": 0.691
      }
@@ -28559,39 +28029,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "House Speaker Mike Johnson joins Mariannette Miller-Meeks for Davenport rally",
-     "source": "WQAD",
-     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQZDM4Y2NCOHpoX1NhZlFSNHV5LXFVSW5JSGRxaHZ2dHN1MmpWd2oycHN5NDNrQWEyWXR5ZnIyTURVNU82VlczVmVDSC1kZFRVTVVKdDl2cGlWUWQtTTRHX0J2Z3hKZUREdXM2VFp4ZlI3QTNmVjc5Y1RsSTBzSGc3V1U2emQwcDdtME1YdFFLbUF2c0NMdU1VRUNnRFV6WnhacUZYdmFDaEFiTmZEQVpYOGpUYVhJM290TFhhdUNUNXF0UXlpSklZZk1NU212cjVJNW5LTFBnOC1lQ1RaUi1IMmd3V0M5RkV4M2VwYUxtRllIT2NCNUIzUGxLdkU2a1FQZHU4?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "House Speaker Mike Johnson rallies with Miller-Meeks in contentious 1st District race",
-     "source": "Iowa Capital Dispatch",
-     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRWlWQ0FIOWdnaDBFT3dCNkNyTndBMEJibnM4WmQzQm9ZbVF1N1VzWlNsVVdncGRaT3RZckxPWDd4ZG1WR2dIVVRoOHBhdUw3bHF0YTZjeTZsVkNYVDdHMWZkb1Y3QXBqaURJNnMzS0wtTmVweW5jR2hlaXJtOERkLVNBaHJmSktiaDZqSDdqb2ZOOFNLWnloQmtsejNrSUxsUzR6NUhVQjhRZ05jZGtwX1p3TjA3b2xya2JhdUdZbVpOWFozN0RaZw?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Iowa 1st Congressional District 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5IdHJaOG16VlRVVTN3RnN0UkNiWExmcGM3MC1iSGc2NndLU0oxLW5tejNQQWp5NEhZYmdiWGZ4VEp2V2t3Qy14M0xQTWpQSDYwVWdoWWFTNnpwaWZZYXB4aFc4NU1oNU12T3YzTXZCa1lpWmRkODMtandtX0ZNdw?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Bohannan calls for release of Iowa City mother held by ICE - Iowa City Press-Citizen",
-     "source": "Iowa City Press-Citizen",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQM0ZuUzRNdjV0eDJ0SjFmaVNDVXhVbk1UOE5FN2JkdEQ1djJfOUJVTjlSRmw5NW5WRTVTTmVEcm52eEY2RzFZakJfbGI5NzdGNDRETjZ1V3hCWmx6S3BkcHdVbDh0MjNmNWxlUkhWdXZ4MHlXZ3IyX3VTczlfdGNaUmQ1Z2psdjZwcEJsMDdxQ3ZVRVdRdUw1UGRlaVpWeFc4SFJlYUFSVkR5ekNGRm5sLTNSVG1VMUY0U09kVXp3dFJNYnQ4YUhIN2xxZlVad05rRVVmbw?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Beyond the Podium: 1st Congressional District candidate Christina Bohannan",
-     "source": "KGAN",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSXQtcVNlOXZOOGlvM0tOb3UtX041Mll0Z1NnOXk1RzBTblNkNWFyZUF2aWFBemJFU0FGMU9sV3pUNzI2WFMyZzY2NTZ1VlZFMHNvNUVZRl9wQjFnUUZXUlZfRkZfdE9NaVVCN3BMQk1yVUYteUxweUZfdVhPZHVCdjlDTi1FU2xrY2RoWU1kTnRDMUFJM3RWZ3Z6a1ItTmgzNG54SVI3OEhhRi1aUW9PSTUxdzlaLUktSDFv?oc=5",
-     "date": "2026-10-09"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "IA-02",
@@ -28599,12 +28037,12 @@
    "state": "IA",
    "name": "IA-02",
    "pvi": -4.0,
-   "p": 0.5208,
-   "mean": 0.2,
+   "p": 0.5225,
+   "mean": 0.3,
    "p10": -6.4,
    "p90": 6.8,
-   "p025": -10.5,
-   "p975": 10.8,
+   "p025": -10.4,
+   "p975": 10.9,
    "rating": "Toss-up",
    "dem": {
     "name": "Lindsay James",
@@ -28666,12 +28104,12 @@
      "n": 10
     },
     "markets": {
-     "margin": 0.3,
+     "margin": 0.4,
      "sd": 7.0,
      "w": 0.17,
-     "p": 0.521,
+     "p": 0.528,
      "sources": {
-      "Polymarket": 0.54,
+      "Polymarket": 0.556,
       "PredictIt": 0.5
      }
     }
@@ -28749,7 +28187,7 @@
    "state": "IA",
    "name": "IA-03",
    "pvi": -2.0,
-   "p": 0.7269,
+   "p": 0.727,
    "mean": 3.3,
    "p10": -3.9,
    "p90": 10.4,
@@ -28809,9 +28247,9 @@
      "margin": 4.2,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.756,
+     "p": 0.757,
      "sources": {
-      "Polymarket": 0.785,
+      "Polymarket": 0.787,
       "Kalshi": 0.78,
       "PredictIt": 0.697
      }
@@ -28912,11 +28350,11 @@
    "name": "KS-01",
    "pvi": -16.0,
    "p": 0.0019,
-   "mean": -23.6,
-   "p10": -32.3,
-   "p90": -14.9,
-   "p025": -37.4,
-   "p975": -9.8,
+   "mean": -23.7,
+   "p10": -32.4,
+   "p90": -15.1,
+   "p025": -37.6,
+   "p975": -10.0,
    "rating": "Safe R",
    "dem": {
     "name": "Lauren Reinhold",
@@ -29007,9 +28445,9 @@
      "margin": -8.4,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.08,
+     "p": 0.081,
      "sources": {
-      "Polymarket": 0.08
+      "Polymarket": 0.081
      }
     }
    },
@@ -29336,7 +28774,7 @@
    "state": "KY",
    "name": "KY-06",
    "pvi": -7.0,
-   "p": 0.2606,
+   "p": 0.2607,
    "mean": -3.1,
    "p10": -9.4,
    "p90": 3.2,
@@ -29406,9 +28844,9 @@
      "margin": -2.5,
      "sd": 7.0,
      "w": 0.144,
-     "p": 0.339,
+     "p": 0.34,
      "sources": {
-      "Polymarket": 0.339
+      "Polymarket": 0.34
      }
     }
    },
@@ -29794,7 +29232,7 @@
    "state": "ME",
    "name": "ME-02",
    "pvi": -4.0,
-   "p": 0.4673,
+   "p": 0.4672,
    "mean": -0.4,
    "p10": -6.7,
    "p90": 5.9,
@@ -29866,8 +29304,8 @@
      "w": 0.148,
      "p": 0.389,
      "sources": {
-      "Polymarket": 0.47,
-      "Kalshi": 0.342,
+      "Polymarket": 0.464,
+      "Kalshi": 0.345,
       "PredictIt": 0.37
      }
     }
@@ -30705,9 +30143,9 @@
      "margin": -10.1,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.046,
+     "p": 0.047,
      "sources": {
-      "Polymarket": 0.046
+      "Polymarket": 0.047
      }
     }
    },
@@ -30834,7 +30272,7 @@
      "margin": 9.9,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.95,
+     "p": 0.951,
      "sources": {
       "Polymarket": 0.954,
       "Kalshi": 0.947
@@ -30868,7 +30306,7 @@
    "state": "MI",
    "name": "MI-04",
    "pvi": -3.0,
-   "p": 0.4309,
+   "p": 0.4315,
    "mean": -0.8,
    "p10": -7.3,
    "p90": 5.7,
@@ -30938,10 +30376,10 @@
      "margin": 0.1,
      "sd": 7.0,
      "w": 0.17,
-     "p": 0.504,
+     "p": 0.507,
      "sources": {
-      "Polymarket": 0.442,
-      "Kalshi": 0.473,
+      "Polymarket": 0.448,
+      "Kalshi": 0.475,
       "PredictIt": 0.601
      }
     }
@@ -30979,39 +30417,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Republicans face midterm backlash from factory workers squeezed out of jobs by Trump's tariffs",
-     "source": "WKMG",
-     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPV2VxVXhrTVZrbVJlRUIzLUJvM1lrUEJMdTRldHBSQm5fMThyVVVjblNzWHRfMHY3MEJ4S3pqWE5xZzZZaDR2TzRhR2xfRi1QVUc0TV9STlNpNEx1Wk04R3FldXJFNTZHOUl1RHRkNUozRlliSDU1anl5LWQxTHdOYVVVVkJSVnllQVZhMG9DblV5eVgzUUpjdkg3M3ZSaVNEczBJMldHbnJ3OGhSMzZTMm50SktDWlFId2h1c0hST01WX3hEdjc4ZEtIWktrZVRnWWg2SjZaWHlNX19oU3NHV09B?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Michigan Midterm Elections 2026: Key Races, Candidates and Past Results",
-     "source": "NBC News",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5VWE96aXR0S3I2YjZPYWRXb21UM1lCZXoxbFdDenBTUzdjMmJHUjljRTdFc3hHQm9DTlBiSXIzRGg1c1U4N05MbHk0OFhtSVNpc2RNcWZhMzdpRldLWE5jYzd0cEZQRV8zR1d1VUtWWWlYQQ?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Jocelyn Benson vows impartiality on Saline data center | Insider",
-     "source": "The Detroit News",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTTlBUE1PUkhpdTJnd2VsdTlpWnNtMlowVmlKRTZDZ29NdmVpUDdxdkdINklNXzVVVUpyU1JOaEZHcGFCc2NlVTZ6S05qQUlFRVhtZGVjN3ZtTmFlRTFLWmxfQ1psRlhVUGZtVk0zLURnaHdZWWZabG1SWlZpcjVKRnd5SXNIQTkyWFNtRkl5ME1scWt1MkgweHhaTGYyOUlzUHdIeFZadDcxWU5JQTdjZmE3NHcxLUlESklhS3AtOS14WTdPaFE?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Davis and Ford take campaign push to battleground states",
-     "source": "The Chicago Crusader",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTGlGSnozN3JfRmFBakptZUhoaTNfTjVhN3ZMMlRJbUhicllUZmlaSGF2NFNsZnBEUmI5b0d6aVB1Vk0yTDZ1S29ESXU0S2Z6ZDNkWFVRS3FyQTlpTXB3NUV1THkwaDRqR2JGc3F4NGdJMF92Zk9mcUdyMFNiWnFRTXVhdzVsN3pfNmhYWWVR?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Aging coal plants turn into a midterm fight over energy costs",
-     "source": "Michigan Advance",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMmRoVGhsMVBZS1M4ZmROb0NudlBrMXBRZXF0OW1hS3BqN3FXT1k5ampkdWdkNWVqSHhUOHQzZVBlUE5PdjJBN1Q5NmpPUHIxb3k4TDh6eDIwLXlNbUhmOU5wNWVWVHJ6YnVNQ2QxTUJCbzd4eG91dmw5b2ppTHBSbndzYXpydFJNcDl6dU9XaldDc0pKZjN5dEFHeXBuRmNaX3dn?oc=5",
-     "date": "2026-10-10"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "MI-05",
@@ -31088,7 +30494,7 @@
    "state": "MI",
    "name": "MI-07",
    "pvi": 0.0,
-   "p": 0.5574,
+   "p": 0.5579,
    "mean": 0.7,
    "p10": -5.6,
    "p90": 7.1,
@@ -31155,12 +30561,12 @@
      "n": 10
     },
     "markets": {
-     "margin": 2.0,
+     "margin": 2.1,
      "sd": 7.0,
      "w": 0.156,
-     "p": 0.633,
+     "p": 0.635,
      "sources": {
-      "Polymarket": 0.727,
+      "Polymarket": 0.735,
       "Kalshi": 0.599,
       "PredictIt": 0.574
      }
@@ -31315,7 +30721,7 @@
      "p": 0.976,
      "sources": {
       "Polymarket": 0.988,
-      "Kalshi": 0.963
+      "Kalshi": 0.964
      }
     }
    },
@@ -31382,7 +30788,7 @@
    "state": "MI",
    "name": "MI-10",
    "pvi": -3.0,
-   "p": 0.6081,
+   "p": 0.6079,
    "mean": 1.3,
    "p10": -5.2,
    "p90": 7.9,
@@ -31452,9 +30858,9 @@
      "margin": 2.5,
      "sd": 7.0,
      "w": 0.171,
-     "p": 0.662,
+     "p": 0.661,
      "sources": {
-      "Polymarket": 0.622,
+      "Polymarket": 0.619,
       "Kalshi": 0.655,
       "PredictIt": 0.71
      }
@@ -31493,39 +30899,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Michigan 10th Congressional District 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOLUtfVUhPOWRPVDBDZXFKLUNzQmw1ak9KNnZ0Uk5yWC13NFFaYk5DSS1idUZFZ1k2NFNTRC1ZOW1LRk5FLUtaOUVHc1VfVjdEYkJaWjliWlZoSmx4a1hRb2FGQ0dRZl9yQ2tJZmhVSmh2Wmdqei1BMGpjUHpaZEt0MEVkaWk?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "GIFFORDS PAC announces new ad in $1 million investment to elect Christina Hines in MI-10",
-     "source": "Giffords",
-     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdmgySXdySUc0Y2N1YzhGcG9oRjktXzhWYVVIOVBjRGlQOGtpYS0yaHVXWVhiWlAzcEdOdXVwZnB0ckNHV0ltVkJRaUNidlhZdElDdnFLWmh0SUNheVhkbUFKNHliRGl6VnVrVGxrbTlpQVg4SlJHTWxfYVlhbGRUZk8tcFRzUGt2aVlqWkZmT21weVVDMk5Makw0Y0RVS21ULTVSMWhjOGwtc1haSjZ3a29lMDc1QzZRVEpWUGVtSHlDY1FMNEpFcGFhbw?oc=5",
-     "date": "2026-10-07"
-    },
-    {
-     "title": "Republicans return to tough-on-crime message before difficult midterm elections",
-     "source": "WKMG",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPb0k3T0JNVWs1bUdXcGxkWExLVkRBa1QxZ2lhcHJSN2hmZk44WFR2RjdfUmx3STVxNmFGQlVJc2tycFJUOW1IWjhqYzFHbHlkZkozaGQxdUUwb2F2eF92a2ZWSFBUOEh0eGlVRGJ2NVVlNVJzclFwQnlTZUNmMXlkNlo3aFJGbVlJdy1YaDNWbkt6OXdobUJkZ0QzQ2JtTUZmeC13dmFDQlhGTnlBUTFqM3pXdXVtb0VXSkNSSm9ad1hiSFJJazNyUlplOWYyVW91VlE?oc=5",
-     "date": "2026-10-06"
-    },
-    {
-     "title": "Republicans return to tough-on-crime message ahead of difficult midterm elections",
-     "source": "KSAT",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNlAwYnJSR1RnZmJjdjZ4dW1jbkNNeG5aR1VjUGwxUkJOZXkwNjhBTlZ3T2Q3OWxOeExIOHVMS3FQc3NwUUZCUjRIeEs4enRfZ1pRRERiQmRSSTNZdHpoVEdXNjBCSlEwSzJld2R1WTVXdnBvUTVQaDZiT1pvMlRpX0lXUjlRQ0ZoeGlXZFJuVGNUMjVXYWFkWVZEV281d1plY09jczVXYTFPT2hhTzB1bHlOSG0yRVhGNlRYLXNBei1BZVZDVlE?oc=5",
-     "date": "2026-10-06"
-    },
-    {
-     "title": "Michael Bouchard Jr. took big donations from real estate execs tied to discrimination claims and unsafe housing",
-     "source": "Detroit Metro Times",
-     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbG9PTVE4THNKT1hndDZDVXhMM01ZUnk4N0pxN01PRlRfQmlJZGRNOXQtODNSX1FkTEM5b0ZfU1l2aU9fODVoZkZUb1pGOGNRdmg1Vmc3VGVtR2VEb21VX0psNTVzd3NDc2JKQ3NNZzdLSjFSY1A5Sy1NRmNGQ3llZXdkZTFNOU5sMF95eTlUVFAxZUtlRklISHNNWWxPOXVGSW9WcGh2eHJOTDVIZ2xkcGVqbW1jdU9ONjZORVgwd0JrZVRXV0RKNUY3amkxZFhGVXRvaWl5eDRxMkk?oc=5",
-     "date": "2026-10-02"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "MI-11",
@@ -31638,7 +31012,7 @@
    "pvi": -6.0,
    "p": 0.1116,
    "mean": -6.2,
-   "p10": -12.9,
+   "p10": -12.8,
    "p90": 0.3,
    "p025": -16.9,
    "p975": 4.4,
@@ -31706,9 +31080,9 @@
      "margin": -3.5,
      "sd": 7.0,
      "w": 0.17,
-     "p": 0.281,
+     "p": 0.282,
      "sources": {
-      "Polymarket": 0.281
+      "Polymarket": 0.282
      }
     }
    },
@@ -31988,7 +31362,7 @@
    "state": "MN",
    "name": "MN-06",
    "pvi": -10.0,
-   "p": 0.0139,
+   "p": 0.0138,
    "mean": -17.9,
    "p10": -27.4,
    "p90": -8.6,
@@ -32062,7 +31436,7 @@
    "pvi": -7.0,
    "p": 0.0172,
    "mean": -13.0,
-   "p10": -20.3,
+   "p10": -20.4,
    "p90": -5.8,
    "p025": -24.8,
    "p975": -1.2,
@@ -32117,12 +31491,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -7.5,
+     "margin": -7.6,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.107,
+     "p": 0.104,
      "sources": {
-      "Polymarket": 0.107
+      "Polymarket": 0.104
      }
     }
    },
@@ -32330,12 +31704,12 @@
    "state": "MO",
    "name": "MO-02",
    "pvi": -4.0,
-   "p": 0.238,
+   "p": 0.2387,
    "mean": -3.6,
    "p10": -10.2,
    "p90": 3.0,
    "p025": -14.2,
-   "p975": 7.1,
+   "p975": 7.2,
    "rating": "Lean R",
    "dem": {
     "name": "Fred Wellman",
@@ -32397,12 +31771,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -1.9,
+     "margin": -1.8,
      "sd": 7.0,
      "w": 0.172,
-     "p": 0.377,
+     "p": 0.381,
      "sources": {
-      "Polymarket": 0.377
+      "Polymarket": 0.381
      }
     }
    },
@@ -32516,11 +31890,11 @@
    "name": "MO-04",
    "pvi": -21.0,
    "p": 0.0003,
-   "mean": -30.6,
+   "mean": -30.7,
    "p10": -39.7,
    "p90": -21.5,
    "p025": -45.1,
-   "p975": -16.1,
+   "p975": -16.2,
    "rating": "Safe R",
    "dem": {
     "name": "Jordan Herrera",
@@ -32694,7 +32068,7 @@
    "state": "MT",
    "name": "MT-01",
    "pvi": -5.0,
-   "p": 0.2994,
+   "p": 0.2993,
    "mean": -2.5,
    "p10": -8.8,
    "p90": 3.7,
@@ -32932,9 +32306,9 @@
    "state": "NE",
    "name": "NE-01",
    "pvi": -6.0,
-   "p": 0.059,
+   "p": 0.0591,
    "mean": -8.3,
-   "p10": -15.0,
+   "p10": -14.9,
    "p90": -1.6,
    "p025": -19.0,
    "p975": 2.4,
@@ -33204,12 +32578,12 @@
    "state": "NV",
    "name": "NV-01",
    "pvi": 2.0,
-   "p": 0.9874,
-   "mean": 13.6,
+   "p": 0.9877,
+   "mean": 13.7,
    "p10": 6.4,
    "p90": 20.8,
    "p025": 2.0,
-   "p975": 25.3,
+   "p975": 25.4,
    "rating": "Safe D",
    "dem": {
     "name": "Dina Titus",
@@ -33261,13 +32635,13 @@
      "n": 10
     },
     "markets": {
-     "margin": 9.7,
+     "margin": 10.0,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.947,
+     "p": 0.952,
      "sources": {
-      "Polymarket": 0.936,
-      "Kalshi": 0.958
+      "Polymarket": 0.948,
+      "Kalshi": 0.956
      }
     }
    },
@@ -33298,7 +32672,7 @@
    "state": "NV",
    "name": "NV-02",
    "pvi": -7.0,
-   "p": 0.1652,
+   "p": 0.1656,
    "mean": -4.8,
    "p10": -11.2,
    "p90": 1.6,
@@ -33368,9 +32742,9 @@
      "margin": -3.5,
      "sd": 7.0,
      "w": 0.148,
-     "p": 0.278,
+     "p": 0.281,
      "sources": {
-      "Polymarket": 0.278
+      "Polymarket": 0.281
      }
     }
    },
@@ -33629,7 +33003,7 @@
      "w": 0.226,
      "p": 0.977,
      "sources": {
-      "Polymarket": 0.983,
+      "Polymarket": 0.982,
       "Kalshi": 0.971
      }
     }
@@ -33661,12 +33035,12 @@
    "state": "NH",
    "name": "NH-01",
    "pvi": 2.0,
-   "p": 0.9726,
+   "p": 0.9728,
    "mean": 10.3,
    "p10": 3.8,
    "p90": 16.8,
-   "p025": -0.3,
-   "p975": 20.8,
+   "p025": -0.2,
+   "p975": 20.9,
    "rating": "Safe D",
    "dem": {
     "name": "Stefany Shaheen",
@@ -33728,13 +33102,13 @@
      "n": 10
     },
     "markets": {
-     "margin": 8.8,
+     "margin": 9.0,
      "sd": 7.0,
      "w": 0.171,
-     "p": 0.93,
+     "p": 0.933,
      "sources": {
-      "Polymarket": 0.912,
-      "Kalshi": 0.946
+      "Polymarket": 0.922,
+      "Kalshi": 0.944
      }
     }
    },
@@ -34186,7 +33560,7 @@
    "state": "NJ",
    "name": "NJ-07",
    "pvi": 0.0,
-   "p": 0.8538,
+   "p": 0.8537,
    "mean": 5.3,
    "p10": -1.2,
    "p90": 11.8,
@@ -34256,9 +33630,9 @@
      "margin": 6.8,
      "sd": 7.0,
      "w": 0.171,
-     "p": 0.872,
+     "p": 0.871,
      "sources": {
-      "Polymarket": 0.847,
+      "Polymarket": 0.846,
       "Kalshi": 0.912,
       "PredictIt": 0.845
      }
@@ -34334,12 +33708,12 @@
    "state": "NJ",
    "name": "NJ-09",
    "pvi": 2.0,
-   "p": 0.9941,
-   "mean": 16.2,
-   "p10": 9.1,
-   "p90": 23.4,
-   "p025": 4.6,
-   "p975": 27.8,
+   "p": 0.9938,
+   "mean": 16.0,
+   "p10": 8.9,
+   "p90": 23.2,
+   "p025": 4.4,
+   "p975": 27.6,
    "rating": "Safe D",
    "dem": {
     "name": "Nellie Pou",
@@ -34391,12 +33765,12 @@
      "n": 10
     },
     "markets": {
-     "margin": 11.3,
+     "margin": 10.6,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.976,
+     "p": 0.961,
      "sources": {
-      "Polymarket": 0.983,
+      "Polymarket": 0.952,
       "Kalshi": 0.969
      }
     }
@@ -34571,12 +33945,12 @@
    "state": "NM",
    "name": "NM-02",
    "pvi": 0.0,
-   "p": 0.9687,
-   "mean": 9.9,
-   "p10": 3.4,
-   "p90": 16.5,
-   "p025": -0.6,
-   "p975": 20.5,
+   "p": 0.9667,
+   "mean": 9.7,
+   "p10": 3.2,
+   "p90": 16.3,
+   "p025": -0.8,
+   "p975": 20.3,
    "rating": "Likely D",
    "dem": {
     "name": "Gabe Vasquez",
@@ -34638,13 +34012,13 @@
      "n": 10
     },
     "markets": {
-     "margin": 9.5,
+     "margin": 8.4,
      "sd": 7.0,
      "w": 0.171,
-     "p": 0.944,
+     "p": 0.919,
      "sources": {
-      "Polymarket": 0.965,
-      "Kalshi": 0.933,
+      "Polymarket": 0.884,
+      "Kalshi": 0.936,
       "PredictIt": 0.935
      }
     }
@@ -34725,7 +34099,7 @@
    "state": "NY",
    "name": "NY-01",
    "pvi": -4.0,
-   "p": 0.0868,
+   "p": 0.0869,
    "mean": -7.6,
    "p10": -14.8,
    "p90": -0.5,
@@ -34782,12 +34156,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -3.9,
+     "margin": -3.8,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.26,
+     "p": 0.261,
      "sources": {
-      "Polymarket": 0.26
+      "Polymarket": 0.261
      }
     }
    },
@@ -34878,9 +34252,9 @@
      "margin": -6.1,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.156,
+     "p": 0.154,
      "sources": {
-      "Polymarket": 0.156
+      "Polymarket": 0.154
      }
     }
    },
@@ -34973,7 +34347,7 @@
      "w": 0.226,
      "p": 0.762,
      "sources": {
-      "Polymarket": 0.925,
+      "Polymarket": 0.926,
       "Kalshi": 0.885,
       "PredictIt": 0.442
      }
@@ -35303,11 +34677,11 @@
    "state": "NY",
    "name": "NY-11",
    "pvi": -10.0,
-   "p": 0.0124,
-   "mean": -15.8,
+   "p": 0.0122,
+   "mean": -15.9,
    "p10": -24.0,
    "p90": -7.6,
-   "p025": -29.2,
+   "p025": -29.3,
    "p975": -2.5,
    "rating": "Safe R",
    "dem": {
@@ -35508,7 +34882,7 @@
    "state": "NY",
    "name": "NY-17",
    "pvi": 1.0,
-   "p": 0.7768,
+   "p": 0.777,
    "mean": 3.7,
    "p10": -2.7,
    "p90": 10.0,
@@ -35578,9 +34952,9 @@
      "margin": 2.1,
      "sd": 7.0,
      "w": 0.154,
-     "p": 0.636,
+     "p": 0.637,
      "sources": {
-      "Polymarket": 0.751,
+      "Polymarket": 0.756,
       "Kalshi": 0.586,
       "PredictIt": 0.583
      }
@@ -36389,7 +35763,7 @@
      "w": 0.139,
      "p": 0.691,
      "sources": {
-      "Polymarket": 0.757,
+      "Polymarket": 0.758,
       "Kalshi": 0.658,
       "PredictIt": 0.663
      }
@@ -36706,7 +36080,7 @@
    "state": "NC",
    "name": "NC-05",
    "pvi": -9.0,
-   "p": 0.0109,
+   "p": 0.0108,
    "mean": -14.6,
    "p10": -21.9,
    "p90": -7.2,
@@ -36763,12 +36137,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -6.9,
+     "margin": -7.0,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.123,
+     "p": 0.121,
      "sources": {
-      "Polymarket": 0.123
+      "Polymarket": 0.121
      }
     }
    },
@@ -36799,12 +36173,12 @@
    "state": "NC",
    "name": "NC-06",
    "pvi": -9.0,
-   "p": 0.0111,
-   "mean": -14.4,
+   "p": 0.0113,
+   "mean": -14.3,
    "p10": -21.7,
-   "p90": -7.0,
+   "p90": -6.9,
    "p025": -26.3,
-   "p975": -2.4,
+   "p975": -2.3,
    "rating": "Safe R",
    "dem": {
     "name": "Cyril Jefferson",
@@ -36856,12 +36230,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -8.4,
+     "margin": -8.1,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.08,
+     "p": 0.088,
      "sources": {
-      "Polymarket": 0.08
+      "Polymarket": 0.088
      }
     }
    },
@@ -36894,7 +36268,7 @@
    "pvi": -7.0,
    "p": 0.0188,
    "mean": -11.5,
-   "p10": -18.3,
+   "p10": -18.2,
    "p90": -4.9,
    "p025": -22.4,
    "p975": -0.8,
@@ -36962,9 +36336,9 @@
      "margin": -7.4,
      "sd": 7.0,
      "w": 0.171,
-     "p": 0.109,
+     "p": 0.11,
      "sources": {
-      "Polymarket": 0.109
+      "Polymarket": 0.11
      }
     }
    },
@@ -37009,7 +36383,7 @@
    "state": "NC",
    "name": "NC-08",
    "pvi": -10.0,
-   "p": 0.0042,
+   "p": 0.0043,
    "mean": -17.9,
    "p10": -25.4,
    "p90": -10.5,
@@ -37066,12 +36440,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -11.0,
+     "margin": -10.8,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.034,
+     "p": 0.035,
      "sources": {
-      "Polymarket": 0.034
+      "Polymarket": 0.035
      }
     }
    },
@@ -37219,12 +36593,12 @@
    "state": "NC",
    "name": "NC-10",
    "pvi": -9.0,
-   "p": 0.0065,
-   "mean": -16.2,
-   "p10": -23.5,
-   "p90": -8.8,
-   "p025": -28.3,
-   "p975": -4.3,
+   "p": 0.006,
+   "mean": -16.5,
+   "p10": -23.8,
+   "p90": -9.1,
+   "p025": -28.6,
+   "p975": -4.6,
    "rating": "Safe R",
    "dem": {
     "name": "Ashley Bell",
@@ -37276,12 +36650,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -9.7,
+     "margin": -10.9,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.054,
+     "p": 0.035,
      "sources": {
-      "Polymarket": 0.054
+      "Polymarket": 0.035
      }
     }
    },
@@ -37439,9 +36813,9 @@
      "date": "2026-10-08"
     },
     {
-     "title": "Candidates for Congress in NC battleground focus on Helene recovery, the economy",
+     "title": "In hesitant interview, Balkcom ‘not sure’ if Edwards should resign after censure",
      "source": "Raleigh News & Observer",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNN2JTSzJvLVNOYjRwTTM4bGY3S1ZXUFg2Z0pKcEM3T2RVX19fd3pjWGZtLVFBM0RXeUlwaVRNZVZGQjV0NVFzcDFlRFJXMmNBWlZnUmEwQnNOZXFaQkpGZnpjRVpGaHVucW5uUVUyd21tbGFERU9MQ0ZlN00ydnZNSVY1eU9WSi1HSWNfNNIBjAFBVV95cUxOc0laaGl5U3diM3E1Y0RaU2lxTnptZ3h2RkRXLW1MdnNIaXlzcnF5b25iWG1LZTdxaWVPaE5iRTVxU3doU2pHcjMxTjdCS09LdXk0MjZYeUV6MkUzNC1MUV90N1pyUEZ0RnV5MXRmUEwzMlgwb0xjdHBiLUVYUTJWTk5VSUhKT0hQclR1Vw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQ2hjd241X2RwX08zVzI1Y05VcUw5VVpKb2ZLbWVSVngwbFNQVDgtYnBCeG1Nb0ZSM1FyUF8tLUdoMjR1Qjd3RFRadjBOdmQtUUdlU2VXbXZheDI1NlR4UHJYS0VFWDlDTHJETWxOOFVYaDlTdTNjM1U4UWxHOXcxZlFvUmZEdkVIdC1rSNIBjAFBVV95cUxQZTkzejJBRkFqREh6TF9taUpXRWh2REZqVGE3ZTd1LVctVmRyTzJsRXZsaEhiX282SlA4dnc4Zld4aHNGRjhEVV9RdFlUR1Z0Q1JaT1Izb3hibTBzdV9rQVhyLURzMmlIVVJKekhkZnFyX3R1Z1FhQkF3R3V6ZjQwV0l5dk9hMzJVQ1hoSw?oc=5",
      "date": "2026-10-07"
     },
     {
@@ -37635,12 +37009,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -9.9,
+     "margin": -9.8,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.05,
+     "p": 0.051,
      "sources": {
-      "Polymarket": 0.05
+      "Polymarket": 0.051
      }
     }
    },
@@ -37707,10 +37081,10 @@
    "state": "OH",
    "name": "OH-01",
    "pvi": -1.0,
-   "p": 0.9442,
+   "p": 0.9444,
    "mean": 8.2,
    "p10": 1.8,
-   "p90": 14.7,
+   "p90": 14.8,
    "p025": -2.2,
    "p975": 18.7,
    "rating": "Likely D",
@@ -37774,12 +37148,12 @@
      "n": 10
     },
     "markets": {
-     "margin": 3.6,
+     "margin": 3.7,
      "sd": 7.0,
      "w": 0.17,
-     "p": 0.727,
+     "p": 0.729,
      "sources": {
-      "Polymarket": 0.944,
+      "Polymarket": 0.951,
       "Kalshi": 0.865,
       "PredictIt": 0.338
      }
@@ -37861,10 +37235,10 @@
    "pvi": 21.0,
    "p": 0.9998,
    "mean": 38.5,
-   "p10": 29.6,
+   "p10": 29.5,
    "p90": 47.6,
    "p025": 24.0,
-   "p975": 52.9,
+   "p975": 52.8,
    "rating": "Safe D",
    "dem": {
     "name": "Joyce Beatty",
@@ -38000,7 +37374,7 @@
    "state": "OH",
    "name": "OH-07",
    "pvi": -5.0,
-   "p": 0.8216,
+   "p": 0.8217,
    "mean": 4.4,
    "p10": -1.8,
    "p90": 10.6,
@@ -38308,9 +37682,9 @@
    "state": "OH",
    "name": "OH-09",
    "pvi": -5.0,
-   "p": 0.6137,
+   "p": 0.6136,
    "mean": 1.4,
-   "p10": -5.1,
+   "p10": -5.2,
    "p90": 8.1,
    "p025": -9.3,
    "p975": 12.3,
@@ -38378,9 +37752,9 @@
      "margin": 3.5,
      "sd": 7.0,
      "w": 0.17,
-     "p": 0.722,
+     "p": 0.721,
      "sources": {
-      "Polymarket": 0.829,
+      "Polymarket": 0.828,
       "Kalshi": 0.709,
       "PredictIt": 0.629
      }
@@ -38419,39 +37793,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Ohio Midterm Elections 2026: Key Races, Candidates and Past Results",
-     "source": "NBC News",
-     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9aYnktTFVvVC14X2pyUEYwRzZGaU5IWDFFdUt2eXo1ZzVheDJGU2xmb185dVJzb1FqaXBWNy1XdHdtTnVuUnZUOVFPWGw5cnYza045eVAwQm5QLUdCbEtNTmh5eElITjFFRU0zXw?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Marcy Kaptur: longest-serving congresswoman’s bid for another House term roiled by anti-trans ad",
-     "source": "The Guardian",
-     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBJVWtJQ0s3LUxSUUpGQUZaNTdJbmdxZnZPazI2ZjRWNkZXZHhaZXhjUTBqYzI5ejdKYzlWNXNacFJ0bGdZMHdVZVAtX2tuTUxtRXpHLVJGbk03aHhySW1KSXQzZlJTODUxQU5QS1dBR2ZJTEFIVzVldTZOVjlYNmM?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Congressional candidates attend candidates gathering - Sent-trib",
-     "source": "Sent-trib",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPV051cjFhSkw2bEV6TEVISWpsSzNhTV8tb2NPSlF1SFBuX0NpWEVZVjVoTFFSMENidEY5WGVSWEtfaXpEZU84c1JMSEFnSHdPM0JibG5GdzB6bHNLcV9fWGIwUjFFSzNSVXJDeGlMaG05VGJ2WEY5bFI5MWV0bjBFbGQ4OXlYREt1SFY2cjJlRklxYmh2?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Constituents have opportunity to meet local candidates - Sent-trib",
-     "source": "Sent-trib",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSkwyQkpIQjA4NWgzMWplY3RpYWVoZENtbjhoUHplT3RSOWVWVHZyanlPTExPVHBiYnc5RHJVQlVZbDJCZnVHWUtiY19GOEZ3VkZxdEg4V0EtLUVTVXpLTU93eDNiOFZDTk1zYzNEUl90NjhvNXhBdFdoU2lIWmpNa1podm5jR2NEOF9tUVhtZVphckhHNUpv?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Fact check: Derek Merrin lies about Marcy Kaptur’s vote on taxes",
-     "source": "Cleveland.com",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNV3F2SF9rQV9yZEp3NERTbmVieGU0X3VNMUVOWGM1cjNNX2xJQU5KR2hnRl9nNml0dENFVFhGa3RyX3Q0WF9aaWd4ZEJLb1IwOUs4cXFrRmUxOUtVQ3RDSU83emV3bzQya3NLaUx2amJobWxkMWtpR0FVVTVDbWk5M2xIREFGSElObGZqc3djckdWU0duTzgwUTRmcE02Y0dwZVlUcmlYdXdFUdIBvgFBVV95cUxPelFVbUlUOTR2UkhjT2JwcklDVTNTMFpBZEJoYVJEV0RHdk8xaktaT2VjRnA4ME01VXZ3ZktmRlBmWTJiMjFNT0RXSDNLRy1mUGhKYmwyZi1lTXlPV3RtenZkS3MxRVVjSEplejJpclJ6UXI3cE1JRUZFQmI4UmkyUDNSU1lkSEhWS2JxeTJHTDhMT3hUVFBlY0NuVWptQVZhUzBVTlVXeHp3V1JwSlZwSW1BbF9xWGZuRHJrcDR3?oc=5",
-     "date": "2026-10-09"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "OH-10",
@@ -38459,7 +37801,7 @@
    "state": "OH",
    "name": "OH-10",
    "pvi": -4.0,
-   "p": 0.0685,
+   "p": 0.0686,
    "mean": -7.6,
    "p10": -14.1,
    "p90": -1.1,
@@ -38529,9 +37871,9 @@
      "margin": -5.4,
      "sd": 7.0,
      "w": 0.16,
-     "p": 0.184,
+     "p": 0.185,
      "sources": {
-      "Polymarket": 0.184
+      "Polymarket": 0.185
      }
     }
    },
@@ -38788,11 +38130,11 @@
    "state": "OH",
    "name": "OH-15",
    "pvi": -5.0,
-   "p": 0.134,
+   "p": 0.1354,
    "mean": -5.5,
-   "p10": -12.0,
-   "p90": 0.9,
-   "p025": -16.0,
+   "p10": -11.9,
+   "p90": 1.0,
+   "p025": -15.9,
    "p975": 4.9,
    "rating": "Lean R",
    "dem": {
@@ -38855,12 +38197,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -3.8,
+     "margin": -3.6,
      "sd": 7.0,
      "w": 0.158,
-     "p": 0.264,
+     "p": 0.277,
      "sources": {
-      "Polymarket": 0.264
+      "Polymarket": 0.277
      }
     }
    },
@@ -39025,11 +38367,11 @@
    "name": "OK-02",
    "pvi": -28.0,
    "p": 0.0001,
-   "mean": -39.7,
-   "p10": -49.6,
-   "p90": -29.8,
-   "p025": -55.4,
-   "p975": -23.9,
+   "mean": -39.4,
+   "p10": -49.3,
+   "p90": -29.5,
+   "p025": -55.1,
+   "p975": -23.6,
    "rating": "Safe R",
    "dem": {
     "name": "Brandon Wade",
@@ -39131,9 +38473,9 @@
    "pvi": -9.0,
    "p": 0.0078,
    "mean": -15.6,
-   "p10": -22.9,
+   "p10": -23.0,
    "p90": -8.1,
-   "p025": -27.4,
+   "p025": -27.5,
    "p975": -3.7,
    "rating": "Safe R",
    "dem": {
@@ -39186,12 +38528,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -9.5,
+     "margin": -9.6,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.056,
+     "p": 0.055,
      "sources": {
-      "Polymarket": 0.056
+      "Polymarket": 0.055
      }
     }
    },
@@ -39258,12 +38600,12 @@
    "state": "OR",
    "name": "OR-02",
    "pvi": -14.0,
-   "p": 0.0047,
-   "mean": -20.3,
-   "p10": -28.8,
-   "p90": -11.8,
-   "p025": -34.0,
-   "p975": -6.5,
+   "p": 0.0045,
+   "mean": -20.7,
+   "p10": -29.1,
+   "p90": -12.2,
+   "p025": -34.4,
+   "p975": -6.9,
    "rating": "Safe R",
    "dem": {
     "name": "Chris Beck",
@@ -39364,11 +38706,11 @@
    "name": "OR-05",
    "pvi": 4.0,
    "p": 0.997,
-   "mean": 19.4,
+   "mean": 19.5,
    "p10": 12.3,
    "p90": 26.6,
-   "p025": 7.7,
-   "p975": 31.1,
+   "p025": 7.8,
+   "p975": 31.2,
    "rating": "Safe D",
    "dem": {
     "name": "Janelle Bynum",
@@ -39420,11 +38762,12 @@
      "n": 10
     },
     "markets": {
-     "margin": 11.0,
+     "margin": 11.3,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.967,
+     "p": 0.982,
      "sources": {
+      "Polymarket": 0.998,
       "Kalshi": 0.967
      }
     }
@@ -39630,6 +38973,18 @@
    "aggs": [],
    "news": [
     {
+     "title": "House Democratic Leader Jeffries Campaigns For Harvie In Bucks",
+     "source": "Patch",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOU2p6ODhudF9YRXZSR1FfaldodFJOc1l2am5GWER2ZDQwSndENGhTWFU3QUt3eWhycFN2SGZvZzctaGpuNGtyRFFfVUZUVmM1ZnRpUzVuZTF2REV0d1Q3NVk4QnI4QlFxTWE1QURZa3lWanRRd0Q2VmM1d0k3dzJOazdrZUVOaG5uVDlFdjRLX2UwYmZaMG9Pb3drLS1yUdIBuAFBVV95cUxNVUZYYnpYWHZlVjFSWmZKbWZZRVdjQTBhcWtKWWhWd212WjBhYjBZLUJpYndWSjZTc1pOR3JCQmc1YjVYdmZhSFdEd2NVMkhoM21HZWRubHQyajJZWmxOdjlKbk1fc2I5SVpEa0NUMU95TWE3ZEpDOWJEZzFqYUhDNEg2dF9WOHZZblBnTkFEOTQxY2RObGhORjA1RHFFbG1WUnZhNjliZUlockFiM3d3U1c5blpCcWk1?oc=5",
+     "date": "2026-10-12"
+    },
+    {
+     "title": "'They bury their heads in the sand...': Hakeem Jeffries accuses Republicans of enabling corruption",
+     "source": "The Economic Times",
+     "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPVFVmWHMtWUFuSk5Kb3VTSHpVLXRjMjB0LXJBYXNhWnd1UEt4MGZhOWJ4UEtieVM3LTR2U2s4NXZhWkZXWURnamFsV1hiSVMwZU1Lb2xscHZBamNsaUtySThObVNjd1pKWEJuS1ZjRjZ4NGFMXzhDZGFwMXpVT1ZlTUt6SUtDOS05b3pTd0lTOXBRakNXeXJocElyZmszM2FLall1NFpsSDZ4THNKTWxHTFRiNXF4QjlpSElYUVA0RjAybFVxOHFJbXdvWnAyZzl0RFFON1BZODNWZXEtTmpTTEZmd05ZVThybWk0aDEzaWdldm1XSUFULVhjRWJ0X0tvRUQ3V3hXSFl4d9IBigJBVV95cUxPVFVmWHMtWUFuSk5Kb3VTSHpVLXRjMjB0LXJBYXNhWnd1UEt4MGZhOWJ4UEtieVM3LTR2U2s4NXZhWkZXWURnamFsV1hiSVMwZU1Lb2xscHZBamNsaUtySThObVNjd1pKWEJuS1ZjRjZ4NGFMXzhDZGFwMXpVT1ZlTUt6SUtDOS05b3pTd0lTOXBRakNXeXJocElyZmszM2FLall1NFpsSDZ4THNKTWxHTFRiNXF4QjlpSElYUVA0RjAybFVxOHFJbXdvWnAyZzl0RFFON1BZODNWZXEtTmpTTEZmd05ZVThybWk0aDEzaWdldm1XSUFULVhjRWJ0X0tvRUQ3V3hXSFl4dw?oc=5",
+     "date": "2026-10-12"
+    },
+    {
      "title": "Brian Fitzpatrick won by 13 points in 2024. Now, Democrats smell blood in the water.",
      "source": "Politico",
      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeTVkNFo5RGdxbk5TMU9uU2pBNlNWY0ZET053b2gyMjVZVFdMTHc0em9ERFBmYzNtWXJlaGU0UnE3bU1OZ2NhTkk2dFREc1pPRlRaTFhwOTh1bkRyYmdlWklGRTBQZWdBdlBDMDRnVmp3WktnR0RDTl9Dcm1XcS1RdkJzM1lJaGhlbFJkM0VIU1A3VHYwR2c?oc=5",
@@ -39646,18 +39001,6 @@
      "source": "The New York Times",
      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdnRTVU9YOU9ROGFHYWRLN0FUb2lvcmZqU1g5SjRHQS1uTF9RU3pyZnQwcW5sdF9RTnpMUzRWRGltd2thNHRvTDZlVmlQOWRVVy1qakhfLTZyQWhkbzBxazF3YjFyY3BQa3R3MzY2VXZrY1k0S1JxUTNEWllmOWpYVjRRVGJlM1Zl?oc=5",
      "date": "2026-10-11"
-    },
-    {
-     "title": "'Why Not Bob?' The Democrat Taking On One Of Republicans’ Toughest Incumbents",
-     "source": "HuffPost",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWnhpenl5Vlp6OFEtQnozOXR2RGJTNi1DQ2xYYVpPZ1ZTVEFCMlNISHU2Z0F3Q19GbWZQY0haUXo4eXJIVHBlNWszeEo5ZGZxRHhDajV1Nk5xWVpvX0t0SlYwcUV3Uy1palQxRUJZNzBoNk1ZekdFR250cXRMTXdYR3JPRU0wdDhlVVhvX0R3b1hDd19oNExoWDRkONIBoAFBVV95cUxQZ284NXI5N2pWQkpWUUtjNWRYSzFRY3ZUUkdKekQ3N3lFcnlpVDBUR1ZDZVk4bnh1and0dVRzSnZnQkdwdFdOYTBqSTV0NTc0VXkyNG5nd282QzRDR1hpZUdXR1V5d2ZRVXo5X3h6VnlmMFFOcFROaS15TTFmWF9yUEJTaTBwb3pCdjZtNVUtQVhuTUttNlF2TURoeWNnakZ2?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Three House races in Pa. — including in Bucks County — shift toward Democrats, Cook Political Report says",
-     "source": "Inquirer.com",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMk0tNjdzVmFVVzUyOExadkRFdFJWU0dnYWZlRVFZT2FiS2Y0TEV4cHRpRDF2cmtsWVJkS0ZHUzE4Qks3WF92N1lwSS1RNE5DSHJjVWZhX2RvYU5zN3RMTEpoem0yS2FsWl9ya0M3R0tWcEx0bEVUOFAxMkVFY3BfNkhFY1c0N0l0NmVBbHBfTkIxa2t4MVlfdlNtN0w4NXRvNmVsc0JybHNKSl82dDhHTjJkZw?oc=5",
-     "date": "2026-10-09"
     }
    ]
   },
@@ -39804,7 +39147,7 @@
    "mean": 19.6,
    "p10": 11.6,
    "p90": 27.7,
-   "p025": 6.5,
+   "p025": 6.4,
    "p975": 32.8,
    "rating": "Safe D",
    "dem": {
@@ -39836,12 +39179,12 @@
    "state": "PA",
    "name": "PA-07",
    "pvi": -1.0,
-   "p": 0.7631,
+   "p": 0.761,
    "mean": 3.5,
-   "p10": -2.9,
+   "p10": -3.0,
    "p90": 10.0,
-   "p025": -7.0,
-   "p975": 14.1,
+   "p025": -7.1,
+   "p975": 14.0,
    "rating": "Lean D",
    "dem": {
     "name": "Bob Brooks",
@@ -39903,12 +39246,12 @@
      "n": 10
     },
     "markets": {
-     "margin": 5.3,
+     "margin": 5.2,
      "sd": 7.0,
      "w": 0.168,
-     "p": 0.813,
+     "p": 0.805,
      "sources": {
-      "Polymarket": 0.821,
+      "Polymarket": 0.796,
       "Kalshi": 0.861,
       "PredictIt": 0.738
      }
@@ -39963,9 +39306,9 @@
    "aggs": [],
    "news": [
     {
-     "title": "A Spanish-language radio show overflows with voters' frustration in Pennsylvania battleground",
-     "source": "WKMG",
-     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPV2s2eWN1OVptS3V3d1BEbGRIVXl1TjM0cVVTTGJHSGxWQi05N3QwSE9UeWYyNDU5VmNtTlpibEs3Ujl1Z0djNUpuQkIxTy1zUEkzcVZVeDlKX1dWejZpN3RLVWtITU9renZ1d3hZU1h4SWt6cE81a3lLWVIwUE13djFFRzNCajgxWGxQbzNiZTdPWlhmWWQtdzZlY0V6aTFHVzFWOXExb21KR1RUbE5tMkFDTENqZXlJZE5SYTU4MjNIWnhGY2NfM2g0OGt1R0FOU2xFNmlLczdvNE1ZVDJ2Vw?oc=5",
+     "title": "A Spanish-language radio show overflows with voters' frustration in Pennsylvania battleground - ABC News",
+     "source": "ABC News - Breaking News, Latest News and Videos",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOVNaTVNlOVQ2aFFfRXNFYXN5dVFVbkxLN1hYdlhGVElzSzF5UElRQjZ0d0JIOVZ1MF9Dc254MjBPQWJzTUlrLTRlMGVSaldhUE1oQUhmX2dPVUZ3b0FSZDI1OXZZSnJwWElCcWVldWUxYmFyUWwtaWRXZUlFOUtoV1VRX1F5bXFxNjVBV25HbmlXMzhpWkdmU1lGZlR5T2o1ckdCWnNLV00zbEhVV0hYNTFjREwyYUFPVUHSAb8BQVVfeXFMTmdLOWtreUNPMkozZE45S0FkYmhacGZpclVzUXZTeHJ5ck9FUTNiZUVLczFyT0psUnFiNHJVNTcybGRYSXZsUUYzY2dQaGFMbVg3OWhDcFZSa05VemFPUFFsQVJjb1hJZnp1Qy1jZjJIZ0JMNEp4UVR0NU9Bb1ZlTnFYY28temI5aU5NUnBTU0ZXZElhSEtXVWM3M0xJVDVtMjZEcjZtaXBYa2wyUGp0OThUbWlwZUJFeExTRkNzZG8?oc=5",
      "date": "2026-10-12"
     },
     {
@@ -40000,7 +39343,7 @@
    "state": "PA",
    "name": "PA-08",
    "pvi": -4.0,
-   "p": 0.5673,
+   "p": 0.5674,
    "mean": 0.8,
    "p10": -5.7,
    "p90": 7.4,
@@ -40070,9 +39413,9 @@
      "margin": 3.0,
      "sd": 7.0,
      "w": 0.17,
-     "p": 0.69,
+     "p": 0.691,
      "sources": {
-      "Polymarket": 0.721,
+      "Polymarket": 0.722,
       "Kalshi": 0.735,
       "PredictIt": 0.6
      }
@@ -40187,7 +39530,7 @@
    "state": "PA",
    "name": "PA-10",
    "pvi": -3.0,
-   "p": 0.698,
+   "p": 0.6978,
    "mean": 2.6,
    "p10": -4.0,
    "p90": 9.2,
@@ -40257,10 +39600,10 @@
      "margin": 5.9,
      "sd": 7.0,
      "w": 0.17,
-     "p": 0.839,
+     "p": 0.838,
      "sources": {
-      "Polymarket": 0.805,
-      "Kalshi": 0.799,
+      "Polymarket": 0.807,
+      "Kalshi": 0.795,
       "PredictIt": 0.918
      }
     }
@@ -40719,12 +40062,12 @@
    "state": "SC",
    "name": "SC-01",
    "pvi": -6.0,
-   "p": 0.2193,
+   "p": 0.2195,
    "mean": -3.8,
    "p10": -10.2,
    "p90": 2.7,
    "p025": -14.1,
-   "p975": 6.5,
+   "p975": 6.6,
    "rating": "Lean R",
    "dem": {
     "name": "Nancy Lacore",
@@ -40789,9 +40132,9 @@
      "margin": -1.7,
      "sd": 7.0,
      "w": 0.154,
-     "p": 0.387,
+     "p": 0.389,
      "sources": {
-      "Polymarket": 0.387
+      "Polymarket": 0.389
      }
     }
    },
@@ -40894,11 +40237,11 @@
    "state": "SC",
    "name": "SC-02",
    "pvi": -7.0,
-   "p": 0.0111,
+   "p": 0.0107,
    "mean": -14.5,
    "p10": -21.7,
    "p90": -7.2,
-   "p025": -26.2,
+   "p025": -26.3,
    "p975": -2.6,
    "rating": "Safe R",
    "dem": {
@@ -40951,12 +40294,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -9.9,
+     "margin": -10.1,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.049,
+     "p": 0.047,
      "sources": {
-      "Polymarket": 0.049
+      "Polymarket": 0.047
      }
     }
    },
@@ -41023,12 +40366,12 @@
    "state": "SC",
    "name": "SC-04",
    "pvi": -11.0,
-   "p": 0.0101,
+   "p": 0.0102,
    "mean": -16.6,
    "p10": -24.8,
    "p90": -8.4,
    "p025": -30.0,
-   "p975": -3.3,
+   "p975": -3.2,
    "rating": "Safe R",
    "dem": {
     "name": "Courtney McClain",
@@ -41059,12 +40402,12 @@
    "state": "SC",
    "name": "SC-05",
    "pvi": -11.0,
-   "p": 0.0042,
-   "mean": -17.8,
-   "p10": -25.4,
-   "p90": -10.3,
-   "p025": -29.8,
-   "p975": -5.5,
+   "p": 0.0039,
+   "mean": -19.9,
+   "p10": -28.1,
+   "p90": -11.7,
+   "p025": -33.0,
+   "p975": -6.5,
    "rating": "Safe R",
    "dem": {
     "name": "Mallory Dittmer",
@@ -41096,7 +40439,7 @@
     "fundamentals": {
      "margin": -18.0,
      "sd": 6.0,
-     "w": 0.512,
+     "w": 0.662,
      "parts": {
       "national": 7.46,
       "lean": -22.0,
@@ -41111,18 +40454,9 @@
     "ratings": {
      "margin": -23.7,
      "sd": 6.5,
-     "w": 0.262,
+     "w": 0.338,
      "label": "Safe R",
      "n": 10
-    },
-    "markets": {
-     "margin": -10.8,
-     "sd": 7.0,
-     "w": 0.226,
-     "p": 0.036,
-     "sources": {
-      "Polymarket": 0.036
-     }
     }
    },
    "ratings": {
@@ -41154,7 +40488,7 @@
    "pvi": 13.0,
    "p": 0.9997,
    "mean": 36.0,
-   "p10": 26.5,
+   "p10": 26.4,
    "p90": 45.4,
    "p025": 20.3,
    "p975": 51.8,
@@ -41328,12 +40662,12 @@
    "state": "TN",
    "name": "TN-03",
    "pvi": -18.0,
-   "p": 0.0013,
-   "mean": -26.2,
-   "p10": -35.0,
-   "p90": -17.5,
-   "p025": -40.3,
-   "p975": -12.1,
+   "p": 0.0009,
+   "mean": -32.8,
+   "p10": -42.7,
+   "p90": -23.0,
+   "p025": -48.7,
+   "p975": -16.9,
    "rating": "Safe R",
    "dem": {
     "name": "Anna Golladay",
@@ -41368,7 +40702,7 @@
    "mean": -17.2,
    "p10": -26.6,
    "p90": -7.8,
-   "p025": -32.6,
+   "p025": -32.7,
    "p975": -1.7,
    "rating": "Safe R",
    "dem": {
@@ -41401,7 +40735,7 @@
    "name": "TN-05",
    "pvi": -10.0,
    "p": 0.0133,
-   "mean": -12.4,
+   "mean": -12.5,
    "p10": -19.2,
    "p90": -5.7,
    "p025": -23.3,
@@ -41435,7 +40769,7 @@
    "status": "Incumbent lost renomination",
    "comps": {
     "fundamentals": {
-     "margin": -11.3,
+     "margin": -11.4,
      "sd": 6.0,
      "w": 0.363,
      "parts": {
@@ -41530,7 +40864,7 @@
    "state": "TN",
    "name": "TN-06",
    "pvi": -13.0,
-   "p": 0.0069,
+   "p": 0.0068,
    "mean": -18.3,
    "p10": -26.8,
    "p90": -10.0,
@@ -41566,11 +40900,11 @@
    "name": "TN-07",
    "pvi": -11.0,
    "p": 0.0037,
-   "mean": -18.5,
-   "p10": -26.0,
-   "p90": -11.0,
+   "mean": -18.4,
+   "p10": -25.9,
+   "p90": -10.9,
    "p025": -30.6,
-   "p975": -6.3,
+   "p975": -6.2,
    "rating": "Safe R",
    "dem": {
     "name": "Darden Copeland",
@@ -41600,7 +40934,7 @@
    "status": "Incumbent renominated",
    "comps": {
     "fundamentals": {
-     "margin": -18.9,
+     "margin": -19.0,
      "sd": 6.0,
      "w": 0.512,
      "parts": {
@@ -41622,12 +40956,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -11.3,
+     "margin": -11.1,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.03,
+     "p": 0.032,
      "sources": {
-      "Polymarket": 0.03
+      "Polymarket": 0.032
      }
     }
    },
@@ -42227,11 +41561,11 @@
    "state": "TX",
    "name": "TX-09",
    "pvi": -9.0,
-   "p": 0.0279,
+   "p": 0.0275,
    "mean": -10.6,
    "p10": -17.4,
    "p90": -3.8,
-   "p025": -21.5,
+   "p025": -21.6,
    "p975": 0.3,
    "rating": "Safe R",
    "dem": {
@@ -42294,13 +41628,13 @@
      "n": 10
     },
     "markets": {
-     "margin": -5.7,
+     "margin": -5.8,
      "sd": 7.0,
      "w": 0.172,
-     "p": 0.172,
+     "p": 0.168,
      "sources": {
-      "Polymarket": 0.142,
-      "Kalshi": 0.199
+      "Polymarket": 0.139,
+      "Kalshi": 0.195
      }
     }
    },
@@ -42349,7 +41683,7 @@
    "mean": -13.0,
    "p10": -19.8,
    "p90": -6.2,
-   "p025": -23.9,
+   "p025": -24.0,
    "p975": -2.0,
    "rating": "Safe R",
    "dem": {
@@ -42412,12 +41746,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -8.1,
+     "margin": -8.2,
      "sd": 7.0,
      "w": 0.171,
-     "p": 0.088,
+     "p": 0.087,
      "sources": {
-      "Polymarket": 0.088
+      "Polymarket": 0.087
      }
     }
    },
@@ -42572,7 +41906,7 @@
    "p10": -29.5,
    "p90": -10.7,
    "p025": -35.6,
-   "p975": -4.7,
+   "p975": -4.8,
    "rating": "Safe R",
    "dem": {
     "name": "Thurman Bartie",
@@ -42603,9 +41937,9 @@
    "state": "TX",
    "name": "TX-15",
    "pvi": -7.0,
-   "p": 0.4955,
-   "mean": -0.1,
-   "p10": -6.4,
+   "p": 0.4971,
+   "mean": -0.0,
+   "p10": -6.3,
    "p90": 6.3,
    "p025": -10.2,
    "p975": 10.2,
@@ -42670,12 +42004,12 @@
      "n": 10
     },
     "markets": {
-     "margin": 4.5,
+     "margin": 4.6,
      "sd": 7.0,
      "w": 0.143,
-     "p": 0.773,
+     "p": 0.78,
      "sources": {
-      "Polymarket": 0.695,
+      "Polymarket": 0.713,
       "Kalshi": 0.825
      }
     }
@@ -43199,12 +42533,12 @@
    "state": "TX",
    "name": "TX-23",
    "pvi": -7.0,
-   "p": 0.1197,
+   "p": 0.1184,
    "mean": -6.7,
-   "p10": -13.9,
+   "p10": -14.0,
    "p90": 0.6,
    "p025": -18.4,
-   "p975": 5.1,
+   "p975": 5.0,
    "rating": "Lean R",
    "dem": {
     "name": "Katy Padilla Stout",
@@ -43256,12 +42590,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -0.7,
+     "margin": -0.8,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.454,
+     "p": 0.444,
      "sources": {
-      "Polymarket": 0.454
+      "Polymarket": 0.444
      }
     }
    },
@@ -43385,12 +42719,12 @@
    "state": "TX",
    "name": "TX-25",
    "pvi": -11.0,
-   "p": 0.0214,
-   "mean": -13.9,
-   "p10": -22.2,
-   "p90": -5.7,
-   "p025": -27.2,
-   "p975": -0.5,
+   "p": 0.0209,
+   "mean": -14.0,
+   "p10": -22.3,
+   "p90": -5.8,
+   "p025": -27.3,
+   "p975": -0.6,
    "rating": "Safe R",
    "dem": {
     "name": "Dione Sims",
@@ -43514,9 +42848,9 @@
      "margin": -10.5,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.04,
+     "p": 0.039,
      "sources": {
-      "Polymarket": 0.04
+      "Polymarket": 0.039
      }
     }
    },
@@ -43855,9 +43189,9 @@
    "state": "TX",
    "name": "TX-32",
    "pvi": -8.0,
-   "p": 0.0318,
+   "p": 0.0317,
    "mean": -11.2,
-   "p10": -18.5,
+   "p10": -18.6,
    "p90": -3.9,
    "p025": -23.2,
    "p975": 0.7,
@@ -43912,13 +43246,13 @@
      "n": 10
     },
     "markets": {
-     "margin": -7.4,
+     "margin": -7.5,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.109,
+     "p": 0.106,
      "sources": {
-      "Polymarket": 0.096,
-      "Kalshi": 0.12
+      "Polymarket": 0.095,
+      "Kalshi": 0.116
      }
     }
    },
@@ -43981,7 +43315,7 @@
    "state": "TX",
    "name": "TX-34",
    "pvi": -3.0,
-   "p": 0.8477,
+   "p": 0.8478,
    "mean": 5.0,
    "p10": -1.3,
    "p90": 11.3,
@@ -44051,9 +43385,9 @@
      "margin": 4.8,
      "sd": 7.0,
      "w": 0.153,
-     "p": 0.786,
+     "p": 0.787,
      "sources": {
-      "Polymarket": 0.721,
+      "Polymarket": 0.724,
       "Kalshi": 0.841
      }
     }
@@ -44117,39 +43451,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Texas Midterm Elections 2026: Key Races, Candidates and Past Results",
-     "source": "NBC News",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5uWFNONTdBQ1dFOUxtbU1pbGVJOXF4LVI1TUFYaTg5SFo2U0YzY1ZRemY4bmxaZ191MHVwbzkyTHhlaXlKWEhtdXdqSFZ5ZFhFMGRSZXRxdVpZRTVFZE1Od2NnTUtMYlFNY1YzNGlB?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Texas 34th Congressional District 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTzRnMkhKbGcwUmRNY0hvU3lEVGpCYWMxeGFNdkpkUzg2M1pvVm1BVUlyWFBrQjFGUHRuRGRlb1F0V0hZZlZrQVlyU3l3TFlZRkFfdmZFOGVoR3UwRmN3TV9nYUZ1dzRIbTc5V1FNd0tjRm5ZX3ZnaFVlZ04wb2xzcw?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "JD Vance Returning to Texas for Midterm Rally in Tyler",
-     "source": "Texas Scorecard",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQc1VqVkJTVzJzWlBvMmVRbE16REhLQlk3ODR1T3BCcVVOVU9yQ05rZkdTOUwzcXRtaGdGVVdhU2JjRG90V09RNnAzN1BqR0lLS3lVUUUtOF8wSDU2UDVpUWVPLUpwaGY1RW1fWTVBRmFYWXBoeXlzOGxSeW0xdGR0YjRROTNXcXBLbVlCTEhmSDY1SnFLQjRfQ1NuaWI?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Dem who ripped rival’s donor-fueled ‘good life’ dropped campaign cash on Disney, spouse travel",
-     "source": "930 WFMD Free Talk",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeVpha0RTdGV1blVBWHYwQ0F2VEdoN0pRcTZ5c2tkd01nSFFmT3hlbjY1QndSd3RRM3NncWJlV1M0SUlBZDZFTHpJTU9HWWpxTkY3VVFsNWxleE9OTUxFbTludi0tQWxicE9vaG9JQ1ZmTXlrNFRoZFN2cjVUSmlXZFRGQkxhenNEanVadEhKcmVLTWJRbXRGV3FpdHZNejZXQkpnSXQ3R243V2xEcUpsOFFJVFZVMG54WVJjd3BjWC0?oc=5",
-     "date": "2026-10-08"
-    },
-    {
-     "title": "US midterms: These 5 House races could determine control of Congress in 2026",
-     "source": "Firstpost",
-     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMlFHbzMyUFRyWEJvRWZUd2Nwb0hzMk1fenY2OGlwT1k0UEpTajczOEE4RjFGZGJUZng1T2xTRlpRRVppd1FBWGh5NVhMc3EycE44dmVPNk82RnR1azhPa0ZILWoyRkFUcVFCZy14alo5V0JCZFRmblRQREpqemtTSGRUMkZ0YmdMLW1CZ1p4X0lSNVNiWUNWNEpqdk1JM2RfX2JZbldrcU80ekZ0SHZ1UEFpZU50alhHVzhwVFRxLVFZN2l5WnU2M09sTjFObENl0gHWAUFVX3lxTE1Sc2RVekJEVl9EZDZ3b21HNXNGS1YzSnprV3VVLWtDTkh3S2hGZDFnX0FlSmw3RHNSR20zYlhhQTVpQTR2NE02YVRUZjUzbkk0ZjI3NFNjT0RHellEMjdKMTVyWE5nY1NkR3AtTzJFWDE4d3V5V2U1MlluUzV1RDJ4Z3hNLUdLamF5QkxzRVh4Z01oOVBmZnFsQVVUNmRuaEhkR1BlcEl6ZVQwdC1YakJySHJuOGV0MTJjVVgzX21wTDhfalB2WjZEeGk0M2dRUnlXaGRRanc?oc=5",
-     "date": "2026-10-07"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "TX-35",
@@ -44267,39 +43569,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "State of Texas: Trump, redistricting and the battleground races that could reshape Texas",
-     "source": "BorderReport",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMDVFU2w1SXc1eXg4VjdZeG5GbGtWeHE5SzREWnJScU5wNUN2WmwxbDlOeUY2TzZQS0FCTjI5S0U2dnhGRzNMaC00V0w5V1pqMmdMZTJNQV9mcEFDcWVTM0tJdnh5eVc5d0laQ0JsdVJEaUZKV1BYbEpWQWE4NFZLQzZwdUlsbjBCRklLWXAwMFlXUDliei04Sl9TeTlNY3ppcFBwWjg1TGVXZ2g2dVdRVkU0cTAwcFdjVmpKRFBSQTJYcGPSAcMBQVVfeXFMTTA1RVNsNUl3NXl4OFY3WXhuRmxrVnhxOUs0RFpyUnFOcDVDdlpsMWw5TnlGNk82UEtBQk4yOUtFNnZ4RkczTGgtNFdMOVdaajJnTGUyTUFfZnBBQ3FlUzNLSXZ4eXlXOXdJWkNCbHVSRGlGSldQWGxKVkFhODRWS0M2cHVJbG4wQkZJS1lwMDBZV1A5YnotOEpfU3k5TWN6aXBQcFo4NUxlV2doNnVXUVZFNHEwMHBXY1ZqSkRQUkEyWHBj?oc=5",
-     "date": "2026-10-12"
-    },
-    {
-     "title": "NEW: DCCC Launches New Digital Ad Campaign Targeting Latino Voters in TX-35",
-     "source": "Democratic Congressional Campaign Committee",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZktIdkQ5dm96N0EtWHhJcVRUQ2VCVTVWWGg1bjZtM3JFbm53T3dPWjd1YVFLUGI4V3FtSVlaYXh6cGpZLWhxY2FuWThRbXNEU3pYc0xFblFnLWpYSFl6djB2ZmNyWUhRLVFKYWQwVjJzSWVMVFFQaDdQYXRXR0lwUHNTZEV0aElzUFZxRFM1OW14M2xreTZZ?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "District 35 candidates pitch voters in a key race for majority control",
-     "source": "San Antonio Report",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZllId2hEUmRYY2JIcUFkRzBnQ05xXzdBSnNiUXFjcVB1N1FpZGE3bmVmcURJRHQtUXlURW5BZTNDVW40WnJGZXRzVXJtZV9MM19RejgwR2k1aE9fQjEyaUx5alZESjFnRElaeWhKWXUyVk95VHM3c3QwZDZKVE4yZlRoenBlSWRT?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Trump makes last-minute pitch in San Antonio after upending the GOP map",
-     "source": "Houston Public Media",
-     "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQQjl1ZGs3enZ4cDFlMDNialhvT1Q1ZEt2bEUxMHVZSnl0Ql9EM0NzV2hWZUZCandvbW9yWVNCYkZsUXRQdFNzWk55LXVHUVJ4Ym93SHE4MVhRMkJhZXNvR1hpa01GWWZKYnZfMmJwZkVSN2JSUWNjLXdQbklzLV84VGFMYVRoeFNpQU93OHhrYjM2SUhiVmRzS0k4TGE1dFRwLXEzSGpxamZxNUJEem9VaWJsT3UybWFBUjlZdEpMTnVneWMxN242b2VkNW5ldzFSTlJMbUZhcS1BYVFZT00zN1hYSTJLUUxnTmEwWDQxR3dIRk130gH8AUFVX3lxTE55c05RTHlKbXUtd2QzRGJ0SXh5SVlZRlFTUThiZTJFUlZmVnpOZFE2U25Fd2lYVy1pREFnRmJ6S3FvYVlfdl96N3JwQVF4cWFVUmM0RUNhZV9FVmpZX3lqQWRTdThBQmJNbi1rTk0xb1d1OTlZMEl3SDhrSnpIQjVYRmg4XzI5NWltTUJRUDhIUjZuZmlNWkhFMTF6aWZvUklheTFrTHpGcFcxOGNZVnplWmQ4bVRKSjgxOHQ0VF93Z2w1bk4xV0pGek45WG1TckZwMW1fNVZpRlhSWnozQ0ZBSGdlQ09Sa3hXcVl4aEw3cXBBcV8zbEdaZVRLTA?oc=5",
-     "date": "2026-10-08"
-    },
-    {
-     "title": "San Antonio Showdown: Trump Rallies for Paxton, Other GOP Candidates One Month Out",
-     "source": "The Texan",
-     "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOYmhzRlo4VXR0OGw0bmFURXlmOThrM3ByV0hlNkllMEp2VEhtaDZXcU5KdmNYaDFieDl1Z2dWa1pTTEhwNXEyTWtXenJiSHBZZlhkcDg3aEFQejN0NWpSVi1wSXBPTlh0TXBvRjFPa00yMVd5UzdSeVg0XzRBakpNSjQ5SDg3Mkt1RFZDaGcxS2VaZ2lsbjVIYWRkUFZ6UU9kV19FdjNoczBvUWtuUFFETTFISWpEVUlJbUhFaTlUYkNPNlhYdnhPS0FxdXVTcTl2cU1aQTZKTzJ6UUdtWU4xUU8tbV9PWEZKYTNCV0RQWnN3M29DQVJsd0VFNA?oc=5",
-     "date": "2026-10-08"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "TX-36",
@@ -44638,10 +43908,10 @@
    "state": "VA",
    "name": "VA-01",
    "pvi": -3.0,
-   "p": 0.4853,
+   "p": 0.4858,
    "mean": -0.2,
    "p10": -6.6,
-   "p90": 6.2,
+   "p90": 6.3,
    "p025": -10.6,
    "p975": 10.2,
    "rating": "Toss-up",
@@ -44705,12 +43975,12 @@
      "n": 10
     },
     "markets": {
-     "margin": 0.8,
+     "margin": 0.9,
      "sd": 7.0,
      "w": 0.161,
-     "p": 0.555,
+     "p": 0.557,
      "sources": {
-      "Polymarket": 0.587,
+      "Polymarket": 0.592,
       "Kalshi": 0.53
      }
     }
@@ -44761,39 +44031,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Virginia Dem Shannon Taylor’s Prosecutor Record Shows Leniency for Donor, Political Allies",
-     "source": "Breitbart News",
-     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSFJWUXY4ZGdaU2tHdkJpMVNBUjFvNW95UkpfWEhXOFIzN1ZBX28yVDlXTkNxc3FqNWx3TFpiSGhFN1NGcWhfRjdvcThnTWtVTmJkMno0Y1ZxWEo0VDdqU3JZMjVyQ0hxVTFucUdoMHRvUnA5SVJ0NmxyNFFOZmJDMjAyYldkN0drSGVQOWJiNlZzTlBIQkJTRlk4dVZ0MmM4WDdXMjFRSnE1bGp2TXE3MXdZTHRqeDVkVjZBOU9iRk15b2V0eFVfNHVuTklvNFBR0gHWAUFVX3lxTE5ESm5iZi1paktpMnRfbnc2RWJaOTFXQTRIZGlndDR3QU9WRWVTN0cyZFlyZ1ZJbXhqVldNYjVrRGhHOEpxbXFaUFRZYmlDYU96Z2Vfb1FraXdTT09KM3BUUmIwVXpwUzN5cnJsMkgybmJIeVE2dXF2MC1Pc2ZBbUJ0bUU5bTZUV3B3RHRGQzFJbWZzaTZOV2JHMnl0LTlScktTNkhqZktoRWJkQXBIQUkzMnNpa2pLWWhobHBLeGFyMndUX3NzVVRocVlpTmtTRU82NGgwQ1E?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "WATCH: VPM News interviews Virginia 1st District’s Shannon Taylor",
-     "source": "VPM",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOY2tDUUZ5N0FyOV92bXZGZTVsM19ScjltN3VNWGE5d0dmODNqOTV1eHR5bXVKNEtrQXNyRmw4bERlYkhGWG5sR1M3V1c4cUVGYm0zT3k5M2pRblU3aEZnd3E1aUlSNlpoX2tYN1Y0Vl9KMlJ6ODBaV2oyeWxBdTBuRXI2UkNZcmppYzRzVQ?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "How Shannon Taylor wants to take on corruption",
-     "source": "The Dogwood",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KY2xESFREOW9kX3RjWVF0SzcyalZJMzJ6QUhGMUVWbVNSRHdIcFR5UE4taXZYamdjbllRWjFYNVU3bDhVdGU0SWdMa3dFc1pETGJVTzJBTURZRlZveW1VNkRoWElZUWhaYVg2UHFlNW0zU2sxUnc?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "WATCH: Congressman Rob Wittman defends his record in Virginia’s 1st District",
-     "source": "VPM",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNOUlEaTJ2WGVJbFBMVHd4RDQ0bG5uRmdESnQyWjFybkNpVExROTM4RTNXOXRqWVRXWTFvWDZLZ2hPZHdTR204ZmNReTRUV2JNUkhmemNSUEd5ZFdaY2FacHpNXzhBTkRJeXp4cUpZTUNkUFlnMWZqM3AxY0VYUlhYZDFEeTZtVGtZX3c?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Virginia 1st Congressional District 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeUdsX0cwWDFiYWpwTXZXa3hPRC1uQ3FlMFRLZkY2NWhOOTdjbVN0ZFNHZE90N3BlQzQ1S1Q2djUwUGtMSHg1anJxT0hfOVhfUmlRbTRGa3huT3E5NUE2Uzh3WERMNU0xUVljQWItdEwxRnAxTElwWE10a0tzY2tnaENHQQ?oc=5",
-     "date": "2026-10-09"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "VA-02",
@@ -44801,7 +44039,7 @@
    "state": "VA",
    "name": "VA-02",
    "pvi": 0.0,
-   "p": 0.7604,
+   "p": 0.7608,
    "mean": 3.5,
    "p10": -3.0,
    "p90": 10.0,
@@ -44868,12 +44106,12 @@
      "n": 10
     },
     "markets": {
-     "margin": 4.8,
+     "margin": 4.9,
      "sd": 7.0,
      "w": 0.17,
-     "p": 0.788,
+     "p": 0.791,
      "sources": {
-      "Polymarket": 0.824,
+      "Polymarket": 0.831,
       "Kalshi": 0.864,
       "PredictIt": 0.649
      }
@@ -44912,39 +44150,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Virginia Midterm Elections 2026: Key Races, Candidates and Past Results",
-     "source": "NBC News",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBkLWRDem9pazRtRXphOUZUcDl4OWdzaFlBZFVZOHVMbE5vemhjU24zR0tJQkdNcy1UcDdMdkRJZFZ5TmI0bWFKemxMQlZ1eGRSZk8tNWswVDVPQi1ScjFSUExZdi1RanNYeS1mZEFIVDBWQQ?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "FACT CHECK: Democrat Luria’s ad claiming Rep. Jen Kiggans “votes 100% with Trump” is completely false",
-     "source": "Washington Reporter",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQQUUtNjU4bTRGcGowaFVSYzR3MGljejJadmwxYURoVHdIcVFwTDd4cGdlRXdOQkRFVFpjby16RnVoRGtXVklUZW8wUDJsWUI0SDNBWURvbmJZNjJiSU93X20xM2RvMDhZazZnZHEtM3VwT0owbk4wQlhEbW8yRGdzMThIT0wtTXNxZFpET1BzQUN0SUZwdy1JM3BMSkRGek9GSWpBVjUzazdacXBhMGMyZ0dzaFJPbVVsOTdWSTFyaDZqMHJDTlFZ?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Virginia 2nd Congressional District 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPV0RzSmlxM2FXU1NWMzdkTGk0c19PM2ZLVG1lNHdJX3BUSVhQUHBZQnFvbUhfN1hrUWs1a2ItSUFtUGdwZVRzd3VsMm5qUGs5cG9CSHE5c0x3Uy1DbWRPN3hsRnp4bTlPU3R3bWVyZUI3bWs1bk9BbEoxSkNneWUwdGJkSQ?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Virginia Elections: Who’s Leading In Prediction Markets?",
-     "source": "Forbes",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObFQyUDVKN01xZWpsVDB6OWliZEhjYnh5dTcyX1NYSkI1NVBkeDZzbDJmWHllQTJsMGcxQllWRW14cGIyb2NsQkYyV0F3aUJ1dExHb1U5Nm5ZZEd1M1h3X3JYd1prZkFzVUdRLXNLWXlZSTJseGw4MGw4b2NSdGh5UGNGLVNpcktrcHJ1amg0MA?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Midterm voters see Trump’s tariffs as culprit for rising costs",
-     "source": "Missoula Current",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5MYmc4OHI0U2FfVG8tZ3dweHNTMHFpWkFRVVYybURHa1FZd1RMdTVOQkVYVVBfNkxOT2dvV0Fha0NjTVlMZU02cks4dlpkSktlMjlJTmUzNG1yQ1Rreno1dA?oc=5",
-     "date": "2026-10-09"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "VA-03",
@@ -45503,7 +44709,7 @@
    "state": "WA",
    "name": "WA-03",
    "pvi": -2.0,
-   "p": 0.8371,
+   "p": 0.837,
    "mean": 4.8,
    "p10": -1.5,
    "p90": 11.2,
@@ -45639,39 +44845,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "In one of the country's most competitive districts, a Democrat tries to keep her seat",
-     "source": "NPR",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWW93TmhsUGFGZm1lSEphYW9KTTdwRzJLUUF4WWFWS0pGY2VjVUNxRVRBSXM3ekxGYlJyUkIzZmI2WFUyeFdkXzN1QmNKbHhuWTZVMjV1X0xfeDViMEtKdFg3bUZzX2JuVzBvejlJMGNLdkNJMDlDSmo4ZEY0LWdKWGNZemdGZ21CZHpVSUJNaXZPY2ZSVmtTcDB0RXQ?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "FULL DEBATE: Marie Gluesenkamp Perez, John Braun to debate for WA’s 3rd district",
-     "source": "KOIN.com",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVWkxS2xyVWE1WU5qT2g4VmRDMW9neTg0eHRLZHFaQnU1enVwcnBlYlBWTTQ1cUMwVnB3UkRTZTVEc3VOXzBjU2szeGgzNlFISlFCdFhhSHlnRlFaWHVMZUN5MXFCQ0Vud01Na0NaXzhJZGhmNnpEazdXWG8tVENTd3d1VThEQnpidkxyeDBvUXVCMG1xSzdwOElweTlEYUZ3QjJQdGVKR3Ztd2JYMU9EQ0E2V2c?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Southwest WA House race shifts toward Democrats",
-     "source": "The Seattle Times",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSDdCSE54TDIwWnBLNlVHWWREMTNXTjQ5YU44T2pTWGlvRXVka3lxYi1kUElRTDNFTFF3U3FiRF9Idm01M2tGd3ZjdmdIdjNVSl9BMzhDUHZVREtOVmhJM0NtZ1ptMHJNWUdOM3Y5TTJBcDg1b1EwR3lfd2lrWjhjd0RJWTFnMmE5Mm9vWElPTjN0V1ZIQUFnaVVic0hjUVJjbjRsYWE1UHktS1RJdkN1Y05JQTJaY1JtTlgw?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "What a major election forecast now says about Marie Gluesenkamp Perez’s race",
-     "source": "OregonLive.com",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSl8tZEViakVoN3hadWxnRDM3VGNRSHEzOEV0cTYyRUFORlNvaUVTS19lNzlvd29uQWNkOGNSZE1SaGNmeS0tMVVVTGxmLWFZODB4aHVRWVA4WFIyRUVZSXBnZHVjNnVra3dhUVc0aEROU2VLaEt0S2tET0F2eVJWVU0xRm14S0VtXzBJeEVfS1pQN2hmWjdYWDA2VWw4UjYxdjNVWUtkRGpZOFVaVktYVGM0bTNuS3JLclk2bVEzYXUyUQ?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Gluesenkamp Perez, Braun stretch each others’ records in 3rd District debate",
-     "source": "The Seattle Times",
-     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTWZDOXcyM2QtbXoyLVI4c2VVRkh2aUJKNEIzb0R4MV93VUVzNk5TRDA0bGJxVk5vcEZHcXl2enhnZ2xGbi1OQ2dxWnExZS1PdG1VZWRWa3VQWTJzWEJNaERrRE9Zb1UzcVhmcHppM3JLbWE1SWVlV3ZaNGV1a2g1YVhlUmh3VEItVlJZS1p1UERQVEVCTGJqWXg5aWN1X0VveDNVVlVsMFJmS2VtcFRLMVlfb1cyWHZk?oc=5",
-     "date": "2026-10-09"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "WA-04",
@@ -46093,12 +45267,12 @@
    "state": "WI",
    "name": "WI-01",
    "pvi": -2.0,
-   "p": 0.3028,
-   "mean": -2.5,
+   "p": 0.3057,
+   "mean": -2.4,
    "p10": -8.8,
-   "p90": 3.8,
+   "p90": 3.9,
    "p025": -12.7,
-   "p975": 7.7,
+   "p975": 7.8,
    "rating": "Tilt R",
    "dem": {
     "name": "Mitchell Berman",
@@ -46160,12 +45334,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -1.6,
+     "margin": -1.3,
      "sd": 7.0,
      "w": 0.153,
-     "p": 0.396,
+     "p": 0.413,
      "sources": {
-      "Polymarket": 0.44,
+      "Polymarket": 0.478,
       "Kalshi": 0.359
      }
     }
@@ -46370,7 +45544,7 @@
      "w": 0.17,
      "p": 0.707,
      "sources": {
-      "Polymarket": 0.687,
+      "Polymarket": 0.686,
       "Kalshi": 0.745,
       "PredictIt": 0.679
      }
@@ -46409,39 +45583,7 @@
      "url": null
     }
    ],
-   "aggs": [],
-   "news": [
-    {
-     "title": "Rep. Derrick Van Orden speaks on reelection campaign ahead of next month's election",
-     "source": "Channel 3000",
-     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNcDNIZEJjdzBYY1pvRFN3RGZ4VHFUUEdqSUtESlRrbEYwWTZ4Ny1lZV96UllOc25ISGhqdU9ERTJubUNRemxSZ2o2MEUxRXZVR0NpcXRxaDVBZU11XzZrd3VZa01ER2pCX3FXbU5GYlNOdjloWjVRMTNYb1hpOXduQ2Rhcmp2Q052bXItanpMWnluUnZld0VOUWx5bW9BNndNZ3NmMlhaVXh4SXJMZlpBaXQwb3lsZ1BseGlUZGVXa01kNlFlRzBnQWhkTmk5amphNnFhazlfS3dXa1RFVm55akw2ZlhEUmtHeVRpZ1dCNUZ6TDdBZjlr?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "Wisconsin Midterm Elections 2026: Key Races, Candidates and Past Results",
-     "source": "NBC News",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE16LXVQNkpxaU5MZkdHTU5YbS1jbm83VzlEUnI2TFVRSWFzdmZ0a2hmcV9vOW9sWFlYWDBucWlJYmhDbHFvTVlzVm9FUHhVNk1HSmNTTXJWOGZGTXhiWVNKMGxBanNqUFZEcl80QXNrVmZZWkk?oc=5",
-     "date": "2026-10-11"
-    },
-    {
-     "title": "UW-La Crosse’s Chergosky on millions spent on Van Orden-Cooke race, plus do negative ads work",
-     "source": "WIZM 92.3FM 106.7FM 1410AM",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQOWpFYmJ3Z1oxNUZZajVQTFp4b1U0Rjh4cFA5dGVWbUVyWnVFU0lJUzhORThmdTlaMEhyTHJrQ1lZNUo2QjZZSmZaWjZCeVJCSGxnOEwxbGZHY1RxWkdkemJJdnhxa0tTWWdpdDQxc3Y0cUgzb2NPbGhpTm1zdXBJTHpMSHhCMExtZjZaM1Z0dHV3TThfZk5V0gGXAUFVX3lxTFA5akViYndnWjE1RllqNVBMWnhvVTRGOHhwUDl0ZVZtRXJadUVTSUlTOE5FOGZ1OVowSHJMcmtDWVk1SjZCNllKZlpaNkJ5UkJIbGc4TDFsZkdjVHFaR2R6Ykl2eHFrS1NZZ2l0NDFzdjRxSDNvY09saGlObXN1cElMekxIeEIwTG1mNlozVnR0dXdNOF9mTlU?oc=5",
-     "date": "2026-10-10"
-    },
-    {
-     "title": "Wisconsin 3rd Congressional District 2026: Latest Polls",
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPaUpJb21WWFFaRzhXTFpoZDRuRVRza2NydW85VWgtY0ZkRmJLSUt4eE93c09ETEFOYldKTWxBWE5iVmhhRi1pTGdDTkRVTm1uSkxyOEw1am42QmxSQ1E2ODdzNE5lUUlxMUdZTU1oLWhZcE9xc1ViMDM4VS1UV3FNN0hyM2Y?oc=5",
-     "date": "2026-10-09"
-    },
-    {
-     "title": "Rebecca Cooke highlights rural hospital closures and rising healthcare costs in press conference",
-     "source": "WEAU",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQclVobjE1c3l0TDBER3pfc1BLWlczSW81a0pvSll5Q2kza282cmdPa0lZLW9fcGpROTFQaVZseURlZWFOWG9vempRSTQ2Q1pFRWt0RTVuVFNpMXRQMkFpOVdhZXhBbG9GR3lGWDdPa3NCczRUWkxVSXFxaXAxOWlsVlRGemZ0WWc3Y2ZQbV9hVDQ5TW1iV1JBUmtpWDZ4Nl9mOUtTTm0tZ0hwTjdRRGFoSzMzaWphcUV1NlhTN3BYQdIB0wFBVV95cUxQaDFsWHoyNDV6aTJNRGkzb2tWUlNIQkZCaVVodjEweEd0dFk5UkxGT2JvVGRfeHBSaFBwa1pieDBmTFJYbW03YTBXNEdndmpnd3BkTEhXWjJ3Z1JNVGpTbGY0WEttWWJabnJWOVY0eF80UTZUTm5HTXRlMUVNMGtPUWk2Y2xrZU1qSTFzX0pScHBBdGpTRnNtdlJ4NVQzVmtUUkl1b1VBTXZYZGRlZ3NYZ0tiTmx3bWNhWTZKQzdLT1Y4LXZNTUwyRVZvc0JVUjBPemxR?oc=5",
-     "date": "2026-10-09"
-    }
-   ]
+   "aggs": []
   },
   {
    "id": "WI-04",
@@ -46575,12 +45717,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -11.1,
+     "margin": -11.0,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.032,
+     "p": 0.033,
      "sources": {
-      "Polymarket": 0.032
+      "Polymarket": 0.033
      }
     }
    },
@@ -46668,12 +45810,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -10.5,
+     "margin": -10.6,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.039,
+     "p": 0.038,
      "sources": {
-      "Polymarket": 0.039
+      "Polymarket": 0.038
      }
     }
    },
@@ -46761,12 +45903,12 @@
      "n": 10
     },
     "markets": {
-     "margin": -7.8,
+     "margin": -7.7,
      "sd": 7.0,
      "w": 0.226,
-     "p": 0.098,
+     "p": 0.099,
      "sources": {
-      "Polymarket": 0.098
+      "Polymarket": 0.099
      }
     }
    },
@@ -46828,106 +45970,8 @@
   }
  ],
  "national_news": {
-  "NATIONAL": [
-   {
-    "title": "Trump could face a new threat in January: A Democratic Senate",
-    "source": "The Washington Post",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVWRBdzkxZmpMOGd4T3V4WWFyRFZ2ajJHaElTWlJoUjdXbW4yNTAxdEVYdF9LR0NnWkFvd0VJVVlxNVB4R2tIYUZJYXZVb0dtcWtHVGx1RnhrX1dCRDVqZTFaTXM3WnJpazBzMGxSSmJ4MkhkUDNoampUNk9fZ1JLejgxZVkwdVJBNjVSWXUtNURiNUpJMEdRREwyeHV2cDc1RndmSHBXdTQ?oc=5",
-    "date": "2026-10-12"
-   },
-   {
-    "title": "FLIPR 2026 midterm election forecast",
-    "source": "Silver Bulletin",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GWjFMc2tINlY1LWQ1RGZtUUJpZlZlN21hNF9iYU1TME9sSmhNclhGM3pmZW54a1JMX0F1TUZSeEtXWDlidVVDRWpUVUtoT0IzdEMyODhrWVRvSlRKd3pDdkdIOUpodHN5aHlJU2lZbWpweWt0a2ZScENITkJzdnc?oc=5",
-    "date": "2026-10-12"
-   },
-   {
-    "title": "Abdul El-Sayed: Democrats must ‘win by massive numbers’ to fend off Trump election denial",
-    "source": "The Guardian",
-    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYmV6UUdZa0FpbmhTcHlfR1pPRU1LTHFrQnFaN2R1eHBxajRaeU1HR3hldm5HNGpDZDNCRnNhZy1nM1BLMDNEU1lEemhjWnFZWDZoTVFoUmZERXlJRjl0b0JNU1N3aGwwdkVrWDE2UWFyc2Y1QXhMbm1MczFXeTlxNXVOQjFUXzlleGgxT2dKT0JiRnlOSVk2ekgxTFpVYWlfaXc?oc=5",
-    "date": "2026-10-11"
-   },
-   {
-    "title": "FiftyPlusOne 2026 Senate Forecast",
-    "source": "270toWin.com",
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUUhSSzR0UU1sLVVHLU1BMUlWbExHYmdRNU9Jd2g5VEQ0OXB2ckxBT3dXcDQ0aWFOd1B3MVR3Snk3eld5MkxuaThPTy1tU2FjdGd6N0wzenFOY0JVbGk4RWxqbk9JY09NOW9SLWg0ZlplWUZKMFk1ZFRzMk1vTkhJeHRUdGJxdw?oc=5",
-    "date": "2026-10-11"
-   },
-   {
-    "title": "Montana Midterm Elections 2026: Key Races, Candidates and Past Results",
-    "source": "NBC News",
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5sRVpNR3ZiQ2RBMEJZSzBrazZneVlmS2VFcERuVDdab190WkJvZ0Z0ek85SUF2TUhheWp1ak1pczBCSDE5MHlaei13WWZNRXk1cXVETHBHOVZ3TEpseDJNYmxVc0FESEw2b1gyckNKbmE?oc=5",
-    "date": "2026-10-11"
-   },
-   {
-    "title": "Who do latest polls show winning 2026 midterms? See odds, forecasts",
-    "source": "PhillyBurbs",
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQN2Nfblo5eFdnLXhoMUw3UERjOXNub0xVLXFJME5QdDJHVFhJejlMUVRucW9RdVNpbzR0VEI0aDBmLThJbEJlRGNiNmpuYmpLZThydVlSSkNtb21yOTgzU3pFcFJuTGpoTlN3NHBhcHlkNnNWdXFlUlJxYUFYcEZ0anlveE83ano4OU5RLWpXWmxySU9zNjFYRjNSYlhvTnRyRGktZF91TFd1WWxXWlJKaWVrbi1fYXlTelllZVhkRE9HQ1VXamU0Y3MxZS05STlYVG95MVExMUwwV0tqNlE?oc=5",
-    "date": "2026-10-11"
-   },
-   {
-    "title": "Latest Senate Polls: Midterm Elections 2026",
-    "source": "The New York Times",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5Kem1zNEtLLXJhQndGWG1LTlI2UWtfWGlqdzJwTGFhV2c1ZUpYYTlNQnNaMW9HUGlHN281RzZpTktsSXVEVXhnS1diRndPbzQwYmtnM2NQSkY5VUstWFAta2ZuVlpRYkhMZk5hNEZrN0Vpdw?oc=5",
-    "date": "2026-10-11"
-   },
-   {
-    "title": "Tracking the Early Vote in the 2026 Midterm Elections",
-    "source": "The New York Times",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWUNScEZXTjJwYVpIZENZS0txWHd4TTNRUFZvQk1aRUUtTHE2NUhQbWJpb3BTRHpQUTFtdWEybmpFRk9iN1VXY1Y5Q1FjMTNqTEYzdkJZZk9OOUFPNnR3WFV2Qy1KZ3JscGpGT2N0eGdOY2NSaXJSZ2hoLXFORXB1bEhmUGd6QnEtVW9sZzRudW9wQ2pJTTdxVWFCTGpaZDJBaU9LX29oeER4STJrczJsOTRZbG43cHFF?oc=5",
-    "date": "2026-10-11"
-   }
-  ],
-  "NATIONAL_POLLS": [
-   {
-    "title": "FLIPR 2026 midterm election forecast",
-    "source": "Silver Bulletin",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1GWjFMc2tINlY1LWQ1RGZtUUJpZlZlN21hNF9iYU1TME9sSmhNclhGM3pmZW54a1JMX0F1TUZSeEtXWDlidVVDRWpUVUtoT0IzdEMyODhrWVRvSlRKd3pDdkdIOUpodHN5aHlJU2lZbWpweWt0a2ZScENITkJzdnc?oc=5",
-    "date": "2026-10-12"
-   },
-   {
-    "title": "The big unknown behind Democrats' polling leads",
-    "source": "Axios",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOS1Zib3UzdWplcUNqeVNVY1FvR2NaQ1dwMGI2MHhEUkZyd2JxR0VfRFVTbUFoRjdjQXVoOGlBY1JuMjFYblJYWGZJYkxCbVNscDZKWUJlb3hYdUlqVEhzY0hfRWppWHVjaG1DZDd5bTBGZnBFU1h2cXdWcnhpbHpUYThBNnZlaUE?oc=5",
-    "date": "2026-10-11"
-   },
-   {
-    "title": "Who do latest polls show winning 2026 midterms? See odds, forecasts",
-    "source": "PhillyBurbs",
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQN2Nfblo5eFdnLXhoMUw3UERjOXNub0xVLXFJME5QdDJHVFhJejlMUVRucW9RdVNpbzR0VEI0aDBmLThJbEJlRGNiNmpuYmpLZThydVlSSkNtb21yOTgzU3pFcFJuTGpoTlN3NHBhcHlkNnNWdXFlUlJxYUFYcEZ0anlveE83ano4OU5RLWpXWmxySU9zNjFYRjNSYlhvTnRyRGktZF91TFd1WWxXWlJKaWVrbi1fYXlTelllZVhkRE9HQ1VXamU0Y3MxZS05STlYVG95MVExMUwwV0tqNlE?oc=5",
-    "date": "2026-10-11"
-   },
-   {
-    "title": "BARONE: Toward the final stretch — and beyond",
-    "source": "The North State Journal",
-    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5IY012cnhCVWlVQXExaHlUWnFkc2JTdThudnNiR0lsVE12ZjduV2ROUnBLa1hVV0hwLUt0Um5XTFRvRDFYUkdNeGFGRHVZYWw1WDlIQlBLUHFyR0lELVJ6N1RKa1BpWkxSWXJRZWpGcTN3U0c0eUcyR2h3?oc=5",
-    "date": "2026-10-11"
-   },
-   {
-    "title": "Meet the ‘independent voters’ who will likely decide which party triumphs in the 2026 midterm elections",
-    "source": "Irish Examiner",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5RUEhqNlk2TGFWM3VaX2MzU0JrU0d6VGlqQlpCY2ExNlhjQU9hY2RodnpsaHVEdDFuZHl2dkZxMVhCbFFSam9QTmZPWlViWFRYakFfNEF1OUh6eEFtNEgyMnEyQTRDNmpkVloxTU9iSUdpaG41TUlITWdlMW8?oc=5",
-    "date": "2026-10-10"
-   },
-   {
-    "title": "With the US midterms less than a month away, what's at stake?",
-    "source": "Mothership",
-    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ZN1hDU1hsY0wyajA1VzVhSW5ESVNiUTE3dHI5eEFFUUJKcHVXMHl3NklnZzE0cXNVOUc5TUYxOC1KaEUwQWhGX0xReTFYOGpyS0tUbGpIZTBySkpvcUE5YlFVM21KMnN1?oc=5",
-    "date": "2026-10-10"
-   },
-   {
-    "title": "Democrats Solidly Ahead on Generic Ballot",
-    "source": "Political Wire",
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNV2dXS2NydHdBdDNxaER2clNiYW5FYS1td0MxVloxb3JzTGM5eHhNZ1diOF9vWW9kYUZuM0JuclZTczR5Yk5kcGh5eVk5LVdtTVJYaHV2Tl9jLWJVZ1JYOHdYX29UbE4zMjFqaHAwTlMzMktLdmtsSnNfaXNaUzYyekdTVlIzZw?oc=5",
-    "date": "2026-10-10"
-   },
-   {
-    "title": "Midterms 2026: Congress Polls and More",
-    "source": "NBC News",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qM2xEd3lHR1dpU2xwT1JLcDEyUXlVS0xaeGptQzlscXNJSHc1VVVXQnZpY2FfN0NYdlFLMGZfWW9SSDFLT3NQVEF5cDlKZUlaVGNmZW5VUlR6LXI1MGtGeHJZWU1icGs?oc=5",
-    "date": "2026-10-09"
-   }
-  ]
+  "NATIONAL": [],
+  "NATIONAL_POLLS": []
  },
  "markets_control": {
   "Polymarket": {
@@ -46935,8 +45979,8 @@
    "HOUSE-CONTROL": 0.905
   },
   "Kalshi": {
-   "HOUSE-CONTROL": 0.895,
-   "SENATE-CONTROL": 0.615
+   "SENATE-CONTROL": 0.615,
+   "HOUSE-CONTROL": 0.895
   },
   "PredictIt": {
    "SENATE-CONTROL": 0.595,
@@ -47374,7 +46418,7 @@
    "CO-GOV": [
     [
      "2026-10-12",
-     0.992
+     0.991
     ]
    ],
    "CT-GOV": [
@@ -47602,7 +46646,7 @@
    "AR-02": [
     [
      "2026-10-12",
-     0.091
+     0.09
     ]
    ],
    "CA-05": [
@@ -47632,7 +46676,7 @@
    "CA-22": [
     [
      "2026-10-12",
-     0.838
+     0.84
     ]
    ],
    "CA-23": [
@@ -47674,7 +46718,7 @@
    "CO-05": [
     [
      "2026-10-12",
-     0.184
+     0.18
     ]
    ],
    "CO-08": [
@@ -47704,7 +46748,7 @@
    "FL-04": [
     [
      "2026-10-12",
-     0.029
+     0.028
     ]
    ],
    "FL-05": [
@@ -47764,7 +46808,7 @@
    "FL-16": [
     [
      "2026-10-12",
-     0.114
+     0.115
     ]
    ],
    "FL-17": [
@@ -47890,13 +46934,13 @@
    "IA-01": [
     [
      "2026-10-12",
-     0.718
+     0.717
     ]
    ],
    "IA-02": [
     [
      "2026-10-12",
-     0.521
+     0.522
     ]
    ],
    "IA-03": [
@@ -47962,7 +47006,7 @@
    "MI-07": [
     [
      "2026-10-12",
-     0.557
+     0.558
     ]
    ],
    "MI-08": [
@@ -48004,7 +47048,7 @@
    "MO-02": [
     [
      "2026-10-12",
-     0.238
+     0.239
     ]
    ],
    "MT-01": [
@@ -48028,13 +47072,13 @@
    "NV-01": [
     [
      "2026-10-12",
-     0.987
+     0.988
     ]
    ],
    "NV-02": [
     [
      "2026-10-12",
-     0.165
+     0.166
     ]
    ],
    "NV-03": [
@@ -48088,7 +47132,7 @@
    "NM-02": [
     [
      "2026-10-12",
-     0.969
+     0.967
     ]
    ],
    "NM-03": [
@@ -48274,7 +47318,7 @@
    "OH-15": [
     [
      "2026-10-12",
-     0.134
+     0.135
     ]
    ],
    "OK-01": [
@@ -48304,7 +47348,7 @@
    "PA-07": [
     [
      "2026-10-12",
-     0.763
+     0.761
     ]
    ],
    "PA-08": [
@@ -48346,7 +47390,7 @@
    "SC-01": [
     [
      "2026-10-12",
-     0.219
+     0.22
     ]
    ],
    "SC-02": [
@@ -48436,7 +47480,7 @@
    "TX-15": [
     [
      "2026-10-12",
-     0.495
+     0.497
     ]
    ],
    "TX-17": [
@@ -48460,7 +47504,7 @@
    "TX-23": [
     [
      "2026-10-12",
-     0.12
+     0.118
     ]
    ],
    "TX-24": [
@@ -48520,13 +47564,13 @@
    "VA-01": [
     [
      "2026-10-12",
-     0.485
+     0.486
     ]
    ],
    "VA-02": [
     [
      "2026-10-12",
-     0.76
+     0.761
     ]
    ],
    "VA-05": [
@@ -48574,7 +47618,7 @@
    "WI-01": [
     [
      "2026-10-12",
-     0.303
+     0.306
     ]
    ],
    "WI-03": [
