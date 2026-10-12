@@ -4107,7 +4107,8 @@
      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOLXdib2JJOFpROEVVb1FvWGREaENkY0dKc0JoQVdiVW1jTm5hNGlsYTBwaFM1cDVCYV9nWU5YdE03bTdUNGZ2WHYtckg1ekNOdVY0WGlrckI5WlgwcndOWmdoVldiUmdjaE8zQ2ptUDZxenQ4a1VaRzFYaGtaT3BtaEdvSEhMaWNDQjN0TA?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T06:00:00Z"
   },
   {
    "id": "AL-SEN",
@@ -4261,7 +4262,8 @@
      "rep": 52.5,
      "asof": "2026-10-02"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "AR-SEN",
@@ -4436,7 +4438,8 @@
      "rep": 47.5,
      "asof": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:30:00Z"
   },
   {
    "id": "CO-SEN",
@@ -4537,7 +4540,8 @@
     "Blake Huber (L)"
    ],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "DE-SEN",
@@ -4634,7 +4638,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "FL-SEN-SP",
@@ -4950,7 +4955,8 @@
      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOb1ljMnlQSENHYzU1MW54WTZ5VWRxbGdSREpwOGRvYnNYRlN2UWlpYjJWU2lOOE40WjdIbEt4NmxyeVZRczFNTzhqcDlJU1YtWFdaODNGMnpRMmtIVDJSTER2aGdSQmN2c3ZzNFYzUHlsbHBtWkNZYklOQjNOanpEWGpORERPcks0YmZj?oc=5",
      "date": "2026-10-10"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "GA-SEN",
@@ -5258,7 +5264,8 @@
      "rep": 42.7,
      "asof": "2026-10-04"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "IA-SEN",
@@ -5613,7 +5620,8 @@
      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPWW9ubmdlYnNwS0FmNEhuNF9rZ2t1bHlyOWJnMzExOUlpVDNORVAxaFFTT21uQUxfRndFcjJVVzMtblNWRnlWZFE0Ql9kVHZXQkV5Z2tXSWxsQk85U0JjV29IeURObk9WSXk2TXNpbmlZS1JSSWRtU0ZGNVJXRnlhQ214LVg4S05WbjBqcUx2ZVNNazJUYUVaNFRrOWpEYnJmUWJ6VlBqMHU3YUZZTmVTcHFILXlUcVQ1WGNFeHVvVHlFTllwU0JWVVYxRjRTUkoxTUNJaEJqOXdMVEkxM3VsdEwyZVFaUFJGLS1GLTg0RHJTY0QxeEpmZ0Q5cDZNanc?oc=5",
      "date": "2026-10-10"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "ID-SEN",
@@ -5802,7 +5810,8 @@
      "rep": 45.7,
      "asof": "2026-09-18"
     }
-   ]
+   ],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "IL-SEN",
@@ -5925,7 +5934,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "KS-SEN",
@@ -6254,7 +6264,8 @@
      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5GZEZDYTJUMjBMVmtmZVVMNVJ2a2NLZ3d1V3FUdVAwbWZxakJxT3l0YnBKLXVOYjBsaW91ZFZzU3N4eURqbmNNRE9KWXB1TFQwZ0p4V1cydzI2THBWZXQ1RHBmbjR4NXRxdFBtenFjMHpQcTFzSzBEb3QzX2NkQdIBfkFVX3lxTE1hNkY2NG01bnZDYm04TjJpSl8xeTFUYUdwQk5tNERnelFyUDNLV0xkakRxRjd5X3JTWFpMQU1XQzc5UU5tUUVkUndjNWlNQ0o3Ti1oZEZodFNGY0tPWU9aeWN1emdSTkRZcFk3VURpNDNVWXN2S202cENtc3hPQQ?oc=5",
      "date": "2026-10-11"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "KY-SEN",
@@ -6376,7 +6387,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "LA-SEN",
@@ -6510,7 +6522,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MA-SEN",
@@ -6712,7 +6725,8 @@
      "rep": 29.4,
      "asof": "2026-09-29"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "ME-SEN",
@@ -7062,7 +7076,8 @@
      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbVZRTVp6U0t2YTdkOTJCZ0hqeEdqZmRUdTZRX2N1S1pETjk5RkZIamwzRzhrYjVpeUNWVGVUOEZpYU82cURoVXVXRGxBMHkxUXlpRDhfQnhYQ2drdFF0LTVtb3J4VFpyUnpJVHBNNDJPMU9MWEx0ZG5uaTJPVXMyQkJYOXpZOGJoc2MzSw?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-SEN",
@@ -7387,7 +7402,8 @@
      "rep": 44.9,
      "asof": "2026-10-07"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MN-SEN",
@@ -7704,7 +7720,8 @@
      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUGJDdmtmT2J6aHZzTHRqamttd0FnRlpWVUQyckZxS0o5SlZ0OHk1Z2haNGYwVFJWVFNOUXZjRTAyRDlhSTJfMHRxWE9DY3ZmQzR1TGFmR2NTWlFRZnV5VURid29IeFZtTDR5clBsSFpiVlo2LVVSQ1NSNW5TdFBJeVZR?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MS-SEN",
@@ -7827,7 +7844,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MT-SEN",
@@ -8118,7 +8136,8 @@
      "rep": 42.6,
      "asof": "2026-09-18"
     }
-   ]
+   ],
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "NC-SEN",
@@ -8442,7 +8461,8 @@
      "rep": 41.5,
      "asof": "2026-10-08"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NE-SEN",
@@ -8683,7 +8703,8 @@
      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeXN4V0ZWNWNDZWhGemluU0lrZlcwY2htal8walAzV29LM3VuZW91dm95Q2I4bzQtX3N3Zk5aaHZzSnBKRGQyYm91QTNMMDdiMHNhbUF4UlVZUmJVZjYzYzZPUXBvSVpnV3J2Z2pLc3dkekZsRkJ6NkRLaW5DUVY1aE54RFZ1LS1mZnlEYTQ4Vmdka3p2dGc4YQ?oc=5",
      "date": "2026-10-08"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NH-SEN",
@@ -8975,7 +8996,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-SEN",
@@ -9075,7 +9097,8 @@
     "Joanne Kuniansky (SOCIALIST WO)"
    ],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NM-SEN",
@@ -9209,7 +9232,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "OH-SEN-SP",
@@ -9533,7 +9557,8 @@
      "rep": 44.1,
      "asof": "2026-10-08"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OK-SEN",
@@ -9658,7 +9683,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "OR-SEN",
@@ -9758,7 +9784,8 @@
     "Chris Henry (PROGRESSIVE)"
    ],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "RI-SEN",
@@ -9907,7 +9934,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "SC-SEN",
@@ -10179,7 +10207,8 @@
      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeU40bmdNMGxXMExZcnlZaEo1cENrakQ5YjJPNWZPODE4Z2R1NjlMeW5WbVYyRmthRnhmUE5uMUFEem5FcVk5UlRqNkJzR1lWUkFSNkRuTzhnSGpyc3UyY0xENkxVVW52ZlN5THBQYUgxemdBWmFpc0xHTmZkdHM5blVJT0RqNjBiR01QWVVfWDE4cUdYc2E2T3RIeUpYNjNhZ2xNcGRjaVhrNWs?oc=5",
      "date": "2026-10-12"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "SD-SEN",
@@ -10391,7 +10420,8 @@
      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNmJBeURnNDg4RXNrSFFfNFFIOWc5VFZLMklpaGJzWVVpdHBndWZ1Z3V2R0JlQXNibDFLWWp5ZF93b2NGUXZJNk1ydlJjOHFxRW9qT19MbkwxSzdJV3ZtMzNCcHBibGxMSGd6WGJEQ0NwbzJQZk9jcFZpUWcxX1NRZlJJbElycnVZaDI0bE05SGhOYUdWWkNuNnlRakc1SEV3bWcwekg3UC1Md9IBqgFBVV95cUxQNmJBeURnNDg4RXNrSFFfNFFIOWc5VFZLMklpaGJzWVVpdHBndWZ1Z3V2R0JlQXNibDFLWWp5ZF93b2NGUXZJNk1ydlJjOHFxRW9qT19MbkwxSzdJV3ZtMzNCcHBibGxMSGd6WGJEQ0NwbzJQZk9jcFZpUWcxX1NRZlJJbElycnVZaDI0bE05SGhOYUdWWkNuNnlRakc1SEV3bWcwekg3UC1Mdw?oc=5",
      "date": "2026-10-10"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "TN-SEN",
@@ -10529,7 +10559,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-SEN",
@@ -10858,7 +10889,8 @@
      "rep": 45.5,
      "asof": "2026-10-08"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "VA-SEN",
@@ -10979,7 +11011,8 @@
      "url": "https://tpsiofficial.substack.com/p/tpsi-new-tpsi-senate-poll-confirms"
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "WV-SEN",
@@ -11078,7 +11111,8 @@
     "S. Marshall Wilson (CONSTITUTION)"
    ],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "WY-SEN",
@@ -11175,7 +11209,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "AK-GOV",
@@ -11386,7 +11421,8 @@
      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNkJKaWpZaGFTc2pQS3Z4TFdRQjRHOFNZMmg5ckhBUVk5dWgtajhLZ1ktQkdIRjgxLVRrcVZqMF9adTZhV2NGaGEwUy10ZlRFMmNoM0VtSkMwVlNZWU81T3Rsamh2b05qY191QzZVZDA1RWozck53TC1hTUJCQ3R6cG1xR0g5WGhoRk9nTTRvUkJtakpISmxheXZLcGh3bWlDaTRzU2lKZXZ1SEQzUVdUNVI2bjI2MUxveVI0N1lDYUIyQkpEMENmMGZpU2tNcGs?oc=5",
      "date": "2026-10-08"
     }
-   ]
+   ],
+   "close": "2026-11-04T06:00:00Z"
   },
   {
    "id": "AL-GOV",
@@ -11524,7 +11560,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "AR-GOV",
@@ -11637,7 +11674,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:30:00Z"
   },
   {
    "id": "AZ-GOV",
@@ -11984,7 +12022,8 @@
      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTXMtWjFlT1F0bWxBaFlvLXVGX1dlM2czUlYyczlXbC03WExnazE4VXdmUFhHMTk5UTlsOHY0QkZJSGxwU0FTMk5YOVhYeS1NeHFoS0twOWUzazVHM0VGTzJRTUZyYUU5NDdCbDlFMXB0eXpBa0NSeVhERHVEV25fcWw5U3phRldTcGhmZGxNNWpRdUh4VUxyZ2NlWVpONDZiZGxoeFpPLWxKc2Z5UTdweWRBRlZtcjlvZ0NOS19SSk5UdmlXZW9IN0prNWh0TzFSdXc?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "CA-GOV",
@@ -12198,7 +12237,8 @@
      "rep": 35.9,
      "asof": "2026-10-11"
     }
-   ]
+   ],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CO-GOV",
@@ -12290,7 +12330,8 @@
     "Eric Mulder (L)"
    ],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "CT-GOV",
@@ -12525,7 +12566,8 @@
      "rep": 38.7,
      "asof": "2026-09-24"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "FL-GOV",
@@ -12776,7 +12818,8 @@
      "rep": 47.5,
      "asof": "2026-10-11"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "GA-GOV",
@@ -13075,7 +13118,8 @@
      "rep": 47.8,
      "asof": "2026-10-04"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "HI-GOV",
@@ -13162,7 +13206,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T05:00:00Z"
   },
   {
    "id": "IA-GOV",
@@ -13508,7 +13553,8 @@
      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE83dldONndYc2JlM2tHbk5Ka1JTMGRYekpYbHZ6OThGb0wxaDlGanlzTHJsek4xQWk0S2x3ZDV3a3drYVJqcnFaY1N6NzNGYTBqVUQtUzZCYWdaaDRNNUxSNTZfQ1dIdjVKRi05R2hYMVR1WTFHSzNEQXlR?oc=5",
      "date": "2026-10-10"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "ID-GOV",
@@ -13668,7 +13714,8 @@
      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaXA4bXh4aFFBV01Jc2JZdGR1aXQ5bmM5VHhSeVpWRUd4M21mbkpwZWxXNXN0Y3V0V1NuY1V4RGhhX2xEVDdOano3VVdyMUoxQkctRHl1dUw2TXVGUms2dDRUQmk5RXFhd1ZNSUdSWk5ycjMzVkJkaXZUbkFzakVqaFVxZWk1Qlp3M2ZleXZrX2dxdEYtVkdXbQ?oc=5",
      "date": "2026-10-07"
     }
-   ]
+   ],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "IL-GOV",
@@ -13781,7 +13828,8 @@
      "url": "https://www.cnwmedia.com/article/cnw-poll-pritzker-leads-bailey-by-20-points-democrats-ahead-in-four-other-statewide-races"
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "KS-GOV",
@@ -13989,7 +14037,8 @@
      "rep": 49.1,
      "asof": "2026-10-06"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MA-GOV",
@@ -14187,7 +14236,8 @@
      "rep": 34.0,
      "asof": "2026-09-29"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MD-GOV",
@@ -14328,7 +14378,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "ME-GOV",
@@ -14641,7 +14692,8 @@
      "rep": 38.9,
      "asof": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-GOV",
@@ -15001,7 +15053,8 @@
      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQLTFQTFJBWjVTVjFZeWgzVU1xTUtNaXdNVXhteFNnYXJWb0RXeGx2aVRmdkMxVWJWcDFoRTJOQXpDd2FlZThtU1dJTmVDaXZ0RzNmdzkwb2s4d1pQeGg5dDhmNFdPYWRuOE5ORGlsM2dremJnZHQyZ3BxZXFFcC1TUFliRmZwVHVjVi1YWDRfUDlHeG8?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MN-GOV",
@@ -15180,7 +15233,8 @@
      "rep": 40.5,
      "asof": "2026-10-11"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NE-GOV",
@@ -15373,7 +15427,8 @@
      "rep": 43.5,
      "asof": "2026-10-11"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NH-GOV",
@@ -15646,7 +15701,8 @@
      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOU5OTkJVaWpSVWpJN2MxMHlReXRUaHRZbzZiYnN0czNiTlFFam5ERVFNYVV2OHd5MkhfTjF5Y3VaZmdUNGJ0NVJvVUtpNmdKNzBCS0RkOTlGeEg4YXdwajBtRm1ld0x5WnhuM0hUcmxCTDFBc3JSdUFJTDI4eEZkTVhvT0dWbl8yUnEtQmt2eVFhZjVCZHNuWU9zWVEzZHh4SmhESnpxemhWTUk?oc=5",
      "date": "2026-10-07"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NM-GOV",
@@ -15862,7 +15918,8 @@
      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOR3Rad25wcndFemdVZUVEWExkbGhvR2pSbHVMa3YtcXd4b2RkaklSczVCM2R2Z1Byam43WVV2UTM5WnJXamNqcVVwdmd5RlJqZEFNWkpwQzR4NlpLaEJ2alg0SzEwSTZVQTJSOE41SC1YZG9BalBJdVlnSG5QcWRMRGY0dnVUUjlWWjJ2cGZXMGlKcEgtTVNNeHZzcGRtSjJadEZ0SDA1ckNob2lPakljM2s5QmNpNHBlbVFnejZvbkE2UHRaNEpvUA?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NV-GOV",
@@ -16111,7 +16168,8 @@
      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQQ3BnOFE2SUl6S3lFU0FSQVU2aGFxZmJfR1Y2MHgxXzkxRzhYS0t3ZFlSeEQwaV9iVUd4a3N6ZjU5bmV1RWtpZ0NlTXRwMlFmdzF4ZFJPYXJsUTQxUW5zcVNVdWdUZnI0emY2X0tWSVpQT3hQcllJRFlURmhtQ2E3OEhBRHVoYlN1bkFqQlNFRktLWW5rbGJlNWwtLVBzNWl4ZUlIazdJVEtya0o1SnlwRFo4TnlPYkFlVC03dm53?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "NY-GOV",
@@ -16392,7 +16450,8 @@
      "url": "https://pollfinity.com/polls/ny-governor-2026"
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "OH-GOV",
@@ -16738,7 +16797,8 @@
      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVmlqbldyOGFZakVaQmpKQW9tZDNEY05uOHJUSHlFRnVaR05IRGtnQnQtODRjMWlkUlQxeUt6d1E3aGlLNm1qRy1NejVVc0U3cVI1NFZvVnkyQWVYazNxd05nZTR3LVV0VmNEbkYtTFdjM2JlWHQ4VTdSYWhIQ0pGVzZkRDJUeVYxS2FZRg?oc=5",
      "date": "2026-10-10"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OK-GOV",
@@ -16861,7 +16921,8 @@
      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMTZYVFRGY3FWRUVGS25pVEVBRUYwQWFxLWsyZmtCTDYwa2lwX0kyQUh2elhsMnhFU3g1RnQ4NzhVQVI5MnN3ZW9vdzZOYlNCZHpaa0tucFItMURzZ2ZwLWlzbm5lRG5TUXNKaWtmU2loUTlkaEdKODJvbzVzYm5LOXhMRE9tRnVKQlpzVXdINVBndkxLZ25UaUs0V0xJR0pJMkt6U3lYYXNtcThsQjhwSVZqRnFjeWJsX0dOZWN1TQ?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "OR-GOV",
@@ -17065,7 +17126,8 @@
      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1TlRxZmtoUWhfdl9ObW9Ua0FXOFdjODhiOVhMZDhYMUhfdEMzWVlaZXh2NGpPNkNpWm9Fc3NBeWRfSno2S0dUZHNpS2JWZkV2VzdoYWlEX19yVXhkbWpRNm9GeDRFaXNKYkRj?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "PA-GOV",
@@ -17379,7 +17441,8 @@
      "rep": 32.8,
      "asof": "2026-10-07"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "RI-GOV",
@@ -17547,7 +17610,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "SC-GOV",
@@ -17687,7 +17751,8 @@
      "url": "https://data.ddhq.io/polls/2026/07/30/Public-Policy-Polling/Annie-Andrews-South-Carolina-2026-07-16-2026-07-17"
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "SD-GOV",
@@ -17806,7 +17871,8 @@
      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0zNDloUzI0NDhDUF9KMHFaZDNtWFZMeDJyeXhsOTVybFpuMlNoQlpqSkxUcEQ1WFV4WFZCaFJqSUhBVzA3NmpKT1NCQnRTYjMySTRzcEJTVmJ6QWdNanNXQ0Zza1h6Q0tHN3hDZFVaVjZqOFJDdTlv?oc=5",
      "date": "2026-10-06"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "TN-GOV",
@@ -17947,7 +18013,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-GOV",
@@ -18293,7 +18360,8 @@
      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAxQ1V3Wmo0azVsV1dIb0Y3Qjd2ZGptMDZEVF9MeU43MXFpY0k0U2NLejlfeXBqS0lUSlpwWGhuY2ZpM0RJNmxRNzZnVUV3TDRXSjNVMUROX3JwZ3M2dGdmcXM2X2lwTU1mZ1BzeHpTNUlWTGkt?oc=5",
      "date": "2026-10-11"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "VT-GOV",
@@ -18461,7 +18529,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "WI-GOV",
@@ -18709,7 +18778,8 @@
      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPM0dfZjN3SlFxYXoxTVBXQ2pXQzNUWU41TDl3eUtielNaa2xFWURabE1KSFdzb3ZHZU9vNDl2U1c0TGVjdG95QXliaDFoazQtR1kwdmFvZnpoTXhuSHNkQXMzdWFJQzJsRUE0Y0p0clRCeFpmb3dfT3JNa3hlZnBzWmNWTjBISGlCLTVhRUJTbGxTMWhQVVUtZ0JR?oc=5",
      "date": "2026-10-10"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "WY-GOV",
@@ -18798,7 +18868,8 @@
     "Joseph Kibler (CONSTITUTION)"
    ],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "AL-01",
@@ -18833,7 +18904,8 @@
    "incp": null,
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "AL-02",
@@ -18999,7 +19071,8 @@
      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPWlhUOEx6M2RhaDc1aVZPSGs1Qk1sX3ByeF94cGtZSTVXZ0p1dTNFYUlkOGFjOG5LSlFBaHF1MllZX29SZktBdTdjUkhoTWVreW53NEhid0dRdGMzMVM4akZHS3RhQ1pRVWltSkEwSHFUbHlnRlBHOWl1QTA2aGVuMGV2QUlmMWZMYkxWWmFlY3d5T2VoOWpFa3hFUWZKSFJtZXR5cXp0RDdtbjZRcXB0MmpvZVR0cHhqbE5ZdE5VNDdYMExNWE56S0IwVzFadHFfWkFRNkJUbXpuVm5YZkdCcGVkWQ?oc=5",
      "date": "2026-10-07"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "AL-03",
@@ -19035,7 +19108,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "AL-04",
@@ -19071,7 +19145,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "AL-05",
@@ -19107,7 +19182,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "AL-06",
@@ -19143,7 +19219,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "AL-07",
@@ -19179,7 +19256,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "AK-AL",
@@ -19270,7 +19348,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T06:00:00Z"
   },
   {
    "id": "AZ-01",
@@ -19420,7 +19499,8 @@
      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBPNEFNWVdVLW9YalB1bDhRYXVvVFhxSTlnQjdXdFBpWTkxRWc3aHdndTBGUkN6dnhSRWFOOW5fS1d0aF9IYV82NjhHVnZNNTA2Z3NPMVJoeW5aWTlzUlF1RkFzQUY3MTVfUGFMb2NmZWtPSFYwemxPc2xkYUU?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "AZ-02",
@@ -19564,7 +19644,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "AZ-03",
@@ -19593,7 +19674,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "AZ-04",
@@ -19629,7 +19711,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "AZ-05",
@@ -19722,7 +19805,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "AZ-06",
@@ -19849,7 +19933,8 @@
      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQckRjb25RZDZQYmpyeHdKU3NtUmlZeDZUd3dyTEdTUG82ODJBWDhVOHd5aHhiTkZKSXdadWhMZWd1YlFvTkpGQnBZb2RueS1ZSnVjS1JBajliQldmTm5CNndxMy1lMHFWMFFWb3JudF9PdTFnclhycElmY0I3aUwwbVJzc0p5dTd4M0hGWVl3?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "AZ-07",
@@ -19885,7 +19970,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "AZ-08",
@@ -19978,7 +20064,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "AZ-09",
@@ -20014,7 +20101,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "AR-01",
@@ -20050,7 +20138,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:30:00Z"
   },
   {
    "id": "AR-02",
@@ -20167,7 +20256,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:30:00Z"
   },
   {
    "id": "AR-03",
@@ -20203,7 +20293,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:30:00Z"
   },
   {
    "id": "AR-04",
@@ -20239,7 +20330,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:30:00Z"
   },
   {
    "id": "CA-01",
@@ -20275,7 +20367,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-02",
@@ -20308,7 +20401,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-03",
@@ -20343,7 +20437,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-04",
@@ -20372,7 +20467,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-05",
@@ -20456,7 +20552,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-06",
@@ -20577,7 +20674,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-07",
@@ -20606,7 +20704,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-08",
@@ -20642,7 +20741,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-09",
@@ -20678,7 +20778,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-10",
@@ -20711,7 +20812,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-11",
@@ -20739,7 +20841,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-12",
@@ -20768,7 +20871,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-13",
@@ -20862,7 +20966,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-14",
@@ -20891,7 +20996,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-15",
@@ -20924,7 +21030,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-16",
@@ -20960,7 +21067,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-17",
@@ -20996,7 +21104,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-18",
@@ -21032,7 +21141,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-19",
@@ -21068,7 +21178,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-20",
@@ -21104,7 +21215,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-21",
@@ -21197,7 +21309,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-22",
@@ -21315,7 +21428,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-23",
@@ -21351,7 +21465,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-24",
@@ -21387,7 +21502,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-25",
@@ -21423,7 +21539,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-26",
@@ -21458,7 +21575,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-27",
@@ -21494,7 +21612,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-28",
@@ -21530,7 +21649,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-29",
@@ -21559,7 +21679,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-30",
@@ -21595,7 +21716,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-31",
@@ -21631,7 +21753,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-32",
@@ -21667,7 +21790,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-33",
@@ -21700,7 +21824,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-34",
@@ -21729,7 +21854,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-35",
@@ -21765,7 +21891,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-36",
@@ -21801,7 +21928,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-37",
@@ -21830,7 +21958,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-38",
@@ -21862,7 +21991,8 @@
    "incp": null,
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-39",
@@ -21895,7 +22025,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-40",
@@ -21924,7 +22055,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": "R",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-41",
@@ -21959,7 +22091,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-42",
@@ -21995,7 +22128,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-43",
@@ -22028,7 +22162,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-44",
@@ -22064,7 +22199,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-45",
@@ -22157,7 +22293,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-46",
@@ -22193,7 +22330,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-47",
@@ -22229,7 +22367,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-48",
@@ -22372,7 +22511,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-49",
@@ -22408,7 +22548,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-50",
@@ -22441,7 +22582,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-51",
@@ -22474,7 +22616,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CA-52",
@@ -22510,7 +22653,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "CO-01",
@@ -22545,7 +22689,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "CO-02",
@@ -22578,7 +22723,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "CO-03",
@@ -22695,7 +22841,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "CO-04",
@@ -22812,7 +22959,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "CO-05",
@@ -22961,7 +23109,8 @@
      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcmlvOXBSdXpGTnhvaWUxZ0sxamlUWGlyZmV0eG1VRl82YnE2ZEgtZlJha3pzODRLRXlPY2NjdGY3cU5QdXJ6WXl6SmJFSzlua21PVTc0WDNSNXR4cEhyRld0T2Rub0g4UmdXUXNvdDA5bHpibGN4SVJRczRFMVY2OGZ1X3NJSVNkMGs1dlVnZHhmRGNqTFJiZGw3U0RCZnA3ZkdIckFvaUZDNU40YjVuTHVNWlBEQQ?oc=5",
      "date": "2026-10-06"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "CO-06",
@@ -22994,7 +23143,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "CO-07",
@@ -23030,7 +23180,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "CO-08",
@@ -23181,7 +23332,8 @@
      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzMTl4MFdmWmhmbGppRDlDWTJTalc3ZWREQlllVzdsam84VXF0OEFMUTRTLUVJVTRYZElFeExrWm1rc0pFU3lmVEs0ellmMzJGX3M1SUhHQmlZNFdBWG1DQzRreUVTVk8tal9yYm14bV80WmVTTlg3Y2EwUmxSWFE?oc=5",
      "date": "2026-10-10"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "CT-01",
@@ -23216,7 +23368,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "CT-02",
@@ -23252,7 +23405,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "CT-03",
@@ -23288,7 +23442,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "CT-04",
@@ -23324,7 +23479,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "CT-05",
@@ -23360,7 +23516,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "DE-AL",
@@ -23396,7 +23553,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "FL-01",
@@ -23432,7 +23590,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "FL-02",
@@ -23525,7 +23684,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "FL-03",
@@ -23618,7 +23778,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-04",
@@ -23711,7 +23872,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-05",
@@ -23795,7 +23957,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-06",
@@ -23831,7 +23994,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-07",
@@ -23947,7 +24111,8 @@
      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOOE5ZSkFONlJReGpxeHJhVWY2ckdKUE1FTmxoS3lldUJaalFHT1FyZTI1bENpVVBfdW8yXzZHbXpKa0ZEd0NHeFdEOXpORVNQeTExcFhXaFZoTmU4RmF4UDJRQkp1UTYtb3lQYTFEOXR6ZVo0cVBMaEtBcEhzM0VTelRFNDNOTjFEWmhKa3IyaXFxRkRDbDd6cDBRMU80RlYzcWc?oc=5",
      "date": "2026-10-04"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-08",
@@ -24068,7 +24233,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-09",
@@ -24202,7 +24368,8 @@
      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMHpWMXV3bDdRX2Y2TnZ2WHNQUk5qUktiM2p2QTg4eUF5bHJNdHlybHd3eHFHd3lVTTlDdDh5Y3BfWDlDcXhaOEtvOENIM3FZODFJTWlEMVd3VnIycUFCZjZ5Y2V2WmkxLUxhRXNWcFQtd0wtT3pvYUl1bHh4ZTRXcEg3blFUUTQzLVh3eUoweU1LNTEyeWI5b3VZQ1AxeUQ0RDlobThZaGFJUVN5bFNPemJpTEdJWEJlOFJDaWFBZG41bE1iVXBtUXJfaDVzeWZXaFVZ?oc=5",
      "date": "2026-10-05"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-10",
@@ -24231,7 +24398,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-11",
@@ -24348,7 +24516,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-12",
@@ -24432,7 +24601,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-13",
@@ -24621,7 +24791,8 @@
      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSWsxUnJpQWFYX0MyVXdGM2R3QUc3MW1OcUhmUmM0RUE5Z0JxcWZSYXRwdlBuQm9zUmEtRW15d0ZLQ1pYZDB1SkJKclA5ekRXZm9IVHM2cHc3ekg5WEI5Q281UHRXbDdkV0RNVWVhcTVUYmF2OHVVcGxXOU9DQ09TNw?oc=5",
      "date": "2026-10-06"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-14",
@@ -24770,7 +24941,8 @@
      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZGpmcHd1ckxFbmFzLWtYWHlNUWwyYmVCaUlkdG1abW5sc0sydUo5c3J6OGU4YlQ1cm9vem1LeFhwTXFXaWJla0d3SnBNMTFJNnR0b0tDc1c4T0d2LXVKYmpPSGZ5Q09BeF9DOTlfSmZUNGNDZVIteGFQTzNyZm9iMC1ZOU9QUHZ4YUhvN25rUDUxOGp2N0pGZTE0aEdsX1pybFlSa0w4Y0txRTJZRm1BRWhZa25qcGZaWGRFbEhrQ09reG1vcmF0VlkwMkpaU05NdENj?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-15",
@@ -24863,7 +25035,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-16",
@@ -24993,7 +25166,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-17",
@@ -25029,7 +25203,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-18",
@@ -25122,7 +25297,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-19",
@@ -25157,7 +25333,8 @@
    "incp": "R",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-20",
@@ -25192,7 +25369,8 @@
    "incp": null,
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-21",
@@ -25285,7 +25463,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-22",
@@ -25438,7 +25617,8 @@
      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYzFEMkxRaFEyLU45blR0a3BqRUJCQlkxZkx2QUlEWmRTOExzX1NNSDRVdENmdjNhV1kyX09OcF83VHFkdHh2ekpDdjVLTFRSX0g5NlZTWUFtbERzbFo1aXVrVUcxQ0dGc1htSUU4YWJEdVhRRUpwNGpmZEZfb0dHMTRWQTd5WnJaYWxRbGQ5VWF0UHllVlBaQXRZUGZ1VEVzUG5uTDJYYzc5di1DOHVmVW92aG0wblFE?oc=5",
      "date": "2026-10-08"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-23",
@@ -25473,7 +25653,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-24",
@@ -25508,7 +25689,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-25",
@@ -25601,7 +25783,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-26",
@@ -25685,7 +25868,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-27",
@@ -25815,7 +25999,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "FL-28",
@@ -25851,7 +26036,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-01",
@@ -25944,7 +26130,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-02",
@@ -25980,7 +26167,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-03",
@@ -26016,7 +26204,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-04",
@@ -26049,7 +26238,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-05",
@@ -26082,7 +26272,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-06",
@@ -26118,7 +26309,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-07",
@@ -26235,7 +26427,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-08",
@@ -26271,7 +26464,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-09",
@@ -26307,7 +26501,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-10",
@@ -26391,7 +26586,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-11",
@@ -26499,7 +26695,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-12",
@@ -26592,7 +26789,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-13",
@@ -26624,7 +26822,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "GA-14",
@@ -26660,7 +26859,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "HI-01",
@@ -26693,7 +26893,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T05:00:00Z"
   },
   {
    "id": "HI-02",
@@ -26729,7 +26930,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T05:00:00Z"
   },
   {
    "id": "ID-01",
@@ -26765,7 +26967,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "ID-02",
@@ -26801,7 +27004,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "IL-01",
@@ -26837,7 +27041,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-02",
@@ -26869,7 +27074,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-03",
@@ -26905,7 +27111,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-04",
@@ -26937,7 +27144,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-05",
@@ -26970,7 +27178,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-06",
@@ -27006,7 +27215,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-07",
@@ -27041,7 +27251,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-08",
@@ -27076,7 +27287,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-09",
@@ -27108,7 +27320,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-10",
@@ -27141,7 +27354,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-11",
@@ -27177,7 +27391,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-12",
@@ -27213,7 +27428,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-13",
@@ -27249,7 +27465,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-14",
@@ -27285,7 +27502,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-15",
@@ -27321,7 +27539,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-16",
@@ -27357,7 +27576,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IL-17",
@@ -27450,7 +27670,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "IN-01",
@@ -27544,7 +27765,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "IN-02",
@@ -27580,7 +27802,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "IN-03",
@@ -27616,7 +27839,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-03T23:00:00Z"
   },
   {
    "id": "IN-04",
@@ -27652,7 +27876,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "IN-05",
@@ -27769,7 +27994,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-03T23:00:00Z"
   },
   {
    "id": "IN-06",
@@ -27805,7 +28031,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-03T23:00:00Z"
   },
   {
    "id": "IN-07",
@@ -27838,7 +28065,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-03T23:00:00Z"
   },
   {
    "id": "IN-08",
@@ -27874,7 +28102,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "IN-09",
@@ -27910,7 +28139,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "IA-01",
@@ -28029,7 +28259,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "IA-02",
@@ -28179,7 +28410,8 @@
      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQWTBxUHJrVXZVSGZBQ3g0QUI1T1ZESkg4c2hLLUl3bF9lWUJMQ1J2a2RvM3gzRzd4UUpnNnlXWmdvbkFnc05CRjd2S2RJRkxyWmdNMUc2dVdGMVFsODJkcGlZNmozMHNKbHIwU1VDV0JwbWFtNWhjdlhCZ0JaT000ZG5JVW9FckJrNE1FeWRXd0hqSHNhTnhsQ3Bhd3JWOTZaNmcxb2hDMXpBUWNlY2dOeEdFRlAzYVZteXlqX2ZzTDhrak5GTkpFakV2bTdvRmZZU0FiMEVzRF9iQThtdVpCay1iS1JYaFdNQXJHbg?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "IA-03",
@@ -28306,7 +28538,8 @@
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOY2pUMkNlSDhsbUdFdzlJZUcyVUZEYmRKdmtHR0RhdldKaDNvanpENGp0V3JhbWkzN0NScS1OMlVWZE5lM2FGcnlEZ3Fxdm9LQzJ3T0Y4NHJTVmFjWkdyN3RLLURyZlBFREp4aW5rd2pyRzNOR0RVSXhHNnFZVXBSWkFFWWozbVdxamNvUENGWmxjVVFEVlJodkNuSkt5RkJpSjRzX1Jzajg0ckU4?oc=5",
      "date": "2026-10-07"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "IA-04",
@@ -28341,7 +28574,8 @@
    "incp": "R",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "KS-01",
@@ -28377,7 +28611,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "KS-02",
@@ -28470,7 +28705,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "KS-03",
@@ -28554,7 +28790,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "KS-04",
@@ -28590,7 +28827,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "KY-01",
@@ -28626,7 +28864,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "KY-02",
@@ -28662,7 +28901,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "KY-03",
@@ -28695,7 +28935,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-03T23:00:00Z"
   },
   {
    "id": "KY-04",
@@ -28730,7 +28971,8 @@
    "incp": "R",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-03T23:00:00Z"
   },
   {
    "id": "KY-05",
@@ -28766,7 +29008,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "KY-06",
@@ -28980,7 +29223,8 @@
      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOSS1RSi1QOVVHXzRRSjNHZS1WaWlTMUFnY3hWc2hfQ2M4ZGl3eXVnMkI2dFpweTNWN1JpVkxrR0lpOEhpQ2hlMmU4RXBHRy12WEVpX050dkxUY0g3RVpkNTNzbXRocnc4a0VRaVZhWXhjSjA2NG8zTjdvWDlXN0h0dWhLbUstUWRBbS1FbWJBMmg4ak1vdXN4UnlycXdDcVo2UjVFeDlSR3pjaVVJUTBKNXJSeklueXNRTGVRQ0dOdFRwaGJFT0VvaVVUSmU1dWNTUDlXOTI2YWMxZFZQZVIyclBSVC1VREtlT1ZYMWkwRVl1UWZOQWZ2VnI4THZiNjlW?oc=5",
      "date": "2026-10-08"
     }
-   ]
+   ],
+   "close": "2026-11-03T23:00:00Z"
   },
   {
    "id": "LA-01",
@@ -29016,7 +29260,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "LA-02",
@@ -29049,7 +29294,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "LA-03",
@@ -29085,7 +29331,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "LA-04",
@@ -29121,7 +29368,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "LA-05",
@@ -29156,7 +29404,8 @@
    "incp": "R",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "LA-06",
@@ -29188,7 +29437,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "ME-01",
@@ -29224,7 +29474,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "ME-02",
@@ -29421,7 +29672,8 @@
      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTGdBSWo4blJtSzBqdXBwbG5qaGZEWDZKSDJmOURGMnJsMDgyQnpHaDFxWDBrWEpRU3oxZXhyVGlfaHRtNG1QSWR1bjUzWmpkQjlsSjNsa3ZBeDgzN0E0TUNDOHNfYjNRQUxYN0ZCY3djbnRlZktGN1BFMEJVU3VHaERsWExHcmlkcWtyb2F2VFMwdFVwaWJGV2lrdw?oc=5",
      "date": "2026-10-04"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MD-01",
@@ -29538,7 +29790,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MD-02",
@@ -29574,7 +29827,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MD-03",
@@ -29610,7 +29864,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MD-04",
@@ -29643,7 +29898,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MD-05",
@@ -29675,7 +29931,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MD-06",
@@ -29711,7 +29968,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MD-07",
@@ -29744,7 +30002,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MD-08",
@@ -29780,7 +30039,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MA-01",
@@ -29809,7 +30069,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MA-02",
@@ -29838,7 +30099,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MA-03",
@@ -29874,7 +30136,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MA-04",
@@ -29910,7 +30173,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MA-05",
@@ -29939,7 +30203,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MA-06",
@@ -29974,7 +30239,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MA-07",
@@ -30003,7 +30269,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MA-08",
@@ -30039,7 +30306,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MA-09",
@@ -30075,7 +30343,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-01",
@@ -30168,7 +30437,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MI-02",
@@ -30204,7 +30474,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-03",
@@ -30298,7 +30569,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-04",
@@ -30417,7 +30689,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-05",
@@ -30453,7 +30726,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-06",
@@ -30486,7 +30760,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-07",
@@ -30650,7 +30925,8 @@
      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUi1JeGRzMzQybjdiSkRFWl9pc3pxb2dyLS16Y3hZNFZtZFA1aWdiVWtXUXo0SVlBb3BLQkEwMlA4TEdKdTFvREFpZm5adF9McVJHRjdwVGJ5b25HQTV4MWxselhkeFZZMnRWcnhRTnM3SG5JMHpVNEQtSU9meUk3czhVS1Ata01yeE9nRnBvYzhiOXZLQlZaMmE4UHk1UkNPMjhmblZUbnZkNG5ZbXpEZ01sSzZxeHp3Zk1YTFNZV052WlpFNFMtc2VwUVQ1Nkk?oc=5",
      "date": "2026-10-07"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-08",
@@ -30744,7 +31020,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-09",
@@ -30780,7 +31057,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-10",
@@ -30899,7 +31177,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-11",
@@ -30934,7 +31213,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-12",
@@ -30970,7 +31250,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MI-13",
@@ -31002,7 +31283,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MN-01",
@@ -31119,7 +31401,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MN-02",
@@ -31249,7 +31532,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MN-03",
@@ -31282,7 +31566,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MN-04",
@@ -31318,7 +31603,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MN-05",
@@ -31354,7 +31640,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MN-06",
@@ -31390,7 +31677,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MN-07",
@@ -31426,7 +31714,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MN-08",
@@ -31519,7 +31808,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "MS-01",
@@ -31555,7 +31845,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MS-02",
@@ -31591,7 +31882,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MS-03",
@@ -31627,7 +31919,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MS-04",
@@ -31663,7 +31956,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MO-01",
@@ -31696,7 +31990,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MO-02",
@@ -31845,7 +32140,8 @@
      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1XeUxxaTF2QlJFazJTV3gwRF9LUTVOVkJLTEwzNVBmYXJMQnVheUltbzBGc1pEdnc4a0JkUG5BUXVwU0piRFhNUGY2NzBobjAtR19aNWtIMA?oc=5",
      "date": "2026-10-08"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MO-03",
@@ -31881,7 +32177,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MO-04",
@@ -31917,7 +32214,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MO-05",
@@ -31953,7 +32251,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MO-06",
@@ -31988,7 +32287,8 @@
    "incp": "R",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MO-07",
@@ -32024,7 +32324,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MO-08",
@@ -32060,7 +32361,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "MT-01",
@@ -32262,7 +32564,8 @@
      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMlQ2azFYUmtlMkpXTjJzLTRqdFBHcFJZc2RvRmRwX0s1S3djNWhnQ1BjVVNZTm9JRUI1bGJSbGhjZmFhR3F5cmdWREFENUtiOUR2Q00wSGdOUEhDMnVqU0VTZUZtU1RTSHMtam9hLTRLeW5halM3emZRb1UxRV83eC1aYUVhNjloWm5HMg?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "MT-02",
@@ -32298,7 +32601,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "NE-01",
@@ -32415,7 +32719,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NE-02",
@@ -32534,7 +32839,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NE-03",
@@ -32570,7 +32876,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NV-01",
@@ -32664,7 +32971,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "NV-02",
@@ -32839,7 +33147,8 @@
      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOU3NWdmRCd0YtUG5OTmtCdXg3cTdfWjdhRXN0Sl9kVlJZV0s5Yk45OFVhYnlURUJkMWZZb3ZSQXBMUEppMGRTbkdzc1JVR3A0cE9ZWjEwOFYwS0xuenpSQTJ4SEp5NDkzeFZjWUNDWVEzUGF2QmpybElZaDBDWUpuMUw5b21ZQzJoYnhUNDJWbFNlWmk2enJv?oc=5",
      "date": "2026-10-06"
     }
-   ]
+   ],
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "NV-03",
@@ -32933,7 +33242,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "NV-04",
@@ -33027,7 +33337,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "NH-01",
@@ -33145,7 +33456,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NH-02",
@@ -33288,7 +33600,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-01",
@@ -33324,7 +33637,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-02",
@@ -33408,7 +33722,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-03",
@@ -33444,7 +33759,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-04",
@@ -33480,7 +33796,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-05",
@@ -33516,7 +33833,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-06",
@@ -33552,7 +33870,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-07",
@@ -33671,7 +33990,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-08",
@@ -33700,7 +34020,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-09",
@@ -33794,7 +34115,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-10",
@@ -33830,7 +34152,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-11",
@@ -33866,7 +34189,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NJ-12",
@@ -33901,7 +34225,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "NM-01",
@@ -33937,7 +34262,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NM-02",
@@ -34056,7 +34382,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NM-03",
@@ -34091,7 +34418,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-01",
@@ -34184,7 +34512,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-02",
@@ -34277,7 +34606,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-03",
@@ -34372,7 +34702,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-04",
@@ -34467,7 +34798,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-05",
@@ -34500,7 +34832,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-06",
@@ -34536,7 +34869,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-07",
@@ -34568,7 +34902,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-08",
@@ -34601,7 +34936,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-09",
@@ -34634,7 +34970,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-10",
@@ -34669,7 +35006,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-11",
@@ -34705,7 +35043,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-12",
@@ -34740,7 +35079,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-13",
@@ -34772,7 +35112,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-14",
@@ -34808,7 +35149,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-15",
@@ -34841,7 +35183,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-16",
@@ -34874,7 +35217,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-17",
@@ -35064,7 +35408,8 @@
      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9NdjZYcUxzYUgzTDNpS2F2bWg0SWE4emdRZ0VKODJsWkVrQ0dRTEVNM3FkbjBoR3ZZZzY5RFgyRFJLeFlwZk9abm1DOTRGVXp6NDJkTm9STjh2VnM3NG4zNm1xbjdPR2wwcGZNVTNydzUxdw?oc=5",
      "date": "2026-10-10"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-18",
@@ -35100,7 +35445,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-19",
@@ -35194,7 +35540,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-20",
@@ -35230,7 +35577,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-21",
@@ -35412,7 +35760,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-22",
@@ -35448,7 +35797,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-23",
@@ -35578,7 +35928,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-24",
@@ -35614,7 +35965,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-25",
@@ -35650,7 +36002,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NY-26",
@@ -35683,7 +36036,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "NC-01",
@@ -35886,7 +36240,8 @@
      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTXBsX2FaX0V1ZW45aVdNTUV4VmNPUm9vbW81dHZ5Zm4zbUpDQTBwOHRDVUljeV9qeXlocl9IeldjYlNvbms3NlZwNXBjUTY0RkxrTlZtcmN0OG9XTm4xMkR5eldZVTJqVm1NS1RneUdOUWp6cXZCTFNWNWx0RmFtM3ZiYVpYZ2RQdlpjX0ZRVF9KRndteS1tYlZBaUxDelk?oc=5",
      "date": "2026-10-07"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-02",
@@ -35919,7 +36274,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-03",
@@ -36036,7 +36392,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-04",
@@ -36072,7 +36429,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-05",
@@ -36165,7 +36523,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-06",
@@ -36258,7 +36617,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-07",
@@ -36375,7 +36735,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-08",
@@ -36468,7 +36829,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-09",
@@ -36585,7 +36947,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-10",
@@ -36678,7 +37041,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-11",
@@ -36824,7 +37188,8 @@
      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTkg4U1JZeFlsdy16VVFQTHFQRHU0T1FQazF0WkR6dV9Yd3cySV8waWI0dlJsaldHMU1PM3NoemhxVW1zbG5CdUZmeWYwNjJQSzd4enI1VFMxTVpNeHNldHY1dnFnQWVBVGt3SXhZdXctSVlmVDVFSWdfbzNIRzlyTS1KVWh6djVa?oc=5",
      "date": "2026-10-07"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-12",
@@ -36860,7 +37225,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-13",
@@ -36944,7 +37310,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "NC-14",
@@ -37037,7 +37404,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "ND-AL",
@@ -37073,7 +37441,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "OH-01",
@@ -37192,7 +37561,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-02",
@@ -37225,7 +37595,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-03",
@@ -37258,7 +37629,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-04",
@@ -37294,7 +37666,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-05",
@@ -37330,7 +37703,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-06",
@@ -37366,7 +37740,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-07",
@@ -37581,7 +37956,8 @@
      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQOUZkUWZhMWtxclFRNkxxMHVqbFpMX0ZIV1hLMmlVenU0MDhEWmp5QkRDTzJweVhoQW5XNEoxZzNTNHNidXB0LVF4UWQ1NkxXSE4ySWpRV2EybW5KXzJ0RFItRHpfcTgwVFJka200OGo5WWNERGsxRjBCV1ZlOHE4VGFnbHhMQXU3NERPZ3NTakpRLUZfcTg1WjJ0T2LSAaIBQVVfeXFMT0l0Z0dGNVltQ3U2dVVBaHFWVDZBWGEyQkh2aXh6NXRUcFd3dFRJblJxZFJLSmhGUGU4V1o0d2NSVTQ4YVItWVZ3dnBxQXNuakd1VzUxVy1DMDFqS0RzWVlpMDU3R3ltWU85TXluNTY0N1k1NGJ1VnRnYzUtZy1fM2EzazItYmQ0dC1LNGNRMm5mVDRITzJ2aUtRa1BSMlc2ZWZB?oc=5",
      "date": "2026-10-07"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-08",
@@ -37674,7 +38050,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-09",
@@ -37793,7 +38170,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-10",
@@ -37923,7 +38301,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-11",
@@ -37956,7 +38335,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-12",
@@ -37992,7 +38372,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-13",
@@ -38086,7 +38467,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-14",
@@ -38122,7 +38504,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OH-15",
@@ -38265,7 +38648,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "OK-01",
@@ -38358,7 +38742,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "OK-02",
@@ -38394,7 +38779,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "OK-03",
@@ -38427,7 +38813,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "OK-04",
@@ -38463,7 +38850,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "OK-05",
@@ -38556,7 +38944,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "OR-01",
@@ -38592,7 +38981,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "OR-02",
@@ -38628,7 +39018,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "OR-03",
@@ -38661,7 +39052,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "OR-04",
@@ -38697,7 +39089,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "OR-05",
@@ -38791,7 +39184,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "OR-06",
@@ -38827,7 +39221,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "PA-01",
@@ -39002,7 +39397,8 @@
      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdnRTVU9YOU9ROGFHYWRLN0FUb2lvcmZqU1g5SjRHQS1uTF9RU3pyZnQwcW5sdF9RTnpMUzRWRGltd2thNHRvTDZlVmlQOWRVVy1qakhfLTZyQWhkbzBxazF3YjFyY3BQa3R3MzY2VXZrY1k0S1JxUTNEWllmOWpYVjRRVGJlM1Zl?oc=5",
      "date": "2026-10-11"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-02",
@@ -39035,7 +39431,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-03",
@@ -39063,7 +39460,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-04",
@@ -39099,7 +39497,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-05",
@@ -39135,7 +39534,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-06",
@@ -39171,7 +39571,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-07",
@@ -39335,7 +39736,8 @@
      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNLWtydDM5a2FmMlc2T1cycnRnN3Q0UVFQV0laOVBGVkNHWVZNOGhkTml1WlcyV2VpU2YzQV82ekJMMVV4Nk9OUW45MnNYblNwVWRoOFZkQjRreU1WWU5DSmxYUjBDcEM5TWNqa1YydTcyVk9GNXBTM2s5NXlUNjVYOXZuZjJ4ZmFoSUZQYmNITXkzaVdr?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-08",
@@ -39486,7 +39888,8 @@
      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbkpwLTdQWk9rU2JRQmFNRm15eC0wVnhhMnl5MmhnbHZUTW11aFRsZ0xKamFuM2ZuX0w2MHJfY1duUHF6bzJGaWcxd0xQYkFqWERfRS1KeWFmeXdJLXJxd0N2ZElWQmhYSlRMckJNaUFHN09mTzZvRXFZRHhkN1JhMTVPdTdiRVZBemMxaXZxOGNEUWpOTXpoWGZwekg1MUx2SHdkQm9ldzZBV1oya3paOXBubTZPT3VORGc?oc=5",
      "date": "2026-10-07"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-09",
@@ -39522,7 +39925,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-10",
@@ -39673,7 +40077,8 @@
      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQV1NxMWFkUzQyWkxscHBzeUNiQnRsVG9uaVJtZ3AtZVlVM0lRckVQcUFWMWJwSUVlUHVRdXFRTXI0c3c2NDlvQ3Jvc1VFd3V1SkdjNzMwbGFKRDA2TkEtZkFFY0k1TFJmMHctWVl3RHg3TUc0eDFuUGtLVVhaZ01VS2QtTi10cGZKUkZISTcwdnpPSkdkTmx5RzNqdG1BcmV3QjN5cVRXOVVxODRZRlh4YmlsMTFuaGVkV1ExekZxZWRHdWN2T0lNZWdBaXZIaVpaNnJVbk9QU0NFRDBuUmRxSVJjNA?oc=5",
      "date": "2026-10-09"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-11",
@@ -39766,7 +40171,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-12",
@@ -39802,7 +40208,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-13",
@@ -39838,7 +40245,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-14",
@@ -39874,7 +40282,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-15",
@@ -39910,7 +40319,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-16",
@@ -39946,7 +40356,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "PA-17",
@@ -39982,7 +40393,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "RI-01",
@@ -40018,7 +40430,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "RI-02",
@@ -40054,7 +40467,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "SC-01",
@@ -40229,7 +40643,8 @@
      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbmhVYlJ0VmpuV3BUQ1g4dDJVczZIUHVTZWlyc0xWeXR3SEFxWTEzR3FmMFd4QXgtVUE5MnVsMks0V09QOGVMMVRvMV9tbWNzOVRaelJOUld2YlBRa21peTNWNTFOUEJNYzZqY1ZRckVLcm9rckZqbVJKeWpFUnpnb1Eyaw?oc=5",
      "date": "2026-10-08"
     }
-   ]
+   ],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "SC-02",
@@ -40322,7 +40737,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "SC-03",
@@ -40358,7 +40774,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "SC-04",
@@ -40394,7 +40811,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "SC-05",
@@ -40478,7 +40896,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "SC-06",
@@ -40511,7 +40930,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "SC-07",
@@ -40547,7 +40967,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "SD-AL",
@@ -40582,7 +41003,8 @@
    "incp": "R",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "TN-01",
@@ -40618,7 +41040,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TN-02",
@@ -40654,7 +41077,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TN-03",
@@ -40690,7 +41114,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TN-04",
@@ -40726,7 +41151,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TN-05",
@@ -40856,7 +41282,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TN-06",
@@ -40891,7 +41318,8 @@
    "incp": "R",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TN-07",
@@ -40984,7 +41412,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TN-08",
@@ -41020,7 +41449,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TN-09",
@@ -41128,7 +41558,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-01",
@@ -41164,7 +41595,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-02",
@@ -41281,7 +41713,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-03",
@@ -41317,7 +41750,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-04",
@@ -41353,7 +41787,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-05",
@@ -41446,7 +41881,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-06",
@@ -41482,7 +41918,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-07",
@@ -41518,7 +41955,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-08",
@@ -41553,7 +41991,8 @@
    "incp": "R",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-09",
@@ -41671,7 +42110,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-10",
@@ -41788,7 +42228,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-11",
@@ -41824,7 +42265,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-12",
@@ -41857,7 +42299,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-13",
@@ -41893,7 +42336,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-14",
@@ -41929,7 +42373,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-15",
@@ -42118,7 +42563,8 @@
      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOV1NaeWlHbTd6a2ljVDlySGFrZTNMN09zUV90V1FWV0V2ZWFEQjUtVWJtYUNWMGhzN20wcEZOTFV5THItdFdLMTZhemkzcHFmNzBmbTROWTVrdklSZ0tvOFVxSndYZ2F2RlVkTUhKaTF0M0dYWGFxd1ZsYVF6Q0E2RzNSOUlTV1BWcFAxVjNicHhJZU9FTHlicG85aE9BTnVNOFo0S0pTalVpdTc3Mm5DSEpGb2QxZEgwZkw4d3hfQQ?oc=5",
      "date": "2026-10-06"
     }
-   ]
+   ],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-16",
@@ -42151,7 +42597,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "TX-17",
@@ -42244,7 +42691,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-18",
@@ -42277,7 +42725,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-19",
@@ -42312,7 +42761,8 @@
    "incp": "R",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-20",
@@ -42348,7 +42798,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-21",
@@ -42432,7 +42883,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-22",
@@ -42525,7 +42977,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-23",
@@ -42618,7 +43071,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "TX-24",
@@ -42711,7 +43165,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-25",
@@ -42744,7 +43199,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-26",
@@ -42780,7 +43236,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-27",
@@ -42873,7 +43330,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-28",
@@ -43017,7 +43475,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-29",
@@ -43053,7 +43512,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-30",
@@ -43088,7 +43548,8 @@
    "incp": null,
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-31",
@@ -43181,7 +43642,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-32",
@@ -43275,7 +43737,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-33",
@@ -43307,7 +43770,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-34",
@@ -43451,7 +43915,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-35",
@@ -43569,7 +44034,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-36",
@@ -43605,7 +44071,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-37",
@@ -43640,7 +44107,8 @@
    "incp": "D",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "TX-38",
@@ -43724,7 +44192,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T01:00:00Z"
   },
   {
    "id": "UT-01",
@@ -43759,7 +44228,8 @@
    "incp": null,
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "UT-02",
@@ -43794,7 +44264,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "UT-03",
@@ -43829,7 +44300,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "UT-04",
@@ -43864,7 +44336,8 @@
    "incp": "R",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T03:00:00Z"
   },
   {
    "id": "VT-AL",
@@ -43900,7 +44373,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "VA-01",
@@ -44031,7 +44505,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "VA-02",
@@ -44150,7 +44625,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "VA-03",
@@ -44186,7 +44662,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "VA-04",
@@ -44222,7 +44699,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "VA-05",
@@ -44356,7 +44834,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "VA-06",
@@ -44392,7 +44871,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "VA-07",
@@ -44485,7 +44965,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "VA-08",
@@ -44521,7 +45002,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "VA-09",
@@ -44557,7 +45039,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "VA-10",
@@ -44593,7 +45076,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "VA-11",
@@ -44629,7 +45113,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:00:00Z"
   },
   {
    "id": "WA-01",
@@ -44665,7 +45150,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "WA-02",
@@ -44701,7 +45187,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "WA-03",
@@ -44845,7 +45332,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "WA-04",
@@ -44929,7 +45417,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "WA-05",
@@ -45010,7 +45499,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "WA-06",
@@ -45046,7 +45536,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "WA-07",
@@ -45082,7 +45573,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "WA-08",
@@ -45118,7 +45610,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "WA-09",
@@ -45154,7 +45647,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "WA-10",
@@ -45187,7 +45681,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T04:00:00Z"
   },
   {
    "id": "WV-01",
@@ -45223,7 +45718,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "WV-02",
@@ -45259,7 +45755,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T00:30:00Z"
   },
   {
    "id": "WI-01",
@@ -45435,7 +45932,8 @@
      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOYllaWjVZZi15VkltYzNuNmcxY3Y0Rk54RWE5TGo3MW9lNG9QTDhHX21xNXhfbTRCeXBtRFlad0tqMk8zMVI3aGZWVmZhSWNEbkVQaEtSa0VNQk90aUFqYTRWTkhaVnAxRWU2MlRmZ0xCNE01ZVIwbUgzLThSVEJTSVZzVTNSSDNWaHRSYUtPTjlXME84X3NHbXl3QUdaMndkaU5EY0lpNS1CcFFIR2RCb0N5ZnV3RjdvUmNBMElZT2R3WUpqR0ZQb2xHNXlhMkQ5bzhndjlwamMyYklXcENSNnhBR2lfdlE?oc=5",
      "date": "2026-10-06"
     }
-   ]
+   ],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "WI-02",
@@ -45464,7 +45962,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": "D",
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "WI-03",
@@ -45583,7 +46082,8 @@
      "url": null
     }
    ],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "WI-04",
@@ -45616,7 +46116,8 @@
    "incp": "D",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "WI-05",
@@ -45652,7 +46153,8 @@
    "incp": "R",
    "incrun": true,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "WI-06",
@@ -45745,7 +46247,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "WI-07",
@@ -45838,7 +46341,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "WI-08",
@@ -45931,7 +46435,8 @@
    "appointed": false,
    "others": [],
    "polls": [],
-   "aggs": []
+   "aggs": [],
+   "close": "2026-11-04T02:00:00Z"
   },
   {
    "id": "WY-AL",
@@ -45966,7 +46471,8 @@
    "incp": "R",
    "incrun": false,
    "fixed": null,
-   "ind": false
+   "ind": false,
+   "close": "2026-11-04T02:00:00Z"
   }
  ],
  "national_news": {
@@ -47646,6 +48152,954 @@
     ]
    ]
   }
+ },
+ "poll_closings": {
+  "groups": [
+   {
+    "utc": "2026-11-03T23:00:00Z",
+    "states": [
+     {
+      "st": "IN",
+      "part": "first",
+      "note": "Counties near Chicago and Evansville are on Central time."
+     },
+     {
+      "st": "KY",
+      "part": "first",
+      "note": "Western Kentucky is on Central time; networks often treat the state as mostly closed at 6 PM ET."
+     }
+    ],
+    "races": {
+     "SEN": [],
+     "GOV": [],
+     "HOUSE": [
+      "IN-03",
+      "IN-05",
+      "IN-06",
+      "IN-07",
+      "KY-03",
+      "KY-04",
+      "KY-06"
+     ]
+    }
+   },
+   {
+    "utc": "2026-11-04T00:00:00Z",
+    "states": [
+     {
+      "st": "FL",
+      "part": "first",
+      "note": "The western panhandle is on Central time and closes an hour after the rest of Florida."
+     },
+     {
+      "st": "GA",
+      "part": "all",
+      "note": "A candidate needs 50% to avoid a runoff."
+     },
+     {
+      "st": "IN",
+      "part": "last",
+      "note": "Counties near Chicago and Evansville are on Central time."
+     },
+     {
+      "st": "KY",
+      "part": "last",
+      "note": "Western Kentucky is on Central time; networks often treat the state as mostly closed at 6 PM ET."
+     },
+     {
+      "st": "SC",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "VA",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "VT",
+      "part": "all",
+      "note": null
+     }
+    ],
+    "races": {
+     "SEN": [
+      "GA-SEN",
+      "KY-SEN",
+      "SC-SEN",
+      "VA-SEN"
+     ],
+     "GOV": [
+      "GA-GOV",
+      "SC-GOV",
+      "VT-GOV"
+     ],
+     "HOUSE": [
+      "FL-03",
+      "FL-04",
+      "FL-05",
+      "FL-06",
+      "FL-07",
+      "FL-08",
+      "FL-09",
+      "FL-10",
+      "FL-11",
+      "FL-12",
+      "FL-13",
+      "FL-14",
+      "FL-15",
+      "FL-16",
+      "FL-17",
+      "FL-18",
+      "FL-19",
+      "FL-20",
+      "FL-21",
+      "FL-22",
+      "FL-23",
+      "FL-24",
+      "FL-25",
+      "FL-26",
+      "FL-27",
+      "FL-28",
+      "GA-01",
+      "GA-02",
+      "GA-03",
+      "GA-04",
+      "GA-05",
+      "GA-06",
+      "GA-07",
+      "GA-08",
+      "GA-09",
+      "GA-10",
+      "GA-11",
+      "GA-12",
+      "GA-13",
+      "GA-14",
+      "IN-01",
+      "IN-02",
+      "IN-04",
+      "IN-08",
+      "IN-09",
+      "KY-01",
+      "KY-02",
+      "KY-05",
+      "SC-01",
+      "SC-02",
+      "SC-03",
+      "SC-04",
+      "SC-05",
+      "SC-06",
+      "SC-07",
+      "VT-AL",
+      "VA-01",
+      "VA-02",
+      "VA-03",
+      "VA-04",
+      "VA-05",
+      "VA-06",
+      "VA-07",
+      "VA-08",
+      "VA-09",
+      "VA-10",
+      "VA-11"
+     ]
+    }
+   },
+   {
+    "utc": "2026-11-04T00:30:00Z",
+    "states": [
+     {
+      "st": "NC",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "OH",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "WV",
+      "part": "all",
+      "note": null
+     }
+    ],
+    "races": {
+     "SEN": [
+      "NC-SEN",
+      "OH-SEN-SP",
+      "WV-SEN"
+     ],
+     "GOV": [
+      "OH-GOV"
+     ],
+     "HOUSE": [
+      "NC-01",
+      "NC-02",
+      "NC-03",
+      "NC-04",
+      "NC-05",
+      "NC-06",
+      "NC-07",
+      "NC-08",
+      "NC-09",
+      "NC-10",
+      "NC-11",
+      "NC-12",
+      "NC-13",
+      "NC-14",
+      "OH-01",
+      "OH-02",
+      "OH-03",
+      "OH-04",
+      "OH-05",
+      "OH-06",
+      "OH-07",
+      "OH-08",
+      "OH-09",
+      "OH-10",
+      "OH-11",
+      "OH-12",
+      "OH-13",
+      "OH-14",
+      "OH-15",
+      "WV-01",
+      "WV-02"
+     ]
+    }
+   },
+   {
+    "utc": "2026-11-04T01:00:00Z",
+    "states": [
+     {
+      "st": "AL",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "CT",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "DE",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "FL",
+      "part": "last",
+      "note": "The western panhandle is on Central time and closes an hour after the rest of Florida."
+     },
+     {
+      "st": "IL",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "KS",
+      "part": "first",
+      "note": "Four western counties are on Mountain time."
+     },
+     {
+      "st": "MA",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "MD",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "ME",
+      "part": "all",
+      "note": "Federal races use ranked-choice voting if no one wins a majority."
+     },
+     {
+      "st": "MI",
+      "part": "first",
+      "note": "Four Upper Peninsula counties are on Central time."
+     },
+     {
+      "st": "MO",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "MS",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "NH",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "NJ",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "OK",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "PA",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "RI",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "SD",
+      "part": "first",
+      "note": "West River is on Mountain time."
+     },
+     {
+      "st": "TN",
+      "part": "all",
+      "note": "Polls close at the same moment in both time zones."
+     },
+     {
+      "st": "TX",
+      "part": "first",
+      "note": "Only El Paso and Hudspeth counties are on Mountain time."
+     }
+    ],
+    "races": {
+     "SEN": [
+      "AL-SEN",
+      "DE-SEN",
+      "FL-SEN-SP",
+      "IL-SEN",
+      "MA-SEN",
+      "ME-SEN",
+      "MS-SEN",
+      "NH-SEN",
+      "NJ-SEN",
+      "OK-SEN",
+      "RI-SEN",
+      "TN-SEN"
+     ],
+     "GOV": [
+      "AL-GOV",
+      "CT-GOV",
+      "FL-GOV",
+      "IL-GOV",
+      "MA-GOV",
+      "MD-GOV",
+      "ME-GOV",
+      "NH-GOV",
+      "OK-GOV",
+      "PA-GOV",
+      "RI-GOV",
+      "TN-GOV"
+     ],
+     "HOUSE": [
+      "AL-01",
+      "AL-02",
+      "AL-03",
+      "AL-04",
+      "AL-05",
+      "AL-06",
+      "AL-07",
+      "CT-01",
+      "CT-02",
+      "CT-03",
+      "CT-04",
+      "CT-05",
+      "DE-AL",
+      "FL-01",
+      "FL-02",
+      "IL-01",
+      "IL-02",
+      "IL-03",
+      "IL-04",
+      "IL-05",
+      "IL-06",
+      "IL-07",
+      "IL-08",
+      "IL-09",
+      "IL-10",
+      "IL-11",
+      "IL-12",
+      "IL-13",
+      "IL-14",
+      "IL-15",
+      "IL-16",
+      "IL-17",
+      "KS-02",
+      "KS-03",
+      "KS-04",
+      "ME-01",
+      "ME-02",
+      "MD-01",
+      "MD-02",
+      "MD-03",
+      "MD-04",
+      "MD-05",
+      "MD-06",
+      "MD-07",
+      "MD-08",
+      "MA-01",
+      "MA-02",
+      "MA-03",
+      "MA-04",
+      "MA-05",
+      "MA-06",
+      "MA-07",
+      "MA-08",
+      "MA-09",
+      "MI-02",
+      "MI-03",
+      "MI-04",
+      "MI-05",
+      "MI-06",
+      "MI-07",
+      "MI-08",
+      "MI-09",
+      "MI-10",
+      "MI-11",
+      "MI-12",
+      "MI-13",
+      "MS-01",
+      "MS-02",
+      "MS-03",
+      "MS-04",
+      "MO-01",
+      "MO-02",
+      "MO-03",
+      "MO-04",
+      "MO-05",
+      "MO-06",
+      "MO-07",
+      "MO-08",
+      "NH-01",
+      "NH-02",
+      "NJ-01",
+      "NJ-02",
+      "NJ-03",
+      "NJ-04",
+      "NJ-05",
+      "NJ-06",
+      "NJ-07",
+      "NJ-08",
+      "NJ-09",
+      "NJ-10",
+      "NJ-11",
+      "NJ-12",
+      "OK-01",
+      "OK-02",
+      "OK-03",
+      "OK-04",
+      "OK-05",
+      "PA-01",
+      "PA-02",
+      "PA-03",
+      "PA-04",
+      "PA-05",
+      "PA-06",
+      "PA-07",
+      "PA-08",
+      "PA-09",
+      "PA-10",
+      "PA-11",
+      "PA-12",
+      "PA-13",
+      "PA-14",
+      "PA-15",
+      "PA-16",
+      "PA-17",
+      "RI-01",
+      "RI-02",
+      "TN-01",
+      "TN-02",
+      "TN-03",
+      "TN-04",
+      "TN-05",
+      "TN-06",
+      "TN-07",
+      "TN-08",
+      "TN-09",
+      "TX-01",
+      "TX-02",
+      "TX-03",
+      "TX-04",
+      "TX-05",
+      "TX-06",
+      "TX-07",
+      "TX-08",
+      "TX-09",
+      "TX-10",
+      "TX-11",
+      "TX-12",
+      "TX-13",
+      "TX-14",
+      "TX-15",
+      "TX-17",
+      "TX-18",
+      "TX-19",
+      "TX-20",
+      "TX-21",
+      "TX-22",
+      "TX-24",
+      "TX-25",
+      "TX-26",
+      "TX-27",
+      "TX-28",
+      "TX-29",
+      "TX-30",
+      "TX-31",
+      "TX-32",
+      "TX-33",
+      "TX-34",
+      "TX-35",
+      "TX-36",
+      "TX-37",
+      "TX-38"
+     ]
+    }
+   },
+   {
+    "utc": "2026-11-04T01:30:00Z",
+    "states": [
+     {
+      "st": "AR",
+      "part": "all",
+      "note": null
+     }
+    ],
+    "races": {
+     "SEN": [
+      "AR-SEN"
+     ],
+     "GOV": [
+      "AR-GOV"
+     ],
+     "HOUSE": [
+      "AR-01",
+      "AR-02",
+      "AR-03",
+      "AR-04"
+     ]
+    }
+   },
+   {
+    "utc": "2026-11-04T02:00:00Z",
+    "states": [
+     {
+      "st": "AZ",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "CO",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "IA",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "KS",
+      "part": "last",
+      "note": "Four western counties are on Mountain time."
+     },
+     {
+      "st": "LA",
+      "part": "all",
+      "note": "House races are an all-candidate primary on Nov. 3, with Dec. 12 runoffs where no one tops 50%."
+     },
+     {
+      "st": "MI",
+      "part": "last",
+      "note": "Four Upper Peninsula counties are on Central time."
+     },
+     {
+      "st": "MN",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "NE",
+      "part": "all",
+      "note": "Polls close at the same moment in both time zones."
+     },
+     {
+      "st": "NM",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "NY",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "SD",
+      "part": "last",
+      "note": "West River is on Mountain time."
+     },
+     {
+      "st": "TX",
+      "part": "last",
+      "note": "Only El Paso and Hudspeth counties are on Mountain time."
+     },
+     {
+      "st": "WI",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "WY",
+      "part": "all",
+      "note": null
+     }
+    ],
+    "races": {
+     "SEN": [
+      "CO-SEN",
+      "IA-SEN",
+      "KS-SEN",
+      "LA-SEN",
+      "MI-SEN",
+      "MN-SEN",
+      "NE-SEN",
+      "NM-SEN",
+      "SD-SEN",
+      "TX-SEN",
+      "WY-SEN"
+     ],
+     "GOV": [
+      "AZ-GOV",
+      "CO-GOV",
+      "IA-GOV",
+      "KS-GOV",
+      "MI-GOV",
+      "MN-GOV",
+      "NE-GOV",
+      "NM-GOV",
+      "NY-GOV",
+      "SD-GOV",
+      "TX-GOV",
+      "WI-GOV",
+      "WY-GOV"
+     ],
+     "HOUSE": [
+      "AZ-01",
+      "AZ-02",
+      "AZ-03",
+      "AZ-04",
+      "AZ-05",
+      "AZ-06",
+      "AZ-07",
+      "AZ-08",
+      "AZ-09",
+      "CO-01",
+      "CO-02",
+      "CO-03",
+      "CO-04",
+      "CO-05",
+      "CO-06",
+      "CO-07",
+      "CO-08",
+      "IA-01",
+      "IA-02",
+      "IA-03",
+      "IA-04",
+      "KS-01",
+      "LA-01",
+      "LA-02",
+      "LA-03",
+      "LA-04",
+      "LA-05",
+      "LA-06",
+      "MI-01",
+      "MN-01",
+      "MN-02",
+      "MN-03",
+      "MN-04",
+      "MN-05",
+      "MN-06",
+      "MN-07",
+      "MN-08",
+      "NE-01",
+      "NE-02",
+      "NE-03",
+      "NM-01",
+      "NM-02",
+      "NM-03",
+      "NY-01",
+      "NY-02",
+      "NY-03",
+      "NY-04",
+      "NY-05",
+      "NY-06",
+      "NY-07",
+      "NY-08",
+      "NY-09",
+      "NY-10",
+      "NY-11",
+      "NY-12",
+      "NY-13",
+      "NY-14",
+      "NY-15",
+      "NY-16",
+      "NY-17",
+      "NY-18",
+      "NY-19",
+      "NY-20",
+      "NY-21",
+      "NY-22",
+      "NY-23",
+      "NY-24",
+      "NY-25",
+      "NY-26",
+      "SD-AL",
+      "TX-16",
+      "TX-23",
+      "WI-01",
+      "WI-02",
+      "WI-03",
+      "WI-04",
+      "WI-05",
+      "WI-06",
+      "WI-07",
+      "WI-08",
+      "WY-AL"
+     ]
+    }
+   },
+   {
+    "utc": "2026-11-04T03:00:00Z",
+    "states": [
+     {
+      "st": "ID",
+      "part": "first",
+      "note": "The northern panhandle is on Pacific time and closes an hour after southern Idaho."
+     },
+     {
+      "st": "MT",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "ND",
+      "part": "first",
+      "note": "Most polling places close earlier; the latest close at 9 PM local time in each time zone."
+     },
+     {
+      "st": "NV",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "OR",
+      "part": "first",
+      "note": "Vote-by-mail; ballots are due at 8 PM local time. Malheur County is on Mountain time."
+     },
+     {
+      "st": "UT",
+      "part": "all",
+      "note": null
+     }
+    ],
+    "races": {
+     "SEN": [
+      "MT-SEN"
+     ],
+     "GOV": [
+      "NV-GOV"
+     ],
+     "HOUSE": [
+      "ID-02",
+      "MT-01",
+      "MT-02",
+      "NV-01",
+      "NV-02",
+      "NV-03",
+      "NV-04",
+      "UT-01",
+      "UT-02",
+      "UT-03",
+      "UT-04"
+     ]
+    }
+   },
+   {
+    "utc": "2026-11-04T04:00:00Z",
+    "states": [
+     {
+      "st": "CA",
+      "part": "all",
+      "note": null
+     },
+     {
+      "st": "ID",
+      "part": "last",
+      "note": "The northern panhandle is on Pacific time and closes an hour after southern Idaho."
+     },
+     {
+      "st": "ND",
+      "part": "last",
+      "note": "Most polling places close earlier; the latest close at 9 PM local time in each time zone."
+     },
+     {
+      "st": "OR",
+      "part": "last",
+      "note": "Vote-by-mail; ballots are due at 8 PM local time. Malheur County is on Mountain time."
+     },
+     {
+      "st": "WA",
+      "part": "all",
+      "note": "Vote-by-mail; ballots are due at 8 PM local time."
+     }
+    ],
+    "races": {
+     "SEN": [
+      "ID-SEN",
+      "OR-SEN"
+     ],
+     "GOV": [
+      "CA-GOV",
+      "ID-GOV",
+      "OR-GOV"
+     ],
+     "HOUSE": [
+      "CA-01",
+      "CA-02",
+      "CA-03",
+      "CA-04",
+      "CA-05",
+      "CA-06",
+      "CA-07",
+      "CA-08",
+      "CA-09",
+      "CA-10",
+      "CA-11",
+      "CA-12",
+      "CA-13",
+      "CA-14",
+      "CA-15",
+      "CA-16",
+      "CA-17",
+      "CA-18",
+      "CA-19",
+      "CA-20",
+      "CA-21",
+      "CA-22",
+      "CA-23",
+      "CA-24",
+      "CA-25",
+      "CA-26",
+      "CA-27",
+      "CA-28",
+      "CA-29",
+      "CA-30",
+      "CA-31",
+      "CA-32",
+      "CA-33",
+      "CA-34",
+      "CA-35",
+      "CA-36",
+      "CA-37",
+      "CA-38",
+      "CA-39",
+      "CA-40",
+      "CA-41",
+      "CA-42",
+      "CA-43",
+      "CA-44",
+      "CA-45",
+      "CA-46",
+      "CA-47",
+      "CA-48",
+      "CA-49",
+      "CA-50",
+      "CA-51",
+      "CA-52",
+      "ID-01",
+      "ND-AL",
+      "OR-01",
+      "OR-02",
+      "OR-03",
+      "OR-04",
+      "OR-05",
+      "OR-06",
+      "WA-01",
+      "WA-02",
+      "WA-03",
+      "WA-04",
+      "WA-05",
+      "WA-06",
+      "WA-07",
+      "WA-08",
+      "WA-09",
+      "WA-10"
+     ]
+    }
+   },
+   {
+    "utc": "2026-11-04T05:00:00Z",
+    "states": [
+     {
+      "st": "AK",
+      "part": "first",
+      "note": "Most of Alaska closes at 8 PM Alaska time (midnight ET), when networks treat the state as callable; the western Aleutians close an hour later. Ranked-choice tabulation, if needed, comes weeks later."
+     },
+     {
+      "st": "HI",
+      "part": "all",
+      "note": null
+     }
+    ],
+    "races": {
+     "SEN": [],
+     "GOV": [
+      "HI-GOV"
+     ],
+     "HOUSE": [
+      "HI-01",
+      "HI-02"
+     ]
+    }
+   },
+   {
+    "utc": "2026-11-04T06:00:00Z",
+    "states": [
+     {
+      "st": "AK",
+      "part": "last",
+      "note": "Most of Alaska closes at 8 PM Alaska time (midnight ET), when networks treat the state as callable; the western Aleutians close an hour later. Ranked-choice tabulation, if needed, comes weeks later."
+     }
+    ],
+    "races": {
+     "SEN": [
+      "AK-SEN"
+     ],
+     "GOV": [
+      "AK-GOV"
+     ],
+     "HOUSE": [
+      "AK-AL"
+     ]
+    }
+   }
+  ],
+  "sources": [
+   "https://www.thegreenpapers.com/G26/closing.phtml",
+   "https://www.thegreenpapers.com/G26/PollingHours.phtml",
+   "https://www.270towin.com/content/local-poll-closing-times-november-2026-general-election"
+  ],
+  "election_date": "2026-11-03"
  },
  "research": {
   "national_environment": {

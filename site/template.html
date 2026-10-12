@@ -203,6 +203,32 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
 .status-ok::before { content: "● "; color: var(--ind); }
 .status-bad::before { content: "▲ "; color: var(--rep); }
 .change-up { color: var(--ink); }
+/* ---------- election night ---------- */
+.cd { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
+.cd.closed { color: var(--ink-3); font-weight: 600; }
+.next-closing { display: grid; gap: 6px; }
+.next-closing .big { font: 700 clamp(1.8rem, 5vw, var(--step-4))/1 var(--font-body); letter-spacing: -0.02em; }
+.next-closing .what { color: var(--ink-2); max-width: 70ch; }
+.closing-list { display: grid; }
+.closing { display: grid; grid-template-columns: minmax(150px, 200px) minmax(0, 1fr); gap: 10px 28px; padding-block: 20px; border-top: 1px solid var(--rule); }
+.closing:first-child { border-top: 0; padding-top: 4px; }
+.closing.done { opacity: 0.6; }
+.closing-time { display: grid; gap: 3px; align-content: start; }
+.closing-time .t { font: 900 var(--step-2)/1.05 var(--font-display); letter-spacing: -0.01em; }
+.closing-time .local { font-size: var(--step--1); color: var(--ink-3); }
+.closing-time .cd { margin-top: 6px; }
+.closing-body { display: grid; gap: 12px; min-width: 0; }
+.closing-states { font-size: var(--step--1); color: var(--ink-2); }
+.closing-states abbr { text-decoration: underline dotted var(--rule-2); text-underline-offset: 3px; cursor: help; }
+.racechips { display: flex; flex-wrap: wrap; gap: 6px; }
+.racechip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--rule-2); border-radius: 999px; padding: 3px 10px 3px 6px;
+  font-size: 0.78rem; background: var(--panel); color: var(--ink); text-decoration: none; white-space: nowrap; }
+.racechip:hover { border-color: var(--ink-3); }
+.racechip .sw { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+.row-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 5px; }
+.night-banner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 24px; }
+.night-banner .cd { font-size: var(--step-2); }
+@media (max-width: 640px) { .closing { grid-template-columns: minmax(0, 1fr); } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 
@@ -231,6 +257,7 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
     <button class="tab" role="tab" id="tab-senate" aria-controls="senate" data-view="senate">Senate</button>
     <button class="tab" role="tab" id="tab-house" aria-controls="house" data-view="house">House</button>
     <button class="tab" role="tab" id="tab-governors" aria-controls="governors" data-view="governors">Governors</button>
+    <button class="tab" role="tab" id="tab-night" aria-controls="night" data-view="night">Election night</button>
     <button class="tab" role="tab" id="tab-national" aria-controls="national" data-view="national">National picture</button>
     <button class="tab" role="tab" id="tab-methods" aria-controls="methods" data-view="methods">How it works</button>
   </nav>
@@ -240,6 +267,7 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
   <!-- ================= OVERVIEW ================= -->
   <section class="view" id="overview" role="tabpanel" aria-labelledby="tab-overview">
     <div class="grid-3" id="verdicts"></div>
+    <article class="board night-banner" id="night-banner"></article>
     <div class="grid-2">
       <article class="board">
         <div class="board-head"><h2>The House, seat by seat</h2><span class="small muted">218 for a majority</span></div>
@@ -353,6 +381,18 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
       <div class="board-head"><h2>Every governor's race</h2><span class="small muted">Click a row for details</span></div>
       <div class="controls"><input id="gov-q" type="search" placeholder="Search state or candidate" aria-label="Search governor races"></div>
       <div class="table-scroll"><table class="ledger" id="gov-table"></table></div>
+    </article>
+  </section>
+
+  <!-- ================= ELECTION NIGHT ================= -->
+  <section class="view" id="night" role="tabpanel" aria-labelledby="tab-night" hidden>
+    <article class="board">
+      <div class="next-closing" id="night-hero"></div>
+    </article>
+    <article class="board">
+      <div class="board-head"><h2>When the polls close</h2><span class="small muted">Races grouped by the moment their last polls close · Tuesday, Nov. 3</span></div>
+      <div class="closing-list" id="closing-list"></div>
+      <p class="small muted" style="margin-top:14px" id="closing-notes"></p>
     </article>
   </section>
 
@@ -588,7 +628,7 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
   $("m-sims").textContent = (META.n_sims || 40000).toLocaleString();
 
   // ---------------- tabs / routing ----------------
-  var VIEWS = ["overview", "senate", "house", "governors", "national", "methods"];
+  var VIEWS = ["overview", "senate", "house", "governors", "night", "national", "methods"];
   var rendered = {};
   function show(view, raceId) {
     if (VIEWS.indexOf(view) < 0) view = "overview";
@@ -596,6 +636,10 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
       $(v).hidden = v !== view;
       $("tab-" + v).setAttribute("aria-selected", v === view ? "true" : "false");
     });
+    var bar = document.querySelector(".tabs"), btn = $("tab-" + view);
+    if (bar && btn && (btn.offsetLeft < bar.scrollLeft || btn.offsetLeft + btn.offsetWidth > bar.scrollLeft + bar.clientWidth)) {
+      bar.scrollLeft = btn.offsetLeft - 16;   // horizontal only, so the page itself doesn't jump
+    }
     try { localStorage.setItem("mf26-tab", view); } catch (e) { /* storage unavailable */ }
     if (!rendered[view]) { rendered[view] = true; RENDER[view](); }
     if (raceId) openRace(raceId);
@@ -614,6 +658,146 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
     show(saved && VIEWS.indexOf(saved) >= 0 ? saved : "overview");
   }
   window.addEventListener("hashchange", routeFromHash);
+
+  // ---------------- poll-closing countdowns ----------------
+  var STATE_NAMES = { AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California", CO: "Colorado", CT: "Connecticut", DE: "Delaware",
+    FL: "Florida", GA: "Georgia", HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa", KS: "Kansas", KY: "Kentucky", LA: "Louisiana",
+    ME: "Maine", MD: "Maryland", MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri", MT: "Montana", NE: "Nebraska",
+    NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey", NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio",
+    OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina", SD: "South Dakota", TN: "Tennessee", TX: "Texas",
+    UT: "Utah", VT: "Vermont", VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming" };
+  var CLOSE_GROUPS = ((DATA.poll_closings || {}).groups || []).map(function (g) { return Object.assign({ t: Date.parse(g.utc) }, g); });
+  var ET_TIME = new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", hour: "numeric", minute: "2-digit" });
+  var ET_WD = new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", weekday: "short" });
+  var LOCAL_TIME = new Intl.DateTimeFormat("en-US", { hour: "numeric", minute: "2-digit" });
+  var LOCAL_WD = new Intl.DateTimeFormat("en-US", { weekday: "short" });
+  function etLabel(t) { var d = new Date(t), wd = ET_WD.format(d); return ET_TIME.format(d) + " ET" + (wd !== "Tue" ? " (" + wd + ")" : ""); }
+  function localLabel(t) {
+    var d = new Date(t), loc = LOCAL_TIME.format(d), et = ET_TIME.format(d);
+    var lwd = LOCAL_WD.format(d), ewd = ET_WD.format(d);
+    if (loc === et && lwd === ewd) return null;           // viewer is on Eastern time
+    return loc + (lwd !== ewd ? " " + lwd : "") + " your time";
+  }
+  function countdownText(ms) {
+    if (ms <= 0) return "Polls closed";
+    var s = Math.floor(ms / 1000), d = Math.floor(s / 86400); s -= d * 86400;
+    var h = Math.floor(s / 3600); s -= h * 3600;
+    var m = Math.floor(s / 60); s -= m * 60;
+    function pad(n) { return (n < 10 ? "0" : "") + n; }
+    return (d > 0 ? d + "d " : "") + pad(h) + "h " + pad(m) + "m " + pad(s) + "s";
+  }
+  function countdown(t, cls) {
+    var ms = t - Date.now();
+    return el("span", { class: "cd" + (cls ? " " + cls : "") + (ms <= 0 ? " closed" : ""), "data-countdown": String(t), text: countdownText(ms) });
+  }
+  function surname(name) {
+    var parts = (name || "").replace(/,/g, "").split(/\s+/).filter(function (w) { return !/^(jr|sr|ii|iii|iv)\.?$/i.test(w); });
+    return parts.length ? parts[parts.length - 1] : "";
+  }
+  function raceChip(r) {
+    var fav = r.fixed ? (r.fixed === "D" ? r.dem : r.rep) : (r.p >= 0.5 ? r.dem : r.rep);
+    var key = r.fixed ? (r.fixed === "D" ? "d3" : "r3") : pclass(r.p).k;
+    var label = r.office === "HOUSE" ? r.id : r.state + (r.office === "GOV" ? " Gov" : r.id.slice(-3) === "-SP" ? " Sen (special)" : " Sen");
+    var odds = r.fixed ? "" : " " + pctText(Math.max(r.p, 1 - r.p));
+    return el("a", { class: "racechip", href: "#race-" + r.id, title: raceTitle(r) + (fav ? ": " + fav.name + " favored" : "") },
+      [el("span", { class: "sw", style: "background:var(--" + key + ")" }), el("b", { text: label }), " " + (fav ? surname(fav.name) : "") + odds]);
+  }
+  function statesLine(g) {
+    var parts = g.states.slice().sort(function (a, b) { return (STATE_NAMES[a.st] || a.st) < (STATE_NAMES[b.st] || b.st) ? -1 : 1; }).map(function (s) {
+      var name = STATE_NAMES[s.st] || s.st;
+      var txt = s.part === "first" ? name + " (part)" : s.part === "last" ? name + " (rest)" : name;
+      return s.note ? el("abbr", { title: s.note, text: txt }) : document.createTextNode(txt);
+    });
+    var out = el("div", { class: "closing-states" }, [el("div", { class: "row-label", text: "Polls close in" })]);
+    parts.forEach(function (p, i) { if (i) out.appendChild(document.createTextNode(" · ")); out.appendChild(p); });
+    return out;
+  }
+  function closingStatesSummary(g) {
+    var full = g.states.filter(function (s) { return s.part !== "first"; }).map(function (s) { return STATE_NAMES[s.st] || s.st; });
+    var part = g.states.filter(function (s) { return s.part === "first"; }).map(function (s) { return STATE_NAMES[s.st] || s.st; });
+    var bits = [];
+    if (full.length) bits.push(full.length > 4 ? full.length + " states" : full.join(", "));
+    if (part.length) bits.push((full.length ? "parts of " : "parts of ") + part.join(" and "));
+    return bits.join(", plus ");
+  }
+  function nextGroup() {
+    var now = Date.now();
+    for (var i = 0; i < CLOSE_GROUPS.length; i++) if (CLOSE_GROUPS[i].t > now) return { g: CLOSE_GROUPS[i], first: i === 0 };
+    return null;
+  }
+  function groupCounts(g) {
+    var n = g.races.SEN.length + g.races.GOV.length + g.races.HOUSE.length;
+    var bits = [];
+    if (g.races.SEN.length) bits.push(g.races.SEN.length + " Senate");
+    if (g.races.GOV.length) bits.push(g.races.GOV.length + " governor");
+    if (g.races.HOUSE.length) bits.push(g.races.HOUSE.length + " House");
+    return { n: n, text: bits.join(", ") };
+  }
+  var nextShown = null;
+  function renderNextClosing() {
+    var nx = nextGroup();
+    nextShown = nx ? nx.g.t : Infinity;
+    var banner = $("night-banner"), hero = $("night-hero");
+    [banner, hero].forEach(function (box) {
+      if (!box) return;
+      clear(box);
+      if (!nx) {
+        box.appendChild(el("div", null, [el("h2", { text: "All polls have closed" }), el("p", { class: "small muted", text: "Results now depend on the count. Some races (Georgia runoffs, Louisiana House runoffs, Alaska ranked-choice tallies) finish later." })]));
+        return;
+      }
+      var g = nx.g, c = groupCounts(g), lead = nx.first ? "First polls close in" : "Next polls close in";
+      var when = etLabel(g.t), loc = localLabel(g.t);
+      var what = when + (loc ? " (" + loc + ")" : "") + ": " + closingStatesSummary(g) + ". Voting ends in " + c.text + (c.n === 1 ? " race." : " races.");
+      if (box === banner) {
+        box.appendChild(el("div", { class: "stack", style: "gap:4px" }, [el("div", { class: "eyebrow", text: "Election night" }),
+          el("div", null, [el("span", { class: "small", text: lead + " " }), countdown(g.t)]), el("div", { class: "small muted", text: what })]));
+        box.appendChild(el("a", { href: "#night", class: "small", text: "See every poll-closing time" }));
+      } else {
+        box.appendChild(el("div", { class: "eyebrow", text: lead }));
+        box.appendChild(countdown(g.t, "big"));
+        box.appendChild(el("p", { class: "what", text: what }));
+      }
+    });
+  }
+  function renderNight() {
+    var list = $("closing-list"); clear(list);
+    CLOSE_GROUPS.forEach(function (g) {
+      var loc = localLabel(g.t);
+      var row = el("div", { class: "closing" + (g.t <= Date.now() ? " done" : "") });
+      row.appendChild(el("div", { class: "closing-time" }, [el("div", { class: "t", text: etLabel(g.t) }), loc ? el("div", { class: "local", text: loc }) : null, countdown(g.t)]));
+      var body = el("div", { class: "closing-body" }, [statesLine(g)]);
+      var byClose = function (a, b) { return Math.abs(a.p - 0.5) - Math.abs(b.p - 0.5); };
+      [["SEN", "Senate"], ["GOV", "Governor"]].forEach(function (o) {
+        var rs = g.races[o[0]].map(function (id) { return BY_ID[id]; }).filter(Boolean).sort(function (a, b) { return a.state < b.state ? -1 : 1; });
+        if (rs.length) body.appendChild(el("div", null, [el("div", { class: "row-label", text: o[1] }), el("div", { class: "racechips" }, rs.map(raceChip))]));
+      });
+      var hs = g.races.HOUSE.map(function (id) { return BY_ID[id]; }).filter(Boolean);
+      if (hs.length) {
+        var comp = hs.filter(function (r) { return !r.fixed && r.p > 0.05 && r.p < 0.95; }).sort(byClose);
+        var rest = hs.length - comp.length;
+        var kids = [el("div", { class: "row-label", text: "House · " + hs.length + " district" + (hs.length === 1 ? "" : "s") + (comp.length ? ", " + comp.length + " competitive" : "") })];
+        if (comp.length) kids.push(el("div", { class: "racechips" }, comp.map(raceChip)));
+        if (rest) kids.push(el("div", { class: "small muted", style: "margin-top:6px", text: (comp.length ? "Plus " : "") + rest + " district" + (rest === 1 ? "" : "s") + " where one side has a 95%+ chance." }));
+        body.appendChild(el("div", null, kids));
+      }
+      row.appendChild(body);
+      list.appendChild(row);
+    });
+    var srcs = (DATA.poll_closings || {}).sources || [];
+    var notes = $("closing-notes"); clear(notes);
+    notes.appendChild(document.createTextNode("Each race is placed at the moment its last polling place closes, so a statewide race in a state that spans two time zones closes with the later zone. Voters already in line at closing time can still vote. Times are Eastern Standard Time (daylight saving ends Nov. 1). Sources: "));
+    srcs.forEach(function (u, i) { if (i) notes.appendChild(document.createTextNode(", ")); notes.appendChild(el("a", { href: u, target: "_blank", rel: "noopener", text: u.replace(/^https:\/\/(www\.)?/, "").split("/")[0] })); });
+    notes.appendChild(document.createTextNode("."));
+  }
+  function tick() {
+    var now = Date.now();
+    document.querySelectorAll("[data-countdown]").forEach(function (n) {
+      var ms = +n.getAttribute("data-countdown") - now, txt = countdownText(ms);
+      if (n.textContent !== txt) n.textContent = txt;
+      if (ms <= 0 && !n.classList.contains("closed")) n.classList.add("closed");
+    });
+    if (nextShown != null && now >= nextShown) { renderNextClosing(); if (rendered.night) renderNight(); }
+  }
 
   // ---------------- charts ----------------
   function seatHistogram(container, hist, opts) {
@@ -919,6 +1103,7 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
     var title = r.office === "HOUSE" ? r.id : r.name + (r.office === "SEN" ? " Senate" : " governor");
     head.appendChild(el("h4", { text: title + ": " + (r.fixed ? "not contested by both parties" : (r.p >= 0.5 ? (r.dem ? r.dem.name : "Democrat") : (r.rep ? r.rep.name : "Republican")) + " is favored, " + oneIn(r.p)) }));
     if (!r.fixed) head.appendChild(el("p", { class: "small", text: "Expected margin " + marginText(r.mean, r) + ". In 80% of simulations the result falls between " + marginText(r.p10, r) + " and " + marginText(r.p90, r) + "; in 95%, between " + marginText(r.p025, r) + " and " + marginText(r.p975, r) + "." }));
+    if (r.close) head.appendChild(el("p", { class: "small" }, ["Voting ends " + etLabel(Date.parse(r.close)) + ", Nov. 3" + (localLabel(Date.parse(r.close)) ? " (" + localLabel(Date.parse(r.close)) + ")" : "") + " · ", countdown(Date.parse(r.close))]));
     if (r.status) head.appendChild(el("p", { class: "small muted", text: "Status: " + r.status + (r.appointed ? " · appointed incumbent" : "") }));
     left.appendChild(head);
     // components
@@ -1321,7 +1506,8 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
         keys.length ? el("span", { class: "small " + (ok ? "status-ok" : "status-bad"), text: ok ? "Fetched in today's run" : "Failed today: " + failed.join(", ") }) : el("span", { class: "small muted", text: "Static calibration data" })]));
     });
   }
-  var RENDER = { overview: renderOverview, senate: renderSenate, house: renderHouse, governors: renderGov, national: renderNational, methods: renderMethods };
+  var RENDER = { overview: renderOverview, senate: renderSenate, house: renderHouse, governors: renderGov, night: function () { renderNight(); renderNextClosing(); },
+    national: renderNational, methods: renderMethods };
 
   // re-render charts on resize (debounced)
   var rt = null;
@@ -1339,5 +1525,7 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
   });
 
   routeFromHash();
+  renderNextClosing();
+  setInterval(tick, 1000);
 })();
 </script>

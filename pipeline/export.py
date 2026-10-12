@@ -12,7 +12,7 @@ import json
 import math
 from pathlib import Path
 
-from pipeline.common import HISTORY, PROCESSED, RESEARCH, SITE, json_safe, log, save_json
+from pipeline.common import HISTORY, PROCESSED, RESEARCH, SITE, STATIC, json_safe, log, save_json
 
 TEMPLATE = SITE / "template.html"
 
@@ -84,6 +84,40 @@ def slim_race(r: dict, news: dict) -> dict:
     if news.get(r["race_id"]):
         out["news"] = news[r["race_id"]][:5]
     return out
+
+
+POLL_CLOSINGS = STATIC / "poll_closings_2026.json"
+
+
+def race_close(rid: str, office: str, state: str, sched: dict) -> str | None:
+    """UTC time when every polling place for this race has closed."""
+    st = (sched.get("states") or {}).get(state)
+    if not st:
+        return None
+    if office == "HOUSE" and st.get("first"):
+        if "early_districts" in st:
+            return st["first"] if rid in st["early_districts"] else st["close"]
+        if "late_districts" in st:
+            return st["close"] if rid in st["late_districts"] else st["first"]
+    return st["close"]
+
+
+def poll_closing_groups(races_slim: list[dict], sched: dict) -> dict:
+    """Combine races whose polls close at the same moment into one countdown group."""
+    groups: dict[str, dict] = {}
+    for r in races_slim:
+        t = r.get("close")
+        if not t:
+            continue
+        g = groups.setdefault(t, {"utc": t, "states": [], "races": {"SEN": [], "GOV": [], "HOUSE": []}})
+        g["races"][r["office"]].append(r["id"])
+    for st, info in sorted((sched.get("states") or {}).items()):
+        first, close = info.get("first"), info["close"]
+        for t, part in ((first, "first"), (close, "last" if first else "all")):
+            if t and t in groups:
+                groups[t]["states"].append({"st": st, "part": part, "note": info.get("note")})
+    out = sorted(groups.values(), key=lambda g: g["utc"])
+    return {"groups": out, "sources": sched.get("sources", []), "election_date": sched.get("election_date")}
 
 
 def chamber(ch: dict) -> dict:
@@ -182,6 +216,9 @@ def site_data(out: dict, hist: dict) -> dict:
     nat = out["national"]
     news = out.get("news") or {}
     races = [slim_race(r, news) for r in out["races"]]
+    sched = json.loads(POLL_CLOSINGS.read_text()) if POLL_CLOSINGS.exists() else {}
+    for r in races:
+        r["close"] = race_close(r["id"], r["office"], r["state"], sched)
     comps = {}
     for k, c in (nat.get("components") or {}).items():
         if not c:
@@ -209,7 +246,7 @@ def site_data(out: dict, hist: dict) -> dict:
             "senate": chamber(out["senate"]), "governors": chamber(out["governors"]), "joint": out.get("joint"),
             "races": races, "national_news": {k: news.get(k, [])[:8] for k in ("NATIONAL", "NATIONAL_POLLS")},
             "markets_control": out.get("markets_control"), "other_forecasts": _research_csv("other_forecasts.csv"),
-            "history": hist,
+            "history": hist, "poll_closings": poll_closing_groups(races, sched),
             "research": out.get("research")}
     return data
 
