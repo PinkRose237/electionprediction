@@ -1,0 +1,92 @@
+# Runs the forecast every day at 12:00 PM Eastern, commits the updated forecast and history to the
+# repo, and redeploys the website to GitHub Pages. Can also be started by hand from the Actions tab.
+name: Daily forecast
+
+on:
+  schedule:
+    # GitHub cron runs on UTC. Noon Eastern is 16:00 UTC during daylight time (EDT) and 17:00 UTC
+    # during standard time (EST); both are scheduled and the gate below keeps the one that is noon.
+    - cron: "0 16 * * *"
+    - cron: "0 17 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-forecast
+  cancel-in-progress: false
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        shell: bash
+        run: |
+          run=true
+          offset=$(TZ=America/New_York date +%z)
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            case "$offset|${{ github.event.schedule }}" in
+              "-0400|0 16 * * *"|"-0500|0 17 * * *") run=true ;;
+              *) run=false ;;
+            esac
+          fi
+          echo "Eastern UTC offset $offset, trigger '${{ github.event.schedule }}' -> run=$run"
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+
+  forecast:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      TZ: America/New_York
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the model (fetch, simulate, rebuild site)
+        run: python -m pipeline.run
+
+      - name: Commit the updated forecast
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history data/processed/forecast.json site/index.html site/data
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Forecast update $(date +%Y-%m-%d)"
+            for attempt in 1 2 3; do
+              git pull --rebase && git push && break
+              sleep 10
+            done
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: forecast
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

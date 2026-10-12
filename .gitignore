@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.claude/
+logs/
+# raw downloads are re-fetched every run (~200 MB/day)
+data/raw/
+# dated full-model snapshots stay local; the committed history CSVs carry the time series
+data/processed/forecast_*.json

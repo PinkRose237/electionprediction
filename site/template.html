@@ -1,0 +1,1300 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026 Midterm Forecast</title>
+<meta name="description" content="Daily-updating forecast of the 2026 U.S. House, Senate and governor elections.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;800;900&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style>
+/* Layout: an election-night results desk. Verdict strip up top, chamber boards with seat charts,
+   then race ledgers you can open row by row. Party colors are the only data colors on the page. */
+:root {
+  --bg: #f3f5f8;
+  --panel: #ffffff;
+  --panel-2: #eaeef3;
+  --ink: #12151a;
+  --ink-2: #434b59;
+  --ink-3: #6c7585;
+  --rule: #dce1e8;
+  --rule-2: #c3cad4;
+  --dem: #2f62b5;
+  --rep: #c9433b;
+  --ind: #14866d;
+  --d3: #1c4485; --d2: #2f62b5; --d1: #8aa9dc;
+  --t0: #c4c9d1;
+  --r1: #e49d96; --r2: #c9433b; --r3: #8a251f;
+  --none: #e3e7ec;
+  --hl: #fff4c2;
+  --font-display: "Libre Franklin", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --font-body: "Public Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --step--1: 0.8125rem;
+  --step-0: 0.9375rem;
+  --step-1: 1.125rem;
+  --step-2: 1.5rem;
+  --step-3: 2.125rem;
+  --step-4: 3.25rem;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111418; --panel: #181c22; --panel-2: #20252d; --ink: #eef1f5; --ink-2: #b9c1cd; --ink-3: #8b94a3;
+    --rule: #2a3039; --rule-2: #3a414c; --dem: #5b8fe0; --rep: #e3665d; --ind: #24a17c;
+    --d3: #9dbdf3; --d2: #5b8fe0; --d1: #33548c; --t0: #444b56; --r1: #8c3e38; --r2: #e3665d; --r3: #f4a39b;
+    --none: #232830; --hl: #3a3420; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111418; --panel: #181c22; --panel-2: #20252d; --ink: #eef1f5; --ink-2: #b9c1cd; --ink-3: #8b94a3;
+  --rule: #2a3039; --rule-2: #3a414c; --dem: #5b8fe0; --rep: #e3665d; --ind: #24a17c;
+  --d3: #9dbdf3; --d2: #5b8fe0; --d1: #33548c; --t0: #444b56; --r1: #8c3e38; --r2: #e3665d; --r3: #f4a39b;
+  --none: #232830; --hl: #3a3420; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: var(--step-0); line-height: 1.5; margin: 0; }
+a { color: inherit; text-decoration-color: var(--rule-2); text-underline-offset: 2px; }
+a:hover { text-decoration-color: currentColor; }
+:focus-visible { outline: 2px solid var(--dem); outline-offset: 2px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: var(--step-2); font-weight: 800; }
+h3 { font-size: var(--step-1); font-weight: 800; }
+p { margin: 0; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-inline: 16px; }
+.muted { color: var(--ink-3); }
+.small { font-size: var(--step--1); }
+.num { font-variant-numeric: tabular-nums; }
+.eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-3); }
+
+/* ---------- masthead ---------- */
+.mast { background: var(--panel); border-bottom: 1px solid var(--rule); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; }
+.mast-row { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: end; justify-content: space-between; padding-block: 18px 10px; }
+.brand h1 { font-size: clamp(1.6rem, 3.6vw, 2.35rem); font-weight: 900; line-height: 1.02; }
+.brand .eyebrow { margin-bottom: 4px; }
+.stamp { text-align: right; display: grid; gap: 2px; }
+.countdown { font-family: var(--font-display); font-weight: 800; font-size: var(--step-1); }
+.countdown b { font-size: var(--step-2); font-weight: 900; }
+.tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { appearance: none; background: none; border: 0; border-bottom: 3px solid transparent; color: var(--ink-2); cursor: pointer;
+  font: 600 var(--step-0)/1 var(--font-body); padding: 12px 12px 11px; white-space: nowrap; }
+.tab:hover { color: var(--ink); }
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+@media (max-width: 640px) { .stamp { text-align: left; } .mast { position: static; } }
+
+/* ---------- layout ---------- */
+main { padding-block: 24px 64px; }
+.view { display: grid; gap: 20px; }
+.board { background: var(--panel); border: 1px solid var(--rule); border-radius: var(--radius); padding: 20px; min-width: 0; }
+.board-head { display: flex; flex-wrap: wrap; gap: 6px 16px; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
+.board-head p { max-width: 68ch; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+@media (max-width: 920px) { .grid-2, .grid-3 { grid-template-columns: minmax(0, 1fr); } }
+.lede { font-size: var(--step-1); max-width: 70ch; color: var(--ink-2); }
+
+/* ---------- verdict cards ---------- */
+.verdict { display: grid; gap: 12px; align-content: start; }
+.verdict .who { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: var(--step-1); }
+.oval { display: inline-block; width: 22px; height: 13px; border-radius: 50%; border: 2px solid var(--ink); flex: none; }
+.oval.fill-D { background: var(--dem); border-color: var(--dem); }
+.oval.fill-R { background: var(--rep); border-color: var(--rep); }
+.oval.fill-I { background: var(--ind); border-color: var(--ind); }
+.hero { font-family: var(--font-body); font-weight: 700; font-size: var(--step-4); line-height: 1; letter-spacing: -0.03em; }
+.hero small { font-size: var(--step-1); font-weight: 600; letter-spacing: 0; color: var(--ink-2); margin-left: 6px; }
+.split { display: flex; gap: 2px; height: 14px; border-radius: 4px; overflow: hidden; }
+.split > span { display: block; height: 100%; }
+.split-legend { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; font-size: var(--step--1); color: var(--ink-2); }
+.split-legend > span { white-space: nowrap; }
+.split-legend b { color: var(--ink); }
+.key { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 6px; }
+.facts { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; font-size: var(--step--1); }
+.facts dt { color: var(--ink-3); }
+.facts dd { margin: 0; font-variant-numeric: tabular-nums; }
+
+/* ---------- charts ---------- */
+.chart { width: 100%; min-width: 0; position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.axis text, .lbl { fill: var(--ink-3); font: 500 11px var(--font-body); font-variant-numeric: tabular-nums; }
+.axis line, .axis path, .grid line { stroke: var(--rule); shape-rendering: crispEdges; }
+.lbl-strong { fill: var(--ink); font: 700 12px var(--font-body); }
+.tip { position: fixed; z-index: 50; pointer-events: none; background: var(--panel); color: var(--ink); border: 1px solid var(--rule-2);
+  border-radius: 8px; padding: 8px 10px; font-size: var(--step--1); box-shadow: 0 6px 24px rgb(0 0 0 / 0.14); max-width: 280px; }
+.tip b { font-size: var(--step-0); }
+.tip .row { display: flex; gap: 8px; align-items: center; justify-content: space-between; }
+.tip .lk { display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: var(--step--1); color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; }
+.seat { cursor: pointer; }
+.seat:hover { stroke: var(--ink); stroke-width: 1.5px; }
+.tile { cursor: pointer; }
+.tile rect { transition: opacity 0.15s; }
+.tile:hover rect { opacity: 0.85; }
+.tile text { font: 700 11px var(--font-body); pointer-events: none; }
+.tile .tp { font: 500 10px var(--font-body); font-variant-numeric: tabular-nums; }
+
+/* ---------- tables ---------- */
+.controls { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin-bottom: 12px; }
+.controls input, .controls select { font: 500 var(--step--1) var(--font-body); color: var(--ink); background: var(--panel); border: 1px solid var(--rule-2);
+  border-radius: 8px; padding: 8px 10px; min-width: 0; }
+.controls input { flex: 1 1 220px; max-width: 340px; }
+.table-scroll { overflow-x: auto; border-top: 1px solid var(--rule); }
+table.ledger { width: 100%; border-collapse: collapse; font-size: var(--step--1); }
+.ledger th { text-align: left; font-weight: 700; color: var(--ink-3); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 10px 8px; border-bottom: 1px solid var(--rule); white-space: nowrap; cursor: pointer; user-select: none; }
+.ledger th[aria-sort="ascending"]::after { content: " ▲"; }
+.ledger th[aria-sort="descending"]::after { content: " ▼"; }
+.ledger td { padding: 9px 8px; border-bottom: 1px solid var(--rule); vertical-align: middle; font-variant-numeric: tabular-nums; }
+.ledger tr.race { cursor: pointer; }
+.ledger tr.race:hover td { background: var(--panel-2); }
+.ledger tr.race[aria-expanded="true"] td { background: var(--panel-2); border-bottom-color: transparent; }
+.ledger td.r, .ledger th.r { text-align: right; }
+.cands { display: grid; gap: 2px; min-width: 170px; }
+.closelist { overflow-x: auto; }
+.closelist .cands { min-width: 0; }
+.closelist .cand { white-space: normal; }
+@media (max-width: 480px) { .closelist .pbar { width: 64px; } .closelist td { padding-inline: 5px; } }
+.cand { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.cand .oval { width: 14px; height: 9px; border-width: 1.5px; }
+.cand.win { font-weight: 700; }
+.chip { display: inline-block; border-radius: 999px; padding: 2px 9px; font-size: 0.74rem; font-weight: 700; white-space: nowrap; border: 1px solid transparent; }
+.prob { font-weight: 700; font-size: var(--step-0); }
+.pbar { width: 96px; height: 8px; display: flex; gap: 2px; border-radius: 3px; overflow: hidden; margin-top: 4px; }
+.pbar span { display: block; height: 100%; }
+td.detail { padding: 0 8px 18px; background: var(--panel-2); }
+.detail-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 20px; padding-top: 8px; }
+@media (max-width: 820px) { .detail-grid { grid-template-columns: minmax(0, 1fr); } }
+.detail h4 { margin: 0 0 8px; font: 800 var(--step-0) var(--font-display); }
+.mini { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+.mini th, .mini td { padding: 5px 6px; border-bottom: 1px solid var(--rule); text-align: left; font-variant-numeric: tabular-nums; }
+.mini th { color: var(--ink-3); font-weight: 600; }
+.mini td.nw, .mini td.r { white-space: nowrap; }
+.mini td.r, .mini th.r { text-align: right; }
+.newslist { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; font-size: 0.82rem; }
+.newslist .src { color: var(--ink-3); }
+.pillrow { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { font-size: 0.74rem; border: 1px solid var(--rule-2); border-radius: 999px; padding: 2px 8px; white-space: nowrap; }
+.note { font-size: 0.82rem; color: var(--ink-2); border-left: 3px solid var(--rule-2); padding-left: 10px; }
+.empty { color: var(--ink-3); font-size: var(--step--1); padding: 8px 0; }
+.stack { display: grid; gap: 16px; }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; }
+.kv > div { border-top: 2px solid var(--ink); padding-top: 8px; }
+.kv .v { font-size: var(--step-2); font-weight: 700; line-height: 1.1; }
+.prose { display: grid; gap: 12px; max-width: 74ch; }
+.prose h3 { margin-top: 10px; }
+.prose ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+.callout { background: var(--panel-2); border-radius: 8px; padding: 14px 16px; }
+.srcgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.src { border: 1px solid var(--rule); border-radius: 8px; padding: 12px; display: grid; gap: 4px; align-content: start; }
+.status-ok::before { content: "● "; color: var(--ind); }
+.status-bad::before { content: "▲ "; color: var(--rep); }
+.change-up { color: var(--ink); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<header class="mast">
+  <div class="wrap mast-row">
+    <div class="brand">
+      <div class="eyebrow">House · Senate · Governors · updated daily</div>
+      <h1>2026 Midterm Forecast</h1>
+    </div>
+    <div class="stamp">
+      <div class="countdown"><b id="days-out">—</b> days until Nov. 3</div>
+      <div class="small muted" id="updated">Loading the latest model run…</div>
+    </div>
+  </div>
+  <nav class="wrap tabs" role="tablist" aria-label="Sections">
+    <button class="tab" role="tab" id="tab-overview" aria-controls="overview" data-view="overview">Overview</button>
+    <button class="tab" role="tab" id="tab-senate" aria-controls="senate" data-view="senate">Senate</button>
+    <button class="tab" role="tab" id="tab-house" aria-controls="house" data-view="house">House</button>
+    <button class="tab" role="tab" id="tab-governors" aria-controls="governors" data-view="governors">Governors</button>
+    <button class="tab" role="tab" id="tab-national" aria-controls="national" data-view="national">National picture</button>
+    <button class="tab" role="tab" id="tab-methods" aria-controls="methods" data-view="methods">How it works</button>
+  </nav>
+</header>
+
+<main class="wrap">
+  <!-- ================= OVERVIEW ================= -->
+  <section class="view" id="overview" role="tabpanel" aria-labelledby="tab-overview">
+    <div class="grid-3" id="verdicts"></div>
+    <div class="grid-2">
+      <article class="board">
+        <div class="board-head"><h2>The House, seat by seat</h2><span class="small muted">218 for a majority</span></div>
+        <div class="chart" id="hemi-house"></div>
+        <div class="legend" id="hemi-legend"></div>
+      </article>
+      <article class="board">
+        <div class="board-head"><h2>The Senate</h2><span class="small muted">51 for control · Vance breaks 50–50 ties</span></div>
+        <div class="chart" id="hemi-senate"></div>
+        <p class="small muted" style="margin-top:10px">Pale seats are not on the ballot this year (34 Democratic caucus, 31 Republican).</p>
+      </article>
+    </div>
+    <article class="board">
+      <div class="board-head"><h2>National environment</h2><span class="small muted" id="nat-sub"></span></div>
+      <div class="grid-2">
+        <div class="stack" id="nat-summary"></div>
+        <div class="chart" id="nat-trend-mini"></div>
+      </div>
+    </article>
+    <div class="grid-2">
+      <article class="board">
+        <div class="board-head"><h2>Closest statewide races</h2><span class="small muted">Senate and governor</span></div>
+        <div id="close-statewide"></div>
+      </article>
+      <article class="board">
+        <div class="board-head"><h2>Closest House races</h2><span class="small muted">By win probability</span></div>
+        <div id="close-house"></div>
+      </article>
+    </div>
+    <div class="grid-2">
+      <article class="board">
+        <div class="board-head"><h2>Since the last update</h2><span class="small muted" id="chg-since"></span></div>
+        <div id="changes"></div>
+      </article>
+      <article class="board">
+        <div class="board-head"><h2>How control could split</h2><span class="small muted">Joint outcomes across simulations</span></div>
+        <div id="joint"></div>
+        <h3 style="margin-top:18px">Model vs. markets and other forecasters</h3>
+        <div id="vs-markets"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= SENATE ================= -->
+  <section class="view" id="senate" role="tabpanel" aria-labelledby="tab-senate" hidden>
+    <div class="grid-2">
+      <article class="board">
+        <div class="board-head"><h2>Senate seats after the election</h2><span class="small muted" id="sen-hist-sub"></span></div>
+        <div class="chart" id="sen-hist"></div>
+      </article>
+      <article class="board">
+        <div class="board-head"><h2>2026 Senate map</h2><span class="small muted">35 races · tap a state</span></div>
+        <div class="chart" id="sen-map"></div>
+        <div class="legend" id="sen-map-legend"></div>
+      </article>
+    </div>
+    <article class="board">
+      <div class="board-head"><h2>Tipping point</h2><p class="small muted">The race most likely to hand a party its 51st seat, ordering races from most to least Democratic in each simulation.</p></div>
+      <div id="sen-tip"></div>
+    </article>
+    <article class="board">
+      <div class="board-head"><h2>Every Senate race</h2><span class="small muted">Click a row for polls, money, ratings and news</span></div>
+      <div class="controls"><input id="sen-q" type="search" placeholder="Search state or candidate" aria-label="Search Senate races"></div>
+      <div class="table-scroll"><table class="ledger" id="sen-table"></table></div>
+    </article>
+  </section>
+
+  <!-- ================= HOUSE ================= -->
+  <section class="view" id="house" role="tabpanel" aria-labelledby="tab-house" hidden>
+    <div class="grid-2">
+      <article class="board">
+        <div class="board-head"><h2>House seats won by Democrats</h2><span class="small muted" id="house-hist-sub"></span></div>
+        <div class="chart" id="house-hist"></div>
+      </article>
+      <article class="board">
+        <div class="board-head"><h2>Seats depend on the national vote</h2><span class="small muted">Average Democratic seats, by simulated national House margin</span></div>
+        <div class="chart" id="house-curve"></div>
+      </article>
+    </div>
+    <article class="board">
+      <div class="board-head"><h2>All 435 districts</h2><span class="small muted" id="house-count"></span></div>
+      <div class="controls">
+        <input id="house-q" type="search" placeholder="Search district, state or candidate" aria-label="Search House districts">
+        <select id="house-filter" aria-label="Filter districts">
+          <option value="competitive">Competitive (5–95%)</option>
+          <option value="tossup">Toss-ups (35–65%)</option>
+          <option value="flips">Likely flips</option>
+          <option value="rated">Rated by any forecaster</option>
+          <option value="all">All districts</option>
+        </select>
+        <select id="house-state" aria-label="Filter by state"><option value="">All states</option></select>
+      </div>
+      <div class="table-scroll"><table class="ledger" id="house-table"></table></div>
+    </article>
+  </section>
+
+  <!-- ================= GOVERNORS ================= -->
+  <section class="view" id="governors" role="tabpanel" aria-labelledby="tab-governors" hidden>
+    <div class="grid-2">
+      <article class="board">
+        <div class="board-head"><h2>Governorships after the election</h2><span class="small muted" id="gov-hist-sub"></span></div>
+        <div class="chart" id="gov-hist"></div>
+      </article>
+      <article class="board">
+        <div class="board-head"><h2>2026 governor map</h2><span class="small muted">36 races · tap a state</span></div>
+        <div class="chart" id="gov-map"></div>
+        <div class="legend" id="gov-map-legend"></div>
+      </article>
+    </div>
+    <article class="board">
+      <div class="board-head"><h2>Every governor's race</h2><span class="small muted">Click a row for details</span></div>
+      <div class="controls"><input id="gov-q" type="search" placeholder="Search state or candidate" aria-label="Search governor races"></div>
+      <div class="table-scroll"><table class="ledger" id="gov-table"></table></div>
+    </article>
+  </section>
+
+  <!-- ================= NATIONAL ================= -->
+  <section class="view" id="national" role="tabpanel" aria-labelledby="tab-national" hidden>
+    <article class="board">
+      <div class="board-head"><h2>Generic congressional ballot</h2><span class="small muted" id="gb-sub"></span></div>
+      <div class="chart" id="gb-trend"></div>
+      <div class="legend" style="margin-top:8px"><span><i class="lk-line" style="display:inline-block;width:16px;height:2px;background:var(--ink);margin-right:6px"></i>Our adjusted average (D minus R)</span><span><svg width="10" height="10" style="margin-right:6px"><circle cx="5" cy="5" r="4" fill="var(--ink-3)"/></svg>Individual polls</span></div>
+    </article>
+    <div class="grid-2">
+      <article class="board">
+        <div class="board-head"><h2>What goes into the national estimate</h2></div>
+        <div id="nat-components"></div>
+      </article>
+      <article class="board">
+        <div class="board-head"><h2>Published polling averages</h2><span class="small muted">Generic ballot, D minus R</span></div>
+        <div id="nat-aggs"></div>
+        <h3 style="margin-top:18px">Trump job approval</h3>
+        <div id="nat-approval"></div>
+      </article>
+    </div>
+    <div class="grid-2">
+      <article class="board">
+        <div class="board-head"><h2>Economy</h2><span class="small muted">FRED, latest releases</span></div>
+        <div class="kv" id="econ"></div>
+      </article>
+      <article class="board">
+        <div class="board-head"><h2>Pollster house effects</h2><span class="small muted">Generic ballot lean vs. the field, shrunk toward zero</span></div>
+        <div id="house-effects"></div>
+      </article>
+    </div>
+    <article class="board">
+      <div class="board-head"><h2>Backtest: how this national method did in past midterms</h2></div>
+      <div id="backtest"></div>
+    </article>
+    <article class="board">
+      <div class="board-head"><h2>Latest generic-ballot polls</h2></div>
+      <div class="table-scroll"><table class="mini" id="gb-polls"></table></div>
+    </article>
+    <article class="board">
+      <div class="board-head"><h2>What has shaped the race</h2><span class="small muted">Key national events since June, from the research log</span></div>
+      <ul class="newslist" id="key-events"></ul>
+    </article>
+    <article class="board">
+      <div class="board-head"><h2>National headlines</h2><span class="small muted">Google News, last few days</span></div>
+      <ul class="newslist" id="nat-news"></ul>
+    </article>
+  </section>
+
+  <!-- ================= METHODS ================= -->
+  <section class="view" id="methods" role="tabpanel" aria-labelledby="tab-methods" hidden>
+    <article class="board">
+      <div class="prose">
+        <h2>How the forecast works</h2>
+        <p>Every day the model collects polls, ratings, prediction-market prices, fundraising reports, economic data and news, then simulates the election <span id="m-sims">40,000</span> times. Each simulation draws one plausible set of polling errors and late shifts, and plays out all 435 House races, 35 Senate races and 36 governor races together.</p>
+        <h3>1. The national environment</h3>
+        <p>The starting point is the expected national House vote margin. It blends four signals, each weighted by how accurate it has been: our own adjusted average of generic-ballot polls together with the published averages; prediction-market prices on the national vote (Kalshi and Polymarket); a fundamentals model of how the president's party fares at a given approval rating, fit on every midterm since 1946; and special-election swings when available.</p>
+        <h3>2. Each race</h3>
+        <p>Each race combines four estimates. <b>Fundamentals</b> are the national environment plus the district or state's partisan lean (twice its Cook PVI), incumbency, candidate experience, scandals and FEC fundraising. <b>Polls</b> come from Wikipedia, VoteHub, 270toWin and Silver Bulletin, de-duplicated. They are adjusted for partisan sponsors (internal polls historically lean about 4.5 points toward their sponsor), pollster house effects, likely-voter screens and national trend, and weighted by recency, sample size and 538 pollster grade. <b>Ratings</b> are the consensus of up to ten forecasters: Cook, Sabato, Inside Elections, Split Ticket, Decision Desk HQ, The Economist, Silver Bulletin, FiftyPlusOne, RealClearPolitics and Fox News. <b>Markets</b> are vig-free prices from Polymarket, Kalshi and PredictIt. The four are combined by precision. Ratings and markets get a discount because they partly reuse the same polls.</p>
+        <h3>3. Correlated uncertainty</h3>
+        <p>Polling errors are not independent. They move together nationally, by office, by region, and by how red or blue a place is, as in 2016 and 2020. The simulation draws all of these jointly with fat-tailed distributions, so a polling miss that hurts one party in Ohio also tends to hurt it in Michigan and Pennsylvania.</p>
+        <h3 id="moe">Margin of error, honestly</h3>
+        <div class="callout" id="moe-box"></div>
+        <h3>What news does, and doesn't, do</h3>
+        <p>Headlines for every competitive race are collected daily and shown with each race. News feeds the model through what it reports: new polls, candidate changes, rating changes and market moves. Raw media tone is not used to move margins, because it has no demonstrated out-of-sample predictive value.</p>
+        <h3>Known limits</h3>
+        <ul>
+          <li>District-level polling is sparse and often partisan; most House seats lean on fundamentals, ratings and markets.</li>
+          <li>Alaska uses a top-four primary with ranked-choice voting, Georgia requires 50% to avoid a runoff, and Louisiana's House races use a Nov. 3 all-candidate primary with Dec. 12 runoffs. The model forecasts the eventual two-candidate result.</li>
+          <li>Nebraska's Dan Osborn is an independent who has not committed to either caucus; he is counted on the non-Republican side but not as a Democrat for Senate control.</li>
+          <li>Nine states use new congressional maps in 2026 (TX, CA, NC, OH, UT, FL, TN, LA, AL); incumbents running on redrawn lines get a smaller incumbency bonus.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="board">
+      <div class="board-head"><h2>Sources</h2><span class="small muted">Status of each automated feed in today's run</span></div>
+      <p class="small" style="margin-bottom:12px">Code, data and daily history: <a href="https://github.com/PinkRose237/electionprediction" target="_blank" rel="noopener">github.com/PinkRose237/electionprediction</a>. The model reruns every day at noon Eastern.</p>
+      <div class="srcgrid" id="sources"></div>
+    </article>
+  </section>
+</main>
+
+<div class="tip" id="tip" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script id="forecast-data" type="application/json">/*__FORECAST_DATA__*/null</script>
+<script>
+(function () {
+  "use strict";
+  var DATA = null;
+  try { DATA = JSON.parse(document.getElementById("forecast-data").textContent); } catch (e) { DATA = null; }
+
+  // ---------------- helpers ----------------
+  function el(tag, attrs, kids) {
+    var n = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) {
+      var v = attrs[k];
+      if (v == null) return;
+      if (k === "class") n.className = v;
+      else if (k === "text") n.textContent = v;
+      else if (k === "style") n.setAttribute("style", v);
+      else if (k.slice(0, 2) === "on") n.addEventListener(k.slice(2), v);
+      else n.setAttribute(k, v);
+    });
+    (kids || []).forEach(function (c) { if (c != null) n.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+    return n;
+  }
+  function clear(n) { while (n && n.firstChild) n.removeChild(n.firstChild); return n; }
+  function $(id) { return document.getElementById(id); }
+  function cssVar(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+  function pctText(p) {
+    if (p == null) return "—";
+    if (p >= 0.995) return ">99%";
+    if (p <= 0.005) return "<1%";
+    return Math.round(p * 100) + "%";
+  }
+  function oneIn(p) {
+    var q = Math.max(p, 1 - p);
+    if (q >= 0.995) return "more than 99 in 100";
+    var n = Math.round(q * 100);
+    return n + " in 100";
+  }
+  function sideLetter(r) { return r && r.ind ? "I" : "D"; }
+  function marginText(m, r) {
+    if (m == null || isNaN(m)) return "—";
+    var a = Math.abs(m);
+    if (a < 0.05) return "Even";
+    return (m > 0 ? sideLetter(r) : "R") + "+" + a.toFixed(1);
+  }
+  function fmtMoney(x) {
+    if (x == null) return "—";
+    if (x >= 1e6) return "$" + (x / 1e6).toFixed(x >= 1e7 ? 0 : 1) + "M";
+    if (x >= 1e3) return "$" + Math.round(x / 1e3) + "K";
+    return "$" + Math.round(x);
+  }
+  function fmtDate(s, opts) {
+    if (!s) return "—";
+    var d = new Date(s.length <= 10 ? s + "T12:00:00" : s);
+    if (isNaN(d)) return s;
+    return d.toLocaleDateString("en-US", opts || { month: "short", day: "numeric" });
+  }
+  function partyName(p, plural) {
+    if (p === "D") return plural ? "Democrats" : "Democrat";
+    if (p === "R") return plural ? "Republicans" : "Republican";
+    if (p === "I") return plural ? "Independents" : "Independent";
+    return p || "";
+  }
+  // probability class for a D-side win probability
+  var CLASSES = [
+    { k: "r3", min: 0, label: "Safe R" }, { k: "r2", min: 0.03, label: "Likely R" }, { k: "r1", min: 0.10, label: "Lean R" },
+    { k: "t0", min: 0.40, label: "Toss-up" }, { k: "d1", min: 0.60, label: "Lean D" }, { k: "d2", min: 0.90, label: "Likely D" },
+    { k: "d3", min: 0.97, label: "Safe D" }];
+  function pclass(p) { var c = CLASSES[0]; CLASSES.forEach(function (x) { if (p >= x.min) c = x; }); return c; }
+  function classColor(p) { return "var(--" + pclass(p).k + ")"; }
+  function luminance(col) {
+    var c = d3.color(col); if (!c) return 1; c = c.rgb();
+    var f = function (v) { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
+    return 0.2126 * f(c.r) + 0.7152 * f(c.g) + 0.0722 * f(c.b);
+  }
+  function inkOn(fill) { return luminance(fill) > 0.32 ? "#12151a" : "#ffffff"; }
+  function resolveVar(v) { return v.indexOf("var(") === 0 ? cssVar(v.slice(4, -1)) : v; }
+
+  // tooltip
+  var tip = $("tip");
+  function showTip(evt, build) {
+    clear(tip); build(tip); tip.hidden = false;
+    var pad = 14, w = tip.offsetWidth, h = tip.offsetHeight;
+    var x = evt.clientX + pad, y = evt.clientY + pad;
+    if (x + w > window.innerWidth - 8) x = evt.clientX - w - pad;
+    if (y + h > window.innerHeight - 8) y = evt.clientY - h - pad;
+    tip.style.left = Math.max(8, x) + "px"; tip.style.top = Math.max(8, y) + "px";
+  }
+  function hideTip() { tip.hidden = true; }
+  function raceTip(t, r) {
+    t.appendChild(el("div", null, [el("b", { text: raceTitle(r) })]));
+    if (r.dem || r.rep) {
+      [["D", r.dem], ["R", r.rep]].forEach(function (pair) {
+        var c = pair[1]; if (!c) return;
+        var p = pair[0] === "D" ? r.p : 1 - r.p;
+        t.appendChild(el("div", { class: "row" }, [
+          el("span", null, [el("span", { class: "lk", style: "background:var(--" + (c.party === "I" ? "ind" : (pair[0] === "D" ? "dem" : "rep")) + ")" }), c.name + (c.inc ? " (inc.)" : "")]),
+          el("b", { text: r.fixed ? (r.fixed === pair[0] ? "certain" : "—") : pctText(p) })]));
+      });
+    }
+    if (!r.fixed) t.appendChild(el("div", { class: "muted", text: "Margin " + marginText(r.mean, r) + " · 80% range " + marginText(r.p10, r) + " to " + marginText(r.p90, r) }));
+  }
+  function raceTitle(r) {
+    if (r.office === "HOUSE") return r.id;
+    return r.name + (r.office === "GOV" ? " governor" : " Senate");
+  }
+
+  // ---------------- data prep ----------------
+  if (!DATA) {
+    $("updated").textContent = "No forecast data is embedded in this page yet. Run the pipeline to build it.";
+    return;
+  }
+  var RACES = DATA.races || [];
+  var BY_ID = {}; RACES.forEach(function (r) { BY_ID[r.id] = r; });
+  var SEN = RACES.filter(function (r) { return r.office === "SEN"; });
+  var GOV = RACES.filter(function (r) { return r.office === "GOV"; });
+  var HOUSE = RACES.filter(function (r) { return r.office === "HOUSE"; });
+  var META = DATA.meta || {};
+
+  $("days-out").textContent = META.days_out;
+  var gen = new Date(META.generated_at);
+  $("updated").textContent = "Model run " + gen.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) + ", " +
+    gen.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }) + " · " + (META.n_sims || 0).toLocaleString() + " simulations · " +
+    ((META.n_polls && (META.n_polls.generic + META.n_polls.races)) || 0).toLocaleString() + " polls";
+  $("m-sims").textContent = (META.n_sims || 40000).toLocaleString();
+
+  // ---------------- tabs / routing ----------------
+  var VIEWS = ["overview", "senate", "house", "governors", "national", "methods"];
+  var rendered = {};
+  function show(view, raceId) {
+    if (VIEWS.indexOf(view) < 0) view = "overview";
+    VIEWS.forEach(function (v) {
+      $(v).hidden = v !== view;
+      $("tab-" + v).setAttribute("aria-selected", v === view ? "true" : "false");
+    });
+    try { localStorage.setItem("mf26-tab", view); } catch (e) { /* storage unavailable */ }
+    if (!rendered[view]) { rendered[view] = true; RENDER[view](); }
+    if (raceId) openRace(raceId);
+  }
+  document.querySelectorAll(".tab").forEach(function (b) {
+    b.addEventListener("click", function () { history.replaceState(null, "", "#" + b.dataset.view); show(b.dataset.view); });
+  });
+  function routeFromHash() {
+    var h = (location.hash || "").replace("#", "");
+    if (h.indexOf("race-") === 0) {
+      var id = h.slice(5); var r = BY_ID[id];
+      if (r) { show(r.office === "SEN" ? "senate" : r.office === "GOV" ? "governors" : "house", id); return; }
+    }
+    if (VIEWS.indexOf(h) >= 0) { show(h); return; }
+    var saved = null; try { saved = localStorage.getItem("mf26-tab"); } catch (e) { saved = null; }
+    show(saved && VIEWS.indexOf(saved) >= 0 ? saved : "overview");
+  }
+  window.addEventListener("hashchange", routeFromHash);
+
+  // ---------------- charts ----------------
+  function seatHistogram(container, hist, opts) {
+    clear(container);
+    var W = Math.max(300, container.clientWidth || 560), H = opts.height || 220;
+    var m = { t: 26, r: 10, b: 30, l: 10 };
+    var entries = Object.keys(hist).map(function (k) { return [+k, hist[k]]; }).sort(function (a, b) { return a[0] - b[0]; });
+    // trim tails below 0.05% for readability
+    var keep = entries.filter(function (e) { return e[1] >= 0.0005; });
+    if (!keep.length) keep = entries;
+    var lo = Math.min(keep[0][0], opts.majority - 3), hi = Math.max(keep[keep.length - 1][0], opts.majority + 3);
+    var x = d3.scaleBand().domain(d3.range(lo, hi + 1)).range([m.l, W - m.r]).paddingInner(0.12);
+    var ymax = d3.max(keep, function (e) { return e[1]; });
+    var y = d3.scaleLinear().domain([0, ymax * 1.08]).range([H - m.b, m.t]);
+    var svg = d3.select(container).append("svg").attr("viewBox", "0 0 " + W + " " + H).attr("width", "100%").attr("role", "img")
+      .attr("aria-label", opts.aria);
+    var bw = Math.min(24, x.bandwidth());
+    var dcol = resolveVar("var(--dem)"), rcol = resolveVar("var(--rep)");
+    svg.append("g").selectAll("path").data(keep).enter().append("path")
+      .attr("d", function (e) {
+        var x0 = x(e[0]) + (x.bandwidth() - bw) / 2, y0 = y(e[1]), h = (H - m.b) - y0, r = Math.min(3, h, bw / 2);
+        return "M" + x0 + "," + (H - m.b) + "V" + (y0 + r) + "Q" + x0 + "," + y0 + " " + (x0 + r) + "," + y0 +
+          "H" + (x0 + bw - r) + "Q" + (x0 + bw) + "," + y0 + " " + (x0 + bw) + "," + (y0 + r) + "V" + (H - m.b) + "Z";
+      })
+      .attr("fill", function (e) { return e[0] >= opts.majority ? dcol : (opts.tieAt != null && e[0] === opts.tieAt ? resolveVar("var(--t0)") : rcol); })
+      .on("pointermove", function (evt, e) {
+        showTip(evt, function (t) {
+          t.appendChild(el("div", null, [el("b", { text: pctText(e[1]) }), " of simulations"]));
+          t.appendChild(el("div", { class: "muted", text: "Democrats win " + e[0] + " " + opts.unit + (opts.rWord ? " · Republicans " + (opts.total - e[0] - (opts.indFn ? opts.indFn(e[0]) : 0)) : "") }));
+        });
+      })
+      .on("pointerleave", hideTip);
+    // majority line
+    var mx = x(opts.majority) - x.step() * x.paddingInner() / 2;
+    svg.append("line").attr("x1", mx).attr("x2", mx).attr("y1", m.t - 8).attr("y2", H - m.b).attr("stroke", resolveVar("var(--ink)")).attr("stroke-width", 1);
+    svg.append("text").attr("class", "lbl-strong").attr("x", mx + 6).attr("y", m.t - 10).text(opts.majorityLabel);
+    var ticks = x.domain().filter(function (d) { var step = Math.ceil((hi - lo) / 10 / 5) * 5 || 1; return d % step === 0; });
+    var ax = svg.append("g").attr("class", "axis").attr("transform", "translate(0," + (H - m.b) + ")");
+    ax.append("line").attr("x1", m.l).attr("x2", W - m.r);
+    ax.selectAll("text").data(ticks).enter().append("text").attr("x", function (d) { return x(d) + x.bandwidth() / 2; })
+      .attr("y", 18).attr("text-anchor", "middle").text(function (d) { return d; });
+  }
+
+  function hemicycle(container, seats, opts) {
+    clear(container);
+    var n = seats.length;
+    var W = Math.max(300, container.clientWidth || 520);
+    var rows = opts.rows;
+    var radii = d3.range(rows).map(function (i) { return opts.inner + (1 - opts.inner) * i / (rows - 1); });
+    var total = d3.sum(radii);
+    var counts = radii.map(function (r) { return Math.round(n * r / total); });
+    counts[counts.length - 1] += n - d3.sum(counts);
+    var pts = [];
+    radii.forEach(function (r, i) {
+      var k = counts[i];
+      for (var j = 0; j < k; j++) {
+        var a = Math.PI * (1 - (k === 1 ? 0.5 : j / (k - 1)));
+        pts.push({ x: r * Math.cos(a), y: r * Math.sin(a), a: a });
+      }
+    });
+    pts.sort(function (p, q) { return q.a - p.a || q.x - p.x; });
+    var R = W / 2 - 8, H = R + 34;
+    var dotR = Math.max(2.2, Math.min(opts.maxDot, R * (1 - opts.inner) / rows * 0.42));
+    var svg = d3.select(container).append("svg").attr("viewBox", "0 0 " + W + " " + H).attr("width", "100%").attr("role", "img").attr("aria-label", opts.aria);
+    var g = svg.append("g").attr("transform", "translate(" + W / 2 + "," + (R + 8) + ")");
+    g.selectAll("circle").data(pts).enter().append("circle")
+      .attr("class", function (d, i) { return seats[i].race ? "seat" : null; })
+      .attr("cx", function (d) { return d.x * R; }).attr("cy", function (d) { return -d.y * R; }).attr("r", dotR)
+      .attr("fill", function (d, i) { return resolveVar(seats[i].fill); })
+      .attr("tabindex", function (d, i) { return seats[i].race ? 0 : null; })
+      .on("pointermove", function (evt, d) { var s = seats[pts.indexOf(d)]; if (s.race) showTip(evt, function (t) { raceTip(t, s.race); }); else if (s.label) showTip(evt, function (t) { t.appendChild(el("div", { text: s.label })); }); })
+      .on("pointerleave", hideTip)
+      .on("click", function (evt, d) { var s = seats[pts.indexOf(d)]; if (s.race) location.hash = "race-" + s.race.id; });
+    // majority marker on the centerline
+    g.append("line").attr("x1", 0).attr("x2", 0).attr("y1", -R - 4).attr("y2", -opts.inner * R + 6).attr("stroke", resolveVar("var(--ink)")).attr("stroke-width", 1);
+    var big = g.append("text").attr("text-anchor", "middle").attr("y", -10).attr("class", "lbl-strong").style("font-size", "26px").style("font-weight", "700");
+    big.text(opts.centerValue);
+    g.append("text").attr("text-anchor", "middle").attr("y", 10).attr("class", "lbl").text(opts.centerLabel);
+    g.append("text").attr("x", -R).attr("y", 22).attr("class", "lbl").text(opts.leftLabel);
+    g.append("text").attr("x", R).attr("y", 22).attr("text-anchor", "end").attr("class", "lbl").text(opts.rightLabel);
+  }
+
+  var TILES = { AK: [0, 0], ME: [11, 0], VT: [10, 1], NH: [11, 1], WA: [1, 2], ID: [2, 2], MT: [3, 2], ND: [4, 2], MN: [5, 2], IL: [6, 2], WI: [7, 2], MI: [8, 2], NY: [9, 2], RI: [10, 2], MA: [11, 2],
+    OR: [1, 3], NV: [2, 3], WY: [3, 3], SD: [4, 3], IA: [5, 3], IN: [6, 3], OH: [7, 3], PA: [8, 3], NJ: [9, 3], CT: [10, 3],
+    CA: [1, 4], UT: [2, 4], CO: [3, 4], NE: [4, 4], MO: [5, 4], KY: [6, 4], WV: [7, 4], VA: [8, 4], MD: [9, 4], DE: [10, 4],
+    AZ: [2, 5], NM: [3, 5], KS: [4, 5], AR: [5, 5], TN: [6, 5], NC: [7, 5], SC: [8, 5], DC: [9, 5],
+    OK: [4, 6], LA: [5, 6], MS: [6, 6], AL: [7, 6], GA: [8, 6], HI: [0, 7], TX: [4, 7], FL: [9, 7] };
+
+  function tileMap(container, races, aria) {
+    clear(container);
+    var byState = {}; races.forEach(function (r) { byState[r.state] = r; });
+    var W = Math.max(300, container.clientWidth || 520), cols = 12, gap = 3;
+    var s = Math.floor((W - gap * (cols - 1)) / cols), H = s * 8 + gap * 7;
+    var svg = d3.select(container).append("svg").attr("viewBox", "0 0 " + W + " " + H).attr("width", "100%").attr("role", "img").attr("aria-label", aria);
+    Object.keys(TILES).forEach(function (st) {
+      var pos = TILES[st], r = byState[st];
+      var gx = pos[0] * (s + gap), gy = pos[1] * (s + gap);
+      var fill = r ? resolveVar(r.fixed ? (r.fixed === "D" ? "var(--d3)" : "var(--r3)") : classColor(r.p)) : resolveVar("var(--none)");
+      var g = svg.append("g").attr("class", r ? "tile" : null).attr("transform", "translate(" + gx + "," + gy + ")");
+      g.append("rect").attr("width", s).attr("height", s).attr("rx", 4).attr("fill", fill);
+      var ink = r ? inkOn(fill) : resolveVar("var(--ink-3)");
+      g.append("text").attr("x", s / 2).attr("y", s / 2 - (r && s > 34 ? 3 : -4)).attr("text-anchor", "middle").attr("fill", ink).text(st);
+      if (r && s > 34) g.append("text").attr("class", "tp").attr("x", s / 2).attr("y", s / 2 + 11).attr("text-anchor", "middle").attr("fill", ink)
+        .text(r.p >= 0.5 ? pctText(r.p) : pctText(1 - r.p));
+      if (r) {
+        g.attr("tabindex", 0).attr("role", "button").attr("aria-label", raceTitle(r) + ": " + pctText(r.p) + " Democratic")
+          .on("pointermove", function (evt) { showTip(evt, function (t) { raceTip(t, r); }); })
+          .on("pointerleave", hideTip)
+          .on("click", function () { location.hash = "race-" + r.id; })
+          .on("keydown", function (evt) { if (evt.key === "Enter") location.hash = "race-" + r.id; });
+      }
+    });
+  }
+  function classLegend(container) {
+    clear(container);
+    CLASSES.slice().reverse().forEach(function (c) {
+      container.appendChild(el("span", null, [el("i", { class: "key", style: "background:var(--" + c.k + ")" }), c.label]));
+    });
+    container.appendChild(el("span", { class: "muted", text: "Numbers show the favorite's chance" }));
+  }
+
+  function intervalCell(r, domain) {
+    var W = 150, H = 22, x = d3.scaleLinear().domain(domain).range([4, W - 4]).clamp(true);
+    var svg = d3.create("svg").attr("viewBox", "0 0 " + W + " " + H).attr("width", W).attr("height", H).attr("aria-hidden", "true");
+    svg.append("line").attr("x1", x(0)).attr("x2", x(0)).attr("y1", 2).attr("y2", H - 2).attr("stroke", resolveVar("var(--rule-2)"));
+    if (r.p025 != null) {
+      svg.append("line").attr("x1", x(r.p025)).attr("x2", x(r.p975)).attr("y1", H / 2).attr("y2", H / 2).attr("stroke", resolveVar("var(--ink-3)")).attr("stroke-width", 1.5).attr("stroke-linecap", "round");
+      svg.append("rect").attr("x", x(r.p10)).attr("width", Math.max(2, x(r.p90) - x(r.p10))).attr("y", H / 2 - 4).attr("height", 8).attr("rx", 4)
+        .attr("fill", resolveVar(r.mean >= 0 ? (r.ind ? "var(--ind)" : "var(--dem)") : "var(--rep)")).attr("opacity", 0.28);
+    }
+    svg.append("circle").attr("cx", x(r.mean)).attr("cy", H / 2).attr("r", 4.5).attr("fill", resolveVar(r.mean >= 0 ? (r.ind ? "var(--ind)" : "var(--dem)") : "var(--rep)"))
+      .attr("stroke", resolveVar("var(--panel)")).attr("stroke-width", 2);
+    return svg.node();
+  }
+
+  function probBar(p, ind) {
+    return el("div", { class: "pbar", "aria-hidden": "true" }, [
+      el("span", { style: "width:" + (p * 100).toFixed(1) + "%;background:var(--" + (ind ? "ind" : "dem") + ")" }),
+      el("span", { style: "width:" + ((1 - p) * 100).toFixed(1) + "%;background:var(--rep)" })]);
+  }
+
+  function lineChart(container, series, polls, opts) {
+    clear(container);
+    var W = Math.max(300, container.clientWidth || 600), H = opts.height || 280, m = { t: 14, r: 46, b: 28, l: 34 };
+    var parse = function (s) { return new Date(s + "T12:00:00"); };
+    var S = series.map(function (d) { return { d: parse(d.date), v: d.margin }; });
+    var Pp = (polls || []).map(function (p) { return { d: parse(p.end), v: p.dem - p.rep, p: p }; }).filter(function (p) { return !isNaN(p.d); });
+    var all = S.concat(Pp);
+    if (!all.length) { container.appendChild(el("p", { class: "empty", text: "No polling series yet." })); return; }
+    var x = d3.scaleTime().domain(d3.extent(all, function (d) { return d.d; })).range([m.l, W - m.r]);
+    var ext = d3.extent(all, function (d) { return d.v; });
+    var y = d3.scaleLinear().domain([Math.min(0, ext[0] - 1), ext[1] + 1]).nice().range([H - m.b, m.t]);
+    var svg = d3.select(container).append("svg").attr("viewBox", "0 0 " + W + " " + H).attr("width", "100%").attr("role", "img").attr("aria-label", opts.aria);
+    var gy = svg.append("g").attr("class", "grid");
+    y.ticks(5).forEach(function (t) { gy.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(t)).attr("y2", y(t)); });
+    var ay = svg.append("g").attr("class", "axis");
+    y.ticks(5).forEach(function (t) { ay.append("text").attr("x", m.l - 6).attr("y", y(t) + 4).attr("text-anchor", "end").text(t === 0 ? "Even" : (t > 0 ? "D+" + t : "R+" + (-t))); });
+    var ax = svg.append("g").attr("class", "axis");
+    x.ticks(W < 500 ? 4 : 7).forEach(function (t) { ax.append("text").attr("x", x(t)).attr("y", H - 8).attr("text-anchor", "middle").text(d3.timeFormat("%b %-d")(t)); });
+    svg.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(0)).attr("y2", y(0)).attr("stroke", resolveVar("var(--rule-2)"));
+    svg.append("g").selectAll("circle").data(Pp).enter().append("circle").attr("cx", function (d) { return x(d.d); }).attr("cy", function (d) { return y(d.v); })
+      .attr("r", 3).attr("fill", resolveVar("var(--ink-3)")).attr("opacity", 0.35);
+    var line = d3.line().x(function (d) { return x(d.d); }).y(function (d) { return y(d.v); }).curve(d3.curveMonotoneX);
+    if (S.length) {
+      svg.append("path").datum(S).attr("d", line).attr("fill", "none").attr("stroke", resolveVar("var(--ink)")).attr("stroke-width", 2).attr("stroke-linejoin", "round").attr("stroke-linecap", "round");
+      var last = S[S.length - 1];
+      svg.append("circle").attr("cx", x(last.d)).attr("cy", y(last.v)).attr("r", 4.5).attr("fill", resolveVar("var(--ink)")).attr("stroke", resolveVar("var(--panel)")).attr("stroke-width", 2);
+      svg.append("text").attr("class", "lbl-strong").attr("x", x(last.d) + 8).attr("y", y(last.v) + 4).text(marginText(last.v));
+    }
+    var cross = svg.append("line").attr("y1", m.t).attr("y2", H - m.b).attr("stroke", resolveVar("var(--ink-3)")).attr("opacity", 0);
+    svg.append("rect").attr("x", m.l).attr("y", m.t).attr("width", W - m.l - m.r).attr("height", H - m.t - m.b).attr("fill", "transparent")
+      .on("pointermove", function (evt) {
+        var px = d3.pointer(evt)[0], d0 = x.invert(px);
+        var i = d3.bisector(function (d) { return d.d; }).center(S, d0); var pt = S[i]; if (!pt) return;
+        cross.attr("x1", x(pt.d)).attr("x2", x(pt.d)).attr("opacity", 1);
+        var near = Pp.filter(function (q) { return Math.abs(q.d - pt.d) < 2 * 864e5; }).slice(0, 4);
+        showTip(evt, function (t) {
+          t.appendChild(el("div", null, [el("b", { text: marginText(pt.v) }), " average on " + d3.timeFormat("%b %-d")(pt.d)]));
+          near.forEach(function (q) { t.appendChild(el("div", { class: "muted", text: q.p.pollster + ": D " + q.p.dem + ", R " + q.p.rep })); });
+        });
+      })
+      .on("pointerleave", function () { cross.attr("opacity", 0); hideTip(); });
+  }
+
+  function curveChart(container, curve, current) {
+    clear(container);
+    if (!curve || !curve.length) { container.appendChild(el("p", { class: "empty", text: "Not enough simulations." })); return; }
+    var W = Math.max(300, container.clientWidth || 520), H = 230, m = { t: 16, r: 14, b: 30, l: 40 };
+    var x = d3.scaleLinear().domain(d3.extent(curve, function (d) { return d.margin; })).range([m.l, W - m.r]);
+    var y = d3.scaleLinear().domain([d3.min(curve, function (d) { return d.d_seats; }) - 5, d3.max(curve, function (d) { return d.d_seats; }) + 5]).nice().range([H - m.b, m.t]);
+    var svg = d3.select(container).append("svg").attr("viewBox", "0 0 " + W + " " + H).attr("width", "100%").attr("role", "img").attr("aria-label", "Expected Democratic House seats by national vote margin");
+    var gy = svg.append("g").attr("class", "grid"), ay = svg.append("g").attr("class", "axis");
+    y.ticks(5).forEach(function (t) { gy.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(t)).attr("y2", y(t)); ay.append("text").attr("x", m.l - 6).attr("y", y(t) + 4).attr("text-anchor", "end").text(t); });
+    x.ticks(6).forEach(function (t) { ay.append("text").attr("x", x(t)).attr("y", H - 8).attr("text-anchor", "middle").text(t === 0 ? "Even" : (t > 0 ? "D+" + t : "R+" + (-t))); });
+    svg.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(218)).attr("y2", y(218)).attr("stroke", resolveVar("var(--ink)"));
+    svg.append("text").attr("class", "lbl-strong").attr("x", W - m.r).attr("y", y(218) - 6).attr("text-anchor", "end").text("218 majority");
+    svg.append("path").datum(curve).attr("fill", "none").attr("stroke", resolveVar("var(--dem)")).attr("stroke-width", 2)
+      .attr("d", d3.line().x(function (d) { return x(d.margin); }).y(function (d) { return y(d.d_seats); }).curve(d3.curveMonotoneX));
+    if (current != null) {
+      var cx = x(Math.max(x.domain()[0], Math.min(x.domain()[1], current)));
+      svg.append("line").attr("x1", cx).attr("x2", cx).attr("y1", m.t).attr("y2", H - m.b).attr("stroke", resolveVar("var(--ink-3)"));
+      svg.append("text").attr("class", "lbl").attr("x", cx + 5).attr("y", m.t + 10).text("Current estimate " + marginText(current));
+    }
+    svg.append("g").selectAll("circle").data(curve).enter().append("circle").attr("cx", function (d) { return x(d.margin); }).attr("cy", function (d) { return y(d.d_seats); })
+      .attr("r", 10).attr("fill", "transparent")
+      .on("pointermove", function (evt, d) { showTip(evt, function (t) { t.appendChild(el("div", null, [el("b", { text: Math.round(d.d_seats) + " seats" }), " on average"])); t.appendChild(el("div", { class: "muted", text: "When Democrats win the national vote by " + marginText(d.margin) + " · House control " + pctText(d.p_control) })); }); })
+      .on("pointerleave", hideTip);
+  }
+
+  // ---------------- race ledgers ----------------
+  function chipFor(label) {
+    var c = { "Safe D": "d3", "Likely D": "d2", "Lean D": "d1", "Tilt D": "d1", "Toss-up": "t0", "Tossup": "t0", "Tilt R": "r1", "Lean R": "r1", "Likely R": "r2", "Safe R": "r3",
+      "Safe I": "d3", "Likely I": "d2", "Lean I": "d1", "Tilt I": "d1" }[label] || "t0";
+    var fill = resolveVar("var(--" + c + ")");
+    return el("span", { class: "chip", style: "background:" + fill + ";color:" + inkOn(fill), text: label });
+  }
+  function candCell(r) {
+    var rows = [];
+    [["D", r.dem], ["R", r.rep]].forEach(function (pair) {
+      var c = pair[1]; if (!c) return;
+      var win = r.fixed ? r.fixed === pair[0] : (pair[0] === "D" ? r.p >= 0.5 : r.p < 0.5);
+      var party = c.party === "I" ? "I" : pair[0];
+      rows.push(el("div", { class: "cand" + (win ? " win" : "") }, [el("span", { class: "oval" + (win ? " fill-" + party : "") , style: win ? null : "border-color:var(--" + (party === "D" ? "dem" : party === "R" ? "rep" : "ind") + ")" }),
+        c.name + (c.inc ? "*" : "") + (party === "I" ? " (Ind.)" : "")]));
+    });
+    if (!rows.length) rows.push(el("div", { class: "muted", text: "No major-party contest" }));
+    return el("div", { class: "cands" }, rows);
+  }
+  function ledger(table, races, opts) {
+    var state = { key: opts.sortKey || "close", dir: 1, open: {} };
+    var cols = [
+      { k: "race", label: opts.office === "HOUSE" ? "District" : "State", sort: function (r) { return r.office === "HOUSE" ? r.id : r.name; } },
+      { k: "cands", label: "Candidates · winner filled", sort: null },
+      { k: "pvi", label: "PVI", cls: "r", sort: function (r) { return r.pvi == null ? 0 : r.pvi; } },
+      { k: "margin", label: "Forecast margin, 80% range", sort: function (r) { return r.mean; } },
+      { k: "p", label: "Win chance", cls: "r", sort: function (r) { return r.p; } },
+      { k: "polls", label: "Polls", cls: "r", sort: function (r) { return r.comps && r.comps.polls ? r.comps.polls.margin : -999; } },
+      { k: "experts", label: "Experts", sort: function (r) { return r.comps && r.comps.ratings ? r.comps.ratings.margin : 0; } },
+      { k: "mkt", label: "Markets", cls: "r", sort: function (r) { return r.comps && r.comps.markets ? r.comps.markets.p : -1; } }];
+    var domain = opts.domain || [-30, 30];
+    function sorted(list) {
+      var c = cols.filter(function (c) { return c.k === state.key; })[0];
+      var f = c && c.sort ? c.sort : function (r) { return -Math.abs(r.p - 0.5); };
+      if (state.key === "close") f = function (r) { return Math.abs(r.p - 0.5) + (r.fixed ? 1 : 0); };
+      return list.slice().sort(function (a, b) { var A = f(a), B = f(b); return (A < B ? -1 : A > B ? 1 : 0) * state.dir; });
+    }
+    function draw(list) {
+      clear(table);
+      var thead = el("thead"), tr = el("tr");
+      cols.forEach(function (c) {
+        var th = el("th", { class: c.cls || null, scope: "col", text: c.label });
+        if (c.sort) {
+          th.setAttribute("tabindex", "0");
+          if (state.key === c.k) th.setAttribute("aria-sort", state.dir > 0 ? "ascending" : "descending");
+          var go = function () { if (state.key === c.k) state.dir *= -1; else { state.key = c.k; state.dir = c.k === "p" ? -1 : 1; } draw(current); };
+          th.addEventListener("click", go); th.addEventListener("keydown", function (e) { if (e.key === "Enter") go(); });
+        }
+        tr.appendChild(th);
+      });
+      thead.appendChild(tr); table.appendChild(thead);
+      var tb = el("tbody");
+      sorted(list).forEach(function (r) {
+        var row = el("tr", { class: "race", id: "row-" + r.id, tabindex: "0", "aria-expanded": state.open[r.id] ? "true" : "false" });
+        var fav = r.p >= 0.5 ? r.p : 1 - r.p;
+        var pv = r.pvi == null ? "—" : (r.pvi === 0 ? "EVEN" : (r.pvi > 0 ? "D+" : "R+") + Math.abs(r.pvi));
+        row.appendChild(el("td", null, [el("b", { text: r.office === "HOUSE" ? r.id : r.name }), r.office === "HOUSE" && r.inc ? el("div", { class: "small muted", text: "Inc. " + r.inc + " (" + (r.incp || "?") + ")" + (r.incrun ? "" : " · open") }) : null]));
+        row.appendChild(el("td", null, [candCell(r)]));
+        row.appendChild(el("td", { class: "r", text: pv }));
+        row.appendChild(el("td", null, r.fixed ? [el("span", { class: "muted", text: r.fixed === "D" ? "Democrat unopposed by a Republican" : "Republican unopposed by a Democrat" })] :
+          [el("div", { style: "display:flex;align-items:center;gap:8px" }, [intervalCell(r, domain), el("span", { class: "num", text: marginText(r.mean, r) })])]));
+        row.appendChild(el("td", { class: "r" }, [el("div", { class: "prob", text: r.fixed ? "—" : pctText(fav) }),
+          el("div", { class: "small muted", text: r.fixed ? "" : (r.p >= 0.5 ? (r.ind ? "Ind." : "Dem.") : "Rep.") }), r.fixed ? null : probBar(r.p, r.ind)]));
+        var pc = r.comps && r.comps.polls;
+        row.appendChild(el("td", { class: "r" }, pc ? [el("div", { text: marginText(pc.margin, r) }), el("div", { class: "small muted", text: pc.n + " poll" + (pc.n === 1 ? "" : "s") })] : [el("span", { class: "muted", text: "—" })]));
+        var rc = r.comps && r.comps.ratings;
+        row.appendChild(el("td", null, rc ? [chipFor(rc.label)] : [el("span", { class: "muted", text: "—" })]));
+        var mk = r.comps && r.comps.markets;
+        row.appendChild(el("td", { class: "r", text: mk ? pctText(mk.p) + " D" : "—" }));
+        var toggle = function () { state.open[r.id] = !state.open[r.id]; draw(current); if (state.open[r.id]) { var d = $("detail-" + r.id); if (d) d.scrollIntoView({ block: "nearest" }); } };
+        row.addEventListener("click", toggle);
+        row.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
+        tb.appendChild(row);
+        if (state.open[r.id]) {
+          var td = el("td", { class: "detail", colspan: String(cols.length), id: "detail-" + r.id });
+          td.appendChild(raceDetail(r));
+          tb.appendChild(el("tr", null, [td]));
+        }
+      });
+      if (!list.length) tb.appendChild(el("tr", null, [el("td", { colspan: String(cols.length), class: "empty", text: "No races match." })]));
+      table.appendChild(tb);
+    }
+    var current = races;
+    draw(current);
+    return {
+      setList: function (list) { current = list; draw(current); },
+      open: function (id) { state.open[id] = true; if (!current.some(function (r) { return r.id === id; })) current = races; draw(current); }
+    };
+  }
+
+  function raceDetail(r) {
+    var left = el("div", { class: "stack" }), right = el("div", { class: "stack" });
+    var head = el("div", { class: "stack" });
+    var title = r.office === "HOUSE" ? r.id : r.name + (r.office === "SEN" ? " Senate" : " governor");
+    head.appendChild(el("h4", { text: title + ": " + (r.fixed ? "not contested by both parties" : (r.p >= 0.5 ? (r.dem ? r.dem.name : "Democrat") : (r.rep ? r.rep.name : "Republican")) + " is favored, " + oneIn(r.p)) }));
+    if (!r.fixed) head.appendChild(el("p", { class: "small", text: "Expected margin " + marginText(r.mean, r) + ". In 80% of simulations the result falls between " + marginText(r.p10, r) + " and " + marginText(r.p90, r) + "; in 95%, between " + marginText(r.p025, r) + " and " + marginText(r.p975, r) + "." }));
+    if (r.status) head.appendChild(el("p", { class: "small muted", text: "Status: " + r.status + (r.appointed ? " · appointed incumbent" : "") }));
+    left.appendChild(head);
+    // components
+    var comps = r.comps || {};
+    var names = { fundamentals: "Fundamentals", polls: "Polling average", ratings: "Forecaster consensus", markets: "Prediction markets" };
+    var t = el("table", { class: "mini" });
+    t.appendChild(el("thead", null, [el("tr", null, [el("th", { text: "Signal" }), el("th", { class: "r", text: "Margin" }), el("th", { class: "r", text: "± error" }), el("th", { class: "r", text: "Weight" })])]));
+    var tb = el("tbody");
+    Object.keys(names).forEach(function (k) {
+      var c = comps[k]; if (!c) return;
+      var extra = k === "polls" ? " (" + c.n + " polls, last " + fmtDate(c.last) + ")" : k === "ratings" ? " (" + c.label + ", " + c.n + " raters)" : k === "markets" ? " (" + pctText(c.p) + " D)" : "";
+      tb.appendChild(el("tr", null, [el("td", { text: names[k] + extra }), el("td", { class: "r", text: marginText(c.margin, r) }), el("td", { class: "r", text: c.sd != null ? c.sd.toFixed(1) : "—" }), el("td", { class: "r", text: c.w != null ? Math.round(c.w * 100) + "%" : "—" })]));
+    });
+    t.appendChild(tb);
+    left.appendChild(el("div", null, [el("h4", { text: "How the forecast is built" }), t]));
+    if (comps.fundamentals && comps.fundamentals.parts) {
+      var p = comps.fundamentals.parts, labels = { national: "National environment", lean: "Partisan lean (2 × PVI)", incumbency: "Incumbency", candidate_quality: "Candidate experience", scandals: "Scandals", fundraising: "Fundraising (log ratio)", independent_bonus: "Independent crossover appeal", personal_vote: "Incumbent's past over-performance" };
+      var pills = el("div", { class: "pillrow" });
+      Object.keys(labels).forEach(function (k) { if (p[k] != null && Math.abs(p[k]) >= 0.05) pills.appendChild(el("span", { class: "pill num", text: labels[k] + " " + (p[k] > 0 ? "+" : "") + p[k].toFixed(1) })); });
+      left.appendChild(el("div", null, [el("p", { class: "small muted", style: "margin-bottom:6px", text: "Fundamentals, in points of D-side margin:" }), pills]));
+    }
+    if (r.ratings && Object.keys(r.ratings).length) {
+      var rp = el("div", { class: "pillrow" });
+      Object.keys(r.ratings).sort().forEach(function (k) { rp.appendChild(el("span", { class: "pill", text: k + ": " + r.ratings[k] })); });
+      left.appendChild(el("div", null, [el("h4", { text: "Ratings" }), rp]));
+    }
+    if (comps.markets && comps.markets.sources) {
+      var mp = el("div", { class: "pillrow" });
+      Object.keys(comps.markets.sources).forEach(function (k) { mp.appendChild(el("span", { class: "pill", text: k + ": " + pctText(comps.markets.sources[k]) + " D" })); });
+      left.appendChild(el("div", null, [el("h4", { text: "Market prices" }), mp]));
+    }
+    // money
+    var money = [];
+    [r.dem, r.rep].forEach(function (c) { if (c && (c.receipts != null || c.cash != null)) money.push(el("tr", null, [el("td", { text: c.name }), el("td", { class: "r", text: fmtMoney(c.receipts) }), el("td", { class: "r", text: fmtMoney(c.cash) }), el("td", { class: "r muted", text: c.fec_through || "" })])); });
+    if (money.length) {
+      var mt = el("table", { class: "mini" }, [el("thead", null, [el("tr", null, [el("th", { text: "FEC" }), el("th", { class: "r", text: "Raised" }), el("th", { class: "r", text: "Cash" }), el("th", { class: "r", text: "Through" })])]), el("tbody", null, money)]);
+      left.appendChild(el("div", null, [el("h4", { text: "Money" }), mt]));
+    }
+    var exp = [];
+    [r.dem, r.rep].forEach(function (c) { if (c && c.experience_detail) exp.push(el("p", { class: "small", text: c.name + ": " + c.experience_detail })); });
+    if (exp.length) left.appendChild(el("div", null, [el("h4", { text: "Candidates" })].concat(exp)));
+    if (r.notes) left.appendChild(el("p", { class: "note", text: r.notes }));
+    if (r.rules) left.appendChild(el("p", { class: "note", text: "Rules: " + r.rules }));
+    // polls
+    var polls = r.polls || [];
+    if (polls.length) {
+      var pt = el("table", { class: "mini" });
+      pt.appendChild(el("thead", null, [el("tr", null, [el("th", { text: "Pollster" }), el("th", { text: "Ended" }), el("th", { class: "r", text: "Sample" }), el("th", { class: "r", text: (r.dem ? r.dem.name.split(" ").slice(-1)[0] : "D") }), el("th", { class: "r", text: (r.rep ? r.rep.name.split(" ").slice(-1)[0] : "R") }), el("th", { class: "r", text: "Adj." })])]));
+      var pb = el("tbody");
+      polls.forEach(function (p) {
+        var name = p.url ? el("a", { href: p.url, target: "_blank", rel: "noopener", text: p.pollster }) : p.pollster;
+        pb.appendChild(el("tr", null, [el("td", null, [name, p.sponsor ? " (" + p.sponsor + ")" : ""]), el("td", { class: "nw", text: fmtDate(p.end) }), el("td", { class: "r", text: (p.n ? p.n.toLocaleString() : "?") + " " + (p.pop || "") }),
+          el("td", { class: "r", text: p.dem }), el("td", { class: "r", text: p.rep }), el("td", { class: "r", text: marginText(p.adj, r) })]));
+      });
+      pt.appendChild(pb);
+      right.appendChild(el("div", null, [el("h4", { text: "Recent polls" }), el("div", { class: "table-scroll", style: "border:0" }, [pt]), el("p", { class: "small muted", text: "(D)/(R) marks a partisan sponsor. Adj. is the margin after sponsor, house-effect, likely-voter and trend adjustments." })]));
+    } else if (!r.fixed) right.appendChild(el("p", { class: "empty", text: "No public polls of this race yet, so it leans on fundamentals, ratings and markets." }));
+    if (r.aggs && r.aggs.length) {
+      var ap = el("div", { class: "pillrow" });
+      r.aggs.forEach(function (a) { ap.appendChild(el("span", { class: "pill num", text: a.src + ": " + marginText(a.dem - a.rep, r) })); });
+      right.appendChild(el("div", null, [el("h4", { text: "Other polling averages" }), ap]));
+    }
+    if (r.news && r.news.length) {
+      var ul = el("ul", { class: "newslist" });
+      r.news.forEach(function (n) { ul.appendChild(el("li", null, [el("a", { href: n.url, target: "_blank", rel: "noopener", text: n.title }), el("div", { class: "src", text: (n.source || "") + " · " + fmtDate(n.date) })])); });
+      right.appendChild(el("div", null, [el("h4", { text: "In the news" }), ul]));
+    }
+    var links = [];
+    if (r.wiki) links.push(el("a", { href: r.wiki, target: "_blank", rel: "noopener", text: "Wikipedia race page" }));
+    if (links.length) right.appendChild(el("p", { class: "small" }, links));
+    return el("div", { class: "detail-grid" }, [left, right]);
+  }
+
+  var LEDGERS = {};
+  function openRace(id) {
+    var r = BY_ID[id]; if (!r) return;
+    var key = r.office === "SEN" ? "senate" : r.office === "GOV" ? "governors" : "house";
+    if (key === "house") {
+      var f = $("house-filter"); if (f && !(r.p > 0.05 && r.p < 0.95)) { f.value = "all"; HOUSE_FILTER(); }
+    }
+    var L = LEDGERS[key]; if (!L) return;
+    L.open(id);
+    var row = $("row-" + id); if (row) { row.scrollIntoView({ block: "center" }); row.focus({ preventScroll: true }); }
+  }
+  function searchFilter(list, q) {
+    q = (q || "").trim().toLowerCase(); if (!q) return list;
+    return list.filter(function (r) {
+      var hay = [r.id, r.name, r.state, r.dem && r.dem.name, r.rep && r.rep.name, r.inc].join(" ").toLowerCase();
+      return hay.indexOf(q) >= 0;
+    });
+  }
+
+  // ---------------- views ----------------
+  function verdictCard(kind) {
+    var ch = DATA[kind === "gov" ? "governors" : kind];
+    var title = { house: "House", senate: "Senate", gov: "Governors" }[kind];
+    var pD = ch.p_d_control, pR = ch.p_r_control, pO = ch.p_other || 0;
+    var favD = pD >= pR;
+    var card = el("article", { class: "board verdict" });
+    var need = { house: "218 seats for a majority", senate: "51 seats for control", gov: "Majority of 50 governorships" }[kind];
+    card.appendChild(el("div", { class: "board-head", style: "margin:0" }, [el("h2", { text: title }), el("span", { class: "small muted", text: need })]));
+    if (kind === "gov") {
+      card.appendChild(el("div", { class: "who" }, [el("span", { class: "oval fill-" + (ch.d_mean >= 25 ? "D" : "R") }), (ch.d_mean >= 25 ? "Democrats" : "Republicans") + " expected to hold most governorships"]));
+      card.appendChild(el("div", { class: "hero" }, [String(Math.round(ch.d_mean >= 25 ? ch.d_mean : ch.r_mean)), el("small", { text: "of 50 expected" })]));
+    } else {
+      card.appendChild(el("div", { class: "who" }, [el("span", { class: "oval fill-" + (favD ? "D" : "R") }), (favD ? "Democrats" : "Republicans") + " are favored to win control"]));
+      card.appendChild(el("div", { class: "hero" }, [pctText(favD ? pD : pR), el("small", { text: "chance" })]));
+    }
+    var segs = [el("span", { style: "width:" + ((kind === "gov" ? ch.d_mean / 50 : pD) * 100).toFixed(1) + "%;background:var(--dem)" })];
+    if (kind === "senate" && pO > 0.003) segs.push(el("span", { style: "width:" + (pO * 100).toFixed(1) + "%;background:var(--t0)" }));
+    segs.push(el("span", { style: "width:" + ((kind === "gov" ? ch.r_mean / 50 : pR) * 100).toFixed(1) + "%;background:var(--rep)" }));
+    card.appendChild(el("div", { class: "split", role: "img", "aria-label": kind === "gov" ? "Expected governorships" : "Control probabilities" }, segs));
+    var leg = el("div", { class: "split-legend" }, kind === "gov" ? [
+      el("span", null, [el("i", { class: "key", style: "background:var(--dem)" }), "Democrats ", el("b", { text: ch.d_mean.toFixed(1) })]),
+      el("span", null, [el("i", { class: "key", style: "background:var(--rep)" }), "Republicans ", el("b", { text: ch.r_mean.toFixed(1) })])] : [
+      el("span", null, [el("i", { class: "key", style: "background:var(--dem)" }), "Democrats ", el("b", { text: pctText(pD) })]),
+      kind === "senate" && pO > 0.003 ? el("span", null, [el("i", { class: "key", style: "background:var(--t0)" }), "Independents decide ", el("b", { text: pctText(pO) })]) : null,
+      el("span", null, [el("i", { class: "key", style: "background:var(--rep)" }), "Republicans ", el("b", { text: pctText(pR) })])]);
+    card.appendChild(leg);
+    var unit = kind === "house" ? "seats" : kind === "senate" ? "seats" : "governorships";
+    var facts = el("dl", { class: "facts" }, [
+      el("dt", { text: "Democratic " + unit }), el("dd", { text: Math.round(ch.d_median) + " (80% range " + Math.round(ch.d_p10) + "–" + Math.round(ch.d_p90) + ")" }),
+      el("dt", { text: "Today" }), el("dd", { text: composition(kind) })]);
+    card.appendChild(facts);
+    var hc = el("div", { class: "chart" });
+    card.appendChild(hc);
+    requestAnimationFrame(function () {
+      seatHistogram(hc, ch.hist, { majority: kind === "house" ? 218 : kind === "senate" ? 51 : 26, tieAt: kind === "senate" ? 50 : null,
+        majorityLabel: kind === "house" ? "218" : kind === "senate" ? "51" : "26", unit: unit, total: kind === "house" ? 435 : kind === "senate" ? 100 : 50, height: 120,
+        aria: title + " seat distribution" });
+    });
+    return card;
+  }
+
+  function composition(kind) {
+    var env = (DATA.research && DATA.research.national_environment) || {};
+    if (kind === "house" && env.house_composition) {
+      var h = env.house_composition, vac = 435 - (h.rep || 0) - (h.dem || 0) - (h.independent || 0);
+      return h.rep + " R · " + h.dem + " D" + (h.independent ? " · " + h.independent + " Ind. (caucuses R)" : "") + (vac > 0 ? " · " + vac + " vacant" : "");
+    }
+    if (kind === "senate") return "53 R · 47 D (incl. 2 Ind.)";
+    if (kind === "gov") return "26 R · 24 D";
+    return "";
+  }
+  function closeList(container, list, n) {
+    clear(container);
+    var rows = list.filter(function (r) { return !r.fixed; }).sort(function (a, b) { return Math.abs(a.p - 0.5) - Math.abs(b.p - 0.5); }).slice(0, n);
+    var t = el("table", { class: "ledger" });
+    var tb = el("tbody");
+    rows.forEach(function (r) {
+      var fav = r.p >= 0.5 ? r.p : 1 - r.p;
+      var tr = el("tr", { class: "race", tabindex: "0" }, [
+        el("td", null, [el("b", { text: raceTitle(r) })]), el("td", null, [candCell(r)]),
+        el("td", { class: "r" }, [el("div", { class: "prob", text: pctText(fav) }), probBar(r.p, r.ind)])]);
+      var go = function () { location.hash = "race-" + r.id; };
+      tr.addEventListener("click", go); tr.addEventListener("keydown", function (e) { if (e.key === "Enter") go(); });
+      tb.appendChild(tr);
+    });
+    t.appendChild(tb); container.appendChild(el("div", { class: "closelist" }, [t]));
+  }
+
+  function renderOverview() {
+    var v = $("verdicts"); clear(v);
+    v.appendChild(verdictCard("house")); v.appendChild(verdictCard("senate")); v.appendChild(verdictCard("gov"));
+    // hemicycles
+    var hs = HOUSE.slice().sort(function (a, b) { return (b.fixed === "D" ? 2 : b.fixed === "R" ? -1 : b.p) - (a.fixed === "D" ? 2 : a.fixed === "R" ? -1 : a.p); });
+    var seats = hs.map(function (r) { return { race: r, fill: r.fixed ? (r.fixed === "D" ? "var(--d3)" : "var(--r3)") : classColor(r.p) }; });
+    var exp = Math.round(DATA.house.d_mean);
+    hemicycle($("hemi-house"), seats, { rows: 12, inner: 0.36, maxDot: 7, aria: "House seats ordered by Democratic win probability", centerValue: exp + " D", centerLabel: "expected Democratic seats", leftLabel: "Most Democratic", rightLabel: "Most Republican" });
+    classLegend($("hemi-legend"));
+    var sen = SEN.slice().sort(function (a, b) { return b.p - a.p; });
+    var sseats = [];
+    for (var i = 0; i < 34; i++) sseats.push({ fill: "var(--d1)", label: "Democratic caucus seat not up in 2026" });
+    sen.filter(function (r) { return !r.ind; }).forEach(function (r) { if (r.p >= 0.5) sseats.push({ race: r, fill: classColor(r.p) }); });
+    sen.filter(function (r) { return r.ind; }).forEach(function (r) { sseats.push({ race: r, fill: "var(--ind)" }); });
+    sen.filter(function (r) { return !r.ind; }).forEach(function (r) { if (r.p < 0.5) sseats.push({ race: r, fill: classColor(r.p) }); });
+    for (var j = 0; j < 31; j++) sseats.push({ fill: "var(--r1)", label: "Republican seat not up in 2026" });
+    hemicycle($("hemi-senate"), sseats, { rows: 5, inner: 0.42, maxDot: 11, aria: "Senate seats, races ordered by Democratic win probability", centerValue: DATA.senate.d_mean.toFixed(1) + " D", centerLabel: "expected Democratic-caucus seats", leftLabel: "Democratic", rightLabel: "Republican" });
+    // national summary
+    var N = DATA.national;
+    $("nat-sub").textContent = "National House vote, D minus R";
+    var ns = $("nat-summary"); clear(ns);
+    ns.appendChild(el("div", { class: "hero", style: "font-size:var(--step-3)" }, [marginText(N.margin), el("small", { text: "expected national House margin" })]));
+    var s = N.sim || {};
+    ns.appendChild(el("p", { class: "small", text: "80% range " + marginText(s.p10) + " to " + marginText(s.p90) + " · 95% range " + marginText(s.p025) + " to " + marginText(s.p975) + ". Democrats win the national vote in " + pctText(s.p_dem_win_popvote) + " of simulations." }));
+    var comp = N.components || {}, parts = [];
+    if (comp.polls) parts.push("polls " + marginText(comp.polls.margin));
+    if (comp.markets) parts.push("markets " + marginText(comp.markets.margin));
+    if (comp.approval) parts.push("approval-based fundamentals " + marginText(comp.approval.margin));
+    if (comp.specials) parts.push("special elections " + marginText(comp.specials.margin));
+    ns.appendChild(el("p", { class: "small muted", text: "Built from " + parts.join(", ") + ". Trump approval: " + (N.approval && N.approval.approve != null ? N.approval.approve.toFixed(1) + "% (net " + N.approval.net.toFixed(1) + ")" : "—") + "." }));
+    ns.appendChild(el("p", { class: "small" }, [el("a", { href: "#national", text: "See the full national picture" })]));
+    requestAnimationFrame(function () { lineChart($("nat-trend-mini"), N.series || [], [], { height: 200, aria: "Generic ballot average over time" }); });
+    closeList($("close-statewide"), SEN.concat(GOV), 10);
+    closeList($("close-house"), HOUSE, 10);
+    // changes
+    var ch = DATA.changes || {}, cc = $("changes"); clear(cc);
+    if (!ch.since) {
+      $("chg-since").textContent = "";
+      cc.appendChild(el("p", { class: "empty", text: "This is the first model run, so there is nothing to compare yet. From tomorrow, this panel lists every race whose odds moved by 3 points or more." }));
+    } else {
+      $("chg-since").textContent = "Compared with " + fmtDate(ch.since);
+      var tl = ch.topline || {};
+      var lines = [];
+      if (tl.house) lines.push("House: Democrats " + pctText(tl.house.from) + " → " + pctText(tl.house.to));
+      if (tl.senate) lines.push("Senate: Democrats " + pctText(tl.senate.from) + " → " + pctText(tl.senate.to));
+      if (tl.national) lines.push("National margin: " + marginText(tl.national.from) + " → " + marginText(tl.national.to));
+      cc.appendChild(el("p", { class: "small", text: lines.join(" · ") }));
+      if (!(ch.races || []).length) cc.appendChild(el("p", { class: "empty", text: "No race moved by 3 points or more." }));
+      else {
+        var t = el("table", { class: "mini" }), tb = el("tbody");
+        ch.races.slice(0, 12).forEach(function (m) {
+          var r = BY_ID[m.id];
+          tb.appendChild(el("tr", null, [el("td", null, [el("a", { href: "#race-" + m.id, text: r ? raceTitle(r) : m.id })]), el("td", { class: "r", text: pctText(m.from) + " → " + pctText(m.to) + " D" }), el("td", { class: "r", text: (m.delta > 0 ? "+" : "") + Math.round(m.delta * 100) + " pts" })]));
+        });
+        t.appendChild(tb); cc.appendChild(t);
+      }
+    }
+    // joint
+    var J = DATA.joint || {}, jc = $("joint"); clear(jc);
+    var jt = el("table", { class: "mini" }), jb = el("tbody");
+    [["Democrats win both chambers", J.both_d], ["Democratic House, Republican Senate", J.house_d_senate_r], ["Republican House, Democratic Senate", J.house_r_senate_d], ["Republicans keep both chambers", J.both_r]].forEach(function (row) {
+      jb.appendChild(el("tr", null, [el("td", { text: row[0] }), el("td", { class: "r num", text: pctText(row[1]) })]));
+    });
+    jt.appendChild(jb); jc.appendChild(jt);
+    jc.appendChild(el("p", { class: "small muted", style: "margin-top:6px", text: "Remaining outcomes: an independent holds the Senate balance." }));
+    var vm = $("vs-markets"); clear(vm);
+    var mt = el("table", { class: "mini" });
+    mt.appendChild(el("thead", null, [el("tr", null, [el("th", { text: "Democratic control" }), el("th", { class: "r", text: "House" }), el("th", { class: "r", text: "Senate" })])]));
+    var mb = el("tbody");
+    mb.appendChild(el("tr", null, [el("td", null, [el("b", { text: "This model" })]), el("td", { class: "r", text: pctText(DATA.house.p_d_control) }), el("td", { class: "r", text: pctText(DATA.senate.p_d_control) })]));
+    var MC = DATA.markets_control || {};
+    Object.keys(MC).forEach(function (ex) {
+      var v = MC[ex] || {}; if (v["HOUSE-CONTROL"] == null && v["SENATE-CONTROL"] == null) return;
+      mb.appendChild(el("tr", null, [el("td", { text: ex }), el("td", { class: "r", text: pctText(v["HOUSE-CONTROL"]) }), el("td", { class: "r", text: pctText(v["SENATE-CONTROL"]) })]));
+    });
+    var OF = (DATA.other_forecasts || []).filter(function (f) { return f.dem_control_prob != null && (f.chamber === "House" || f.chamber === "Senate"); });
+    var bySrc = {};
+    OF.forEach(function (f) { var k = f.source; bySrc[k] = bySrc[k] || { as_of: f.as_of }; bySrc[k][f.chamber] = f.dem_control_prob; if (f.as_of > bySrc[k].as_of) bySrc[k].as_of = f.as_of; });
+    Object.keys(bySrc).sort().forEach(function (k) {
+      var v = bySrc[k];
+      mb.appendChild(el("tr", null, [el("td", null, [k, el("span", { class: "muted", text: " · " + fmtDate(v.as_of) })]), el("td", { class: "r", text: v.House != null ? pctText(v.House) : "—" }), el("td", { class: "r", text: v.Senate != null ? pctText(v.Senate) : "—" })]));
+    });
+    mt.appendChild(mb); vm.appendChild(mt);
+    vm.appendChild(el("p", { class: "small muted", style: "margin-top:6px", text: "Market prices count any Democratic-aligned control; this model's Senate figure requires 51 Democratic-caucus seats. Other forecasters' figures are as published on the date shown." }));
+  }
+
+  function renderSenate() {
+    $("sen-hist-sub").textContent = "Democratic caucus seats · median " + Math.round(DATA.senate.d_median);
+    seatHistogram($("sen-hist"), DATA.senate.hist, { majority: 51, tieAt: 50, majorityLabel: "51 for control", unit: "seats", total: 100, height: 230, aria: "Senate seat distribution" });
+    tileMap($("sen-map"), SEN, "Senate races by state"); classLegend($("sen-map-legend"));
+    var tp = DATA.senate.tipping_point || {}, tc = $("sen-tip"); clear(tc);
+    var t = el("table", { class: "mini" }), tb = el("tbody");
+    Object.keys(tp).slice(0, 8).forEach(function (id) { var r = BY_ID[id]; tb.appendChild(el("tr", null, [el("td", null, [el("a", { href: "#race-" + id, text: r ? r.name : id })]), el("td", { class: "r", text: pctText(tp[id]) })])); });
+    t.appendChild(tb); tc.appendChild(t);
+    var L = ledger($("sen-table"), SEN, { office: "SEN", domain: [-25, 25] }); LEDGERS.senate = L;
+    $("sen-q").addEventListener("input", function (e) { L.setList(searchFilter(SEN, e.target.value)); });
+  }
+  function renderGov() {
+    $("gov-hist-sub").textContent = "Democratic governors after the election · median " + Math.round(DATA.governors.d_median);
+    seatHistogram($("gov-hist"), DATA.governors.hist, { majority: 26, majorityLabel: "26 = majority", unit: "governorships", total: 50, height: 230, aria: "Governorship distribution" });
+    tileMap($("gov-map"), GOV, "Governor races by state"); classLegend($("gov-map-legend"));
+    var L = ledger($("gov-table"), GOV, { office: "GOV", domain: [-25, 25] }); LEDGERS.governors = L;
+    $("gov-q").addEventListener("input", function (e) { L.setList(searchFilter(GOV, e.target.value)); });
+  }
+  var HOUSE_FILTER = function () {};
+  function renderHouse() {
+    $("house-hist-sub").textContent = "Median " + Math.round(DATA.house.d_median) + " · 80% range " + Math.round(DATA.house.d_p10) + "–" + Math.round(DATA.house.d_p90);
+    seatHistogram($("house-hist"), DATA.house.hist, { majority: 218, majorityLabel: "218 majority", unit: "seats", total: 435, height: 230, aria: "House seat distribution" });
+    curveChart($("house-curve"), DATA.house.seats_by_national_vote, DATA.national.margin);
+    var sel = $("house-state");
+    Array.from(new Set(HOUSE.map(function (r) { return r.state; }))).sort().forEach(function (s) { sel.appendChild(el("option", { value: s, text: s })); });
+    var L = ledger($("house-table"), HOUSE, { office: "HOUSE", domain: [-30, 30] }); LEDGERS.house = L;
+    HOUSE_FILTER = function () {
+      var f = $("house-filter").value, st = $("house-state").value, q = $("house-q").value;
+      var list = HOUSE.filter(function (r) {
+        if (st && r.state !== st) return false;
+        if (f === "competitive") return !r.fixed && r.p > 0.05 && r.p < 0.95;
+        if (f === "tossup") return !r.fixed && r.p > 0.35 && r.p < 0.65;
+        if (f === "flips") return !r.fixed && r.incp && ((r.incp === "D" && r.p < 0.5) || (r.incp === "R" && r.p >= 0.5));
+        if (f === "rated") return r.ratings && Object.keys(r.ratings).length > 0;
+        return true;
+      });
+      list = searchFilter(list, q);
+      $("house-count").textContent = list.length + " of 435 shown";
+      L.setList(list);
+    };
+    ["house-filter", "house-state"].forEach(function (id) { $(id).addEventListener("change", HOUSE_FILTER); });
+    $("house-q").addEventListener("input", HOUSE_FILTER);
+    HOUSE_FILTER();
+  }
+  function renderNational() {
+    var N = DATA.national;
+    $("gb-sub").textContent = (N.n_polls_total || 0).toLocaleString() + " polls this cycle · latest average " + marginText(N.series && N.series.length ? N.series[N.series.length - 1].margin : null);
+    lineChart($("gb-trend"), N.series || [], (N.chart_polls && N.chart_polls.length ? N.chart_polls : N.polls) || [], { height: 300, aria: "Generic ballot average with individual polls" });
+    var c = N.components || {}, nc = $("nat-components"); clear(nc);
+    var t = el("table", { class: "mini" });
+    t.appendChild(el("thead", null, [el("tr", null, [el("th", { text: "Signal" }), el("th", { class: "r", text: "Estimate" }), el("th", { class: "r", text: "± error" }), el("th", { class: "r", text: "Weight" })])]));
+    var tb = el("tbody");
+    var desc = { polls: "Generic-ballot polls (bias-corrected)", markets: "Prediction markets (national vote)", approval: "Approval-based fundamentals", specials: "Special elections" };
+    Object.keys(desc).forEach(function (k) { var x = c[k]; if (!x) return; tb.appendChild(el("tr", null, [el("td", { text: desc[k] }), el("td", { class: "r", text: marginText(x.margin) }), el("td", { class: "r", text: x.sd != null ? x.sd.toFixed(1) : "—" }), el("td", { class: "r", text: x.w != null ? Math.round(x.w * 100) + "%" : "—" })])); });
+    tb.appendChild(el("tr", null, [el("td", null, [el("b", { text: "Blended estimate" })]), el("td", { class: "r" }, [el("b", { text: marginText(N.margin) })]), el("td", { class: "r", text: N.sd.toFixed(1) }), el("td", { class: "r", text: "100%" })]));
+    t.appendChild(tb); nc.appendChild(t);
+    var notes = [];
+    if (c.polls) notes.push("Our own average of " + (c.polls.n_polls || 0) + " recent polls is " + marginText(c.polls.own_average) + "; the median published average is " + marginText(c.polls.aggregator_median) + ". Generic-ballot averages overstated Democrats in 10 of the last 13 cycles, so the model subtracts " + Math.abs(c.polls.bias_correction).toFixed(1) + " points.");
+    if (c.approval) notes.push("At " + c.approval.approval.toFixed(1) + "% approval, the historical relationship implies " + marginText(c.approval.margin) + ".");
+    if (c.markets && c.markets.detail) Object.keys(c.markets.detail).forEach(function (k) { var d = c.markets.detail[k]; notes.push(k + " national-vote market: median " + marginText(d.median != null ? d.median : d.mean) + "."); });
+    notes.push("The ± error is " + N.struct_sd.toFixed(1) + " points of backtested error plus " + N.drift_sd.toFixed(1) + " points for how far opinion can still move in " + META.days_out + " days.");
+    notes.forEach(function (n) { nc.appendChild(el("p", { class: "small muted", style: "margin-top:8px", text: n })); });
+    // aggregators
+    var na = $("nat-aggs"); clear(na);
+    var at = el("table", { class: "mini" }), ab = el("tbody");
+    (N.aggregators || []).forEach(function (a) { ab.appendChild(el("tr", null, [el("td", { text: a.source }), el("td", { class: "r", text: marginText(a.margin) }), el("td", { class: "r muted", text: a.as_of && a.as_of !== "NaT" ? fmtDate(a.as_of) : "" })])); });
+    at.appendChild(ab); na.appendChild(at);
+    var ap = $("nat-approval"); clear(ap);
+    var pt = el("table", { class: "mini" }), pb = el("tbody");
+    ((N.approval && N.approval.aggregates) || []).forEach(function (a) { pb.appendChild(el("tr", null, [el("td", { text: a.aggregator }), el("td", { class: "r", text: a.approve + "% approve" }), el("td", { class: "r", text: a.disapprove + "% disapprove" })])); });
+    pt.appendChild(pb); ap.appendChild(pt);
+    // economy
+    var E = DATA.economy || {}, ec = $("econ"); clear(ec);
+    [["Unemployment", E.unemployment != null ? E.unemployment.toFixed(1) + "%" : "—", E.unemployment_change_12m != null ? (E.unemployment_change_12m >= 0 ? "+" : "") + E.unemployment_change_12m.toFixed(1) + " pts vs. a year ago · " + E.unemployment_asof : ""],
+     ["Inflation (CPI, y/y)", E.inflation_yoy != null ? E.inflation_yoy.toFixed(1) + "%" : "—", E.inflation_asof || ""],
+     ["Consumer sentiment", E.consumer_sentiment != null ? E.consumer_sentiment.toFixed(1) : "—", "University of Michigan · " + (E.sentiment_asof || "")],
+     ["Gas, regular", E.gas_price != null ? "$" + E.gas_price.toFixed(2) : "—", E.gas_change_12m != null ? (E.gas_change_12m >= 0 ? "+$" : "−$") + Math.abs(E.gas_change_12m).toFixed(2) + " vs. a year ago" : ""],
+     ["Real disposable income", E.rdi_growth_yoy != null ? (E.rdi_growth_yoy >= 0 ? "+" : "") + E.rdi_growth_yoy.toFixed(1) + "%" : "—", "per capita, y/y · " + (E.rdi_asof || "")],
+     ["Real GDP growth", E.gdp_growth_q_annualized != null ? E.gdp_growth_q_annualized.toFixed(1) + "%" : "—", "annualized, latest quarter"]].forEach(function (k) {
+      ec.appendChild(el("div", null, [el("div", { class: "small muted", text: k[0] }), el("div", { class: "v", text: k[1] }), el("div", { class: "small muted", text: k[2] })]));
+    });
+    // house effects
+    var he = N.house_effects || {}, hc = $("house-effects"); clear(hc);
+    var ht = el("table", { class: "mini" }), hb = el("tbody");
+    Object.keys(he).slice(0, 14).forEach(function (k) { hb.appendChild(el("tr", null, [el("td", { text: k }), el("td", { class: "r", text: (he[k] > 0 ? "D+" : "R+") + Math.abs(he[k]).toFixed(1) })])); });
+    ht.appendChild(hb); hc.appendChild(ht);
+    hc.appendChild(el("p", { class: "small muted", style: "margin-top:6px", text: "Pollster names are normalized. Each state poll gets half its pollster's national house effect removed." }));
+    // backtest
+    var B = N.backtest, bc = $("backtest"); clear(bc);
+    if (B && B.years) {
+      bc.appendChild(el("p", { class: "small", style: "margin-bottom:10px", text: "Out-of-sample test on " + B.n + " midterms. Each year's bias correction and approval model were fit without that year. Average miss of the blend: " + B.mae.toFixed(1) + " points (RMSE " + B.rmse.toFixed(1) + "), versus " + B.mae_polls.toFixed(1) + " for polls alone and " + B.mae_fund.toFixed(1) + " for fundamentals alone. Today's model adds markets and better poll adjustments, which this historical test cannot include." }));
+      var bt = el("table", { class: "mini" });
+      bt.appendChild(el("thead", null, [el("tr", null, ["Year", "Polls", "Fundamentals", "Blend", "Actual", "Blend error"].map(function (h, i) { return el("th", { class: i ? "r" : null, text: h }); }))]));
+      var bb = el("tbody");
+      B.years.forEach(function (y) { bb.appendChild(el("tr", null, [el("td", { text: y.year }), el("td", { class: "r", text: marginText(y.polls) }), el("td", { class: "r", text: marginText(y.fundamentals) }), el("td", { class: "r", text: marginText(y.blend) }), el("td", { class: "r", text: marginText(y.actual) }), el("td", { class: "r", text: (y.err_blend > 0 ? "+" : "") + y.err_blend.toFixed(1) })])); });
+      bt.appendChild(bb); bc.appendChild(el("div", { class: "table-scroll", style: "border:0" }, [bt]));
+    } else bc.appendChild(el("p", { class: "empty", text: "Historical data unavailable in this run." }));
+    // polls table
+    var gt = $("gb-polls"); clear(gt);
+    gt.appendChild(el("thead", null, [el("tr", null, ["Pollster", "Ended", "Sample", "Dem.", "Rep.", "Margin", "Adjusted", "538 grade"].map(function (h, i) { return el("th", { class: i > 1 ? "r" : null, text: h }); }))]));
+    var gb = el("tbody");
+    (N.polls || []).slice(0, 40).forEach(function (p) {
+      gb.appendChild(el("tr", null, [el("td", null, [p.url ? el("a", { href: p.url, target: "_blank", rel: "noopener", text: p.pollster }) : p.pollster, p.sponsor ? " (" + p.sponsor + ")" : ""]), el("td", { text: fmtDate(p.end) }), el("td", { class: "r", text: (p.n ? p.n.toLocaleString() : "?") + " " + (p.pop || "") }),
+        el("td", { class: "r", text: p.dem }), el("td", { class: "r", text: p.rep }), el("td", { class: "r", text: marginText(p.dem - p.rep) }), el("td", { class: "r", text: marginText(p.adj) }), el("td", { class: "r", text: p.grade != null ? p.grade.toFixed(1) : "—" })]));
+    });
+    gt.appendChild(gb);
+    var ke = $("key-events"); clear(ke);
+    var evs = (((DATA.research || {}).national_environment || {}).key_events || []).slice().sort(function (a, b) { return (b.date || "").localeCompare(a.date || ""); });
+    if (!evs.length) ke.appendChild(el("li", { class: "empty", text: "No research log in this run." }));
+    evs.slice(0, 16).forEach(function (e) { ke.appendChild(el("li", null, [el("div", { class: "src", text: fmtDate(e.date, { month: "short", day: "numeric", year: "numeric" }) }), e.url ? el("a", { href: e.url, target: "_blank", rel: "noopener", text: e.headline || e.summary || e.event }) : (e.headline || e.summary || e.event || "")])); });
+    var nn = $("nat-news"); clear(nn);
+    var news = ((DATA.national_news || {}).NATIONAL || []).concat((DATA.national_news || {}).NATIONAL_POLLS || []);
+    if (!news.length) nn.appendChild(el("li", { class: "empty", text: "Headlines are collected in the daily run." }));
+    news.slice(0, 14).forEach(function (n) { nn.appendChild(el("li", null, [el("a", { href: n.url, target: "_blank", rel: "noopener", text: n.title }), el("div", { class: "src", text: (n.source || "") + " · " + fmtDate(n.date) })])); });
+  }
+  function renderMethods() {
+    var N = DATA.national, s = N.sim || {}, B = N.backtest || {};
+    var box = $("moe-box"); clear(box);
+    var half80 = (s.p90 - s.p10) / 2, half95 = (s.p975 - s.p025) / 2;
+    box.appendChild(el("p", { text: "National House vote: " + marginText(N.margin) + " with a standard error of " + N.sd.toFixed(1) + " points. The 80% range is ±" + half80.toFixed(1) + " points and the 95% range is ±" + half95.toFixed(1) + " points. In backtests on past midterms, the national estimate missed by " + (B.mae != null ? B.mae.toFixed(1) : "about 2.3") + " points on average." }));
+    function medHalf(list) {
+      var v = list.filter(function (r) { return !r.fixed && r.p10 != null; }).map(function (r) { return (r.p90 - r.p10) / 2; }).sort(function (a, b) { return a - b; });
+      return v.length ? v[Math.floor(v.length / 2)] : null;
+    }
+    var senPolled = medHalf(SEN.filter(function (r) { return r.comps && r.comps.polls && r.comps.polls.n >= 10; }));
+    var housePlain = medHalf(HOUSE.filter(function (r) { return r.ratings && Object.keys(r.ratings).length && !(r.comps && r.comps.polls); }));
+    var timeShare = N.drift_sd != null ? Math.round(100 * N.drift_sd * N.drift_sd / (N.sd * N.sd)) : null;
+    box.appendChild(el("p", { style: "margin-top:8px", text: (timeShare != null ? "About " + timeShare + "% of that uncertainty (by variance) is time: opinion can still move before Nov. 3, so the range narrows every day. " : "") +
+      "The rest is the irreducible chance that polls miss together, as they did by 3 to 5 points in 2014 and 2020. Individual races carry more uncertainty than the national vote: today a well-polled Senate race has a median 80% range of ±" +
+      (senPolled != null ? senPolled.toFixed(1) : "6") + " points, and a competitive House district without public polls ±" + (housePlain != null ? housePlain.toFixed(1) : "7") +
+      ". Reporting narrower ranges would make the stated probabilities overconfident." }));
+    var sg = $("sources"); clear(sg);
+    var st = META.fetch_status || {};
+    var SOURCES = [
+      ["Wikipedia race pages", "Candidates, Cook PVI, ratings from 10 forecasters, polls and published polling averages for every race", ["wiki_senate", "wiki_governor", "wiki_house", "wiki_house_ratings"], "https://en.wikipedia.org/wiki/2026_United_States_elections"],
+      ["Silver Bulletin poll sheet", "Every generic-ballot poll, published as a public Google Sheet", ["silver_bulletin_generic"], "https://www.natesilver.net/"],
+      ["VoteHub polls API", "Generic ballot, approval, Senate, governor and House polls", ["votehub"], "https://votehub.com/"],
+      ["270toWin", "State polls for Senate and governor races", ["270towin"], "https://www.270towin.com/"],
+      ["Polymarket", "Control, race-winner and national popular-vote markets", ["markets"], "https://polymarket.com/"],
+      ["Kalshi", "Control, race and national-vote markets", ["markets"], "https://kalshi.com/"],
+      ["PredictIt", "Control and race markets", ["markets"], "https://www.predictit.org/"],
+      ["FEC bulk data", "Receipts and cash on hand for every House and Senate candidate", ["fec"], "https://www.fec.gov/data/browse-data/?tab=bulk-data"],
+      ["FRED (St. Louis Fed)", "Unemployment, CPI, sentiment, income, gas prices, GDP", ["fred"], "https://fred.stlouisfed.org/"],
+      ["Approval aggregators via Wikipedia", "Trump approval from about 10 aggregators", ["wiki_approval"], "https://en.wikipedia.org/wiki/Opinion_polling_on_the_second_Trump_presidency"],
+      ["Google News", "Daily headlines for every competitive race", ["news"], "https://news.google.com/"],
+      ["FiveThirtyEight archive", "20,000 historical polls with results (1998–2022) and pollster grades, used for calibration", [], "https://github.com/fivethirtyeight/data/tree/master/pollster-ratings"],
+      ["Gallup via UCSB", "Presidential approval before every midterm since 1946", [], "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"],
+      ["Redistricting research", "Status of the nine new congressional maps, with court rulings", [], "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"]];
+    SOURCES.forEach(function (s) {
+      var keys = s[2], ok = keys.length ? keys.every(function (k) { return st[k] === "ok"; }) : null;
+      var failed = keys.filter(function (k) { return st[k] && st[k] !== "ok"; });
+      sg.appendChild(el("div", { class: "src" }, [el("b", null, [el("a", { href: s[3], target: "_blank", rel: "noopener", text: s[0] })]), el("span", { class: "small muted", text: s[1] }),
+        keys.length ? el("span", { class: "small " + (ok ? "status-ok" : "status-bad"), text: ok ? "Fetched in today's run" : "Failed today: " + failed.join(", ") }) : el("span", { class: "small muted", text: "Static calibration data" })]));
+    });
+  }
+  var RENDER = { overview: renderOverview, senate: renderSenate, house: renderHouse, governors: renderGov, national: renderNational, methods: renderMethods };
+
+  // re-render charts on resize (debounced)
+  var rt = null;
+  window.addEventListener("resize", function () {
+    clearTimeout(rt);
+    rt = setTimeout(function () {
+      var cur = VIEWS.filter(function (v) { return !$(v).hidden; })[0];
+      Object.keys(rendered).forEach(function (k) { if (k !== cur) rendered[k] = false; });
+      if (cur === "overview") renderOverview();
+      if (cur === "senate") { seatHistogram($("sen-hist"), DATA.senate.hist, { majority: 51, tieAt: 50, majorityLabel: "51 for control", unit: "seats", total: 100, height: 230, aria: "Senate seat distribution" }); tileMap($("sen-map"), SEN, "Senate races by state"); }
+      if (cur === "governors") { seatHistogram($("gov-hist"), DATA.governors.hist, { majority: 26, majorityLabel: "26 = majority", unit: "governorships", total: 50, height: 230, aria: "Governorship distribution" }); tileMap($("gov-map"), GOV, "Governor races by state"); }
+      if (cur === "house") { seatHistogram($("house-hist"), DATA.house.hist, { majority: 218, majorityLabel: "218 majority", unit: "seats", total: 435, height: 230, aria: "House seat distribution" }); curveChart($("house-curve"), DATA.house.seats_by_national_vote, DATA.national.margin); }
+      if (cur === "national") lineChart($("gb-trend"), DATA.national.series || [], (DATA.national.chart_polls && DATA.national.chart_polls.length ? DATA.national.chart_polls : DATA.national.polls) || [], { height: 300, aria: "Generic ballot average with individual polls" });
+    }, 200);
+  });
+  // theme changes recolor SVG fills that were resolved from tokens
+  if (window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () { window.dispatchEvent(new Event("resize")); });
+  new MutationObserver(function () { window.dispatchEvent(new Event("resize")); }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+  routeFromHash();
+})();
+</script>

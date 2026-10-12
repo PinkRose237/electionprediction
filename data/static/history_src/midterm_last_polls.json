@@ -1,0 +1,142 @@
+{
+ "1946": {
+  "start": "1946-09-13",
+  "end": "1946-09-18",
+  "approve": "33",
+  "disapprove": "52",
+  "pres": "harry-s-truman"
+ },
+ "1950": {
+  "start": "1950-10-22",
+  "end": "1950-10-27",
+  "approve": "39",
+  "disapprove": "46",
+  "pres": "harry-s-truman"
+ },
+ "1954": {
+  "start": "1954-10-15",
+  "end": "1954-10-20",
+  "approve": "61",
+  "disapprove": "26",
+  "pres": "dwight-d-eisenhower"
+ },
+ "1958": {
+  "start": "1958-10-15",
+  "end": "1958-10-20",
+  "approve": "57",
+  "disapprove": "27",
+  "pres": "dwight-d-eisenhower"
+ },
+ "1962": {
+  "start": "1962-10-19",
+  "end": "1962-10-24",
+  "approve": "61",
+  "disapprove": "25",
+  "pres": "john-f-kennedy"
+ },
+ "1966": {
+  "start": "1966-10-21",
+  "end": "1966-10-26",
+  "approve": "44",
+  "disapprove": "41",
+  "pres": "lyndon-b-johnson"
+ },
+ "1970": {
+  "start": "1970-10-09",
+  "end": "1970-10-14",
+  "approve": "58",
+  "disapprove": "27",
+  "pres": "richard-m-nixon"
+ },
+ "1974": {
+  "start": "1974-10-18",
+  "end": "1974-10-21",
+  "approve": "54",
+  "disapprove": "28",
+  "pres": "gerald-r-ford"
+ },
+ "1978": {
+  "start": "1978-10-27",
+  "end": "1978-10-30",
+  "approve": "49",
+  "disapprove": "36",
+  "pres": "jimmy-carter"
+ },
+ "1982": {
+  "start": "1982-10-15",
+  "end": "1982-10-18",
+  "approve": "42",
+  "disapprove": "48",
+  "pres": "ronald-reagan"
+ },
+ "1986": {
+  "start": "1986-10-24",
+  "end": "1986-10-27",
+  "approve": "63",
+  "disapprove": "29",
+  "pres": "ronald-reagan"
+ },
+ "1990": {
+  "start": "1990-11-01",
+  "end": "1990-11-04",
+  "approve": "58",
+  "disapprove": "32",
+  "pres": "george-bush"
+ },
+ "1994": {
+  "start": "1994-11-02",
+  "end": "1994-11-06",
+  "approve": "46",
+  "disapprove": "46",
+  "pres": "william-j-clinton"
+ },
+ "1998": {
+  "start": "1998-10-29",
+  "end": "1998-11-01",
+  "approve": "66",
+  "disapprove": "30",
+  "pres": "william-j-clinton"
+ },
+ "2002": {
+  "start": "2002-10-31",
+  "end": "2002-11-03",
+  "approve": "63",
+  "disapprove": "29",
+  "pres": "george-w-bush"
+ },
+ "2006": {
+  "start": "2006-11-02",
+  "end": "2006-11-05",
+  "approve": "38",
+  "disapprove": "56",
+  "pres": "george-w-bush"
+ },
+ "2010": {
+  "start": "2010-10-25",
+  "end": "2010-10-31",
+  "approve": "45",
+  "disapprove": "48",
+  "pres": "barack-obama"
+ },
+ "2014": {
+  "start": "2014-10-27",
+  "end": "2014-11-02",
+  "approve": "42",
+  "disapprove": "53",
+  "pres": "barack-obama"
+ },
+ "2018": {
+  "start": "2018-10-29",
+  "end": "2018-11-04",
+  "approve": "40",
+  "disapprove": "54",
+  "pres": "donald-j-trump"
+ },
+ "2022": {
+  "start": "2022-10-03",
+  "end": "2022-10-20",
+  "approve": "40",
+  "disapprove": "56",
+  "pres": "joseph-r-biden"
+ }
+}

@@ -1,0 +1,6 @@
+{
+  "AK-SEN": {"rep": "Dan S. Sullivan",
+             "note": "Two Republicans named Dan Sullivan are on the ballot; the incumbent is Dan S. Sullivan (the other is Daniel J. Sullivan Jr.)."},
+  "MT-SEN": {"dem": "Seth Bodnar", "dem_is_independent": true,
+             "note": "Independent Seth Bodnar polls 24-30% to Democrat Alani Bankhead's 15-23% (VoteHub, Aug-Sep 2026), so he is modeled as the main challenger; Bankhead stays on the ballot and splits the anti-Alme vote."}
+}

@@ -1,0 +1,775 @@
+{
+  "meta": {
+    "description": "National environment staging data for 2026 US midterm forecast (as of 2026-10-11; Election Day 2026-11-03).",
+    "retrieved_on": "2026-10-11",
+    "method": "All values read from pages opened in this session via curl (HTML stripped and parsed with python3 -I) or WebFetch (BLS release pages, which return 403 to curl; numbers re-verified against the official BLS public API). Event summaries are paraphrased.",
+    "sign_convention_redistricting": "positive numeric_net_change = Republican seat gain"
+  },
+  "house_composition": {
+    "rep": 218,
+    "dem": 214,
+    "independent": 1,
+    "independent_members": [
+      {
+        "name": "Kevin Kiley",
+        "district": "CA-03",
+        "caucuses_with": "Republicans",
+        "detail": "Left GOP on 2026-03-09, serves as independent but caucuses with Republicans; running in redrawn CA-06 without party label.",
+        "url": "https://www.news4jax.com/news/politics/2026/03/09/gop-lawmaker-says-hes-leaving-the-republican-party-and-will-serve-as-an-independent/",
+        "quote": "he will still caucus with Republicans to maintain his committee assignments"
+      }
+    ],
+    "effective_caucus_split": {
+      "republican_conference": 219,
+      "democratic_caucus": 214,
+      "note": "218 R + Kiley (I, caucuses R). Delegates/Resident Commissioner (3 R, 3 D) excluded."
+    },
+    "vacancies": 2,
+    "vacancy_list": [
+      {
+        "district": "TX-23",
+        "previous_member": "Tony Gonzales (R)",
+        "reason": "resignation",
+        "date": "2026-04-14",
+        "special_election": "date TBD per Wikipedia (as of 2026-09-02)",
+        "url": "https://clerk.house.gov/xml/lists/MemberData.xml",
+        "quote": "Vacancy due to the resignation of Tony Gonzales, April 14, 2026."
+      },
+      {
+        "district": "FL-20",
+        "previous_member": "Sheila Cherfilus-McCormick (D)",
+        "reason": "resignation",
+        "date": "2026-04-21",
+        "special_election": "date TBD per Wikipedia (as of 2026-09-02)",
+        "url": "https://clerk.house.gov/xml/lists/MemberData.xml",
+        "quote": "Vacancy due to the resignation of Sheila Cherfilus-McCormick, April 21, 2026."
+      }
+    ],
+    "as_of": "2026-10-11",
+    "urls": [
+      "https://clerk.house.gov/",
+      "https://pressgallery.house.gov/member-data/party-breakdown",
+      "https://clerk.house.gov/xml/lists/MemberData.xml",
+      "https://en.wikipedia.org/wiki/List_of_current_members_of_the_United_States_House_of_Representatives"
+    ],
+    "quotes": {
+      "clerk.house.gov": "Republicans 218 Democrats 214 Independents 1 Vacancies 2",
+      "pressgallery.house.gov": "218 Republicans 214 Democrats 1 Independent 2* Vacancies",
+      "clerk_xml": "MemberData publish-date=\"October 1, 2026\"; Kiley party I, caucus R",
+      "wikipedia": "there are 433 representatives and 2 vacancies (As of September 2, 2026)"
+    },
+    "cross_check": "Clerk homepage, House Press Gallery, and Clerk MemberData.xml (published Oct 1, 2026) agree: 218 R, 214 D, 1 I, 2 vacant (voting members only). Wikipedia (last edited 2026-09-20) agrees on 433 seated + 2 vacancies but its party summary tables count Kiley with Republicans (219 R / 214 D / 2 vacant). Ballotpedia's redistricting page still says 'As of August 2026, Republicans have a 218-212 majority ... with four vacancies' (outdated: GA-13 and CA-14 were filled Sept 1-2).",
+    "special_elections_filled_in_2026": [
+      {
+        "district": "TX-18",
+        "member": "Christian D. Menefee (D)",
+        "elected": "2026-01-31",
+        "sworn": "2026-02-02",
+        "predecessor": "Sylvester Turner (D, died 2025-03-05)"
+      },
+      {
+        "district": "GA-14",
+        "member": "Clay Fuller (R)",
+        "elected": "2026-04-07",
+        "sworn": "2026-04-14",
+        "predecessor": "Marjorie Taylor Greene (R, resigned 2026-01-05)"
+      },
+      {
+        "district": "NJ-11",
+        "member": "Analilia Mejia (D)",
+        "elected": "2026-04-16",
+        "sworn": "2026-04-20",
+        "predecessor": "Mikie Sherrill (D, resigned 2025-11-20)"
+      },
+      {
+        "district": "CA-01",
+        "member": "James Gallagher (R)",
+        "elected": "2026-06-02",
+        "sworn": "2026-06-10",
+        "predecessor": "Doug LaMalfa (R, died 2026-01-06)"
+      },
+      {
+        "district": "CA-14",
+        "member": "Aisha Wahab (D)",
+        "elected": "2026-08-18",
+        "sworn": "2026-09-02",
+        "predecessor": "Eric Swalwell (D, resigned 2026-04-14)"
+      },
+      {
+        "district": "GA-13",
+        "member": "Everton Blair Jr. (D)",
+        "elected": "2026-08-25",
+        "sworn": "2026-09-01",
+        "predecessor": "David Scott (D, died 2026-04-22)"
+      }
+    ],
+    "special_elections_source_url": "https://clerk.house.gov/xml/lists/MemberData.xml",
+    "other": "House Press Gallery (fetched 2026-10-11): House in district work period; next votes expected Monday, November 9."
+  },
+  "senate_composition": {
+    "rep": 53,
+    "dem": 45,
+    "independents_caucusing_with_dem": 2,
+    "independent_members": [
+      "Angus King (ME)",
+      "Bernie Sanders (VT)"
+    ],
+    "vacancies": 0,
+    "as_of": "2026-10-08 (senate.gov senators XML last_updated 2026-10-08T14:47-05:00); fetched 2026-10-11",
+    "url": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
+    "urls": [
+      "https://www.senate.gov/general/contact_information/senators_cfm.xml",
+      "https://www.senate.gov/history/partydiv.htm",
+      "https://en.wikipedia.org/wiki/List_of_current_United_States_senators"
+    ],
+    "quotes": {
+      "senate.gov_partydiv": "Majority Party: Republicans (53 seats) ... Minority Party: Democrats (45 seats) ... Other Parties: 2 Independents",
+      "senate.gov_xml": "Parsed 100 members: party R=53, D=45, I=2; every state has 2 senators",
+      "wikipedia": "there are 53 Republican senators, 45 Democratic senators, and two independent senators"
+    },
+    "changes_in_2026": [
+      {
+        "state": "OK",
+        "new_senator": "Alan Armstrong (R)",
+        "replaced": "Markwayne Mullin (R), nominated/moving to lead DHS",
+        "date": "2026-03-24 (appointment announced by Gov. Stitt)",
+        "url": "https://katv.com/news/nation-world/oklahoma-republican-energy-executive-alan-armstrong-picked-to-replace-markwayne-mullin-in-senate-governor-kevin-stitt"
+      },
+      {
+        "state": "SC",
+        "new_senator": "Darline Graham (R)",
+        "replaced": "Lindsey Graham (R), died 2026-07-11",
+        "date": "appointed 2026-07-13, sworn in 2026-07-14",
+        "url": "https://www.hawaiinewsnow.com/2026/07/14/darline-graham-sister-late-sen-lindsey-graham-has-been-sworn-finish-his-term/"
+      }
+    ],
+    "cross_check": "senate.gov party-division page, senate.gov member XML (updated 2026-10-08) and Wikipedia ('As of July 2026') all give 53 R / 45 D / 2 I, no vacancies."
+  },
+  "governors_composition": {
+    "rep": 26,
+    "dem": 24,
+    "other": 0,
+    "note": "Counts are the 50 states only; Minnesota's Tim Walz (DFL) counted as Democratic. Territories excluded.",
+    "as_of": "Wikipedia statement 'As of January 2026'; page last edited 2026-10-11; table re-counted 2026-10-11",
+    "url": "https://en.wikipedia.org/wiki/List_of_current_United_States_governors",
+    "urls": [
+      "https://en.wikipedia.org/wiki/List_of_current_United_States_governors",
+      "https://www.nga.org/governors/"
+    ],
+    "quote": "there are 26 states with Republican governors and 24 states with Democratic governors",
+    "cross_check": "Parsed Wikipedia governor table: 26 Republican, 23 Democratic + 1 DFL (MN). NGA 'Current Governors' list (no party labels) shows the same 50 state governors by name (e.g., Abigail Spanberger VA, Mikie Sherrill NJ)."
+  },
+  "economy": {
+    "unemployment_rate": {
+      "value": 4.2,
+      "unit": "percent",
+      "period": "2026-09 (September 2026)",
+      "release_date": "2026-10-02",
+      "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "quote": "Both nonfarm payroll employment (+29,000) and the unemployment rate (4.2 percent) changed little",
+      "verification_url": "https://api.bls.gov/publicAPI/v1/timeseries/data/LNS14000000",
+      "verification": "BLS API series LNS14000000: 2026 M09 value 4.2 (Aug 4.1, Jul 4.1, Jun 4.2, May 4.3)",
+      "delays_or_shutdown_notes": "September 2026 report released on schedule. BLS API notes October 2025 data unavailable due to the 2025 lapse in appropriations. Next (October 2026) report scheduled Friday 2026-11-06, three days after Election Day.",
+      "unemployed_persons": {
+        "value_millions": 7.1,
+        "quote": "the number of unemployed people, at 7.1 million, changed little in September"
+      }
+    },
+    "nonfarm_payroll_change": {
+      "value": 29000,
+      "unit": "jobs, month-over-month",
+      "period": "2026-09",
+      "release_date": "2026-10-02",
+      "status": "preliminary",
+      "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "quote": "nonfarm payroll employment (+29,000)",
+      "verification_url": "https://api.bls.gov/publicAPI/v1/timeseries/data/CES0000000001",
+      "verification": "CES0000000001 levels (thousands): Sep 2026 159044, Aug 159015 (both preliminary), Jul 158882 => Sep +29K, Aug +133K, Jul -10K"
+    },
+    "cpi_yoy": {
+      "value": 3.4,
+      "unit": "percent, 12-month change, CPI-U all items, not seasonally adjusted",
+      "period": "2026-08 (August 2026)",
+      "release_date": "2026-09-11",
+      "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+      "quote": "the all items index increased 3.4 percent before seasonal adjustment",
+      "monthly_change_sa": {
+        "value": 0.4,
+        "quote": "increased 0.4 percent on a seasonally adjusted basis in August"
+      },
+      "verification_url": "https://api.bls.gov/publicAPI/v1/timeseries/data/CUUR0000SA0",
+      "verification": "CUUR0000SA0: Aug 2026 334.980 / Aug 2025 323.976 = +3.40%",
+      "next_release": "September 2026 CPI scheduled Wednesday 2026-10-14",
+      "context": "May 2026 CPI (released 2026-06-10) had hit 4.2% y/y, a three-year high, per BBC: https://www.bbc.co.uk/news/articles/c0myzxjkw99o. BLS API notes October 2025 CPI unavailable due to the 2025 lapse in appropriations."
+    },
+    "core_cpi_yoy": {
+      "value": 2.4,
+      "unit": "percent, 12-month change, all items less food and energy",
+      "period": "2026-08",
+      "release_date": "2026-09-11",
+      "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+      "quote": "all items less food and energy index rose 2.4 percent over the year",
+      "verification_url": "https://api.bls.gov/publicAPI/v1/timeseries/data/CUUR0000SA0L1E",
+      "verification": "CUUR0000SA0L1E: Aug 2026 338.041 / Aug 2025 329.970 = +2.45% (BLS publishes 2.4); July was 2.5"
+    },
+    "real_gdp_growth_last_quarter": {
+      "value": 2.2,
+      "unit": "percent, seasonally adjusted annual rate (q/q)",
+      "period": "2026Q2",
+      "estimate": "third",
+      "release_date": "2026-09-30",
+      "url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+      "quote": "increased at an annual rate of 2.2 percent in the second quarter of 2026",
+      "prior_quarter": {
+        "period": "2026Q1",
+        "value": 2.5,
+        "quote": "In the first quarter, real GDP increased 2.5 percent (revised)."
+      },
+      "next_release": "2026-10-29 (Q3 2026 advance estimate, per BEA page 'Next release: October 29, 2026')"
+    },
+    "umich_consumer_sentiment": {
+      "value": 46.3,
+      "period": "October 2026 (preliminary)",
+      "release_date": null,
+      "url": "https://www.sca.isr.umich.edu/",
+      "quote": "Preliminary Results for October 2026 ... Index of Consumer Sentiment 46.3",
+      "prior_month_final": {
+        "period": "September 2026",
+        "value": 48.1
+      },
+      "year_ago": {
+        "period": "October 2025",
+        "value": 53.6
+      },
+      "current_conditions_index": 44.7,
+      "expectations_index": 47.3,
+      "year_ahead_inflation_expectation_pct": 4.7,
+      "long_run_inflation_expectation_pct": 3.5,
+      "notes": "Page states final October data due Friday 2026-10-23. Release date of the preliminary reading not printed on the page (left null)."
+    },
+    "gas_price": {
+      "aaa_national_average_regular": {
+        "value": 4.3585,
+        "unit": "USD per gallon",
+        "date": "2026-10-11",
+        "url": "https://gasprices.aaa.com/",
+        "quote": "Today’s AAA National Average $4.3585 ... Price as of 10/11/26",
+        "week_ago": 4.3697,
+        "month_ago": 4.295,
+        "year_ago": 3.0895,
+        "diesel_current": 6.2771,
+        "diesel_record": {
+          "value": 6.5276,
+          "date": "2026-09-22"
+        }
+      },
+      "eia_weekly_us_regular": {
+        "value": 4.354,
+        "unit": "USD per gallon",
+        "week_of": "2026-10-05",
+        "release_date": "2026-10-06",
+        "url": "https://www.eia.gov/petroleum/gasdiesel/",
+        "quote": "U.S. 4.478 | 4.465 | 4.354 (weeks of 09/21/26, 09/28/26, 10/05/26)",
+        "change_vs_year_ago": 1.23,
+        "next_release": "2026-10-14"
+      }
+    },
+    "fed_funds_target_range": {
+      "value": "3.75-4.00",
+      "unit": "percent",
+      "decision_date": "2026-09-16",
+      "effective_date_per_fed_table": "2026-09-17",
+      "change_bp": 25,
+      "direction": "increase",
+      "vote": "12-0",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "quote": "by 1/4 percentage point to 3-3/4 to 4 percent",
+      "secondary_url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+      "secondary_quote": "September 17 | 25 | 0 | 3.75-4.00",
+      "note": "Fed table shows no other 2026 changes (prior level 3.50-3.75 set Dec 2025); this was a rate HIKE."
+    },
+    "sp500_level": null,
+    "sp500_note": "Not collected (not found on an opened page)."
+  },
+  "key_events": [
+    {
+      "importance_rank": 1,
+      "date": "2026-07-08",
+      "summary": "The interim US-Iran ceasefire collapsed after Iranian attacks on Gulf shipping; Trump declared the truce 'over' and US forces resumed strikes on Iran, reigniting the war (which the US and Israel launched on Feb. 28) and pushing oil prices up.",
+      "url": "https://english.aawsat.com/world/5293567-trump-says-ceasefire-iran-over-negotiations-can-continue",
+      "category": "war/foreign policy"
+    },
+    {
+      "importance_rank": 2,
+      "date": "2026-06-10",
+      "summary": "May CPI showed annual inflation jumping to 4.2% (from 3.8%), a three-year high driven by war-related energy costs; Trump drew criticism for saying he 'loves' the inflation numbers.",
+      "url": "https://www.bbc.co.uk/news/articles/c0myzxjkw99o",
+      "category": "economy/inflation"
+    },
+    {
+      "importance_rank": 3,
+      "date": "2026-06-17",
+      "summary": "Trump and Iranian President Pezeshkian signed a memorandum of understanding meant to end the Iran war (signed by Trump at Versailles after the G7), trading sanctions relief for uranium dilution and a 60-day window for a final deal.",
+      "url": "https://www.deccanchronicle.com/world/iran-mou-signed-on-wednesday-by-trump-iran-president-us-official-1964365",
+      "supporting_urls": [
+        "https://www.cnbc.com/2026/06/17/trump-us-iran-deal-g7.html"
+      ],
+      "category": "war/foreign policy"
+    },
+    {
+      "importance_rank": 4,
+      "date": "2026-10-08",
+      "summary": "Trump said US strikes on Iran would not resume before the Nov. 3 midterms, while directing the Pentagon to prepare options for renewed combat, including a short, intense multi-day strike campaign (per NYT reporting).",
+      "url": "https://www.timesofisrael.com/liveblog_entry/nytimes-us-preparing-options-to-renew-iran-war-including-plan-for-3-days-of-intense-strikes/",
+      "supporting_urls": [
+        "https://www.axios.com/2026/08/25/rubio-iran-war-hormuz-oil",
+        "https://www.axios.com/2026/09/26/trump-iran-un-proposal"
+      ],
+      "category": "war/foreign policy"
+    },
+    {
+      "importance_rank": 5,
+      "date": "2026-09-09",
+      "summary": "At the GOP's midterm convention in Dallas, Trump promised a $5,000 'Trump Dividend' to every US adult if Republicans keep both chambers; the plan would cost over $1 trillion and need congressional approval, and its legality was questioned.",
+      "url": "https://apnews.com/article/cc80644e3168acd31c892129fb849436",
+      "category": "campaign"
+    },
+    {
+      "importance_rank": 6,
+      "date": "2026-09-16",
+      "summary": "The Federal Reserve raised its policy rate by a quarter point to 3.75%-4.00%, citing elevated inflation, making borrowing costlier heading into the election.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "category": "economy/monetary policy"
+    },
+    {
+      "importance_rank": 7,
+      "date": "2026-09-25",
+      "summary": "The Supreme Court, for the third time, refused to let Missouri use its new GOP-drawn map in 2026, leaving the 2022 map in place for November despite the new lines having been used in the August primaries; voters will decide the new map's fate by referendum.",
+      "url": "https://www.scotusblog.com/2026/09/for-the-third-time-supreme-court-declines-to-allow-missouri-to-use-congressional-map-expected-to/",
+      "category": "redistricting/courts"
+    },
+    {
+      "importance_rank": 8,
+      "date": "2026-06-02",
+      "summary": "The Supreme Court (6-3) let Alabama use a Republican-drawn congressional map that eliminates one of its two majority-Black districts, likely costing Democrats a seat.",
+      "url": "https://www.nbcnews.com/politics/supreme-court/supreme-court-allows-alabama-congress-map-eliminate-black-district-rcna346920",
+      "supporting_urls": [
+        "https://apnews.com/article/supreme-court-alabama-redistricting-racial-discrimination-trump-3ec1bbe2999ab1cc23d4adb34a068af2"
+      ],
+      "category": "redistricting/courts"
+    },
+    {
+      "importance_rank": 9,
+      "date": "2026-06-10",
+      "summary": "Florida's Supreme Court declined to block the new DeSantis-drawn congressional map, so a plan making 24 of 28 seats GOP-leaning (up to four Republican pickups) will be used in 2026.",
+      "url": "https://www.nbcnews.com/politics/2026-election/florida-supreme-court-rejects-challenge-new-gop-drawn-congressional-ma-rcna349602",
+      "category": "redistricting/courts"
+    },
+    {
+      "importance_rank": 10,
+      "date": "2026-07-08",
+      "summary": "Maine Democratic Senate nominee Graham Platner quit the race against Sen. Susan Collins after a sexual assault allegation, forcing Democrats to pick a replacement in a must-win Senate state.",
+      "url": "https://www.cnbc.com/2026/07/08/platner-quits-maine-senate-race-midterm-elections.html",
+      "category": "campaign/Senate"
+    },
+    {
+      "importance_rank": 11,
+      "date": "2026-07-11",
+      "summary": "Sen. Lindsey Graham (R-SC) died suddenly at 71; Gov. McMaster appointed his sister Darline Graham, who was sworn in July 14, and a special GOP primary was scheduled to pick a new nominee.",
+      "url": "https://apnews.com/article/bfa556e170f2df22ce9ffc7165da3dfa",
+      "supporting_urls": [
+        "https://www.hawaiinewsnow.com/2026/07/14/darline-graham-sister-late-sen-lindsey-graham-has-been-sworn-finish-his-term/"
+      ],
+      "category": "Senate"
+    },
+    {
+      "importance_rank": 12,
+      "date": "2026-07-23",
+      "summary": "The administration imposed new 10%-12.5% tariffs on goods from 60 trading partners (covering nearly all US imports), citing forced-labor enforcement after the Supreme Court had struck down many emergency-power tariffs earlier in the year.",
+      "url": "https://www.bbc.co.uk/news/articles/cvgj61j6l08o",
+      "category": "economy/trade"
+    },
+    {
+      "importance_rank": 13,
+      "date": "2026-09-03",
+      "summary": "Trump signed a stopgap spending bill (House vote 370-48 on Sept. 1) funding the government through Dec. 11, averting an Oct. 1 shutdown before the midterms.",
+      "url": "https://news.ballotpedia.org/2026/09/25/stopgap-funding-bill-delayes-omb-grants-rule-until-december-11/",
+      "date_note": "Ballotpedia News says signed Sept. 3; Wikipedia (citing Reuters, which blocked access) says Sept. 2.",
+      "category": "Congress/funding"
+    },
+    {
+      "importance_rank": 14,
+      "date": "2026-09-14",
+      "summary": "The Supreme Court refused the administration's request to enforce new Postal Service restrictions on mail ballots, likely ending efforts to curtail mail voting for the midterms.",
+      "url": "https://rollcall.com/2026/09/14/supreme-court-blocks-efforts-to-stop-mail-voting-this-fall/",
+      "category": "election administration/courts"
+    },
+    {
+      "importance_rank": 15,
+      "date": "2026-06-30",
+      "summary": "The Supreme Court struck down Trump's executive order limiting birthright citizenship, a major legal defeat for his agenda.",
+      "url": "https://www.nbcnews.com/politics/supreme-court/supreme-court-nixes-trump-attempt-limit-birthright-citizenship-rcna266935",
+      "category": "courts"
+    },
+    {
+      "importance_rank": 16,
+      "date": "2026-06-30",
+      "summary": "In a GOP-backed case (NRSC v. FEC), the Supreme Court erased federal limits on party spending coordinated with candidates, reshaping campaign finance for the midterms.",
+      "url": "https://www.pbs.org/newshour/politics/supreme-court-strikes-limits-on-party-spending-in-federal-elections-backing-gop-appeal",
+      "category": "campaign finance/courts"
+    },
+    {
+      "importance_rank": 17,
+      "date": "2026-08-22",
+      "summary": "After trade talks collapsed, the US imposed 50% tariffs on about $20 billion of Canadian goods and Canada vowed dollar-for-dollar retaliation.",
+      "url": "https://www.timesofisrael.com/us-imposes-50-tariffs-on-20-billion-worth-of-canadian-products-as-trade-talks-collapse/",
+      "category": "economy/trade"
+    },
+    {
+      "importance_rank": 18,
+      "date": "2026-06-10",
+      "summary": "Trump signed a party-line (214-212 House vote) ~$70 billion ICE and Border Patrol funding law, ending a nearly six-month fight over DHS funding that had produced a record-long DHS shutdown.",
+      "url": "https://apnews.com/article/trump-immigration-enforcement-dhs-ice-deportation-9eef2e24fede3e4d593be462cbcf31f2",
+      "category": "immigration/Congress"
+    },
+    {
+      "importance_rank": 19,
+      "date": "2026-10-05",
+      "summary": "At a Nebraska rally, Trump said Iran could 'take out' Los Angeles and San Diego while calling high war-driven gas prices a small price to pay, drawing sharp criticism, especially from California Democrats; the White House said he meant the war prevents such threats.",
+      "url": "https://www.factcheck.org/2026/10/the-context-for-trumps-take-out-los-angeles-san-diego-remarks/",
+      "category": "campaign/war"
+    },
+    {
+      "importance_rank": 20,
+      "date": "2026-10-09",
+      "summary": "Hurricane Isaias made landfall near Destin, Florida, as a Category 2 storm, leaving hundreds of thousands without power in the Florida Panhandle and Alabama less than four weeks before the election.",
+      "url": "https://abcnews.com/US/wireStory/hundreds-thousands-power-after-isaias-slams-florida-panhandle-137153995",
+      "category": "disaster"
+    },
+    {
+      "importance_rank": 21,
+      "date": "2026-08-18",
+      "summary": "US national debt passed $40 trillion, while long-term Treasury yields rose to their highest in nearly 20 years.",
+      "url": "https://www.bbc.co.uk/news/articles/c70gp8252ejo",
+      "category": "economy/fiscal"
+    }
+  ],
+  "key_events_note": "Events list built from Wikipedia '2026 in the United States' (https://en.wikipedia.org/wiki/2026_in_the_United_States, last edited 2026-10-11) plus the linked news articles opened individually. importance_rank is a subjective analyst ranking; take ranks 1-12 for a ~12-item list. Background (before window): US-Israel war on Iran began 2026-02-28; two 2026 shutdowns (Jan 31-Feb 3 partial; DHS-only Feb 14-Apr 30, longest ever).",
+  "redistricting_net_effect": {
+    "estimates": [
+      {
+        "source": "Cook Political Report (Erin Covey), '2025-2026 Redistricting Tracker: How Many Seats Could Flip?'",
+        "date": "2026-09-10 (page modified 2026-09-15)",
+        "estimate_text": "Likeliest scenario: Republicans net about 4 seats from redistricting alone; Cook still sees Democrats favored to win the House.",
+        "numeric_net_change": 4,
+        "url": "https://www.cookpolitical.com/analysis/house/redistricting/2025-2026-redistricting-tracker-how-many-seats-could-flip-0",
+        "quote": "Republicans netting around four seats due to redistricting alone",
+        "per_state": null,
+        "notes": "Per-state detail is subscriber-only. Free text notes Virginia reverts to old lines where Republicans defend two competitive seats (VA-01, VA-02)."
+      },
+      {
+        "source": "Ballotpedia, 'Redistricting ahead of the 2026 elections'",
+        "date": "last updated 2026-09-28",
+        "estimate_text": "Potential (nominal) result of new maps in effect for 2026: net +9 Republican.",
+        "numeric_net_change": 9,
+        "url": "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+        "quote": "Net | +9 R",
+        "per_state": {
+          "AL": 1,
+          "CA": -5,
+          "FL": 4,
+          "LA": 1,
+          "NC": 1,
+          "OH": 2,
+          "TN": 1,
+          "TX": 5,
+          "UT": -1
+        },
+        "notes": "Missouri excluded (2022 map used in Nov). Virginia excluded (struck down)."
+      },
+      {
+        "source": "Wikipedia, '2025–2026 United States redistricting'",
+        "date": "last edited 2026-10-09",
+        "estimate_text": "Table of passed redistricting shows net 9-seat Republican advantage (TX R+5, NC R+1, OH R+2, FL R+4, TN R+1, LA R+1, AL R+1 vs CA D+5, UT D+1); Missouri R+1 blocked for 2026 and Virginia D+4 struck down.",
+        "numeric_net_change": 9,
+        "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting",
+        "quote": "Net | 9 seats",
+        "per_state": {
+          "TX": 5,
+          "NC": 1,
+          "OH": 2,
+          "FL": 4,
+          "TN": 1,
+          "LA": 1,
+          "AL": 1,
+          "CA": -5,
+          "UT": -1,
+          "MO_blocked": 1,
+          "VA_struck_down": -4
+        },
+        "notes": "Table footnote: red indicates Republican, blue Democratic; the Net '9 seats' cell is red (Republican). Infobox separately says 'Net 12 Republican and 1 Democratic seats established' and 'Net 13 competitive seats dissolved' (a seat-lean metric, see next entry). Also cites Kyle Kondik (Sabato's Crystal Ball, July 2026) arguing overall seat bias resembles 2018 and redistricting alone likely won't decide control; that Crystal Ball page returned 403 and was not opened."
+      },
+      {
+        "source": "Wikipedia, '2026 United States House of Representatives elections' (Summary of mid-decade changes table)",
+        "date": "table labeled 'Net change (as of October 11, 2026)'; page last edited 2026-10-10",
+        "estimate_text": "Change in seat lean from new maps: Republican-leaning seats +12, Democratic-leaning seats +1, highly competitive seats -13.",
+        "numeric_net_change": null,
+        "url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
+        "quote": "Net change (as of October 11, 2026) ... 1 | 13 | 12",
+        "per_state": {
+          "AL": {
+            "D": 0,
+            "Competitive": -1,
+            "R": 1
+          },
+          "CA": {
+            "D": 4,
+            "Competitive": -3,
+            "R": -1
+          },
+          "FL": {
+            "D": 1,
+            "Competitive": -4,
+            "R": 3
+          },
+          "LA": {
+            "D": -1,
+            "Competitive": 0,
+            "R": 1
+          },
+          "NC": {
+            "D": 0,
+            "Competitive": -1,
+            "R": 1
+          },
+          "OH": {
+            "D": 0,
+            "Competitive": -2,
+            "R": 2
+          },
+          "TN": {
+            "D": -1,
+            "Competitive": 0,
+            "R": 1
+          },
+          "TX": {
+            "D": -3,
+            "Competitive": -2,
+            "R": 5
+          },
+          "UT": {
+            "D": 1,
+            "Competitive": 0,
+            "R": -1
+          }
+        },
+        "notes": "Different metric (lean categories, competitive = 2024 margin under 10 pts), not a net seat projection; signs read from Increase/Decrease icons in the table."
+      },
+      {
+        "source": "CNN",
+        "date": "2026-05-08",
+        "estimate_text": "After Virginia's map was struck down, Democrats trailed Republicans by 8 seats in the redistricting battle (snapshot before Louisiana/Alabama maps and before Missouri's map was blocked).",
+        "numeric_net_change": 8,
+        "url": "https://www.cnn.com/2026/05/08/politics/virginia-supreme-court-redistricting",
+        "quote": "Democrats are now eight seats behind Republicans",
+        "per_state": null
+      },
+      {
+        "source": "Cook Political Report, 'Introducing the 2026 Cook PVI'",
+        "date": "2026-07-29",
+        "estimate_text": "After re-redistricting the median House seat is R+3 on Cook PVI, two points more Republican than before this cycle's map changes.",
+        "numeric_net_change": null,
+        "url": "https://www.cookpolitical.com/cook-pvi/introducing-2026-cook-pvi-re-redistricting-yields-more-republican-less-elastic-house-map",
+        "quote": "the median House seat now sports a Cook PVI score of R+3",
+        "per_state": null
+      },
+      {
+        "source": "NBC News",
+        "date": "2026-06-11",
+        "estimate_text": "Qualitative: Republicans set to net more seats from redistricting than Democrats.",
+        "numeric_net_change": null,
+        "url": "https://www.nbcnews.com/politics/2026-election/florida-supreme-court-rejects-challenge-new-gop-drawn-congressional-ma-rcna349602",
+        "quote": "Republicans are set to net more seats from redistricting",
+        "per_state": null
+      }
+    ],
+    "state_status": [
+      {
+        "state": "TX",
+        "status": "enacted; in effect for 2026",
+        "expected_shift": "+5 R",
+        "key_dates": "signed 2025-08-29; SCOTUS stayed lower-court block 2025-12-04 (6-3)",
+        "urls": [
+          "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+        ]
+      },
+      {
+        "state": "CA",
+        "status": "enacted (Prop 50); in effect for 2026",
+        "expected_shift": "+5 D",
+        "key_dates": "approved by voters 2025-11-04 (64.42%-35.58%); upheld by federal panel Jan 2026; SCOTUS denied GOP application 2026-02-04",
+        "urls": [
+          "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+        ]
+      },
+      {
+        "state": "NC",
+        "status": "enacted; in effect for 2026",
+        "expected_shift": "+1 R",
+        "key_dates": "passed 2025-10-22; federal panel allowed use 2025-11-26",
+        "urls": [
+          "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+        ]
+      },
+      {
+        "state": "OH",
+        "status": "enacted (required by state law); in effect for 2026",
+        "expected_shift": "+2 R",
+        "key_dates": "redistricting commission approved unanimously 2025-10-31",
+        "urls": [
+          "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+        ]
+      },
+      {
+        "state": "UT",
+        "status": "court-ordered map; in effect for 2026",
+        "expected_shift": "+1 D",
+        "key_dates": "court adopted plaintiff map 2025-11-10; GOP repeal initiative failed to qualify 2026-03-26",
+        "urls": [
+          "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+        ]
+      },
+      {
+        "state": "FL",
+        "status": "enacted; in effect for 2026",
+        "expected_shift": "+4 R (24 of 28 seats GOP-leaning)",
+        "key_dates": "legislature passed 2026-04-29; signed 2026-05-04; FL Supreme Court declined to block 2026-06-10",
+        "urls": [
+          "https://www.nbcnews.com/politics/2026-election/florida-supreme-court-rejects-challenge-new-gop-drawn-congressional-ma-rcna349602",
+          "https://www.nbcnews.com/politics/2026-election/florida-legislature-passes-redistricting-plan-creating-four-additional-rcna342656",
+          "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections"
+        ]
+      },
+      {
+        "state": "TN",
+        "status": "enacted; in effect for 2026",
+        "expected_shift": "+1 R (targets Memphis TN-09)",
+        "key_dates": "signed 2026-05-07; federal judge declined to block 2026-05-26",
+        "urls": [
+          "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+        ]
+      },
+      {
+        "state": "LA",
+        "status": "enacted after Louisiana v. Callais; in effect for 2026 (legal challenges pending)",
+        "expected_shift": "+1 R (LA-06)",
+        "key_dates": "SCOTUS Callais ruling 2026-04-29; new map 2026-05-29; House primary moved to 2026-11-03 with general 2026-12-12",
+        "urls": [
+          "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections",
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting",
+          "https://www.npr.org/2026/04/29/nx-s1-5754657/supreme-court-louisiana-redistricting"
+        ]
+      },
+      {
+        "state": "AL",
+        "status": "legislature's 2023 map allowed by SCOTUS; in effect for 2026",
+        "expected_shift": "+1 R",
+        "key_dates": "SCOTUS order 2026-06-02 (6-3); special congressional primaries in four districts 2026-08-11",
+        "urls": [
+          "https://www.nbcnews.com/politics/supreme-court/supreme-court-allows-alabama-congress-map-eliminate-black-district-rcna346920",
+          "https://apnews.com/article/supreme-court-alabama-redistricting-racial-discrimination-trump-3ec1bbe2999ab1cc23d4adb34a068af2"
+        ]
+      },
+      {
+        "state": "MO",
+        "status": "enacted 2025-09-28 but BLOCKED for 2026 general (2022 map used); new map goes to voters by referendum Nov 2026",
+        "expected_shift": "would have been +1 R; 0 for 2026",
+        "key_dates": "Mo. Supreme Court 2026-09-03; Kavanaugh denied stay 2026-09-08; SCOTUS stays 2026-09-10 and 2026-09-25",
+        "urls": [
+          "https://www.scotusblog.com/2026/09/for-the-third-time-supreme-court-declines-to-allow-missouri-to-use-congressional-map-expected-to/",
+          "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections"
+        ]
+      },
+      {
+        "state": "VA",
+        "status": "voter-approved amendment STRUCK DOWN; old map used",
+        "expected_shift": "would have been up to +4 D; 0 for 2026",
+        "key_dates": "referendum passed 2026-04-21 (51.61%-48.39%); VA Supreme Court voided 2026-05-08 (4-3); SCOTUS denied stay 2026-05-15",
+        "urls": [
+          "https://www.cnn.com/2026/05/08/politics/virginia-supreme-court-redistricting",
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+        ]
+      },
+      {
+        "state": "IN",
+        "status": "failed (state Senate rejected 2025-12-11); old map",
+        "expected_shift": "0 (proposal would have been +2 R)",
+        "urls": [
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting",
+          "https://ballotpedia.org/Redistricting_ahead_of_the_2026_elections"
+        ]
+      },
+      {
+        "state": "MD",
+        "status": "failed for 2026 (House passed map 2026-02-02; Senate did not act; Wikipedia lists as unsuccessfully attempted); old map",
+        "expected_shift": "0",
+        "urls": [
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+        ]
+      },
+      {
+        "state": "NY",
+        "status": "court-ordered NY-11 redraw blocked by SCOTUS 2026-03-02; old map",
+        "expected_shift": "0",
+        "urls": [
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+        ]
+      },
+      {
+        "state": "SC",
+        "status": "failed in state Senate (May 2026); old map",
+        "expected_shift": "0",
+        "urls": [
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+        ]
+      },
+      {
+        "state": "KS",
+        "status": "stalled (insufficient votes to override veto); old map",
+        "expected_shift": "0",
+        "urls": [
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+        ]
+      },
+      {
+        "state": "WI",
+        "status": "court challenges dismissed; old map",
+        "expected_shift": "0",
+        "urls": [
+          "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+        ]
+      }
+    ],
+    "summary": "Maps actually in effect for Nov 2026 imply a nominal net shift of about R+9 seats (Ballotpedia, Wikipedia); Cook Political Report's likeliest realized effect is about R+4. Missouri (R+1) and Virginia (D+4) changes are NOT in effect for 2026."
+  },
+  "notes": [
+    "WebSearch quota was exhausted partway through (per coordinating agent); later items were found via links inside opened pages (mainly Wikipedia reference lists) rather than new searches.",
+    "Blocked/unavailable: reuters.com (HTTP 401), fox59.com (403), centerforpolitics.org Sabato's Crystal Ball (403), bls.gov pages via curl (403). BLS numbers were read with WebFetch (twice) and cross-checked against the official BLS public API (api.bls.gov). No paywalls/bot-blocks were circumvented.",
+    "Cook Political Report tracker body is subscriber-only; only the free summary was used (R net about 4).",
+    "House: Kevin Kiley is officially an Independent who caucuses with Republicans, so the GOP-aligned bloc is 219 vs 214 Democrats. Some sources (Wikipedia summary tables) count him as R; Ballotpedia's '218-212 with four vacancies' is outdated.",
+    "Louisiana US House: primaries on Nov 3 and general election on Dec 12, 2026, so LA House results will not be final on Election Night.",
+    "Missouri: the 2025 map was used in the Aug 4 primaries but the 2022 map governs the November general election (SCOTUS 2026-09-25), so nominees may run in districts that differ from where they were nominated.",
+    "Stopgap funding signing date: Ballotpedia News says Sept 3, 2026; Wikipedia (citing Reuters) says Sept 2. Recorded as Sept 3.",
+    "Inflation path: CPI y/y peaked at 4.2% in May 2026 (BBC on June 10 release) and was 3.4% in August 2026 (BLS). September CPI is due 2026-10-14 and Q3 GDP advance estimate 2026-10-29 (before Election Day); the October jobs report is due 2026-11-06 (after).",
+    "UMich sentiment (46.3 prelim Oct) is near historic lows; the page links the inflation-expectations jump to the Iran conflict that began in February.",
+    "Trump approval ratings were not collected in this pass.",
+    "Tariff legal history: NBC (2026-06-30) refers to a February 2026 Supreme Court ruling invalidating the sweeping tariffs, while an AP article (2026-09-10) says 'last year'. Unresolved; not used as a data point.",
+    "Event summaries are paraphrased; importance_rank is a judgment call."
+  ]
+}
