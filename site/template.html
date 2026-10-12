@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>try{var t=localStorage.getItem("mf26-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 <title>2026 Midterm Forecast</title>
 <meta name="description" content="Daily-updating forecast of the 2026 U.S. House, Senate and governor elections.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +26,8 @@
   --r1: #e49d96; --r2: #c9433b; --r3: #8a251f;
   --none: #e3e7ec;
   --hl: #fff4c2;
+  --knob: #ffffff;
+  --on-d3: #ffffff; --on-d2: #ffffff; --on-d1: #12151a; --on-t0: #12151a; --on-r1: #12151a; --on-r2: #ffffff; --on-r3: #ffffff; --on-none: #6c7585;
   --font-display: "Libre Franklin", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --font-body: "Public Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --step--1: 0.8125rem;
@@ -40,14 +43,14 @@
     --bg: #111418; --panel: #181c22; --panel-2: #20252d; --ink: #eef1f5; --ink-2: #b9c1cd; --ink-3: #8b94a3;
     --rule: #2a3039; --rule-2: #3a414c; --dem: #5b8fe0; --rep: #e3665d; --ind: #24a17c;
     --d3: #9dbdf3; --d2: #5b8fe0; --d1: #33548c; --t0: #444b56; --r1: #8c3e38; --r2: #e3665d; --r3: #f4a39b;
-    --none: #232830; --hl: #3a3420; color-scheme: dark;
+    --none: #232830; --hl: #3a3420; --knob: #3a414c; --on-d3: #12151a; --on-d2: #12151a; --on-d1: #ffffff; --on-t0: #ffffff; --on-r1: #ffffff; --on-r2: #12151a; --on-r3: #12151a; --on-none: #8b94a3; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #111418; --panel: #181c22; --panel-2: #20252d; --ink: #eef1f5; --ink-2: #b9c1cd; --ink-3: #8b94a3;
   --rule: #2a3039; --rule-2: #3a414c; --dem: #5b8fe0; --rep: #e3665d; --ind: #24a17c;
   --d3: #9dbdf3; --d2: #5b8fe0; --d1: #33548c; --t0: #444b56; --r1: #8c3e38; --r2: #e3665d; --r3: #f4a39b;
-  --none: #232830; --hl: #3a3420; color-scheme: dark;
+  --none: #232830; --hl: #3a3420; --knob: #3a414c; --on-d3: #12151a; --on-d2: #12151a; --on-d1: #ffffff; --on-t0: #ffffff; --on-r1: #ffffff; --on-r2: #12151a; --on-r3: #12151a; --on-none: #8b94a3; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -74,13 +77,24 @@ p { margin: 0; }
 .stamp { text-align: right; display: grid; gap: 2px; }
 .countdown { font-family: var(--font-display); font-weight: 800; font-size: var(--step-1); }
 .countdown b { font-size: var(--step-2); font-weight: 900; }
+.stamp-top { display: flex; align-items: center; justify-content: flex-end; gap: 14px; }
+.theme-switch { appearance: none; background: none; border: 0; padding: 2px; margin: 0; cursor: pointer; border-radius: 999px; line-height: 0; }
+.ts-track { position: relative; display: block; width: 52px; height: 28px; border-radius: 999px; background: var(--panel-2); border: 1px solid var(--rule-2); }
+.ts-knob { position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; border-radius: 50%; background: var(--knob); box-shadow: 0 1px 3px rgb(0 0 0 / 0.28); transition: transform 0.18s ease; }
+.ts-ic { position: absolute; top: 6px; width: 14px; height: 14px; fill: none; stroke: var(--ink-3); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; z-index: 1; transition: stroke 0.18s ease; }
+.ts-sun { left: 6px; stroke: var(--ink); }
+.ts-moon { left: 30px; }
+.theme-switch[aria-checked="true"] .ts-knob { transform: translateX(24px); }
+.theme-switch[aria-checked="true"] .ts-sun { stroke: var(--ink-3); }
+.theme-switch[aria-checked="true"] .ts-moon { stroke: var(--ink); }
+.theme-switch:hover .ts-track { border-color: var(--ink-3); }
 .tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
 .tabs::-webkit-scrollbar { display: none; }
 .tab { appearance: none; background: none; border: 0; border-bottom: 3px solid transparent; color: var(--ink-2); cursor: pointer;
   font: 600 var(--step-0)/1 var(--font-body); padding: 12px 12px 11px; white-space: nowrap; }
 .tab:hover { color: var(--ink); }
 .tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
-@media (max-width: 640px) { .stamp { text-align: left; } .mast { position: static; } }
+@media (max-width: 640px) { .stamp { text-align: left; } .stamp-top { justify-content: space-between; } .mast { position: static; } }
 
 /* ---------- layout ---------- */
 main { padding-block: 24px 64px; }
@@ -199,7 +213,16 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
       <h1>2026 Midterm Forecast</h1>
     </div>
     <div class="stamp">
-      <div class="countdown"><b id="days-out">—</b> days until Nov. 3</div>
+      <div class="stamp-top">
+        <div class="countdown"><b id="days-out">—</b> days until Nov. 3</div>
+        <button class="theme-switch" id="theme-switch" type="button" role="switch" aria-checked="false" aria-label="Dark mode" title="Switch to dark mode">
+          <span class="ts-track" aria-hidden="true">
+            <span class="ts-knob"></span>
+            <svg class="ts-ic ts-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            <svg class="ts-ic ts-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg>
+          </span>
+        </button>
+      </div>
       <div class="small muted" id="updated">Loading the latest model run…</div>
     </div>
   </div>
@@ -485,13 +508,6 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
     { k: "d3", min: 0.97, label: "Safe D" }];
   function pclass(p) { var c = CLASSES[0]; CLASSES.forEach(function (x) { if (p >= x.min) c = x; }); return c; }
   function classColor(p) { return "var(--" + pclass(p).k + ")"; }
-  function luminance(col) {
-    var c = d3.color(col); if (!c) return 1; c = c.rgb();
-    var f = function (v) { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
-    return 0.2126 * f(c.r) + 0.7152 * f(c.g) + 0.0722 * f(c.b);
-  }
-  function inkOn(fill) { return luminance(fill) > 0.32 ? "#12151a" : "#ffffff"; }
-  function resolveVar(v) { return v.indexOf("var(") === 0 ? cssVar(v.slice(4, -1)) : v; }
 
   // tooltip
   var tip = $("tip");
@@ -521,6 +537,36 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
     if (r.office === "HOUSE") return r.id;
     return r.name + (r.office === "GOV" ? " governor" : " Senate");
   }
+
+  // ---------------- light / dark switch ----------------
+  // Starts on the device setting. Choosing the opposite is remembered; switching back to match the
+  // device clears the saved choice, so the page follows the device again.
+  (function () {
+    var root = document.documentElement, btn = $("theme-switch");
+    if (!btn) return;
+    var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+    function systemDark() { return !!(mq && mq.matches); }
+    function isDark() { var t = root.getAttribute("data-theme"); return t ? t === "dark" : systemDark(); }
+    function sync() {
+      var d = isDark();
+      btn.setAttribute("aria-checked", d ? "true" : "false");
+      btn.title = d ? "Switch to light mode" : "Switch to dark mode";
+    }
+    btn.addEventListener("click", function () {
+      var next = !isDark();
+      if (next === systemDark()) {
+        root.removeAttribute("data-theme");
+        try { localStorage.removeItem("mf26-theme"); } catch (e) { /* storage unavailable */ }
+      } else {
+        root.setAttribute("data-theme", next ? "dark" : "light");
+        try { localStorage.setItem("mf26-theme", next ? "dark" : "light"); } catch (e) { /* storage unavailable */ }
+      }
+      sync();
+    });
+    if (mq && mq.addEventListener) mq.addEventListener("change", sync);
+    new MutationObserver(sync).observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+    sync();
+  })();
 
   // ---------------- data prep ----------------
   if (!DATA) {
@@ -585,14 +631,14 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
     var svg = d3.select(container).append("svg").attr("viewBox", "0 0 " + W + " " + H).attr("width", "100%").attr("role", "img")
       .attr("aria-label", opts.aria);
     var bw = Math.min(24, x.bandwidth());
-    var dcol = resolveVar("var(--dem)"), rcol = resolveVar("var(--rep)");
+    var dcol = ("var(--dem)"), rcol = ("var(--rep)");
     svg.append("g").selectAll("path").data(keep).enter().append("path")
       .attr("d", function (e) {
         var x0 = x(e[0]) + (x.bandwidth() - bw) / 2, y0 = y(e[1]), h = (H - m.b) - y0, r = Math.min(3, h, bw / 2);
         return "M" + x0 + "," + (H - m.b) + "V" + (y0 + r) + "Q" + x0 + "," + y0 + " " + (x0 + r) + "," + y0 +
           "H" + (x0 + bw - r) + "Q" + (x0 + bw) + "," + y0 + " " + (x0 + bw) + "," + (y0 + r) + "V" + (H - m.b) + "Z";
       })
-      .attr("fill", function (e) { return e[0] >= opts.majority ? dcol : (opts.tieAt != null && e[0] === opts.tieAt ? resolveVar("var(--t0)") : rcol); })
+      .style("fill", function (e) { return e[0] >= opts.majority ? dcol : (opts.tieAt != null && e[0] === opts.tieAt ? ("var(--t0)") : rcol); })
       .on("pointermove", function (evt, e) {
         showTip(evt, function (t) {
           t.appendChild(el("div", null, [el("b", { text: pctText(e[1]) }), " of simulations"]));
@@ -602,7 +648,7 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
       .on("pointerleave", hideTip);
     // majority line
     var mx = x(opts.majority) - x.step() * x.paddingInner() / 2;
-    svg.append("line").attr("x1", mx).attr("x2", mx).attr("y1", m.t - 8).attr("y2", H - m.b).attr("stroke", resolveVar("var(--ink)")).attr("stroke-width", 1);
+    svg.append("line").attr("x1", mx).attr("x2", mx).attr("y1", m.t - 8).attr("y2", H - m.b).style("stroke", ("var(--ink)")).attr("stroke-width", 1);
     svg.append("text").attr("class", "lbl-strong").attr("x", mx + 6).attr("y", m.t - 10).text(opts.majorityLabel);
     var ticks = x.domain().filter(function (d) { var step = Math.ceil((hi - lo) / 10 / 5) * 5 || 1; return d % step === 0; });
     var ax = svg.append("g").attr("class", "axis").attr("transform", "translate(0," + (H - m.b) + ")");
@@ -636,13 +682,13 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
     g.selectAll("circle").data(pts).enter().append("circle")
       .attr("class", function (d, i) { return seats[i].race ? "seat" : null; })
       .attr("cx", function (d) { return d.x * R; }).attr("cy", function (d) { return -d.y * R; }).attr("r", dotR)
-      .attr("fill", function (d, i) { return resolveVar(seats[i].fill); })
+      .style("fill", function (d, i) { return (seats[i].fill); })
       .attr("tabindex", function (d, i) { return seats[i].race ? 0 : null; })
       .on("pointermove", function (evt, d) { var s = seats[pts.indexOf(d)]; if (s.race) showTip(evt, function (t) { raceTip(t, s.race); }); else if (s.label) showTip(evt, function (t) { t.appendChild(el("div", { text: s.label })); }); })
       .on("pointerleave", hideTip)
       .on("click", function (evt, d) { var s = seats[pts.indexOf(d)]; if (s.race) location.hash = "race-" + s.race.id; });
     // majority marker on the centerline
-    g.append("line").attr("x1", 0).attr("x2", 0).attr("y1", -R - 4).attr("y2", -opts.inner * R + 6).attr("stroke", resolveVar("var(--ink)")).attr("stroke-width", 1);
+    g.append("line").attr("x1", 0).attr("x2", 0).attr("y1", -R - 4).attr("y2", -opts.inner * R + 6).style("stroke", ("var(--ink)")).attr("stroke-width", 1);
     var big = g.append("text").attr("text-anchor", "middle").attr("y", -10).attr("class", "lbl-strong").style("font-size", "26px").style("font-weight", "700");
     big.text(opts.centerValue);
     g.append("text").attr("text-anchor", "middle").attr("y", 10).attr("class", "lbl").text(opts.centerLabel);
@@ -665,12 +711,13 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
     Object.keys(TILES).forEach(function (st) {
       var pos = TILES[st], r = byState[st];
       var gx = pos[0] * (s + gap), gy = pos[1] * (s + gap);
-      var fill = r ? resolveVar(r.fixed ? (r.fixed === "D" ? "var(--d3)" : "var(--r3)") : classColor(r.p)) : resolveVar("var(--none)");
+      var key = r ? (r.fixed ? (r.fixed === "D" ? "d3" : "r3") : pclass(r.p).k) : "none";
+      var fill = "var(--" + key + ")";
       var g = svg.append("g").attr("class", r ? "tile" : null).attr("transform", "translate(" + gx + "," + gy + ")");
-      g.append("rect").attr("width", s).attr("height", s).attr("rx", 4).attr("fill", fill);
-      var ink = r ? inkOn(fill) : resolveVar("var(--ink-3)");
-      g.append("text").attr("x", s / 2).attr("y", s / 2 - (r && s > 34 ? 3 : -4)).attr("text-anchor", "middle").attr("fill", ink).text(st);
-      if (r && s > 34) g.append("text").attr("class", "tp").attr("x", s / 2).attr("y", s / 2 + 11).attr("text-anchor", "middle").attr("fill", ink)
+      g.append("rect").attr("width", s).attr("height", s).attr("rx", 4).style("fill", fill);
+      var ink = "var(--on-" + key + ")";
+      g.append("text").attr("x", s / 2).attr("y", s / 2 - (r && s > 34 ? 3 : -4)).attr("text-anchor", "middle").style("fill", ink).text(st);
+      if (r && s > 34) g.append("text").attr("class", "tp").attr("x", s / 2).attr("y", s / 2 + 11).attr("text-anchor", "middle").style("fill", ink)
         .text(r.p >= 0.5 ? pctText(r.p) : pctText(1 - r.p));
       if (r) {
         g.attr("tabindex", 0).attr("role", "button").attr("aria-label", raceTitle(r) + ": " + pctText(r.p) + " Democratic")
@@ -692,14 +739,14 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
   function intervalCell(r, domain) {
     var W = 150, H = 22, x = d3.scaleLinear().domain(domain).range([4, W - 4]).clamp(true);
     var svg = d3.create("svg").attr("viewBox", "0 0 " + W + " " + H).attr("width", W).attr("height", H).attr("aria-hidden", "true");
-    svg.append("line").attr("x1", x(0)).attr("x2", x(0)).attr("y1", 2).attr("y2", H - 2).attr("stroke", resolveVar("var(--rule-2)"));
+    svg.append("line").attr("x1", x(0)).attr("x2", x(0)).attr("y1", 2).attr("y2", H - 2).style("stroke", ("var(--rule-2)"));
     if (r.p025 != null) {
-      svg.append("line").attr("x1", x(r.p025)).attr("x2", x(r.p975)).attr("y1", H / 2).attr("y2", H / 2).attr("stroke", resolveVar("var(--ink-3)")).attr("stroke-width", 1.5).attr("stroke-linecap", "round");
+      svg.append("line").attr("x1", x(r.p025)).attr("x2", x(r.p975)).attr("y1", H / 2).attr("y2", H / 2).style("stroke", ("var(--ink-3)")).attr("stroke-width", 1.5).attr("stroke-linecap", "round");
       svg.append("rect").attr("x", x(r.p10)).attr("width", Math.max(2, x(r.p90) - x(r.p10))).attr("y", H / 2 - 4).attr("height", 8).attr("rx", 4)
-        .attr("fill", resolveVar(r.mean >= 0 ? (r.ind ? "var(--ind)" : "var(--dem)") : "var(--rep)")).attr("opacity", 0.28);
+        .style("fill", (r.mean >= 0 ? (r.ind ? "var(--ind)" : "var(--dem)") : "var(--rep)")).attr("opacity", 0.28);
     }
-    svg.append("circle").attr("cx", x(r.mean)).attr("cy", H / 2).attr("r", 4.5).attr("fill", resolveVar(r.mean >= 0 ? (r.ind ? "var(--ind)" : "var(--dem)") : "var(--rep)"))
-      .attr("stroke", resolveVar("var(--panel)")).attr("stroke-width", 2);
+    svg.append("circle").attr("cx", x(r.mean)).attr("cy", H / 2).attr("r", 4.5).style("fill", (r.mean >= 0 ? (r.ind ? "var(--ind)" : "var(--dem)") : "var(--rep)"))
+      .style("stroke", ("var(--panel)")).attr("stroke-width", 2);
     return svg.node();
   }
 
@@ -727,18 +774,18 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
     y.ticks(5).forEach(function (t) { ay.append("text").attr("x", m.l - 6).attr("y", y(t) + 4).attr("text-anchor", "end").text(t === 0 ? "Even" : (t > 0 ? "D+" + t : "R+" + (-t))); });
     var ax = svg.append("g").attr("class", "axis");
     x.ticks(W < 500 ? 4 : 7).forEach(function (t) { ax.append("text").attr("x", x(t)).attr("y", H - 8).attr("text-anchor", "middle").text(d3.timeFormat("%b %-d")(t)); });
-    svg.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(0)).attr("y2", y(0)).attr("stroke", resolveVar("var(--rule-2)"));
+    svg.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(0)).attr("y2", y(0)).style("stroke", ("var(--rule-2)"));
     svg.append("g").selectAll("circle").data(Pp).enter().append("circle").attr("cx", function (d) { return x(d.d); }).attr("cy", function (d) { return y(d.v); })
-      .attr("r", 3).attr("fill", resolveVar("var(--ink-3)")).attr("opacity", 0.35);
+      .attr("r", 3).style("fill", ("var(--ink-3)")).attr("opacity", 0.35);
     var line = d3.line().x(function (d) { return x(d.d); }).y(function (d) { return y(d.v); }).curve(d3.curveMonotoneX);
     if (S.length) {
-      svg.append("path").datum(S).attr("d", line).attr("fill", "none").attr("stroke", resolveVar("var(--ink)")).attr("stroke-width", 2).attr("stroke-linejoin", "round").attr("stroke-linecap", "round");
+      svg.append("path").datum(S).attr("d", line).style("fill", "none").style("stroke", ("var(--ink)")).attr("stroke-width", 2).attr("stroke-linejoin", "round").attr("stroke-linecap", "round");
       var last = S[S.length - 1];
-      svg.append("circle").attr("cx", x(last.d)).attr("cy", y(last.v)).attr("r", 4.5).attr("fill", resolveVar("var(--ink)")).attr("stroke", resolveVar("var(--panel)")).attr("stroke-width", 2);
+      svg.append("circle").attr("cx", x(last.d)).attr("cy", y(last.v)).attr("r", 4.5).style("fill", ("var(--ink)")).style("stroke", ("var(--panel)")).attr("stroke-width", 2);
       svg.append("text").attr("class", "lbl-strong").attr("x", x(last.d) + 8).attr("y", y(last.v) + 4).text(marginText(last.v));
     }
-    var cross = svg.append("line").attr("y1", m.t).attr("y2", H - m.b).attr("stroke", resolveVar("var(--ink-3)")).attr("opacity", 0);
-    svg.append("rect").attr("x", m.l).attr("y", m.t).attr("width", W - m.l - m.r).attr("height", H - m.t - m.b).attr("fill", "transparent")
+    var cross = svg.append("line").attr("y1", m.t).attr("y2", H - m.b).style("stroke", ("var(--ink-3)")).attr("opacity", 0);
+    svg.append("rect").attr("x", m.l).attr("y", m.t).attr("width", W - m.l - m.r).attr("height", H - m.t - m.b).style("fill", "transparent")
       .on("pointermove", function (evt) {
         var px = d3.pointer(evt)[0], d0 = x.invert(px);
         var i = d3.bisector(function (d) { return d.d; }).center(S, d0); var pt = S[i]; if (!pt) return;
@@ -762,17 +809,17 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
     var gy = svg.append("g").attr("class", "grid"), ay = svg.append("g").attr("class", "axis");
     y.ticks(5).forEach(function (t) { gy.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(t)).attr("y2", y(t)); ay.append("text").attr("x", m.l - 6).attr("y", y(t) + 4).attr("text-anchor", "end").text(t); });
     x.ticks(6).forEach(function (t) { ay.append("text").attr("x", x(t)).attr("y", H - 8).attr("text-anchor", "middle").text(t === 0 ? "Even" : (t > 0 ? "D+" + t : "R+" + (-t))); });
-    svg.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(218)).attr("y2", y(218)).attr("stroke", resolveVar("var(--ink)"));
+    svg.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(218)).attr("y2", y(218)).style("stroke", ("var(--ink)"));
     svg.append("text").attr("class", "lbl-strong").attr("x", W - m.r).attr("y", y(218) - 6).attr("text-anchor", "end").text("218 majority");
-    svg.append("path").datum(curve).attr("fill", "none").attr("stroke", resolveVar("var(--dem)")).attr("stroke-width", 2)
+    svg.append("path").datum(curve).style("fill", "none").style("stroke", ("var(--dem)")).attr("stroke-width", 2)
       .attr("d", d3.line().x(function (d) { return x(d.margin); }).y(function (d) { return y(d.d_seats); }).curve(d3.curveMonotoneX));
     if (current != null) {
       var cx = x(Math.max(x.domain()[0], Math.min(x.domain()[1], current)));
-      svg.append("line").attr("x1", cx).attr("x2", cx).attr("y1", m.t).attr("y2", H - m.b).attr("stroke", resolveVar("var(--ink-3)"));
+      svg.append("line").attr("x1", cx).attr("x2", cx).attr("y1", m.t).attr("y2", H - m.b).style("stroke", ("var(--ink-3)"));
       svg.append("text").attr("class", "lbl").attr("x", cx + 5).attr("y", m.t + 10).text("Current estimate " + marginText(current));
     }
     svg.append("g").selectAll("circle").data(curve).enter().append("circle").attr("cx", function (d) { return x(d.margin); }).attr("cy", function (d) { return y(d.d_seats); })
-      .attr("r", 10).attr("fill", "transparent")
+      .attr("r", 10).style("fill", "transparent")
       .on("pointermove", function (evt, d) { showTip(evt, function (t) { t.appendChild(el("div", null, [el("b", { text: Math.round(d.d_seats) + " seats" }), " on average"])); t.appendChild(el("div", { class: "muted", text: "When Democrats win the national vote by " + marginText(d.margin) + " · House control " + pctText(d.p_control) })); }); })
       .on("pointerleave", hideTip);
   }
@@ -781,8 +828,7 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
   function chipFor(label) {
     var c = { "Safe D": "d3", "Likely D": "d2", "Lean D": "d1", "Tilt D": "d1", "Toss-up": "t0", "Tossup": "t0", "Tilt R": "r1", "Lean R": "r1", "Likely R": "r2", "Safe R": "r3",
       "Safe I": "d3", "Likely I": "d2", "Lean I": "d1", "Tilt I": "d1" }[label] || "t0";
-    var fill = resolveVar("var(--" + c + ")");
-    return el("span", { class: "chip", style: "background:" + fill + ";color:" + inkOn(fill), text: label });
+    return el("span", { class: "chip", style: "background:var(--" + c + ");color:var(--on-" + c + ")", text: label });
   }
   function candCell(r) {
     var rows = [];
@@ -1291,9 +1337,6 @@ td.detail { padding: 0 8px 18px; background: var(--panel-2); }
       if (cur === "national") lineChart($("gb-trend"), DATA.national.series || [], (DATA.national.chart_polls && DATA.national.chart_polls.length ? DATA.national.chart_polls : DATA.national.polls) || [], { height: 300, aria: "Generic ballot average with individual polls" });
     }, 200);
   });
-  // theme changes recolor SVG fills that were resolved from tokens
-  if (window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () { window.dispatchEvent(new Event("resize")); });
-  new MutationObserver(function () { window.dispatchEvent(new Event("resize")); }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 
   routeFromHash();
 })();

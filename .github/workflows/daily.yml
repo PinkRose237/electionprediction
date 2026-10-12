@@ -9,6 +9,10 @@ on:
     - cron: "0 16 * * *"
     - cron: "0 17 * * *"
   workflow_dispatch: {}
+  # Page-design changes rebuild and redeploy the site from the latest committed forecast (no model rerun).
+  push:
+    branches: [main]
+    paths: ["site/template.html", "pipeline/export.py"]
 
 permissions:
   contents: write
@@ -24,11 +28,15 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       run: ${{ steps.check.outputs.run }}
+      mode: ${{ steps.check.outputs.mode }}
     steps:
       - id: check
         shell: bash
         run: |
           run=true
+          mode=full
+          if [ "${{ github.event_name }}" = "push" ]; then mode=site; fi
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
           offset=$(TZ=America/New_York date +%z)
           if [ "${{ github.event_name }}" = "schedule" ]; then
             case "$offset|${{ github.event.schedule }}" in
@@ -58,7 +66,12 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run the model (fetch, simulate, rebuild site)
+        if: needs.gate.outputs.mode == 'full'
         run: python -m pipeline.run
+
+      - name: Rebuild the site from the latest forecast
+        if: needs.gate.outputs.mode == 'site'
+        run: python -m pipeline.export
 
       - name: Commit the updated forecast
         run: |
@@ -68,7 +81,8 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nothing changed."
           else
-            git commit -m "Forecast update $(date +%Y-%m-%d)"
+            if [ "${{ needs.gate.outputs.mode }}" = "site" ]; then msg="Rebuild site"; else msg="Forecast update $(date +%Y-%m-%d)"; fi
+            git commit -m "$msg"
             for attempt in 1 2 3; do
               git pull --rebase && git push && break
               sleep 10
